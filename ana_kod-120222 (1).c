@@ -3,7 +3,7 @@
 #include <time.h>
 #include <locale.h>  
 
-//int main satırı:845
+//int main satÄ±rÄ±:845
 
 int hasar=10;
 int Mcan=100,can=100;
@@ -25,25 +25,25 @@ int atla(int hak,int tahmin,int sanssayi,int indirim,int altin)
 {
 	printf("3.TURA ATLADIN!!\n");
 	hak+=4;
-	printf("+4 Hak Kazandın!!\n");
-	printf("İPUCU: Aradığın sayı %d ile %d arasında...\n",tahmin-10,tahmin+10);
+	printf("+4 Hak KazandÄ±n!!\n");
+	printf("Ä°PUCU: AradÄ±ÄŸÄ±n sayÄ± %d ile %d arasÄ±nda...\n",tahmin-10,tahmin+10);
 	while(hak>0)
 	{
 		hak--;
-		printf("Kalan hakkın: %d\n",hak);
+		printf("Kalan hakkÄ±n: %d\n",hak);
 		if(hak==0)
 		{
 			printf("Kaybettin!!\n");
 			altin-=50;
-			printf("Kalan altın: %d\n",altin);
+			printf("Kalan altÄ±n: %d\n",altin);
 			break;
 		}
-		printf("Bir sayı tahmin et: ");
+		printf("Bir sayÄ± tahmin et: ");
 		scanf("%d",&tahmin);
 		if(sanssayi==tahmin)
 		{
-			printf("Kazandın!!\n");
-			printf("Bir tane indirim hakkın var!!\n(Fiyatı yarısını hesapla)\n");
+			printf("KazandÄ±n!!\n");
+			printf("Bir tane indirim hakkÄ±n var!!\n(FiyatÄ± yarÄ±sÄ±nÄ± hesapla)\n");
 			hak=0;
 			indirim=1;
 			break;
@@ -63,10 +63,10 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 {
 	int pazarlik,sanspazar,pazarliksecim;
 	int fonkdongu=1;
-	printf("HATIRLATMA!!\nEğer indirim oyundan gelen bir indirim hakkın varsa onu pazarlıkta kullanamazsın!\n");
+	printf("HATIRLATMA!!\nEÄŸer indirim oyundan gelen bir indirim hakkÄ±n varsa onu pazarlÄ±kta kullanamazsÄ±n!\n");
 	while(fonkdongu!=0)
 	{
-		printf("[1]Pazarlık yap\n[2]Devam et\n");
+		printf("[1]PazarlÄ±k yap\n[2]Devam et\n");
 		scanf("%d",&pazarliksecim);
 		if(pazarliksecim==1)
 		{
@@ -77,30 +77,30 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 			 
 				if(sanspazar>=0 && sanspazar<60)
 				{
-					printf("İndirim yok\n");		
+					printf("Ä°ndirim yok\n");		
 					break;			
 				}
 				else if(sanspazar>=60 && sanspazar<70)
 				{
-					printf("Yüzde 10 indirim kazandın!\n");
+					printf("YÃ¼zde 10 indirim kazandÄ±n!\n");
 					pazarlik=10;
 					break;
 				}
 				else if(sanspazar>=70 && sanspazar<80)
 				{
-					printf("Yüzde 25 indirim kazandın!\n");
+					printf("YÃ¼zde 25 indirim kazandÄ±n!\n");
 					pazarlik=25;
 					break;
 				}
 				else if(sanspazar>=80 && sanspazar<90)
 				{
-					printf("Yüzde 40 indirim kazandın!\n");
+					printf("YÃ¼zde 40 indirim kazandÄ±n!\n");
 					pazarlik=40;
 					break;
 				}
 				else if(sanspazar>=90 && sanspazar<100)
 				{
-					printf("Yüzde 50 indirim kazandın!\n");
+					printf("YÃ¼zde 50 indirim kazandÄ±n!\n");
 					pazarlik=50;
 					break;
 				}
@@ -109,30 +109,30 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 			{ 
 				if(sanspazar>=0 && sanspazar<50)
 				{
-					printf("İndirim yok\n");
+					printf("Ä°ndirim yok\n");
 					break;
 				}
 				else if(sanspazar>=50 && sanspazar<60)
 				{
-					printf("Yüzde 10 indirim kazandın!\n");
+					printf("YÃ¼zde 10 indirim kazandÄ±n!\n");
 					pazarlik=10;
 					break;
 				}
 				else if(sanspazar>=60 && sanspazar<75)
 				{
-					printf("Yüzde 25 indirim kazandın!\n");
+					printf("YÃ¼zde 25 indirim kazandÄ±n!\n");
 					pazarlik=25;
 					break;
 				}
 				else if(sanspazar>=75 && sanspazar<85)
 				{
-					printf("Yüzde 40 indirim kazandın!\n");
+					printf("YÃ¼zde 40 indirim kazandÄ±n!\n");
 					pazarlik=40;
 					break;
 				}
 				else if(sanspazar>=85 && sanspazar<100)
 				{
-					printf("Yüzde 50 indirim kazandın!\n");
+					printf("YÃ¼zde 50 indirim kazandÄ±n!\n");
 					pazarlik=50;
 					break;
 				}
@@ -141,30 +141,30 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 			{ 
 				if(sanspazar>=0 && sanspazar<40)
 				{
-					printf("İndirim yok\n");
+					printf("Ä°ndirim yok\n");
 					break;
 				}
 				else if(sanspazar>=40 && sanspazar<50)
 				{
-					printf("Yüzde 10 indirim kazandın!\n");
+					printf("YÃ¼zde 10 indirim kazandÄ±n!\n");
 					pazarlik=10;
 					break;
 				}
 				else if(sanspazar>=50 && sanspazar<65)
 				{
-					printf("Yüzde 25 indirim kazandın!\n");
+					printf("YÃ¼zde 25 indirim kazandÄ±n!\n");
 					pazarlik=25;
 					break;
 				}
 				else if(sanspazar>=65 && sanspazar<80)
 				{
-					printf("Yüzde 40 indirim kazandın!\n");
+					printf("YÃ¼zde 40 indirim kazandÄ±n!\n");
 					pazarlik=40;
 					break;
 				}
 				else if(sanspazar>=80 && sanspazar<100)
 				{
-					printf("Yüzde 50 indirim kazandın!\n");
+					printf("YÃ¼zde 50 indirim kazandÄ±n!\n");
 					pazarlik=50;
 					break;
 				}
@@ -173,30 +173,30 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 			{ 
 				if(sanspazar>=0 && sanspazar<30)
 				{
-					printf("İndirim yok\n");
+					printf("Ä°ndirim yok\n");
 					break;
 				}
 				else if(sanspazar>=30 && sanspazar<40)
 				{
-					printf("Yüzde 10 indirim kazandın!\n");
+					printf("YÃ¼zde 10 indirim kazandÄ±n!\n");
 					pazarlik=10;
 					break;
 				}
 				else if(sanspazar>=40 && sanspazar<55)
 				{
-					printf("Yüzde 25 indirim kazandın!\n");
+					printf("YÃ¼zde 25 indirim kazandÄ±n!\n");
 					pazarlik=25;
 					break;
 				}
 				else if(sanspazar>=55 && sanspazar<75)
 				{
-					printf("Yüzde 40 indirim kazandın!\n");
+					printf("YÃ¼zde 40 indirim kazandÄ±n!\n");
 					pazarlik=40;
 					break;
 				}
 				else if(sanspazar>=75 && sanspazar<100)
 				{
-					printf("Yüzde 50 indirim kazandın!\n");
+					printf("YÃ¼zde 50 indirim kazandÄ±n!\n");
 					pazarlik=50;
 					break;
 				}
@@ -219,29 +219,29 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 		{
 			if(altin>=itemfiyat/2)
 			{
-				printf("%d karşılığında satın aldın\n",itemfiyat/2);
-				item++;	//envanterdeki bu item sayısını arttırır
+				printf("%d karÅŸÄ±lÄ±ÄŸÄ±nda satÄ±n aldÄ±n\n",itemfiyat/2);
+				item++;	//envanterdeki bu item sayÄ±sÄ±nÄ± arttÄ±rÄ±r
 				altin-=itemfiyat/2;
 				indirim=0;
 			}
 			else
 			{
-				printf("Yeterli altının yok!\n");
+				printf("Yeterli altÄ±nÄ±n yok!\n");
 			}
 		}
 		else
 		{
-			printf("Kaç tane alacaksın? ");
+			printf("KaÃ§ tane alacaksÄ±n? ");
 			scanf("%d",&almasayi);
 			if(altin>=itemfiyat*almasayi)
 			{
-				printf("%d karşılığında satın aldın\n",itemfiyat*almasayi);
-				item+=almasayi; //envanterdeki bu item sayısını arttırır
+				printf("%d karÅŸÄ±lÄ±ÄŸÄ±nda satÄ±n aldÄ±n\n",itemfiyat*almasayi);
+				item+=almasayi; //envanterdeki bu item sayÄ±sÄ±nÄ± arttÄ±rÄ±r
 				altin-=itemfiyat*almasayi;
 			}
 			else
 			{
-				printf("Yeterli altının yok!\n");
+				printf("Yeterli altÄ±nÄ±n yok!\n");
 			}
 		}	
 	}
@@ -252,30 +252,30 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 		{
 			if(altin>=itemfiyat/2)
 			{
-				printf("%d karşılığında satın aldın\n",itemfiyat/2);
-				item++;	//envanterdeki bu item sayısını arttırır
+				printf("%d karÅŸÄ±lÄ±ÄŸÄ±nda satÄ±n aldÄ±n\n",itemfiyat/2);
+				item++;	//envanterdeki bu item sayÄ±sÄ±nÄ± arttÄ±rÄ±r
 				altin-=itemfiyat/2;
 				indirim=0;
 			}
 			else
 			{
-				printf("Yeterli altının yok!\n");
+				printf("Yeterli altÄ±nÄ±n yok!\n");
 			}
 		}
 		else
 		{
-			printf("Ürünün yeni fiyatı: %d\n",itemfiyat*(100-pazarlik)/100);
-			printf("Kaç tane alacaksın? ");
+			printf("ÃœrÃ¼nÃ¼n yeni fiyatÄ±: %d\n",itemfiyat*(100-pazarlik)/100);
+			printf("KaÃ§ tane alacaksÄ±n? ");
 			scanf("%d",&almasayi);
 			if(altin>=itemfiyat*almasayi*(100-pazarlik)/100)
 			{
-				printf("%d karşılığında satın aldın\n",itemfiyat*almasayi*(100-pazarlik)/100);
-				item+=almasayi; //envanterdeki bu item sayısını arttırır
+				printf("%d karÅŸÄ±lÄ±ÄŸÄ±nda satÄ±n aldÄ±n\n",itemfiyat*almasayi*(100-pazarlik)/100);
+				item+=almasayi; //envanterdeki bu item sayÄ±sÄ±nÄ± arttÄ±rÄ±r
 				altin-=itemfiyat*almasayi*(100-pazarlik)/100;
 			}
 			else
 			{
-				printf("Yeterli altının yok!\n");
+				printf("Yeterli altÄ±nÄ±n yok!\n");
 			}
 		}
 	}
@@ -287,12 +287,12 @@ int *satinal(int item,int altin,int itemfiyat,int indirim,int ind[],int karizma)
 
 int *satisfonksiyonu(int item,int altin,int itemfiyat,int sat[])
 {
-	printf("Satış fiyatı: %d\n",itemfiyat/2);
+	printf("SatÄ±ÅŸ fiyatÄ±: %d\n",itemfiyat/2);
 	int satsayac=1;
 	int satmasayi;
 	while(satsayac!=0)
 	{
-		printf("Kaç tane satmak istiyorsun? ");
+		printf("KaÃ§ tane satmak istiyorsun? ");
 		scanf("%d",&satmasayi);
 		if(satmasayi==-1)
 		{
@@ -301,14 +301,14 @@ int *satisfonksiyonu(int item,int altin,int itemfiyat,int sat[])
 		else if(satmasayi>item)
 		{
 			printf("Biraz fazla girdin galiba!!\n");
-			printf("Geri gelmek için -1'e bas\n");
+			printf("Geri gelmek iÃ§in -1'e bas\n");
 		}
 		else
 		{
 			
 			altin+=(itemfiyat/2)*satmasayi;
 			item-=satmasayi;
-			printf("Altının: %d\n",altin);
+			printf("AltÄ±nÄ±n: %d\n",altin);
 			break;
 		}
 	}
@@ -347,13 +347,13 @@ while(Dcan>0&&can>0)
 	Dcan1=Dcan1-tahm1;
 	Dcan1=Dcan1+Dsal1;*/
 	
-printf("rakibin tahmini saldırı hasarı :%d\nrakibin tahmini canı :%d",Dsal2,Dcan1);
-printf("%d.Tur saldırı sırası sizde.\n1-[Saldır]\n2-[İyileş]\n3-[Teslim ol]\nNe yapmak istersin:",tur);
+printf("rakibin tahmini saldÄ±rÄ± hasarÄ± :%d\nrakibin tahmini canÄ± :%d",Dsal2,Dcan1);
+printf("%d.Tur saldÄ±rÄ± sÄ±rasÄ± sizde.\n1-[SaldÄ±r]\n2-[Ä°yileÅŸ]\n3-[Teslim ol]\nNe yapmak istersin:",tur);
 scanf("%d",&Ssec);
 							
 	if(Ssec==1)
 	{
-		printf("saldırı türünüzü seçiniz\n[1] reine(hasar %d dayanıklılık 70)\n[2]beau(hasar %d dayanıklılık 50)\n[3]vaillant(hasar %d dayanıklılık 30)\nHangi saldırı türüyle saldırmak istersiniz: ",(saldiri*3),(saldiri*2),saldiri);
+		printf("saldÄ±rÄ± tÃ¼rÃ¼nÃ¼zÃ¼ seÃ§iniz\n[1] reine(hasar %d dayanÄ±klÄ±lÄ±k 70)\n[2]beau(hasar %d dayanÄ±klÄ±lÄ±k 50)\n[3]vaillant(hasar %d dayanÄ±klÄ±lÄ±k 30)\nHangi saldÄ±rÄ± tÃ¼rÃ¼yle saldÄ±rmak istersiniz: ",(saldiri*3),(saldiri*2),saldiri);
 		int SSSay=1;
 		
 		while(SSSay!=0)
@@ -377,14 +377,14 @@ scanf("%d",&Ssec);
 				saldiri = saldiri - (Ddef/10);
 			}
 			Dcan= Dcan-saldiri;
-			printf("Hasarınız=%d\n",saldiri);
+			printf("HasarÄ±nÄ±z=%d\n",saldiri);
 			day= day -70;
 			SSSay--;
 			}
 			
 			else
 			{
-				printf("dayanıklılığınız yetmiyor");	
+				printf("dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z yetmiyor");	
 			}
 			
 		}
@@ -406,14 +406,14 @@ scanf("%d",&Ssec);
 				saldiri = saldiri - (Ddef/10);
 			}
 			Dcan= Dcan-saldiri;
-			printf("Hasarınız=%d\n",saldiri);
+			printf("HasarÄ±nÄ±z=%d\n",saldiri);
 			day=day-50;
 			SSSay--;
 			}
 			
 			else
 			{
-				printf("dayanıklılığınız yetmiyor");	
+				printf("dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z yetmiyor");	
 			}
 			
 		}
@@ -429,14 +429,14 @@ scanf("%d",&Ssec);
 				saldiri = saldiri - (Ddef/10);
 			}
 			Dcan= Dcan-saldiri;
-			printf("Hasarınız=%d\n",saldiri);
+			printf("HasarÄ±nÄ±z=%d\n",saldiri);
 			day=day-50;
 			SSSay--;
 			}
 			}
 			else
 			{
-				printf("dayanıklılığınız yetmiyor");	
+				printf("dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z yetmiyor");	
 			}
 		
 		}
@@ -445,7 +445,7 @@ scanf("%d",&Ssec);
 	else if(Ssec==2)
 	{
 		
-		printf("savunma türünüzü seçin.\n[1] gratuit(defansınız %d artacak dayanıklılığınız 30)\n[2] loué(defansınız %d artacak dayanıklılığınız 50)\n[3] de valeur(defansınız %d artacak dayanıklılığınız 70)\nHangi savunma türüyle savunmak istersiniz: ",(def*3),(def*2),def);
+		printf("savunma tÃ¼rÃ¼nÃ¼zÃ¼ seÃ§in.\n[1] gratuit(defansÄ±nÄ±z %d artacak dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z 30)\n[2] louÃ©(defansÄ±nÄ±z %d artacak dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z 50)\n[3] de valeur(defansÄ±nÄ±z %d artacak dayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z 70)\nHangi savunma tÃ¼rÃ¼yle savunmak istersiniz: ",(def*3),(def*2),def);
 		scanf("%d",&SDsec);
 		
 		if(SDsec==1)
@@ -462,8 +462,8 @@ scanf("%d",&Ssec);
 			{
 				day=Mday;
 			}
-			printf("dayanlıklılığınız%d/%d\n",day,Mday);
-			printf("Canınız=%d/%d\n",can,Mcan);
+			printf("dayanlÄ±klÄ±lÄ±ÄŸÄ±nÄ±z%d/%d\n",day,Mday);
+			printf("CanÄ±nÄ±z=%d/%d\n",can,Mcan);
 		}
 		
 		else if(SDsec==2)
@@ -481,8 +481,8 @@ scanf("%d",&Ssec);
 			{
 				day=Mday;
 			}
-			printf("dayanlıklılığınız%d/%d\n",day,Mday);
-			printf("Canınız=%d/%d\n",can,Mcan);
+			printf("dayanlÄ±klÄ±lÄ±ÄŸÄ±nÄ±z%d/%d\n",day,Mday);
+			printf("CanÄ±nÄ±z=%d/%d\n",can,Mcan);
 		}
 		
 		else if(SDsec==3)
@@ -497,13 +497,13 @@ scanf("%d",&Ssec);
 			{
 				day=Mday;
 			}
-			printf("dayanlıklılığınız%d/%d\n",day,Mday);
-			printf("Canınız=%d/%d\n",can,Mcan);	
+			printf("dayanlÄ±klÄ±lÄ±ÄŸÄ±nÄ±z%d/%d\n",day,Mday);
+			printf("CanÄ±nÄ±z=%d/%d\n",can,Mcan);	
 		}
 		
 		else
 		{
-			printf("herhangi bir şey yapmadınız");
+			printf("herhangi bir ÅŸey yapmadÄ±nÄ±z");
 		}
 	}
 	else if(Ssec==3)
@@ -514,7 +514,7 @@ scanf("%d",&Ssec);
 	}					
 	else
 	{
-		printf("Sıranı boş geçtin rakibin seninle dalga geçiyor\n");
+		printf("SÄ±ranÄ± boÅŸ geÃ§tin rakibin seninle dalga geÃ§iyor\n");
 	}
 	
 	if(Dcan>0)
@@ -530,7 +530,7 @@ scanf("%d",&Ssec);
 				Dsaldiri = Dsaldiri -(def/10);
 			}
 			can= can-Dsaldiri;
-			printf("Aldığınız hasar= %d\nKalan canınız= %d/%d\ndayanıklılığınız %d/%d",Dsaldiri,can,Mcan,day,Mday);
+			printf("AldÄ±ÄŸÄ±nÄ±z hasar= %d\nKalan canÄ±nÄ±z= %d/%d\ndayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z %d/%d",Dsaldiri,can,Mcan,day,Mday);
 		}
 		else
 		{
@@ -538,7 +538,7 @@ scanf("%d",&Ssec);
 		}
 		def=def1;
 		saldiri=sal1;
-		printf("Aldığınız hasar= 0\nKalan canınız= %d/%d\ndayanıklılığınız %d/%d",Dsaldiri,can,Mcan,day,Mday);
+		printf("AldÄ±ÄŸÄ±nÄ±z hasar= 0\nKalan canÄ±nÄ±z= %d/%d\ndayanÄ±klÄ±lÄ±ÄŸÄ±nÄ±z %d/%d",Dsaldiri,can,Mcan,day,Mday);
 	}
 
 	
@@ -547,13 +547,13 @@ scanf("%d",&Ssec);
 						
 	if(Dcan<=0)
 	{
-	printf("GALİBİYET!!!\n");
+	printf("GALÄ°BÄ°YET!!!\n");
 	exp+=Dsaldiri;
 	onur+=Dsaldiri;
-	printf("Tecrübeniz: %d\n",exp);
+	printf("TecrÃ¼beniz: %d\n",exp);
 	altin=altin+(DMcan/10);
 	hasar= hasar+(DMcan/10);
-	printf("Hasarınız %d arttı\n",DMcan/10);
+	printf("HasarÄ±nÄ±z %d arttÄ±\n",DMcan/10);
 	}
 	Darena[0]=can;
 	Darena[1]=exp;
@@ -568,67 +568,67 @@ int yetenekpuani(void)
 {
 	int yetw=1;
 	int lvlyet;
-	printf("\n\nYetenek puanınızı kullanın");
+	printf("\n\nYetenek puanÄ±nÄ±zÄ± kullanÄ±n");
 	
 	while(yetw!=0)
 	{
-		printf("\n[1]Kılıç yeteneği [2]Yay kullanma yeteneği [3]Defans yeteneği [4]Zihin okuma [5]Tahmin yeteneği [6]Onur [7]Büyü yeteneği[8] Hız\n");
+		printf("\n[1]KÄ±lÄ±Ã§ yeteneÄŸi [2]Yay kullanma yeteneÄŸi [3]Defans yeteneÄŸi [4]Zihin okuma [5]Tahmin yeteneÄŸi [6]Onur [7]BÃ¼yÃ¼ yeteneÄŸi[8] HÄ±z\n");
 		scanf("%d",&lvlyet);
 		switch(lvlyet)
 		{
 			
 			case 1:
 				hasar+=10;
-				printf("Yeni kılıç yeteneğin: %d\n",hasar);
+				printf("Yeni kÄ±lÄ±Ã§ yeteneÄŸin: %d\n",hasar);
 				yetw--;
 			
 			break;
 		
 			case 2:
 				okyet+=10;
-				printf("Yeni yay kullanma yeteneğin: %d\n",okyet);
+				printf("Yeni yay kullanma yeteneÄŸin: %d\n",okyet);
 				yetw--;
 			
 			break;
 		
 			case 3:
 				def+=10;
-				printf("Yeni defans yeteneğin: %d\n",def);
+				printf("Yeni defans yeteneÄŸin: %d\n",def);
 				yetw--;
 			
 			break;
 		
 			case 4:
 				zih+=10;
-				printf("Yeni zihin okuma yeteneğin: %d\n",zih);
+				printf("Yeni zihin okuma yeteneÄŸin: %d\n",zih);
 				yetw--;
 			
 			break;
 			
 			case 5:
 				tahm+=10;
-				printf("Yeni tahmin yeteneğin: %d\n",tahm);
+				printf("Yeni tahmin yeteneÄŸin: %d\n",tahm);
 				yetw--;
 			
 			break;
 			
 			case 6:
 				onur+=10;
-				printf("Yeni onur yeteneğin: %d\n",onur);
+				printf("Yeni onur yeteneÄŸin: %d\n",onur);
 				yetw--;
 			
 			break;
 		
 			case 7:
 				buyuyet+=10;
-				printf("Yeni büyü yeteneğin: %d\n",buyuyet);
+				printf("Yeni bÃ¼yÃ¼ yeteneÄŸin: %d\n",buyuyet);
 				yetw--;
 			
 			break;
 			
 			case 8:
 				hiz+=10;
-				printf("Yeni hız yeteneğin: %d\n",hiz);
+				printf("Yeni hÄ±z yeteneÄŸin: %d\n",hiz);
 				yetw--;
 			
 			break;
@@ -648,53 +648,53 @@ int orman(void)
 	
 	if(say1>90)
 	{
-		printf("Altın kesesi buldun(10 altın)\n");
+		printf("AltÄ±n kesesi buldun(10 altÄ±n)\n");
 		altin= altin+10;
-		printf("Altınınız: %d\n",altin);
+		printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 		}
 	
 	else if(say1>80)
 	{
-		printf("Bir büyücü çıka geldi ve sana bir tür kutsama yaptı.\n");
+		printf("Bir bÃ¼yÃ¼cÃ¼ Ã§Ä±ka geldi ve sana bir tÃ¼r kutsama yaptÄ±.\n");
 		buyuyet= buyuyet+10;
-		printf("Büyü gücünüz: %d\n",buyuyet);
+		printf("BÃ¼yÃ¼ gÃ¼cÃ¼nÃ¼z: %d\n",buyuyet);
 	}
 	
 	else if(say1>70)
 	{
-		printf("Bir tür kapan bitkiye denk geldin. Ondan kaçmak için hamle yaptın ama geç kaldın. Bir tür sıvı ile kaplandın. Artık daha hızlısın?!?!?!?\n");
+		printf("Bir tÃ¼r kapan bitkiye denk geldin. Ondan kaÃ§mak iÃ§in hamle yaptÄ±n ama geÃ§ kaldÄ±n. Bir tÃ¼r sÄ±vÄ± ile kaplandÄ±n. ArtÄ±k daha hÄ±zlÄ±sÄ±n?!?!?!?\n");
 		hiz= hiz+10;
-		printf("Hızınız: %d\n",hiz);
+		printf("HÄ±zÄ±nÄ±z: %d\n",hiz);
 	}
 	
 	else if(say1>60)
 	{
-		printf("Bir kemik yığını buluyorsun. Ormanın derinliklerinde kaybolmuş olmalı. Eşyalarını almak ister misin?\n[1]Evet [2]Hayır\nNe yapacaksın:");
+		printf("Bir kemik yÄ±ÄŸÄ±nÄ± buluyorsun. OrmanÄ±n derinliklerinde kaybolmuÅŸ olmalÄ±. EÅŸyalarÄ±nÄ± almak ister misin?\n[1]Evet [2]HayÄ±r\nNe yapacaksÄ±n:");
 		scanf("%d",&kemik);
 		if(kemik==1)
 		{
-			printf("Sunlar bulundu:1 kese altın(100 altın),20 taş ok, 1 demir kılıç\n");
+			printf("Sunlar bulundu:1 kese altÄ±n(100 altÄ±n),20 taÅŸ ok, 1 demir kÄ±lÄ±Ã§\n");
 			altin=altin+ 100;
 			ok[1]= ok[1]+20;
 			hasar=hasar+30;
-			printf("Altınınız: %d\nOkunuz: %d\nHasarınız: %d\n",altin,ok[1],hasar);
+			printf("AltÄ±nÄ±nÄ±z: %d\nOkunuz: %d\nHasarÄ±nÄ±z: %d\n",altin,ok[1],hasar);
 		}
 		else
 		{
-			printf("Hiçbir şey yapmadan onu sonsuz yalnızlığa bıraktın ve devam ettin\n");
+			printf("HiÃ§bir ÅŸey yapmadan onu sonsuz yalnÄ±zlÄ±ÄŸa bÄ±raktÄ±n ve devam ettin\n");
 		}
 	}
 	
 	else if(say1>50)
 	{
-		printf("Bir periye denk geldin ve kalbinin biraz daha hızlı attığını farkediyorsun... Uyandın peri yok ama bir şeyler değişmiş.\n");
+		printf("Bir periye denk geldin ve kalbinin biraz daha hÄ±zlÄ± attÄ±ÄŸÄ±nÄ± farkediyorsun... UyandÄ±n peri yok ama bir ÅŸeyler deÄŸiÅŸmiÅŸ.\n");
 		Mcan=Mcan+50;
-		printf("Canınız: %d/%d\n",can,Mcan);
+		printf("CanÄ±nÄ±z: %d/%d\n",can,Mcan);
 	}
 	
 	else
 	{
-		printf("Ortalıkta hiçbir şey yok\n");
+		printf("OrtalÄ±kta hiÃ§bir ÅŸey yok\n");
 	}
 }
 
@@ -705,36 +705,36 @@ int hasen(void)
 	
 	if(say1==1)
 	{
-		printf("Bir gece uyku tulumunda sessiz sakince uyurken ay tanrısı senin rüyalar aleminde ona sunduğun minneti kabul ediyor ve...\nSana altın bir kılıç veriyor!!\n");
+		printf("Bir gece uyku tulumunda sessiz sakince uyurken ay tanrÄ±sÄ± senin rÃ¼yalar aleminde ona sunduÄŸun minneti kabul ediyor ve...\nSana altÄ±n bir kÄ±lÄ±Ã§ veriyor!!\n");
 		hasar +=150;
 	}
 	
 	if(say1==2)
 	{
-		printf("Bir ejderha sen yatağında fosur fosur osurup uyurken seni bir lokmada ham yaptı. Acısız gibi görünse de beynin tüm acıyı hissetti.\n");
+		printf("Bir ejderha sen yataÄŸÄ±nda fosur fosur osurup uyurken seni bir lokmada ham yaptÄ±. AcÄ±sÄ±z gibi gÃ¶rÃ¼nse de beynin tÃ¼m acÄ±yÄ± hissetti.\n");
 		can -= 1000;
 	}
 	
 	if(say1==3)
 	{
-		printf("Uyuduğun yerin yanında bir kese altın buldun(100 altın). Muhtemelen bir hayırsever senin haline acıyıp koydu.\n");
+		printf("UyuduÄŸun yerin yanÄ±nda bir kese altÄ±n buldun(100 altÄ±n). Muhtemelen bir hayÄ±rsever senin haline acÄ±yÄ±p koydu.\n");
 		altin=altin+100;
 	}
 	
 	if(say1==4)
 	{
 		int koylu;
-		printf("Yolda yürürken bir köylüye rastladın. Senden yardım istiyor.\n[1]Yardım et\n[2]Yoluna devam et\nNe yapacaksın:");
+		printf("Yolda yÃ¼rÃ¼rken bir kÃ¶ylÃ¼ye rastladÄ±n. Senden yardÄ±m istiyor.\n[1]YardÄ±m et\n[2]Yoluna devam et\nNe yapacaksÄ±n:");
 		scanf("%d",&koylu);
 		if(koylu==1)
 		{
-			printf("Köylünün sabanı taşa sıkışmış güçlü kollarınla birkaç hamlede kurtardın. Köylü ve ailesi sana minnettar.\n");
+			printf("KÃ¶ylÃ¼nÃ¼n sabanÄ± taÅŸa sÄ±kÄ±ÅŸmÄ±ÅŸ gÃ¼Ã§lÃ¼ kollarÄ±nla birkaÃ§ hamlede kurtardÄ±n. KÃ¶ylÃ¼ ve ailesi sana minnettar.\n");
 			onur=onur+50;
 			printf("Onurunuz: %d",onur);
 		}
 		else
 		{
-			printf("Köylünün dili uzun çıktı. Yardım etmediğini tüm ahali öğrendi.\n");
+			printf("KÃ¶ylÃ¼nÃ¼n dili uzun Ã§Ä±ktÄ±. YardÄ±m etmediÄŸini tÃ¼m ahali Ã¶ÄŸrendi.\n");
 			onur=onur-50;
 			if(onur<0)
 			{
@@ -746,25 +746,25 @@ int hasen(void)
 	
 	if(say1==5)
 	{
-		printf("Yolda dinlenirken güzel bir cadıya denk geldin ve dikkatini çektin. Senden hoşlandı ve sana bir iksir verdi.içtin ve bayıldın. Ayıldığında cadı yoktu.\n");
+		printf("Yolda dinlenirken gÃ¼zel bir cadÄ±ya denk geldin ve dikkatini Ã§ektin. Senden hoÅŸlandÄ± ve sana bir iksir verdi.iÃ§tin ve bayÄ±ldÄ±n. AyÄ±ldÄ±ÄŸÄ±nda cadÄ± yoktu.\n");
 		Mcan=Mcan+100;
-		printf("Canınız: %d/%d\n",can,Mcan);
+		printf("CanÄ±nÄ±z: %d/%d\n",can,Mcan);
 	}
 	
 	if(say1==6)
 	{
-		printf("Bir ustaya denk geldin. Seni sevdi ve sana bir büyü öğretmek istedi. Büyüler gelince rasgele bir büyü öğret\n");
+		printf("Bir ustaya denk geldin. Seni sevdi ve sana bir bÃ¼yÃ¼ Ã¶ÄŸretmek istedi. BÃ¼yÃ¼ler gelince rasgele bir bÃ¼yÃ¼ Ã¶ÄŸret\n");
 	}
 	
 	if(say1==7)
 	{
-		printf("Bir Nizam Şövalyesi yanından geçiyor. Senin güçlü olduğunu gördüğü ve hoşuna gitti. Seni minik bir düelloya davet ediyor.\n");
+		printf("Bir Nizam ÅÃ¶valyesi yanÄ±ndan geÃ§iyor. Senin gÃ¼Ã§lÃ¼ olduÄŸunu gÃ¶rdÃ¼ÄŸÃ¼ ve hoÅŸuna gitti. Seni minik bir dÃ¼elloya davet ediyor.\n");
 		
 		int Ssec,DMcan=300,Dcan=300,Dsaldiri=300,saldiri=hasar/3,tur=0,Ddef=300;
 						
 		while(Dcan>0&&can>0)
 		{
-			printf("%d.Tur saldırı sırası sizde.\n1-[Saldır]\n2-[İyileş]\n3-[Teslim ol]\nNe yapmak istersin:",tur);
+			printf("%d.Tur saldÄ±rÄ± sÄ±rasÄ± sizde.\n1-[SaldÄ±r]\n2-[Ä°yileÅŸ]\n3-[Teslim ol]\nNe yapmak istersin:",tur);
 			scanf("%d",&Ssec);
 							
 			if(Ssec==1)
@@ -778,7 +778,7 @@ int hasen(void)
 					saldiri = saldiri - (Ddef/10);
 				}
 				Dcan= Dcan-saldiri;
-				printf("Hasarınız=%d\n",saldiri);
+				printf("HasarÄ±nÄ±z=%d\n",saldiri);
 			}
 			else if(Ssec==2)
 			{
@@ -787,24 +787,24 @@ int hasen(void)
 				{
 					can=Mcan;
 				}
-				printf("Canınız=%d\n",can);
+				printf("CanÄ±nÄ±z=%d\n",can);
 			}
 			else if(Ssec==3)
 			{
-				printf("Şövalye sana\"senin onurlu ve güçlü bir savaşçı olduğunu düşünmüştüm\" diyor. Ve gidiyor\n");
+				printf("ÅÃ¶valye sana\"senin onurlu ve gÃ¼Ã§lÃ¼ bir savaÅŸÃ§Ä± olduÄŸunu dÃ¼ÅŸÃ¼nmÃ¼ÅŸtÃ¼m\" diyor. Ve gidiyor\n");
 			break;
 			}					
 			
 			else
 			{
-				printf("Sıranı boş geçtin rakibin seninle dalga geçiyor\n");
+				printf("SÄ±ranÄ± boÅŸ geÃ§tin rakibin seninle dalga geÃ§iyor\n");
 			}
 							
 			if(tur%3==0||tur%3==1)
 			{
 				Dsaldiri = Dsaldiri -(def/10);
 				can= can-Dsaldiri;
-				printf("Aldığınız hasar=%d\nKalan canınız=%d/%d\n",Dsaldiri,can,Mcan);
+				printf("AldÄ±ÄŸÄ±nÄ±z hasar=%d\nKalan canÄ±nÄ±z=%d/%d\n",Dsaldiri,can,Mcan);
 			}
 			else
 			{
@@ -821,14 +821,14 @@ int hasen(void)
 				altin=altin+(DMcan/10);
 				hasar= hasar+(DMcan/10);
 			}
-		printf("Şövalye senin karşında diz çöküyor ve senin bu gücünden etkileniyor.Sana Nizam Şövalyesi Karargahına giriş belgesi veriyor.(İtemler geldiğnide eklenir ve Nizam Şövalyesi Karargahı da eklenir)\n");
+		printf("ÅÃ¶valye senin karÅŸÄ±nda diz Ã§Ã¶kÃ¼yor ve senin bu gÃ¼cÃ¼nden etkileniyor.Sana Nizam ÅÃ¶valyesi KarargahÄ±na giriÅŸ belgesi veriyor.(Ä°temler geldiÄŸnide eklenir ve Nizam ÅÃ¶valyesi KarargahÄ± da eklenir)\n");
 	}
 	
 	if(say1==8)
 	{
-		printf("Bir nene görüyorsun. Çok tatlı birisi. Yanına gidip halini hatrını soracakken alnına dokunuyor ve gözüne perde iniyor. Bir süre sonra düzeliyorsun\n");
+		printf("Bir nene gÃ¶rÃ¼yorsun. Ã‡ok tatlÄ± birisi. YanÄ±na gidip halini hatrÄ±nÄ± soracakken alnÄ±na dokunuyor ve gÃ¶zÃ¼ne perde iniyor. Bir sÃ¼re sonra dÃ¼zeliyorsun\n");
 	zih=zih+10;
-	printf("Zihin gücü: %d\n",zih);
+	printf("Zihin gÃ¼cÃ¼: %d\n",zih);
 	}
 	
 	if(say1==9)
@@ -877,8 +877,8 @@ int main ()
 	int ind[3];
 	int sat[2];
 	int shp=1;
-	int cikis; //Satış ekranından çıkar
-	int kel; //KUAFÖR
+	int cikis; //SatÄ±ÅŸ ekranÄ±ndan Ã§Ä±kar
+	int kel; //KUAFÃ–R
 	int duksec,silsec,kilicsec,baltasec,mizsec,yaysec,zirhsec,buyusec,ikssec,petsec,akssec,kalkansec,migfsec,govsec,bacsec,kolsec,eldsec,botsec,kolyesec,bileksec,yuzuksec,kupesec,kuaforsec,sacsec,sakalsec,renksec;
 	int kil[4]={0,0,0,0},bic[2]={0,0},bal[4]={0,0,0,0},miz[2]={0,0},kar[2]={0,0},yay[3]={0,0,0},ok[2]={0,0},kalkan[4]={0,0,0,0},mig[4]={0,0,0,0},gov[4]={0,0,0,0},bac[4]={0,0,0,0},kol[4]={0,0,0,0},eld[4]={0,0,0,0},bot[4]={0,0,0,0},kolye[3]={0,0,0},bilek[3]={0,0,0},yuzuk[3]={0,0,0},kupe[3]={0,0,0},iksir[4]={0,0,0,0},pet[2]={0,0},buyu[4]={0,0,0,0};
 	
@@ -926,9 +926,9 @@ int main ()
 	
 	char isim[255];
 	int intmagara=1; //while
-	int kediotu=0; //İTEM 
-	int yilanyumurtasi=0; //İTEM
-	int bilgi[8]={0,0,0,0,0,0,0}; //İTEMLER
+	int kediotu=0; //Ä°TEM 
+	int yilanyumurtasi=0; //Ä°TEM
+	int bilgi[8]={0,0,0,0,0,0,0}; //Ä°TEMLER
 	int intmagarayolsecim1,intmagarayolsecim2,intmagarasecim1,intmagarasecim2,intmagarasecim3,intmagarasecim4,intmagarasecim5,intmagarasecim6,intmagarasecim7,intmagarasecim8,intmagarasecim9,intmagarasecim10;
 	int intboceksans,intmagaraoktopla,intmagaraokalma,intmagaragorevkarar,intmagaragorev1secimi;
 	int intmagaraalevsecim1,intmagaraalevsecim2,intmagaraalevsecim3,intmagaraalevsecim4,intmagaraalevsecim5;
@@ -955,38 +955,38 @@ int main ()
 	int intbilgisayfa;
 	
 	setlocale(LC_ALL, "Turkish");
-	printf("Selam dünyalı, bu girdiğin evrene birçok yiğit savaşçı girmeyi denese de çıkmayı başaramadı.\nBu sebepten çok dikkatli ol! Dünyaya giriş yapmak istediğine hala emin misin?\n");
+	printf("Selam dÃ¼nyalÄ±, bu girdiÄŸin evrene birÃ§ok yiÄŸit savaÅŸÃ§Ä± girmeyi denese de Ã§Ä±kmayÄ± baÅŸaramadÄ±.\nBu sebepten Ã§ok dikkatli ol! DÃ¼nyaya giriÅŸ yapmak istediÄŸine hala emin misin?\n");
 	printf("Kabul ediyorsan y'ye, Reddediyorsan n'ye bas...");
 	scanf("%c",&sec);
 	
 	if(sec=='y')
 	{
 		
-		printf("Bana kendini tanıt...\n");
-		printf("İsmin ne?\n");
+		printf("Bana kendini tanÄ±t...\n");
+		printf("Ä°smin ne?\n");
 		scanf("%s",&isim);
 		system("CLS");
-		printf("Mesleğin ne?\n");
+		printf("MesleÄŸin ne?\n");
 		
 		while(mes1!=0)
 		{
-			printf("[1]Savaşçı\n[2]Okçu\n[3]Büyücü\n[4]Dedektif\n");
+			printf("[1]SavaÅŸÃ§Ä±\n[2]OkÃ§u\n[3]BÃ¼yÃ¼cÃ¼\n[4]Dedektif\n");
 			scanf("%d",&mes);
 			switch(mes)
 			{
-				case 1: hasar+=150;			printf("Yeni kılıç yeteneğin: %d",hasar);
+				case 1: hasar+=150;			printf("Yeni kÄ±lÄ±Ã§ yeteneÄŸin: %d",hasar);
 					mes1--;
 				break;
 				
-				case 2: okyet+=150;			printf("\nYeni yay kullanma yeteneğin: %d",okyet);
+				case 2: okyet+=150;			printf("\nYeni yay kullanma yeteneÄŸin: %d",okyet);
 					mes1--;
 				break;
 				
-				case 3: buyuyet+=150;			printf("\nYeni büyü yeteneğin: %d",buyuyet);
+				case 3: buyuyet+=150;			printf("\nYeni bÃ¼yÃ¼ yeteneÄŸin: %d",buyuyet);
 					mes1--;
 				break;
 				
-				case 4: tahm+=75; zih+=75;	printf("\nYeni tahmin yeteneğin: %d\nYeni zihin yeteneğin: %d",tahm,zih);
+				case 4: tahm+=75; zih+=75;	printf("\nYeni tahmin yeteneÄŸin: %d\nYeni zihin yeteneÄŸin: %d",tahm,zih);
 					mes1--;
 				break;
 				
@@ -998,112 +998,112 @@ int main ()
 				system("pause");
 				system("cls");
 				
-		printf("\nElinde bulunan 10 adet puanı karakterini geliştirmek için kullan\n");
+		printf("\nElinde bulunan 10 adet puanÄ± karakterini geliÅŸtirmek iÃ§in kullan\n");
 		
-		printf("\n[1]Kılıç yeteneği [2]Yay kullanma yeteneği [3]Defans yeteneği [4]Zihin okuma [5]Tahmin yeteneği [6]Onur [7]Büyü yeteneği[8] Hız\n");
+		printf("\n[1]KÄ±lÄ±Ã§ yeteneÄŸi [2]Yay kullanma yeteneÄŸi [3]Defans yeteneÄŸi [4]Zihin okuma [5]Tahmin yeteneÄŸi [6]Onur [7]BÃ¼yÃ¼ yeteneÄŸi[8] HÄ±z\n");
 		
 		
 		while(puan!=0)
 		{
-			printf("Hangi özelliğinizi geliştirmek istersiniz:");
+			printf("Hangi Ã¶zelliÄŸinizi geliÅŸtirmek istersiniz:");
     		scanf("%d",&yet);
     		
 			switch(yet)
 			{
     			case 1:
 					hasar+=10;
-					printf("\nYeni kılıç yeteneğin: %d\n",hasar);
+					printf("\nYeni kÄ±lÄ±Ã§ yeteneÄŸin: %d\n",hasar);
 					puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 2: 
 					okyet+=10;	
-					printf("\nYeni yay kullanma yeteneğin: %d\n",okyet);
+					printf("\nYeni yay kullanma yeteneÄŸin: %d\n",okyet);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 3: 
 					def+=10;
-					printf("\nYeni defans yeteneğin: %d\n",def);
+					printf("\nYeni defans yeteneÄŸin: %d\n",def);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 4: 
 					tahm+=10;
-					printf("\nYeni zihin okuma yeteneğin: %d\n",zih);
+					printf("\nYeni zihin okuma yeteneÄŸin: %d\n",zih);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 5: 
 					zih+=10;
-					printf("\nYeni tahmin yeteneğin: %d\n",tahm);
+					printf("\nYeni tahmin yeteneÄŸin: %d\n",tahm);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 6: 
 					onur+=10;
-					printf("\nYeni onur yeteneğin: %d\n",onur);
+					printf("\nYeni onur yeteneÄŸin: %d\n",onur);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				case 7: 
 					buyuyet+=10;
-					printf("\nYeni büyü yeteneğin: %d\n",buyuyet);
+					printf("\nYeni bÃ¼yÃ¼ yeteneÄŸin: %d\n",buyuyet);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			case 8: 
 					hiz+=10;
-					printf("\nYeni hız yeteneğin: %d\n",hiz);
+					printf("\nYeni hÄ±z yeteneÄŸin: %d\n",hiz);
     				puan--;
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
     			
 				default:
     				printf("Tekrar dene!!");
-    				printf("Kalan puanınız: %d\n\n",puan);
+    				printf("Kalan puanÄ±nÄ±z: %d\n\n",puan);
     			break;
 			}
 		}
     			can=Mcan;
     			system("cls");
 		
-		printf("\nGireceğin evrende çok düşük ihtimallerde nadir eşyalarla kutsanabilir, güçlü büyücülerin efsunlarına uğrayabilir\nveya ansızın bir ejderha tarafından yutulabilirsin.\nO yüzden vereceğin her kararda sonraki kararının seni sona yaklaştırmadığından emin ol.");
-		printf("\n\nHasarını günden güne antrenman yaparak artırabilir veya sakatlanıp azalmasına sebep olabilirsin.");
-		printf("\nCan barın her şeyden önemlidir. birçok şeyden etkilendiği gibi birçok şeye de etki etmektedir.");
-		printf("\nDefans gücün bardaki sarhoşla antrenman sırasında gelişir ama cebindeki çakıya dikkat et!! \n(Defansını azaltıp canını azaltabilir.)");
-		printf("\nOk sayını çalı kullanarak günden güne artırabilirsin veya yerden bularak da kazanbilirsin.");
-		printf("\nDüşmanlarına dikkat etmelisin. Onların gücünü öğrenebilmek için tahmin yeteneğininin yeteri kadar olması gerekir.\nTahmin yeteneğini tavernadaki kızlar hakkında tahmin yaparak kazanabilirsin.\n\n");
+		printf("\nGireceÄŸin evrende Ã§ok dÃ¼ÅŸÃ¼k ihtimallerde nadir eÅŸyalarla kutsanabilir, gÃ¼Ã§lÃ¼ bÃ¼yÃ¼cÃ¼lerin efsunlarÄ±na uÄŸrayabilir\nveya ansÄ±zÄ±n bir ejderha tarafÄ±ndan yutulabilirsin.\nO yÃ¼zden vereceÄŸin her kararda sonraki kararÄ±nÄ±n seni sona yaklaÅŸtÄ±rmadÄ±ÄŸÄ±ndan emin ol.");
+		printf("\n\nHasarÄ±nÄ± gÃ¼nden gÃ¼ne antrenman yaparak artÄ±rabilir veya sakatlanÄ±p azalmasÄ±na sebep olabilirsin.");
+		printf("\nCan barÄ±n her ÅŸeyden Ã¶nemlidir. birÃ§ok ÅŸeyden etkilendiÄŸi gibi birÃ§ok ÅŸeye de etki etmektedir.");
+		printf("\nDefans gÃ¼cÃ¼n bardaki sarhoÅŸla antrenman sÄ±rasÄ±nda geliÅŸir ama cebindeki Ã§akÄ±ya dikkat et!! \n(DefansÄ±nÄ± azaltÄ±p canÄ±nÄ± azaltabilir.)");
+		printf("\nOk sayÄ±nÄ± Ã§alÄ± kullanarak gÃ¼nden gÃ¼ne artÄ±rabilirsin veya yerden bularak da kazanbilirsin.");
+		printf("\nDÃ¼ÅŸmanlarÄ±na dikkat etmelisin. OnlarÄ±n gÃ¼cÃ¼nÃ¼ Ã¶ÄŸrenebilmek iÃ§in tahmin yeteneÄŸininin yeteri kadar olmasÄ± gerekir.\nTahmin yeteneÄŸini tavernadaki kÄ±zlar hakkÄ±nda tahmin yaparak kazanabilirsin.\n\n");
         
 		while(can>0)
 		{
 		Igun=0;
 		while(Igun<=(hiz/100)&&can>0)
 		{
-            printf("%d. Gün\n",gun);
+            printf("%d. GÃ¼n\n",gun);
 			hasen();
-            printf("Başlıyoruz hazır mısın?\n");
+            printf("BaÅŸlÄ±yoruz hazÄ±r mÄ±sÄ±n?\n");
             printf("Seviyeniz: %d\n",lwl);
-            printf("Tecrübeniz: %d/%d\n",exp,Mexp);
-   			printf("Hasarınız: %d\n",hasar);
-   			printf("Canınız: %d/%d\n",can,Mcan);
-   			printf("Defansınız: %d\n",def);
-   			printf("Ok yeteneğiniz: %d\n",okyet);
+            printf("TecrÃ¼beniz: %d/%d\n",exp,Mexp);
+   			printf("HasarÄ±nÄ±z: %d\n",hasar);
+   			printf("CanÄ±nÄ±z: %d/%d\n",can,Mcan);
+   			printf("DefansÄ±nÄ±z: %d\n",def);
+   			printf("Ok yeteneÄŸiniz: %d\n",okyet);
    			printf("Okunuz: %d\n",ok[1]);
-   			printf("Tahmin yeteneğiniz: %d\n",tahm);
-   			printf("Zihin yeteneğiniz: %d\n",zih);
+   			printf("Tahmin yeteneÄŸiniz: %d\n",tahm);
+   			printf("Zihin yeteneÄŸiniz: %d\n",zih);
    			printf("Onurunuz: %d\n",onur);
-   			printf("Hızınız: %d\n",hiz);
-   			printf("Altınınız: %d\n",altin);
+   			printf("HÄ±zÄ±nÄ±z: %d\n",hiz);
+   			printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
    			
    			day=Mday;
-            printf("[1]Arenaya gir\n[2]Aşk çeşmesine git\n[3]Bara git\n[4]Ormana git\n[5]Büyücünün inine gir\n[6]İntihar mağrasına gir\n[7]Evde dinlen(iyileş)\n[8]Talim alanına git\n[9]Çarşıya git\n[12]envantere bak\n");
+            printf("[1]Arenaya gir\n[2]AÅŸk Ã§eÅŸmesine git\n[3]Bara git\n[4]Ormana git\n[5]BÃ¼yÃ¼cÃ¼nÃ¼n inine gir\n[6]Ä°ntihar maÄŸrasÄ±na gir\n[7]Evde dinlen(iyileÅŸ)\n[8]Talim alanÄ±na git\n[9]Ã‡arÅŸÄ±ya git\n[12]envantere bak\n");
             printf("Ne yapmak istersin:");
    			scanf("%d",&karar);
             
@@ -1112,7 +1112,7 @@ int main ()
 				
 				case 1:
 					
-					printf("Arenaya gittin.\n1-Cher[güç 1000]\n2-Aimer[güç 500]\n3-Ami[güç 300]\n4-Ordinaire[güç 100]\n5-Cupidite[güç 50]\n6-Haine[güç 20]\nRakibini seç:\n");
+					printf("Arenaya gittin.\n1-Cher[gÃ¼Ã§ 1000]\n2-Aimer[gÃ¼Ã§ 500]\n3-Ami[gÃ¼Ã§ 300]\n4-Ordinaire[gÃ¼Ã§ 100]\n5-Cupidite[gÃ¼Ã§ 50]\n6-Haine[gÃ¼Ã§ 20]\nRakibini seÃ§:\n");
 					scanf("%d",&arena);
 					
 					if(arena==1)
@@ -1184,14 +1184,14 @@ int main ()
 				
 					else
 					{
-					printf("boş geçtin manyak niye\n");
+					printf("boÅŸ geÃ§tin manyak niye\n");
 					}
 				
 				break;
 				
 				case 2:
 					
-					printf("Aşk çeşmesine geldiniz: 1-Dilek tutmak.\n2-Yeni insanlar ile tanışma.\n3-Ticaret yapmak.\n");
+					printf("AÅŸk Ã§eÅŸmesine geldiniz: 1-Dilek tutmak.\n2-Yeni insanlar ile tanÄ±ÅŸma.\n3-Ticaret yapmak.\n");
 					printf("Ne yapmak istersin:");
 					scanf("%d",&secim);
 					
@@ -1199,36 +1199,36 @@ int main ()
 					    if(secim == 1)
 						{
 						iht = rand() % 10;
-						printf("İhtimaller:1-Zengin olmak.\n2-Onurun artması.\n3-Yeni bir zırh.\n4-Güçlenmek.\n");
+						printf("Ä°htimaller:1-Zengin olmak.\n2-Onurun artmasÄ±.\n3-Yeni bir zÄ±rh.\n4-GÃ¼Ã§lenmek.\n");
 						scanf("%d",&secim1);
 					
 						if(iht == 1)
 						{
-							printf("Dileğini tuttuktan sonra yolda yürürken bir hırsızın güzel bir kadının çantasını çalarken gördün.1-Peşine düş.\n2-Umursama.\n");
+							printf("DileÄŸini tuttuktan sonra yolda yÃ¼rÃ¼rken bir hÄ±rsÄ±zÄ±n gÃ¼zel bir kadÄ±nÄ±n Ã§antasÄ±nÄ± Ã§alarken gÃ¶rdÃ¼n.1-PeÅŸine dÃ¼ÅŸ.\n2-Umursama.\n");
 							scanf("%d",&secim2);
 							if(secim2 == 2)
 							{
-								// pişmanlık ileride gelecek...
+								// piÅŸmanlÄ±k ileride gelecek...
 							}
 							else if(secim2 == 1)
 							{
-								printf("Uzun bir çabadan sonra çantayı hırsızdan aldın ve hırsızı patakladın.Çantayı açtın ve o da ne!! içinde bir sürü para var.1-Çantayı sahibine götür.\n2-Çanta al ve kaç.\n");
+								printf("Uzun bir Ã§abadan sonra Ã§antayÄ± hÄ±rsÄ±zdan aldÄ±n ve hÄ±rsÄ±zÄ± patakladÄ±n.Ã‡antayÄ± aÃ§tÄ±n ve o da ne!! iÃ§inde bir sÃ¼rÃ¼ para var.1-Ã‡antayÄ± sahibine gÃ¶tÃ¼r.\n2-Ã‡anta al ve kaÃ§.\n");
 								scanf("%d",&secim3);
 								
 								if(secim3 == 1)
 								{
 							
-									printf("Çantayı sahibine götürdün ve kadın bunun karşılığında sana bir miktar para verdi.\n");
+									printf("Ã‡antayÄ± sahibine gÃ¶tÃ¼rdÃ¼n ve kadÄ±n bunun karÅŸÄ±lÄ±ÄŸÄ±nda sana bir miktar para verdi.\n");
 									altin = altin + 200;
 									onur = onur + 20;
-									printf("Altınınız: %d\n",altin);
+									printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 									printf("Onurunuz: %d\n",onur);
 								}
 								else
 								{
 									altin = altin + 500;
 									onur = onur - 10;
-									printf("Altınınız: %d\n",altin);
+									printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 								    printf("Onurunuz: %d\n",onur);
 								}
 							}
@@ -1237,29 +1237,29 @@ int main ()
 				        
 						if(iht == 2)
 						{
-				        	printf("Yolda giderken bir adamın siyahi bir adamı aşağıladığını gördün.1-Siyahi adama yardım et.\n2-Umursama.\n");
+				        	printf("Yolda giderken bir adamÄ±n siyahi bir adamÄ± aÅŸaÄŸÄ±ladÄ±ÄŸÄ±nÄ± gÃ¶rdÃ¼n.1-Siyahi adama yardÄ±m et.\n2-Umursama.\n");
 				        	scanf("%d",&secim4);
 				        	
 				        	if(secim4 == 1)
 							{
-				        		printf("Adamın yanına gittin ve yaptığının yanlış olduğunu söyledin ama o da ne!! Adam sana karşılık verdi.1-Sende karşılık ver.\n2-Uyarmaya devam et.\n");
+				        		printf("AdamÄ±n yanÄ±na gittin ve yaptÄ±ÄŸÄ±nÄ±n yanlÄ±ÅŸ olduÄŸunu sÃ¶yledin ama o da ne!! Adam sana karÅŸÄ±lÄ±k verdi.1-Sende karÅŸÄ±lÄ±k ver.\n2-Uyarmaya devam et.\n");
 				        		scanf("%d",&secim5);
 								
 								if(secim5== 1)
 								{
-				        			printf("Adamı patakladın ve adam sinirli bakışlar ile kaçtı.Siyahi adam ise kısık ve korku dolu bir ses ile koşarak uzaklaştı.\n");
+				        			printf("AdamÄ± patakladÄ±n ve adam sinirli bakÄ±ÅŸlar ile kaÃ§tÄ±.Siyahi adam ise kÄ±sÄ±k ve korku dolu bir ses ile koÅŸarak uzaklaÅŸtÄ±.\n");
 				        			onur = onur + 15;
 				        			printf("Onurunuz: %d\n",onur);
 								}
 								
 								if(secim5 == 2)
 								{
-									printf("Adam senin uyarı ve hoşgörüne rağmen aynı harekete devam ediyor.1-Karşılık ver.\n2-Birşey yapma ve uzaklaş");
+									printf("Adam senin uyarÄ± ve hoÅŸgÃ¶rÃ¼ne raÄŸmen aynÄ± harekete devam ediyor.1-KarÅŸÄ±lÄ±k ver.\n2-BirÅŸey yapma ve uzaklaÅŸ");
 									scanf("%d",&secim6);
 									
 									if(secim6 == 1)
 									{
-										printf("Adamı patakladın ve adam sinirli bakışlar ile kaçtı.Siyahi adam ise kısık ve korku dolu bir ses ile koşarak uzaklaştı.\n");
+										printf("AdamÄ± patakladÄ±n ve adam sinirli bakÄ±ÅŸlar ile kaÃ§tÄ±.Siyahi adam ise kÄ±sÄ±k ve korku dolu bir ses ile koÅŸarak uzaklaÅŸtÄ±.\n");
 										onur = onur + 15;
 										printf("Onurunuz: %d\n",onur);
 									}
@@ -1281,18 +1281,18 @@ int main ()
 						
 						if(iht == 3)
 						{
-							printf("Yolda giderken bir at arabasından sandık düştüğünü gördün.Hemen gidip açtın ve o da ne!İçinde çok güzel bir zırh var.1-Zırhı al.\n2-At arabasının arkasından bağır.\n");
+							printf("Yolda giderken bir at arabasÄ±ndan sandÄ±k dÃ¼ÅŸtÃ¼ÄŸÃ¼nÃ¼ gÃ¶rdÃ¼n.Hemen gidip aÃ§tÄ±n ve o da ne!Ä°Ã§inde Ã§ok gÃ¼zel bir zÄ±rh var.1-ZÄ±rhÄ± al.\n2-At arabasÄ±nÄ±n arkasÄ±ndan baÄŸÄ±r.\n");
 							scanf("%d",&secim7);
 							
 							if(secim7 == 1)
 							{
-							   printf("Zırh hoşuna gitti ve zırhı aldın.");
+							   printf("ZÄ±rh hoÅŸuna gitti ve zÄ±rhÄ± aldÄ±n.");
 							   def = def + 10;
-							   printf("Defansınız: %d\n",def);
+							   printf("DefansÄ±nÄ±z: %d\n",def);
 							}
 							else
 							{
-								printf("At arabsının akrasından bağırdın lakin seni duymadılar.Yeni zırh...");
+								printf("At arabsÄ±nÄ±n akrasÄ±ndan baÄŸÄ±rdÄ±n lakin seni duymadÄ±lar.Yeni zÄ±rh...");
 								def = def + 10;
 								onur = onur + 5;
 								printf("Onurunuz: %d\n",onur);
@@ -1304,122 +1304,122 @@ int main ()
 							sans = rand() % 100;
 							if(sans == 1 )
 							{
-								printf("Dileğini tuttun ve yolda gidiyorsun o da ne!! Habeşli Hasen Tanrısı sana ilahi bir güç bahşetti.");
+								printf("DileÄŸini tuttun ve yolda gidiyorsun o da ne!! HabeÅŸli Hasen TanrÄ±sÄ± sana ilahi bir gÃ¼Ã§ bahÅŸetti.");
 								hasar = hasar + 700;
-								printf("Hasarınız: %d\n",hasar);
+								printf("HasarÄ±nÄ±z: %d\n",hasar);
 							}
 				    	}
 				    	
 						if(secim == 2)
 						{
-				       	printf("Bir kadın ile tanıştın.");
-				       	printf("Kadın:Merhabalar bana bir konuda yardımcı olur musunuz?1-Yardım et.\n2-Umursama.\n");
+				       	printf("Bir kadÄ±n ile tanÄ±ÅŸtÄ±n.");
+				       	printf("KadÄ±n:Merhabalar bana bir konuda yardÄ±mcÄ± olur musunuz?1-YardÄ±m et.\n2-Umursama.\n");
 				       	scanf("%d",&secim8);
 				       	if(secim8 == 1)
 						{
 				       		printf("Bizim Karakter:Tabi ki! Buyrun sizi dinliyorum!\n");
-				       		printf("Kadın:Şu köşede gördüğünüz adamlar bana zorbalık yapıyorlar.Bana yardım etmeniz karşılığında size çalıştığım barda bir içki verebilir ve bara girişinizin kolay olmasını sağlayabilirim.\n1-Yabancı kadının dediğini yap.\n2-Yapma ve uzaklaş.\n");
+				       		printf("KadÄ±n:Åu kÃ¶ÅŸede gÃ¶rdÃ¼ÄŸÃ¼nÃ¼z adamlar bana zorbalÄ±k yapÄ±yorlar.Bana yardÄ±m etmeniz karÅŸÄ±lÄ±ÄŸÄ±nda size Ã§alÄ±ÅŸtÄ±ÄŸÄ±m barda bir iÃ§ki verebilir ve bara giriÅŸinizin kolay olmasÄ±nÄ± saÄŸlayabilirim.\n1-YabancÄ± kadÄ±nÄ±n dediÄŸini yap.\n2-Yapma ve uzaklaÅŸ.\n");
 				       	    scanf("%d",&secim9); 
 						   	
 							if(secim9 == 1)
 							{
-				       			printf("Yabancı kadının dediğini yaptın ve adamları patakladın.Ceblerinden bir miktar altin çıktı");
+				       			printf("YabancÄ± kadÄ±nÄ±n dediÄŸini yaptÄ±n ve adamlarÄ± patakladÄ±n.Ceblerinden bir miktar altin Ã§Ä±ktÄ±");
 				       			altin = altin + 50;
 				       			onur = onur + 20;
 				       			printf("Onurunuz: %d",onur);
-				       			printf("Altınınız: %d",altin);
-				       			printf("Yabancı Kadın:Çok teşekkür ederim efendim.Adım Lisa.Hemen şu aşağıdaki barda çalışıyorum isterseniz gidebiliriz.\n1-Git.\n2-Gitme");
+				       			printf("AltÄ±nÄ±nÄ±z: %d",altin);
+				       			printf("YabancÄ± KadÄ±n:Ã‡ok teÅŸekkÃ¼r ederim efendim.AdÄ±m Lisa.Hemen ÅŸu aÅŸaÄŸÄ±daki barda Ã§alÄ±ÅŸÄ±yorum isterseniz gidebiliriz.\n1-Git.\n2-Gitme");
 				       			scanf("%d",&secim11);
 									
 									if(secim11 == 1)
 									{
-				       					printf("Lisa ile beraber çalıştığı bara gittiniz ve içtiniz.Lisa sana bir işini halletmen karşılığında barın özel girişi için bir giriş kartı vereceğinin söyledi.");
-				       					printf("Fakat bu iş için 3 gün sonra gelmen gerektiğini ve işi o zaman anlatacağını söyledi.\n1-Kabul et.\n2-Kabul etme.\n");
+				       					printf("Lisa ile beraber Ã§alÄ±ÅŸtÄ±ÄŸÄ± bara gittiniz ve iÃ§tiniz.Lisa sana bir iÅŸini halletmen karÅŸÄ±lÄ±ÄŸÄ±nda barÄ±n Ã¶zel giriÅŸi iÃ§in bir giriÅŸ kartÄ± vereceÄŸinin sÃ¶yledi.");
+				       					printf("Fakat bu iÅŸ iÃ§in 3 gÃ¼n sonra gelmen gerektiÄŸini ve iÅŸi o zaman anlatacaÄŸÄ±nÄ± sÃ¶yledi.\n1-Kabul et.\n2-Kabul etme.\n");
 				       					scanf("%d",&secim11);
 				       					
 									   	if(secim11 == 1)
 										{
 				       						Ggun = gun + 3;
-				       						printf("Lisa:Bara akşam saatlerinde gelen bir zorba var.Zamanında benim en kıymetli eşyamı çaldı.Eğer eşyamı alıp hakettiğini ona verirsen anlaşmamız gerçekleşir");
-				       						printf("Lisa'nın dediği adamı takip ettin ve adamla yüzleşmek için uygun bir fırsat buldun.\n1-Adamla yüzleş.\n2-Bekle.\n");
+				       						printf("Lisa:Bara akÅŸam saatlerinde gelen bir zorba var.ZamanÄ±nda benim en kÄ±ymetli eÅŸyamÄ± Ã§aldÄ±.EÄŸer eÅŸyamÄ± alÄ±p hakettiÄŸini ona verirsen anlaÅŸmamÄ±z gerÃ§ekleÅŸir");
+				       						printf("Lisa'nÄ±n dediÄŸi adamÄ± takip ettin ve adamla yÃ¼zleÅŸmek iÃ§in uygun bir fÄ±rsat buldun.\n1-Adamla yÃ¼zleÅŸ.\n2-Bekle.\n");
 				       						scanf("%d",&secim12);
 				       						
 											if(secim12 == 1)
 											{
-				       							printf("Adamdan eşyayı aldın ve adamı fena benzettin.\n");
+				       							printf("Adamdan eÅŸyayÄ± aldÄ±n ve adamÄ± fena benzettin.\n");
 				       							altin = altin + 15;
-				       							printf("Altınınız: %d\n",altin);
-				       							printf("Eşyayı aldın ve Lisaya götürdün ve bunun karşılığında bara özel giriş kartını aldın\n");
+				       							printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+				       							printf("EÅŸyayÄ± aldÄ±n ve Lisaya gÃ¶tÃ¼rdÃ¼n ve bunun karÅŸÄ±lÄ±ÄŸÄ±nda bara Ã¶zel giriÅŸ kartÄ±nÄ± aldÄ±n\n");
 											}
 											
 											else
 											{
-												printf("Bekledin ve adam gözden kayboldu görev başarısız!!");
+												printf("Bekledin ve adam gÃ¶zden kayboldu gÃ¶rev baÅŸarÄ±sÄ±z!!");
 											}
 									   	}
 									
 										else if(secim11 == 2)
 										{
-									   		printf("Lisa'nın dediğini yapmadın ve bu yüzden sinirlenen Lisa oyalandığını düşündü ve seni bardaki bir kaç soytarıya dövdürdü\n");
+									   		printf("Lisa'nÄ±n dediÄŸini yapmadÄ±n ve bu yÃ¼zden sinirlenen Lisa oyalandÄ±ÄŸÄ±nÄ± dÃ¼ÅŸÃ¼ndÃ¼ ve seni bardaki bir kaÃ§ soytarÄ±ya dÃ¶vdÃ¼rdÃ¼\n");
 									   		can = can - 10;
 									   		altin = altin - 20;
-									   		printf("Canınız: %d\n",can);
-									   		printf("Altınınız: %d\n",altin);
+									   		printf("CanÄ±nÄ±z: %d\n",can);
+									   		printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 										}
 									}
 							   }
 					}
 								else
 								{
-								printf("Yabancı kadının dediğini yapmadın ve uzaklaştın.");
+								printf("YabancÄ± kadÄ±nÄ±n dediÄŸini yapmadÄ±n ve uzaklaÅŸtÄ±n.");
 								}
 					} 	
 						   
 						   if(secim == 3)
 						   {
-						   		printf("Yolda giderken bir yandan da ticareti nasıl yapabilirsin diye düşünürken çarşıdaki bir tüccara:Merhabalar kolay gelsin.Ticaret yapmak istiyorum da öneribileceğiniz bir ticari iş var mı?\n");
-						   		printf("Tüccar:Sizlere de merhabalar.İşler şuan pek iyi değil fakat karşıda gördüğün tüccara danışabilirsin.\n\n\nKarşıdaki tüccarın yanına gittin.\n");
-						   		printf("Bizim Karakter:Merhabalar.Karşıdaki Tüccar beni size yönlendirdi.Adım(karakterin adı)ticaret yapmak istiyorum.Elinizde yapabileceğimiz tiari bir iş var mı?");
-						   		printf("Tüccar:Sizlere de merhabalar.Çok iyi bir zamanda geldiniz.Evet elimde yapabileceğimiz ticari bir iş var?Size anlatmamı ister misiniz:1-Kabul et.\n2-Etme.\n");
+						   		printf("Yolda giderken bir yandan da ticareti nasÄ±l yapabilirsin diye dÃ¼ÅŸÃ¼nÃ¼rken Ã§arÅŸÄ±daki bir tÃ¼ccara:Merhabalar kolay gelsin.Ticaret yapmak istiyorum da Ã¶neribileceÄŸiniz bir ticari iÅŸ var mÄ±?\n");
+						   		printf("TÃ¼ccar:Sizlere de merhabalar.Ä°ÅŸler ÅŸuan pek iyi deÄŸil fakat karÅŸÄ±da gÃ¶rdÃ¼ÄŸÃ¼n tÃ¼ccara danÄ±ÅŸabilirsin.\n\n\nKarÅŸÄ±daki tÃ¼ccarÄ±n yanÄ±na gittin.\n");
+						   		printf("Bizim Karakter:Merhabalar.KarÅŸÄ±daki TÃ¼ccar beni size yÃ¶nlendirdi.AdÄ±m(karakterin adÄ±)ticaret yapmak istiyorum.Elinizde yapabileceÄŸimiz tiari bir iÅŸ var mÄ±?");
+						   		printf("TÃ¼ccar:Sizlere de merhabalar.Ã‡ok iyi bir zamanda geldiniz.Evet elimde yapabileceÄŸimiz ticari bir iÅŸ var?Size anlatmamÄ± ister misiniz:1-Kabul et.\n2-Etme.\n");
 						   		scanf("%d",&secim11);
 						   	
 						   	if(secim11 == 1)
 							{
 						   		printf("Bizim Karakter: Buyrun sizi dinliyorum.\n");
-						   		printf("Tüccar:Efendim öncelikle adım Philip.Burada Tüccar Philip diye bilinirim.Eğer kabul ederseniz yapacağımız iş ipek üzerine.İpek ile ilgileniyorsanız açıklayacağım.Yoksa vaktimi çalmayın.1-Kabul et.\n2-Kabul etme.\n\n\n");
+						   		printf("TÃ¼ccar:Efendim Ã¶ncelikle adÄ±m Philip.Burada TÃ¼ccar Philip diye bilinirim.EÄŸer kabul ederseniz yapacaÄŸÄ±mÄ±z iÅŸ ipek Ã¼zerine.Ä°pek ile ilgileniyorsanÄ±z aÃ§Ä±klayacaÄŸÄ±m.Yoksa vaktimi Ã§almayÄ±n.1-Kabul et.\n2-Kabul etme.\n\n\n");
 						   		scanf("%d",&secim12);
 								   
 								   if(secim12 == 1)
 								   {
-						   			printf("Bizim Karakter: Evet sizi dinliyorum.\n Tüccar:Elimde satılacak güzel ipekler var.Bunları satabilemk için bir yatırımcıya ihtiyacm var eğer kabul ederseniz sizdrn 100 altın istiyorum eğer iş tutarsa verdiğiniz paranın en az 3 katını alacaksınız.");
-						   			printf("Paranız: %d\n",altin);
+						   			printf("Bizim Karakter: Evet sizi dinliyorum.\n TÃ¼ccar:Elimde satÄ±lacak gÃ¼zel ipekler var.BunlarÄ± satabilemk iÃ§in bir yatÄ±rÄ±mcÄ±ya ihtiyacm var eÄŸer kabul ederseniz sizdrn 100 altÄ±n istiyorum eÄŸer iÅŸ tutarsa verdiÄŸiniz paranÄ±n en az 3 katÄ±nÄ± alacaksÄ±nÄ±z.");
+						   			printf("ParanÄ±z: %d\n",altin);
 						   			printf("1-Kabul et.\n2-Kabul etme.\n");
 						   			scanf("%d",&secim13);
 									   
 									   if(secim13 == 1)
 									   {
-						   				printf("Bizim karakter:Tamamdır kabul ediyorum.Ama size güvenebilir miyim bilmiyorum?\n Tücaar:Çok haklsınız efendim. Bu zamanda güvenilir insan bulmak zor.Bana olan güvenceniz için size bu işaretli demiri alın.Bunu kime gösterirseniz beni gösterir.");
-						   				printf("Bizim karakter:Pekala tüccar Philip.Peki bu iş ne zaman içerisinde biter?\n Tüccar:Efendim bu iş en az 7 en çok 10 gün içerisinde bitecektir diye umuyorum.Bu 3 gün içerisinde size verdiğim bu işareti karşıda gördüğünüz adama gösterin o sizi yönlendirecektir.");
-						   				printf("Bizim karakter:Pekala Philip.Şimdiden güzel haberlerini bekliyorum görüşmek üzere.\n");
+						   				printf("Bizim karakter:TamamdÄ±r kabul ediyorum.Ama size gÃ¼venebilir miyim bilmiyorum?\n TÃ¼caar:Ã‡ok haklsÄ±nÄ±z efendim. Bu zamanda gÃ¼venilir insan bulmak zor.Bana olan gÃ¼venceniz iÃ§in size bu iÅŸaretli demiri alÄ±n.Bunu kime gÃ¶sterirseniz beni gÃ¶sterir.");
+						   				printf("Bizim karakter:Pekala tÃ¼ccar Philip.Peki bu iÅŸ ne zaman iÃ§erisinde biter?\n TÃ¼ccar:Efendim bu iÅŸ en az 7 en Ã§ok 10 gÃ¼n iÃ§erisinde bitecektir diye umuyorum.Bu 3 gÃ¼n iÃ§erisinde size verdiÄŸim bu iÅŸareti karÅŸÄ±da gÃ¶rdÃ¼ÄŸÃ¼nÃ¼z adama gÃ¶sterin o sizi yÃ¶nlendirecektir.");
+						   				printf("Bizim karakter:Pekala Philip.Åimdiden gÃ¼zel haberlerini bekliyorum gÃ¶rÃ¼ÅŸmek Ã¼zere.\n");
 						   				
 											if(Ggun = 7 + Agun)
 											{	   
-						   						printf("Yeni gün: %d\n",Ggun);
-						   						printf("Bizim Karakter:Merhabalar ben bu işaretin sahibini arıyorum kendisinden bir haber var mı?\n Adam: Hayır.Sonra yeniden gelin.\n");
+						   						printf("Yeni gÃ¼n: %d\n",Ggun);
+						   						printf("Bizim Karakter:Merhabalar ben bu iÅŸaretin sahibini arÄ±yorum kendisinden bir haber var mÄ±?\n Adam: HayÄ±r.Sonra yeniden gelin.\n");
 						   					}
 						   					
 											if(Ggun = 8 + Agun)
 											{
-						   						printf("Yeni gün: %d\n",Ggun);
-						   						printf("Bizim Karakter:Tekrardan merhaba.Herhangi bir haber var mı?\n Adam:Henüz bir haber yok.Sonra yeniden gelin.\n");
+						   						printf("Yeni gÃ¼n: %d\n",Ggun);
+						   						printf("Bizim Karakter:Tekrardan merhaba.Herhangi bir haber var mÄ±?\n Adam:HenÃ¼z bir haber yok.Sonra yeniden gelin.\n");
 									   		}
 											
 											if(Ggun = 9 + Agun)
 											{
-												printf("Bizim Karakter:Kolay gelsin.Var mı bir haber?\n Adam:Beni takip edin efendim.\n");
-												printf("Tüccar ile beraber gittin ve gittiğiniz yerde Tüccar Philip ile karşılaitın.\n");
-												printf("Bizim karakter: Merhaba Tüccar Philip umarım güzel haberler almak için geldim(hafif gülümsemeler).\n Tüccar Philip:HEHEHEHE tabi ki efendim tam istediğimi gibi oldu.Bu işten tam 10.000 altın kazandık.\n\n\n");
-												printf("Tüccar Philip:Size bu ticaretten verdiğiniz değerin 3 katını vermeyi teklif ediyorum.Cevabınız nedir?\n 1-Kabul et.\n 2-Kabul etme.\n");
+												printf("Bizim Karakter:Kolay gelsin.Var mÄ± bir haber?\n Adam:Beni takip edin efendim.\n");
+												printf("TÃ¼ccar ile beraber gittin ve gittiÄŸiniz yerde TÃ¼ccar Philip ile karÅŸÄ±laitÄ±n.\n");
+												printf("Bizim karakter: Merhaba TÃ¼ccar Philip umarÄ±m gÃ¼zel haberler almak iÃ§in geldim(hafif gÃ¼lÃ¼msemeler).\n TÃ¼ccar Philip:HEHEHEHE tabi ki efendim tam istediÄŸimi gibi oldu.Bu iÅŸten tam 10.000 altÄ±n kazandÄ±k.\n\n\n");
+												printf("TÃ¼ccar Philip:Size bu ticaretten verdiÄŸiniz deÄŸerin 3 katÄ±nÄ± vermeyi teklif ediyorum.CevabÄ±nÄ±z nedir?\n 1-Kabul et.\n 2-Kabul etme.\n");
 												scanf("%d",&secim14);
 												
 												sayi = rand() % 3;
@@ -1427,45 +1427,45 @@ int main ()
 												
 												if(secim14 == 1)
 												{
-													printf("Bizim karakter:Peki.Kabul ediyorum.Bu güzel ticaret için teşekkür ediyorum Philip.\n Tüccar Philip:Bende sizlere teşekkür ederim efendim tam zamanında sizin gibi birini buldum.Aynı zamanda bu işaret ile istediğiniz zaman buraya gelebilirsiniz.\n");
+													printf("Bizim karakter:Peki.Kabul ediyorum.Bu gÃ¼zel ticaret iÃ§in teÅŸekkÃ¼r ediyorum Philip.\n TÃ¼ccar Philip:Bende sizlere teÅŸekkÃ¼r ederim efendim tam zamanÄ±nda sizin gibi birini buldum.AynÄ± zamanda bu iÅŸaret ile istediÄŸiniz zaman buraya gelebilirsiniz.\n");
 													altin = 100 * 3;
 													onur = onur + 10;
-													printf("Altınınız: %d\n",altin);
+													printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 													printf("Onurunuz: %d\n",onur);
 												}
 												
 												else
 												{
-													printf("Bizim Karakter:Bu güzel ticaret içiin öncelikle teşekkür ederim Tüccar Philip.Lakin bu teklif bana uymuyor.\n");
+													printf("Bizim Karakter:Bu gÃ¼zel ticaret iÃ§iin Ã¶ncelikle teÅŸekkÃ¼r ederim TÃ¼ccar Philip.Lakin bu teklif bana uymuyor.\n");
 													printf("Teklif ver.");
 													scanf("%d",&teklif);
 													
 													if(teklif <= sayi){
-													printf("Tüccar Philip:Hehehe bu teklif biraz fazla oldu ama kabul ediyorum.\n");
+													printf("TÃ¼ccar Philip:Hehehe bu teklif biraz fazla oldu ama kabul ediyorum.\n");
 													altin = 100 * teklif;
 													onur = onur + 10;
-													printf("Altınınız: %d\n",altin);
+													printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 													printf("Onurunuz: %d\n",onur);
 												}
 												
 												else{
-													printf("Tüccar Philip:fendim bu teklif benim için çok fazla.3 katı hepimiz için en iyisi.\n");
+													printf("TÃ¼ccar Philip:fendim bu teklif benim iÃ§in Ã§ok fazla.3 katÄ± hepimiz iÃ§in en iyisi.\n");
 								    				altin = altin * 3;
-								    				printf("Altınınız: %d\n",altin);
+								    				printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 												}
 												}
 											}
 									
 										if(secim13 == 2)
 										{
-											printf("Bizim karakter: Hayır ilgilenmiorum teşekkürler.");
+											printf("Bizim karakter: HayÄ±r ilgilenmiorum teÅŸekkÃ¼rler.");
 										}
 									}
 								}
 								
 								if(secim11 == 2)
 								{
-								   	printf("İlgilenmiyorum!!");
+								   	printf("Ä°lgilenmiyorum!!");
 								}
 							}
 						}
@@ -1475,11 +1475,11 @@ int main ()
 				case 3:
 					
 					int bar,bar1;
-					printf("Bara girdin konuşacak birkaç kişi var.\nHangisiyle konuşmak istersin?\n[1]\n[2]\n[3]\n");
+					printf("Bara girdin konuÅŸacak birkaÃ§ kiÅŸi var.\nHangisiyle konuÅŸmak istersin?\n[1]\n[2]\n[3]\n");
 					scanf("%d",&bar);
 					if(bar==1)
 					{
-						printf("\n[1]Kaç [2]Odaya git");
+						printf("\n[1]KaÃ§ [2]Odaya git");
 						scanf("%d",&bar1);
 						if(bar1==1)
 						{
@@ -1513,13 +1513,13 @@ int main ()
 				
 				case 4:
 					
-					printf("Ormana girdiniz.\n[1]Ok toplamak\n[2]Ormanı keşfetmek\n[3]Meyve toplamak\n[4]Ormanın derinliklerine gir\nNe yapmak istersiniz:");
+					printf("Ormana girdiniz.\n[1]Ok toplamak\n[2]OrmanÄ± keÅŸfetmek\n[3]Meyve toplamak\n[4]OrmanÄ±n derinliklerine gir\nNe yapmak istersiniz:");
 					scanf("%d",&orman1);
 					
 					if(orman1==1)
 					{
 						Oorman=(rand()%15);
-						printf("%d tane çubuk buldun ve güzel oklar yaptın.\n",Oorman);
+						printf("%d tane Ã§ubuk buldun ve gÃ¼zel oklar yaptÄ±n.\n",Oorman);
 					}
 					
 					else if(orman1==2)
@@ -1528,43 +1528,43 @@ int main ()
 						
 						if(Korman>20)
 						{
-							printf("Orman kıyılarında gezerken bir meyve sepeti buldun.\n");
-							printf("İtem eklenince meyve sepeti eklensin\n");
+							printf("Orman kÄ±yÄ±larÄ±nda gezerken bir meyve sepeti buldun.\n");
+							printf("Ä°tem eklenince meyve sepeti eklensin\n");
 						}
 						
 						else if(Korman>15)
 						{
-							printf("Ormanın kıyılarında gezerken bir kese altın buldun. Kısa günün karı.\n");
+							printf("OrmanÄ±n kÄ±yÄ±larÄ±nda gezerken bir kese altÄ±n buldun. KÄ±sa gÃ¼nÃ¼n karÄ±.\n");
 							altin=altin + 100;
-							printf("Toplam altınınız: %d\n",altin);
+							printf("Toplam altÄ±nÄ±nÄ±z: %d\n",altin);
 						}
 						
 						else if(Korman>10)
 						{
-							printf("Ormanın kıyısında gezerken yaşlı bir dedeye ras geldin. Yardım istiyor yardım eder misin?\n");
-							printf("Yardım ederse şans göre iyi veya kötü bir şey olsun\n");
+							printf("OrmanÄ±n kÄ±yÄ±sÄ±nda gezerken yaÅŸlÄ± bir dedeye ras geldin. YardÄ±m istiyor yardÄ±m eder misin?\n");
+							printf("YardÄ±m ederse ÅŸans gÃ¶re iyi veya kÃ¶tÃ¼ bir ÅŸey olsun\n");
 						}
 						
 						else
 						{
-							printf("Ne bir şey gördün ne bir şeye rastladın bomboş bir gün geçirdin\n");
+							printf("Ne bir ÅŸey gÃ¶rdÃ¼n ne bir ÅŸeye rastladÄ±n bomboÅŸ bir gÃ¼n geÃ§irdin\n");
 						}
 					}
 					
 					else if(orman1==3)
 					{
-						printf("Güzel ve tatlı meyveler topladın\n");
-						printf("İtemler geldiğinde meyveler eklenmeli rastgelelikle meyveler bulsun\n");
+						printf("GÃ¼zel ve tatlÄ± meyveler topladÄ±n\n");
+						printf("Ä°temler geldiÄŸinde meyveler eklenmeli rastgelelikle meyveler bulsun\n");
 					}
 					
 					else if(orman1==4)
 					{
 						//[21][11]
 
-						printf("ormanın derinliklerine dalıyorsun burada bir sürü pisliğin döndüğüne dair dedikodular zihnini kurcalıyor.\n");
-						printf("içeri giriyorsun şimdi vereceğin kararlar çok önemli çünkügirdiğin her alanda ya seni öldürecek risklere sahip bir yere girmiş olacaksın ya da büyük ödüllere kavuşacaksın\n");
-						printf("ilk olarak derinlere fazla gidersen bazı canavarlarla karşılaşabilirsin o yüzden fazla uzaklaşmadığından ve dönüş yolunu bildiğinden emin ol\n");
-						printf("gittiğin yolun tam tersine giderek ormandan çıkacaksın dikkat et dönüş yolunu unutursan ormanda ölümle burun burunasın\n");
+						printf("ormanÄ±n derinliklerine dalÄ±yorsun burada bir sÃ¼rÃ¼ pisliÄŸin dÃ¶ndÃ¼ÄŸÃ¼ne dair dedikodular zihnini kurcalÄ±yor.\n");
+						printf("iÃ§eri giriyorsun ÅŸimdi vereceÄŸin kararlar Ã§ok Ã¶nemli Ã§Ã¼nkÃ¼girdiÄŸin her alanda ya seni Ã¶ldÃ¼recek risklere sahip bir yere girmiÅŸ olacaksÄ±n ya da bÃ¼yÃ¼k Ã¶dÃ¼llere kavuÅŸacaksÄ±n\n");
+						printf("ilk olarak derinlere fazla gidersen bazÄ± canavarlarla karÅŸÄ±laÅŸabilirsin o yÃ¼zden fazla uzaklaÅŸmadÄ±ÄŸÄ±ndan ve dÃ¶nÃ¼ÅŸ yolunu bildiÄŸinden emin ol\n");
+						printf("gittiÄŸin yolun tam tersine giderek ormandan Ã§Ä±kacaksÄ±n dikkat et dÃ¶nÃ¼ÅŸ yolunu unutursan ormanda Ã¶lÃ¼mle burun burunasÄ±n\n");
 						
 						Osay1=0;
 						
@@ -1587,7 +1587,7 @@ int main ()
 						while(Osay!=0)
 						{
 						
-						printf("ileri girmek için w\'ye bas\nsağa gitmek içind\'ye bas\nsola gitmek için a\'ya bas\ngeri gitmek içins\'ye bas\ngeri dönmek için g\'ye bas\nne yapmak istersin: ");
+						printf("ileri girmek iÃ§in w\'ye bas\nsaÄŸa gitmek iÃ§ind\'ye bas\nsola gitmek iÃ§in a\'ya bas\ngeri gitmek iÃ§ins\'ye bas\ngeri dÃ¶nmek iÃ§in g\'ye bas\nne yapmak istersin: ");
 						scanf(" %c",&Osec);
 						printf("%d\n",orman12[20-Oy][10+Ox]);
 						
@@ -1602,7 +1602,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1614,7 +1614,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1633,7 +1633,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1645,7 +1645,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1664,7 +1664,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1676,7 +1676,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1694,7 +1694,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1706,7 +1706,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1720,12 +1720,12 @@ int main ()
 							}
 							else if(Osec=='g'||Osec=='G')
 							{
-								printf("Çıkmak istiyorsun demek o zaman geldiğin yolu hatırlayıp geri dönmen gerekir.\n");
+								printf("Ã‡Ä±kmak istiyorsun demek o zaman geldiÄŸin yolu hatÄ±rlayÄ±p geri dÃ¶nmen gerekir.\n");
 								Osay--;
 							}
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==2)
@@ -1737,7 +1737,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1749,7 +1749,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1768,7 +1768,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1780,7 +1780,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1799,7 +1799,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1811,7 +1811,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1829,7 +1829,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1841,7 +1841,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1855,12 +1855,12 @@ int main ()
 							}
 							else if(Osec=='g'||Osec=='G')
 							{
-								printf("Çıkmak istiyorsun demek o zaman geldiğin yolu hatırlayıp geri dönmen gerekir.\n");
+								printf("Ã‡Ä±kmak istiyorsun demek o zaman geldiÄŸin yolu hatÄ±rlayÄ±p geri dÃ¶nmen gerekir.\n");
 								Osay--;
 							}
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==3)
@@ -1872,7 +1872,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1884,7 +1884,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1903,7 +1903,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1915,7 +1915,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1934,7 +1934,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1946,7 +1946,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1964,7 +1964,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -1976,7 +1976,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -1990,12 +1990,12 @@ int main ()
 							}
 							else if(Osec=='g'||Osec=='G')
 							{
-								printf("Çıkmak istiyorsun demek o zaman geldiğin yolu hatırlayıp geri dönmen gerekir.\n");
+								printf("Ã‡Ä±kmak istiyorsun demek o zaman geldiÄŸin yolu hatÄ±rlayÄ±p geri dÃ¶nmen gerekir.\n");
 								Osay--;
 							}
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==4)
@@ -2007,7 +2007,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -2019,7 +2019,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2038,7 +2038,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -2050,7 +2050,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2069,7 +2069,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -2081,7 +2081,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2099,7 +2099,7 @@ int main ()
 								{
 									if(orman12[20-Oy][10+Ox]==1)
 									{
-										printf("buraya önceden gelmişsin ya da başkası talan etmiş\n");
+										printf("buraya Ã¶nceden gelmiÅŸsin ya da baÅŸkasÄ± talan etmiÅŸ\n");
 									}
 									else
 									{
@@ -2111,7 +2111,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2125,12 +2125,12 @@ int main ()
 							}
 							else if(Osec=='g'||Osec=='G')
 							{
-								printf("Çıkmak istiyorsun demek o zaman geldiğin yolu hatırlayıp geri dönmen gerekir.\n");
+								printf("Ã‡Ä±kmak istiyorsun demek o zaman geldiÄŸin yolu hatÄ±rlayÄ±p geri dÃ¶nmen gerekir.\n");
 								Osay--;
 							}
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						if(yon==1)
@@ -2160,7 +2160,7 @@ int main ()
 						Osay=1;
 						while(Osay!=0)
 						{
-							printf("ileri girmek için w\'ye bas\nsağa gitmek içind\'ye bas\nsola gitmek için a\'ya bas\ngeri dönmek için s\'ye bas\nne yapmak isteresin: ");
+							printf("ileri girmek iÃ§in w\'ye bas\nsaÄŸa gitmek iÃ§ind\'ye bas\nsola gitmek iÃ§in a\'ya bas\ngeri dÃ¶nmek iÃ§in s\'ye bas\nne yapmak isteresin: ");
 							scanf(" %c",&Osec);
 	
 							if(yon==1)
@@ -2175,7 +2175,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2197,7 +2197,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2219,7 +2219,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2240,7 +2240,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2255,7 +2255,7 @@ int main ()
 							
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==2)
@@ -2270,7 +2270,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2292,7 +2292,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2314,7 +2314,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2335,7 +2335,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2350,7 +2350,7 @@ int main ()
 							
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==3)
@@ -2365,7 +2365,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2387,7 +2387,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2409,7 +2409,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2430,7 +2430,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2445,7 +2445,7 @@ int main ()
 							
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						else if(yon==4)
@@ -2460,7 +2460,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2482,7 +2482,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2504,7 +2504,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2525,7 +2525,7 @@ int main ()
 								}
 								else
 								{
-									printf("ormanın o kadar derinlerine daldın ki kendini bir canavarın ininin öünde buldun ve canavar seni çoktan görmüştü. savaşmaktan başka çaren yok\n");
+									printf("ormanÄ±n o kadar derinlerine daldÄ±n ki kendini bir canavarÄ±n ininin Ã¶Ã¼nde buldun ve canavar seni Ã§oktan gÃ¶rmÃ¼ÅŸtÃ¼. savaÅŸmaktan baÅŸka Ã§aren yok\n");
 									DMcan=500,Dcan=500,Dsaldiri=50,saldiri=hasar/3,tur=0,Ddef=50;
 									savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 									can=Darena[0];
@@ -2540,7 +2540,7 @@ int main ()
 							
 							else
 							{
-								printf("galiba yanlış bir tuşa bastın\n");
+								printf("galiba yanlÄ±ÅŸ bir tuÅŸa bastÄ±n\n");
 							}
 						}
 						
@@ -2572,11 +2572,11 @@ int main ()
 						}
 						if(orman12[20][10]==2)
 						{
-							printf("başarıyla ormandan çıktın. tebrik ederim\n");	
+							printf("baÅŸarÄ±yla ormandan Ã§Ä±ktÄ±n. tebrik ederim\n");	
 						}
 						else
 						{
-							printf("bir bekçi seni kurtardı ama o geceyi tek başına geçirmenin acısını unutamayacaksın ya seni bulmasaydı(başka ihtimaller getir)\n");
+							printf("bir bekÃ§i seni kurtardÄ± ama o geceyi tek baÅŸÄ±na geÃ§irmenin acÄ±sÄ±nÄ± unutamayacaksÄ±n ya seni bulmasaydÄ±(baÅŸka ihtimaller getir)\n");
 						}
 					}
 					
@@ -2584,85 +2584,85 @@ int main ()
 				
 				case 5:
 					
-					printf("Büyücü İnine Girdiniz. Ne Yapmak İstersiniz?\n[1]Büyücüden Tavsiye Al\n[2]Büyücüye Meydan Oku (YÜKSEK TEHLİKE)\n[3]Büyücüden Mağaranın Anahtarını İste\n");
+					printf("BÃ¼yÃ¼cÃ¼ Ä°nine Girdiniz. Ne Yapmak Ä°stersiniz?\n[1]BÃ¼yÃ¼cÃ¼den Tavsiye Al\n[2]BÃ¼yÃ¼cÃ¼ye Meydan Oku (YÃœKSEK TEHLÄ°KE)\n[3]BÃ¼yÃ¼cÃ¼den MaÄŸaranÄ±n AnahtarÄ±nÄ± Ä°ste\n");
 					scanf("%d",&buyucusecimi);
 					
 					if(buyucusecimi==1)
 					{
 						altin=altin-10;
-						printf("kalan altınınızz: %d",altin);
-						printf("Büyücü: Ne hakkında tavsiye almak istersin genç adam?\n");
-						printf("[1]İksir Tarifi");
-						printf("[2]Büyü Öğrenme");
+						printf("kalan altÄ±nÄ±nÄ±zz: %d",altin);
+						printf("BÃ¼yÃ¼cÃ¼: Ne hakkÄ±nda tavsiye almak istersin genÃ§ adam?\n");
+						printf("[1]Ä°ksir Tarifi");
+						printf("[2]BÃ¼yÃ¼ Ã–ÄŸrenme");
 						printf("[3]Silah Efsunlama");
 
 						scanf("%d",&buyucutavsiyesecimi);
 						
 						if(buyucutavsiyesecimi==1)
 						{
-							printf("Ne İksirinin Tarifini istiyorsun?\n");
-							printf("[1]Görünmezlik(500G)\n[2]Güç(250g)\n[3]Sağlık\n(100G)");
+							printf("Ne Ä°ksirinin Tarifini istiyorsun?\n");
+							printf("[1]GÃ¶rÃ¼nmezlik(500G)\n[2]GÃ¼Ã§(250g)\n[3]SaÄŸlÄ±k\n(100G)");
 							scanf("%d",&iksirsecimi);
 							
 							if(iksirsecimi==1)
 							{
 								//altin=altin-500;
-								//printf("kalan altınınızz: %d",altin);
-								printf("Tarifi Şu:");
+								//printf("kalan altÄ±nÄ±nÄ±zz: %d",altin);
+								printf("Tarifi Åu:");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("Tarifi Şu:");
+								printf("Tarifi Åu:");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("Tarifi Şu:");
+								printf("Tarifi Åu:");
 							}
 						}
 						
 						else if(buyucutavsiyesecimi==2)
 						{
-							printf("Ne Büyüsü Öğrenmek istiyorsun?\n");
-							printf("[1]Alevtopu(1000G)\n[2]İyileştirme(700G)\n[3]Stamina Yenileme(500G)\n");
+							printf("Ne BÃ¼yÃ¼sÃ¼ Ã–ÄŸrenmek istiyorsun?\n");
+							printf("[1]Alevtopu(1000G)\n[2]Ä°yileÅŸtirme(700G)\n[3]Stamina Yenileme(500G)\n");
 							scanf("%d",&iksirsecimi);
 							
 							if(iksirsecimi==1)
 							{
-								printf("Alevtopu Büyüsünü Öğrendiniz.\n");
+								printf("Alevtopu BÃ¼yÃ¼sÃ¼nÃ¼ Ã–ÄŸrendiniz.\n");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("İyileştirme Büyüsünü Öğrendiniz.\n");
+								printf("Ä°yileÅŸtirme BÃ¼yÃ¼sÃ¼nÃ¼ Ã–ÄŸrendiniz.\n");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("Stamina Yenileme Büyüsünü Öğrendiniz.\n");
+								printf("Stamina Yenileme BÃ¼yÃ¼sÃ¼nÃ¼ Ã–ÄŸrendiniz.\n");
 							}
 						}
 						
 						else if(buyucutavsiyesecimi==3)
 						{
-							printf("Kılıcına Ne Efsunu Yaptırmak istiyorsun?\n");
-							printf("[1]Alevleme(2000G)\n[2]Zehir(1200g)\n[3]Dayanıklılık(500G)\n");
+							printf("KÄ±lÄ±cÄ±na Ne Efsunu YaptÄ±rmak istiyorsun?\n");
+							printf("[1]Alevleme(2000G)\n[2]Zehir(1200g)\n[3]DayanÄ±klÄ±lÄ±k(500G)\n");
 							scanf("%d",&iksirsecimi);
 							
 							if(iksirsecimi==1)
 							{
-								printf("Silahınıza Alevleme Efsununu Yaptırdınız.\n");
+								printf("SilahÄ±nÄ±za Alevleme Efsununu YaptÄ±rdÄ±nÄ±z.\n");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("Silahınıza Zehir Efsununu Yaptırdınız.\n");
+								printf("SilahÄ±nÄ±za Zehir Efsununu YaptÄ±rdÄ±nÄ±z.\n");
 							}
 							
 							else if(iksirsecimi==2)
 							{
-								printf("Silahınıza Dayanıklılık Efsununu Yaptırdınız.\n");
+								printf("SilahÄ±nÄ±za DayanÄ±klÄ±lÄ±k Efsununu YaptÄ±rdÄ±nÄ±z.\n");
 							}
 						}
 					}
@@ -2675,29 +2675,29 @@ int main ()
 						buyucucan=can*5;
 						int magarayaatilma=0;
 						
-						printf("Yerinden Kalkan Büyücünün Gözlerindeki Parıltıyı Görünce İçin Ürperdi.\n");
-						printf("Çok Belalı Bir İşe Giriştin... \n Büyücüye Meydan Okumadan Önce İki Kere Düşünmen Gerekirdi\n Ne Yapmak İstiyorsun?\n [1]Saldır\n [2]Kaç\n [3]Bağışlanma Dile\n");
+						printf("Yerinden Kalkan BÃ¼yÃ¼cÃ¼nÃ¼n GÃ¶zlerindeki ParÄ±ltÄ±yÄ± GÃ¶rÃ¼nce Ä°Ã§in Ãœrperdi.\n");
+						printf("Ã‡ok BelalÄ± Bir Ä°ÅŸe GiriÅŸtin... \n BÃ¼yÃ¼cÃ¼ye Meydan Okumadan Ã–nce Ä°ki Kere DÃ¼ÅŸÃ¼nmen Gerekirdi\n Ne Yapmak Ä°stiyorsun?\n [1]SaldÄ±r\n [2]KaÃ§\n [3]BaÄŸÄ±ÅŸlanma Dile\n");
 						scanf("%d",&buyucusavassecimi);
 						
 						if(buyucusavassecimi==1)
 						{
 						
 							can=can-buyucuhasar;
-							printf("Kalan Canın:%d\n",can);
+							printf("Kalan CanÄ±n:%d\n",can);
 							
 							buyucucan=buyucucan-hasar;
-							printf("Büyücünün Kalan Canı:%d\n",buyucucan);
+							printf("BÃ¼yÃ¼cÃ¼nÃ¼n Kalan CanÄ±:%d\n",buyucucan);
 						}
 						
 						else if(buyucusavassecimi==2)
 						{
 							buyucumanahtar=2;
-							printf("Kimse Bu Kadim Büyücüye Meydan Okuyup da Ondan Kaçabilmiş Değildir.\n Büyücü Senin Çaresiz Kaçışına Biraz Acımış Olacak ki Seni Öldürmek Yerine Mağaranın İçine Fırlatıp Kapıyı Kitledi.\n Artık Bu Mağaradan Kaçışın Senin Elinde.\n");
+							printf("Kimse Bu Kadim BÃ¼yÃ¼cÃ¼ye Meydan Okuyup da Ondan KaÃ§abilmiÅŸ DeÄŸildir.\n BÃ¼yÃ¼cÃ¼ Senin Ã‡aresiz KaÃ§Ä±ÅŸÄ±na Biraz AcÄ±mÄ±ÅŸ Olacak ki Seni Ã–ldÃ¼rmek Yerine MaÄŸaranÄ±n Ä°Ã§ine FÄ±rlatÄ±p KapÄ±yÄ± Kitledi.\n ArtÄ±k Bu MaÄŸaradan KaÃ§Ä±ÅŸÄ±n Senin Elinde.\n");
 						}
 						
 						else if(buyucusavassecimi==3)
 						{
-							printf("Onurunu Bir Kenara Bıraktın Ve Büyücüden Bağışlanma Diledin...\n Büyücü Seni Bu Seferlik Affetmeye Karar Verdi.\n Birdaha Bulaşmaman Kaydıyla Tabii.\n");
+							printf("Onurunu Bir Kenara BÄ±raktÄ±n Ve BÃ¼yÃ¼cÃ¼den BaÄŸÄ±ÅŸlanma Diledin...\n BÃ¼yÃ¼cÃ¼ Seni Bu Seferlik Affetmeye Karar Verdi.\n Birdaha BulaÅŸmaman KaydÄ±yla Tabii.\n");
 						}
 					}
 					
@@ -2707,68 +2707,68 @@ int main ()
 						
 						if(buyucurng>=50)
 						{
-							printf("Büyücüyle Biraz Tartıştınız Ve Sonunda Sana Mağaranın Anahtarını Ödünç Vermeye Razı Oldu.\n");
+							printf("BÃ¼yÃ¼cÃ¼yle Biraz TartÄ±ÅŸtÄ±nÄ±z Ve Sonunda Sana MaÄŸaranÄ±n AnahtarÄ±nÄ± Ã–dÃ¼nÃ§ Vermeye RazÄ± Oldu.\n");
 							buyucumanahtar=1;
 						}
 						
 						else
 						{
-							printf("Büyücü Kesinlikle Mağaraya Girmene Karşı Çıktı Ve Seni Mağaradan Kovdu.\n");
+							printf("BÃ¼yÃ¼cÃ¼ Kesinlikle MaÄŸaraya Girmene KarÅŸÄ± Ã‡Ä±ktÄ± Ve Seni MaÄŸaradan Kovdu.\n");
 							break;
 						}
 					}
 					
 					if(buyucumanahtar==1)
 					{
-						printf("Sonunda Şu Halk Arasındaki Meşhur Mağaraya Girebildin.\nMağaranın İçinde Biraz İlerledin Ve Karşına İki Yol Ayrımı Çıktı.\nSağ a Mı Gideceksin Sol a Mı?\n[1]Sağ\n[2]Sol\n");
+						printf("Sonunda Åu Halk ArasÄ±ndaki MeÅŸhur MaÄŸaraya Girebildin.\nMaÄŸaranÄ±n Ä°Ã§inde Biraz Ä°lerledin Ve KarÅŸÄ±na Ä°ki Yol AyrÄ±mÄ± Ã‡Ä±ktÄ±.\nSaÄŸ a MÄ± Gideceksin Sol a MÄ±?\n[1]SaÄŸ\n[2]Sol\n");
 						
 						scanf("%d",&magarayonsecimi);
 						
 						if(magarayonsecimi==1)
 						{
 							can=can-10;
-							printf("Sağ'a Gittin...\nBiraz İlerledin ve Karşına Efsunlu Bir Köpek Çıktı.\nOnla Savaştın...\nKalan Canın:%d",can);
+							printf("SaÄŸ'a Gittin...\nBiraz Ä°lerledin ve KarÅŸÄ±na Efsunlu Bir KÃ¶pek Ã‡Ä±ktÄ±.\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
 							can=can-25;
-							printf("Biraz Daha İlerledin Ve Karşına Efsunlu Bir Goblin Çıktı...\nOnla Savaştın...\nKalan Canın:%d",can);
-							printf("Yürümeye Devam Ettin Ve Mağaranın Çıkışını Buldun Doğru Yönde İlerlediğin İçin Şanslısın.\n");
+							printf("Biraz Daha Ä°lerledin Ve KarÅŸÄ±na Efsunlu Bir Goblin Ã‡Ä±ktÄ±...\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
+							printf("YÃ¼rÃ¼meye Devam Ettin Ve MaÄŸaranÄ±n Ã‡Ä±kÄ±ÅŸÄ±nÄ± Buldun DoÄŸru YÃ¶nde Ä°lerlediÄŸin Ä°Ã§in ÅanslÄ±sÄ±n.\n");
 						}
 						
 						else if(magarayonsecimi==2)
 						{
 							can=can-25;
-							printf("Sol'a Gittin...\nBiraz İlerledin ve Karşına Efsunlu Bir Ayı Çıktı.\nOnla Savaştın...\nKalan Canın:%d",can);
+							printf("Sol'a Gittin...\nBiraz Ä°lerledin ve KarÅŸÄ±na Efsunlu Bir AyÄ± Ã‡Ä±ktÄ±.\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
 							can=can-15;
-							printf("Biraz Daha İlerledin Ve Karşına Efsunlu Bir Yılan Çıktı...\nOnla Savaştın...\nKalan Canın:%d",can);
-							printf("Yürümeye Devam Ettin Ve Yolun Çıkmaza Girdi...\nGeri Döndün Ve Sağa İlerledin.\nYaralı Olduğun İçin Karşına Çıkan Yaratıkların Yanından Koşarak Geçip Onları Atlattın ve Sonunda Çıkışa Varabildin.\n");
-							//burada kazandığı eşyalar ve altın yazılıp eklenecek şuan bu sürümde altın olmadığı için ekleyemedim.
+							printf("Biraz Daha Ä°lerledin Ve KarÅŸÄ±na Efsunlu Bir YÄ±lan Ã‡Ä±ktÄ±...\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
+							printf("YÃ¼rÃ¼meye Devam Ettin Ve Yolun Ã‡Ä±kmaza Girdi...\nGeri DÃ¶ndÃ¼n Ve SaÄŸa Ä°lerledin.\nYaralÄ± OlduÄŸun Ä°Ã§in KarÅŸÄ±na Ã‡Ä±kan YaratÄ±klarÄ±n YanÄ±ndan KoÅŸarak GeÃ§ip OnlarÄ± AtlattÄ±n ve Sonunda Ã‡Ä±kÄ±ÅŸa Varabildin.\n");
+							//burada kazandÄ±ÄŸÄ± eÅŸyalar ve altÄ±n yazÄ±lÄ±p eklenecek ÅŸuan bu sÃ¼rÃ¼mde altÄ±n olmadÄ±ÄŸÄ± iÃ§in ekleyemedim.
 						}
 					}
 					
 					else if(buyucumanahtar==2)
 					{
 						can=can/2;
-						printf("Büyücü Seni Mağaranın İçine Baya Bir Sert Fırlatmış Olacak ki, Bilincini Kaybetmişsin Ve Yaralanmışsın.\n Kalan Canın:%d\n",can);
-						printf("Mağaranın İçinde Biraz İlerledin Ve Karşına İki Yol Ayrımı Çıktı.\nSağ a Mı Gideceksin Sol a Mı?\n[1]Sağ\n[2]Sol\n");
+						printf("BÃ¼yÃ¼cÃ¼ Seni MaÄŸaranÄ±n Ä°Ã§ine Baya Bir Sert FÄ±rlatmÄ±ÅŸ Olacak ki, Bilincini KaybetmiÅŸsin Ve YaralanmÄ±ÅŸsÄ±n.\n Kalan CanÄ±n:%d\n",can);
+						printf("MaÄŸaranÄ±n Ä°Ã§inde Biraz Ä°lerledin Ve KarÅŸÄ±na Ä°ki Yol AyrÄ±mÄ± Ã‡Ä±ktÄ±.\nSaÄŸ a MÄ± Gideceksin Sol a MÄ±?\n[1]SaÄŸ\n[2]Sol\n");
 						
 						scanf("%d",&magarayonsecimi);
 						
 						if(magarayonsecimi==1)
 						{
 							can=can-10;
-							printf("Sağ'a Gittin...\nBiraz İlerledin ve Karşına Efsunlu Bir Köpek Çıktı.\nOnla Savaştın...\nKalan Canın:%d",can);
+							printf("SaÄŸ'a Gittin...\nBiraz Ä°lerledin ve KarÅŸÄ±na Efsunlu Bir KÃ¶pek Ã‡Ä±ktÄ±.\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
 							can=can-25;
-							printf("Biraz Daha İlerledin Ve Karşına Efsunlu Bir Zombi Çıktı...\nOnla Savaştın...\nKalan Canın:%d",can);
-							printf("Yürümeye Devam Ettin Ve Mağaranın Çıkışını Buldun Doğru Yönde İlerlediğin İçin Şanslısın.\n");
+							printf("Biraz Daha Ä°lerledin Ve KarÅŸÄ±na Efsunlu Bir Zombi Ã‡Ä±ktÄ±...\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
+							printf("YÃ¼rÃ¼meye Devam Ettin Ve MaÄŸaranÄ±n Ã‡Ä±kÄ±ÅŸÄ±nÄ± Buldun DoÄŸru YÃ¶nde Ä°lerlediÄŸin Ä°Ã§in ÅanslÄ±sÄ±n.\n");
 						}
 						
 						else if(magarayonsecimi==2)
 						{
 							can=can-25;
-							printf("Sol'a Gittin...\nBiraz İlerledin ve Karşına Efsunlu Bir Ayı Çıktı.\nOnla Savaştın...\nKalan Canın:%d",can);
+							printf("Sol'a Gittin...\nBiraz Ä°lerledin ve KarÅŸÄ±na Efsunlu Bir AyÄ± Ã‡Ä±ktÄ±.\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
 							can=can-15;
-							printf("Biraz Daha İlerledin Ve Karşına Efsunlu Bir Yılan Çıktı...\nOnla Savaştın...\nKalan Canın:%d",can);
-							printf("Yürümeye Devam Ettin Ve Yolun Çıkmaza Girdi...\nGeri Döndün Ve Sağa İlerledin.\nAğır Yaralı Olduğun İçin Karşına Çıkan Yaratıkların Yanından Koşarak Geçip Onları Atlattın ve Sonunda Çıkışa Varabildin.\n");
-							//üstteki aynı şekilde
+							printf("Biraz Daha Ä°lerledin Ve KarÅŸÄ±na Efsunlu Bir YÄ±lan Ã‡Ä±ktÄ±...\nOnla SavaÅŸtÄ±n...\nKalan CanÄ±n:%d",can);
+							printf("YÃ¼rÃ¼meye Devam Ettin Ve Yolun Ã‡Ä±kmaza Girdi...\nGeri DÃ¶ndÃ¼n Ve SaÄŸa Ä°lerledin.\nAÄŸÄ±r YaralÄ± OlduÄŸun Ä°Ã§in KarÅŸÄ±na Ã‡Ä±kan YaratÄ±klarÄ±n YanÄ±ndan KoÅŸarak GeÃ§ip OnlarÄ± AtlattÄ±n ve Sonunda Ã‡Ä±kÄ±ÅŸa Varabildin.\n");
+							//Ã¼stteki aynÄ± ÅŸekilde
 						}
 					}
 					
@@ -2776,49 +2776,49 @@ int main ()
 				
 				case 6:
 					
-					printf("İntihar Mağarasına girdin\n");
-					printf("Mağara çok soğuk\nNe yapacaksan yap çabuk yap!!\n");
+					printf("Ä°ntihar MaÄŸarasÄ±na girdin\n");
+					printf("MaÄŸara Ã§ok soÄŸuk\nNe yapacaksan yap Ã§abuk yap!!\n");
 					while(intmagara!=0){
 						
 						if(intmagaradancikis==1){
 							break;
 						}
 						
-						printf("[1]Mağaranın derinliklerine gir\n");
-						printf("[2]Geri dön\n");
+						printf("[1]MaÄŸaranÄ±n derinliklerine gir\n");
+						printf("[2]Geri dÃ¶n\n");
 						scanf("%d",&intmagarayolsecim1);
 						system("CLS");
 						if(intmagarayolsecim1==1){
-							printf("Verdiğin nefesin buhar olarak havada yayıldığını görüyorsun. Yol 3'e ayrılıyor.\n");
-							printf("Sol taraftan gelen bir ışığın olduğunu farkediyor\nSağ tarafta ise hiçbir ışığın olmadığını, sadece birkaç ipin olduğunu görüyorsun\n");
+							printf("VerdiÄŸin nefesin buhar olarak havada yayÄ±ldÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼yorsun. Yol 3'e ayrÄ±lÄ±yor.\n");
+							printf("Sol taraftan gelen bir Ä±ÅŸÄ±ÄŸÄ±n olduÄŸunu farkediyor\nSaÄŸ tarafta ise hiÃ§bir Ä±ÅŸÄ±ÄŸÄ±n olmadÄ±ÄŸÄ±nÄ±, sadece birkaÃ§ ipin olduÄŸunu gÃ¶rÃ¼yorsun\n");
 							while(intmagara!=0){
 								
 								if(intmagaradancikis==1){
 									break;
 								}
 								
-								printf("Ne yapacaksın?\n");
-								printf("[1]Düz git\n"); //İkiye ayrılıyor
-								printf("[2]Sola git\n"); //Ateş
-								printf("[3]Sağa git\n"); //İp
-								printf("[4]Geri dön\n");
+								printf("Ne yapacaksÄ±n?\n");
+								printf("[1]DÃ¼z git\n"); //Ä°kiye ayrÄ±lÄ±yor
+								printf("[2]Sola git\n"); //AteÅŸ
+								printf("[3]SaÄŸa git\n"); //Ä°p
+								printf("[4]Geri dÃ¶n\n");
 								scanf("%d",&intmagarayolsecim2);
 								system("CLS");
-								if(intmagarayolsecim2==1){ //Düz
+								if(intmagarayolsecim2==1){ //DÃ¼z
 									while(intmagara!=0){
 										
 										if(intmagaradancikis==1){
 											break;
 										}
 										
-										printf("Yol ikiye ayrılıyor\n[1]Sola git\n[2]Sağa git\n[3]Geri dön\n");
+										printf("Yol ikiye ayrÄ±lÄ±yor\n[1]Sola git\n[2]SaÄŸa git\n[3]Geri dÃ¶n\n");
 										scanf("%d",&intmagarasecim2);
 										system("CLS");
 										
-										if(intmagarasecim2==1){ //Yılanlara gider
+										if(intmagarasecim2==1){ //YÄ±lanlara gider
 										
 											if(intmagaragorevi1==1 || intmagaragorevi1==2){
-												printf("Bu yol ihtiyarın söylediğine göre yılanların olduğu yere açılıyor\n");
+												printf("Bu yol ihtiyarÄ±n sÃ¶ylediÄŸine gÃ¶re yÄ±lanlarÄ±n olduÄŸu yere aÃ§Ä±lÄ±yor\n");
 												system("PAUSE");
 												system("CLS");
 											}
@@ -2827,36 +2827,36 @@ int main ()
 												printf("tssssssssssssss...\n");
 												system("PAUSE");
 												system("CLS");
-												printf("-Lanet olsun. Bu sesler hiç hoş değil\n");
+												printf("-Lanet olsun. Bu sesler hiÃ§ hoÅŸ deÄŸil\n");
 												system("PAUSE");
 												system("CLS");
-												printf("Bu seslerin yılan sesi olduğunu farkediyorsun\nBuraya girmek oldukça tehlikeli olmalı...\n");
+												printf("Bu seslerin yÄ±lan sesi olduÄŸunu farkediyorsun\nBuraya girmek oldukÃ§a tehlikeli olmalÄ±...\n");
 												system("PAUSE");
 												system("CLS");
 											}
 											
 											while(intmagara!=0){
-												printf("Ne yapacaksın?\n[1]Yılan yumurtası çal\n[2]Yılan kes\n[3]Yılanlarla Konuş\n[4]Kendini yılanların arasına at\n[5]Geri dön\n");
+												printf("Ne yapacaksÄ±n?\n[1]YÄ±lan yumurtasÄ± Ã§al\n[2]YÄ±lan kes\n[3]YÄ±lanlarla KonuÅŸ\n[4]Kendini yÄ±lanlarÄ±n arasÄ±na at\n[5]Geri dÃ¶n\n");
 												scanf("%d",&intmagarayilan);
 												system("CLS");
 												
-												if(intmagarayilan==1){ //Yılan yumurtasını çal
+												if(intmagarayilan==1){ //YÄ±lan yumurtasÄ±nÄ± Ã§al
 													
 													if(intyilanyumurtasialmahakki==1){
-														printf("Bugünkü hakkını kullandın!\n");
+														printf("BugÃ¼nkÃ¼ hakkÄ±nÄ± kullandÄ±n!\n");
 														continue;
 													}
 													
 													intyilanyumurtasialmahakki=1;
 													
 													if(kediotu==0){
-														printf("Yanında kediotu olmadan yılanlara yaklaşıyorsun\nOnlar ortama göre renk değiştirirler\nBu yüzden adımlarını dikkatli atmalısın\n");
+														printf("YanÄ±nda kediotu olmadan yÄ±lanlara yaklaÅŸÄ±yorsun\nOnlar ortama gÃ¶re renk deÄŸiÅŸtirirler\nBu yÃ¼zden adÄ±mlarÄ±nÄ± dikkatli atmalÄ±sÄ±n\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Yumurtaları gördün!\nYaklaşıyorsun\n");
+														printf("YumurtalarÄ± gÃ¶rdÃ¼n!\nYaklaÅŸÄ±yorsun\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Yumurtalara ulaşman 3 adımını alacak\n");
+														printf("Yumurtalara ulaÅŸman 3 adÄ±mÄ±nÄ± alacak\n");
 														system("PAUSE");
 														system("CLS");
 														srand(time(NULL));
@@ -2865,16 +2865,16 @@ int main ()
 														printf("1.ADIM\n\n");
 														
 														if(intmagarayilansans1>=0 && intmagarayilansans1<5){
-															printf("Güzel, hiçbiri seni farketmedi\n");
+															printf("GÃ¼zel, hiÃ§biri seni farketmedi\n");
 															system("PAUSE");
 															system("CLS");
 														}
 														
 														else{
-															printf("Olamaz!\nBiri seni farketti ve sana saldırıyor\n");
+															printf("Olamaz!\nBiri seni farketti ve sana saldÄ±rÄ±yor\n");
 															system("PAUSE");
 															system("CLS");
-															//DÖVÜŞ EKLENECEK**************************************************
+															//DÃ–VÃœÅ EKLENECEK**************************************************
 														}
 														
 														srand(time(NULL));
@@ -2883,16 +2883,16 @@ int main ()
 														printf("2.ADIM\n\n");
 														
 														if(intmagarayilansans2>=0 && intmagarayilansans2<5){
-															printf("Güzel, hiçbirisi seni farketmedi\n");
+															printf("GÃ¼zel, hiÃ§birisi seni farketmedi\n");
 															system("PAUSE");
 															system("CLS");
 														}
 														
 														else{
-															printf("Olamaz!\nBiri seni farketti ve sana saldırıyor\n");
+															printf("Olamaz!\nBiri seni farketti ve sana saldÄ±rÄ±yor\n");
 															system("PAUSE");
 															system("CLS");
-															//DÖVÜŞ EKLENECEK**************************************************
+															//DÃ–VÃœÅ EKLENECEK**************************************************
 														}
 														
 														srand(time(NULL));
@@ -2901,42 +2901,42 @@ int main ()
 														printf("3.ADIM\n\n");
 														
 														if(intmagarayilansans3>=0 && intmagarayilansans3<5){
-															printf("Güzel, hiçbirisi seni farketmedi\n");
+															printf("GÃ¼zel, hiÃ§birisi seni farketmedi\n");
 															system("PAUSE");
 															system("CLS");
 														}
 														
 														else{
-															printf("Olamaz!\nBiri seni farketti ve sana saldırıyor\n");
+															printf("Olamaz!\nBiri seni farketti ve sana saldÄ±rÄ±yor\n");
 															system("PAUSE");
 															system("CLS");
-															//DÖVÜŞ EKLENECEK**************************************************
+															//DÃ–VÃœÅ EKLENECEK**************************************************
 														}
 														
 														srand(time(NULL));
 														intmagarayilanyumurtasayisi=rand()%10;
 														intmagarayilanyumurtasayisi+=2;
-														printf("Sonunda yumurtaların yanına vardın\n");
+														printf("Sonunda yumurtalarÄ±n yanÄ±na vardÄ±n\n");
 														
 														while(intmagara!=0){
-															printf("%d tane yılan yumurtası görüyorsun\nKaç tane alacaksın?\n",intmagarayilanyumurtasayisi); //İLERİDE HEPSİNİ ALAMAMASI İÇİN ÇANTA AĞIRLIĞI OLACAK
+															printf("%d tane yÄ±lan yumurtasÄ± gÃ¶rÃ¼yorsun\nKaÃ§ tane alacaksÄ±n?\n",intmagarayilanyumurtasayisi); //Ä°LERÄ°DE HEPSÄ°NÄ° ALAMAMASI Ä°Ã‡Ä°N Ã‡ANTA AÄIRLIÄI OLACAK
 															scanf("%d",&intalinanyumurtasayisi);
 															system("CLS");
 															
 															if(intalinanyumurtasayisi>intmagarayilanyumurtasayisi || intalinanyumurtasayisi<=0){
-																printf("Bu mümkün değil!!\n");
+																printf("Bu mÃ¼mkÃ¼n deÄŸil!!\n");
 															}
 															
 															else{
 																
 																intmagarayilanyumurtasayisi-=intalinanyumurtasayisi;
 																yilanyumurtasi+=intalinanyumurtasayisi;
-																printf("%d tane yumurta aldın\nKalan yumurta sayısı: %d\n",intalinanyumurtasayisi,intmagarayilanyumurtasayisi);
+																printf("%d tane yumurta aldÄ±n\nKalan yumurta sayÄ±sÄ±: %d\n",intalinanyumurtasayisi,intmagarayilanyumurtasayisi);
 																system("PAUSE");
 																system("CLS");
 																
 																if(intalinanyumurtasayisi>=2 && intmagaragorevi1==2){
-																	printf("Güzel!\nŞimdi ihtiyara gidip 2 yılan yumurtasını verebilirsin\n");
+																	printf("GÃ¼zel!\nÅimdi ihtiyara gidip 2 yÄ±lan yumurtasÄ±nÄ± verebilirsin\n");
 																	intmagaragorevi1=3;
 																}
 																
@@ -2945,7 +2945,7 @@ int main ()
 														
 														}
 														
-														printf("Burada işin bittiğine göre hızla dışarı çıkıyorsun\n");
+														printf("Burada iÅŸin bittiÄŸine gÃ¶re hÄ±zla dÄ±ÅŸarÄ± Ã§Ä±kÄ±yorsun\n");
 														system("PAUSE");
 														system("CLS");
 														
@@ -2957,45 +2957,45 @@ int main ()
 													
 												}
 												
-												else if(intmagarayilan==2){ //Yılan kes
-													printf("Hadi Başlayalım!\n"); //DÖVÜŞ EKLENECEK *****************************************
+												else if(intmagarayilan==2){ //YÄ±lan kes
+													printf("Hadi BaÅŸlayalÄ±m!\n"); //DÃ–VÃœÅ EKLENECEK *****************************************
 													break;
 												}
 												
-												else if(intmagarayilan==3){ //Yılanlarla konuş
+												else if(intmagarayilan==3){ //YÄ±lanlarla konuÅŸ
 													
-													if(intsurungenlekonusmayetenegi==1){ //Yılanla konuş
-														printf("EKLENECEK\n"); //YILANLA KONUŞMA EKLENECEK **************************************
+													if(intsurungenlekonusmayetenegi==1){ //YÄ±lanla konuÅŸ
+														printf("EKLENECEK\n"); //YILANLA KONUÅMA EKLENECEK **************************************
 													}
 													
-													else{ //Yılanla konuşamama
-														printf("Yılanlarla konuşmak için sürüngen dilini öğrenmelisin!!\n");
+													else{ //YÄ±lanla konuÅŸamama
+														printf("YÄ±lanlarla konuÅŸmak iÃ§in sÃ¼rÃ¼ngen dilini Ã¶ÄŸrenmelisin!!\n");
 														system("PAUSE");
 														system("CLS");
 													}
 													
 												}
 												
-												else if(intmagarayilan==4){ //YILANLARA ÖL
+												else if(intmagarayilan==4){ //YILANLARA Ã–L
 													printf("Yolun sonuna geldik %s...\n",isim);
 													system("PAUSE");
 													system("CLS");
-													printf("Kararını verdin.\nBirden fazla Ölüm Yılanının zehrini damarlarında hissetmen sadece birkaç saniye aldı\n");
-													printf("Canın çok yandı. Ama sonunda...\n");
+													printf("KararÄ±nÄ± verdin.\nBirden fazla Ã–lÃ¼m YÄ±lanÄ±nÄ±n zehrini damarlarÄ±nda hissetmen sadece birkaÃ§ saniye aldÄ±\n");
+													printf("CanÄ±n Ã§ok yandÄ±. Ama sonunda...\n");
 													system("PAUSE");
 													system("CLS");
-													printf("--------------------------------------\nBu acımasız hayata gözlerini yumdun...\n--------------------------------------\n");
-													printf("Toplam Geçirilen Gün: %d\n",gun); //GÜNÜ EKLE
-													printf("Tamamlanan Görevler: %d/%d\n");
-													printf("Kazandığın Para: %d\n");
-													printf("Harcadığın Para: %d\n");
+													printf("--------------------------------------\nBu acÄ±masÄ±z hayata gÃ¶zlerini yumdun...\n--------------------------------------\n");
+													printf("Toplam GeÃ§irilen GÃ¼n: %d\n",gun); //GÃœNÃœ EKLE
+													printf("Tamamlanan GÃ¶revler: %d/%d\n");
+													printf("KazandÄ±ÄŸÄ±n Para: %d\n");
+													printf("HarcadÄ±ÄŸÄ±n Para: %d\n");
 													printf("--------------------------------------\n");
 													printf("Yolun sonuna geldik %s...\n",isim);
 													return 0;
 												}
 												
-												else if(intmagarayilan==5){ //Geri dön
-													printf("Mantıklı bir seçim...\n");
+												else if(intmagarayilan==5){ //Geri dÃ¶n
+													printf("MantÄ±klÄ± bir seÃ§im...\n");
 													system("PAUSE");
 													system("CLS");
 													break;
@@ -3005,15 +3005,15 @@ int main ()
 				
 										}
 										
-										else if(intmagarasecim2==2){ //Mağaradan çıkış
-											printf("Sağdan ilerledikçe bir gözüne yoğun bir ışık geliyor\nBurası mağaranın çıkışı olmalı\n");
+										else if(intmagarasecim2==2){ //MaÄŸaradan Ã§Ä±kÄ±ÅŸ
+											printf("SaÄŸdan ilerledikÃ§e bir gÃ¶zÃ¼ne yoÄŸun bir Ä±ÅŸÄ±k geliyor\nBurasÄ± maÄŸaranÄ±n Ã§Ä±kÄ±ÅŸÄ± olmalÄ±\n");
 											while(intmagara!=0){
-												printf("Ne Yapacaksın?\n[1]Mağaradan çık\n[2]Geri dön\n");
+												printf("Ne YapacaksÄ±n?\n[1]MaÄŸaradan Ã§Ä±k\n[2]Geri dÃ¶n\n");
 												scanf("%d",&intmagarasecim6);
 												system("CLS");
 												
 												if(intmagarasecim6==1){
-													printf("Mağaradan çıktın.\n");
+													printf("MaÄŸaradan Ã§Ä±ktÄ±n.\n");
 													intmagaradancikis=1;
 													break;
 												}
@@ -3026,7 +3026,7 @@ int main ()
 										
 										}
 										
-										else if(intmagarasecim2==3){ //Geri dön
+										else if(intmagarasecim2==3){ //Geri dÃ¶n
 											break;
 										}
 										
@@ -3037,11 +3037,11 @@ int main ()
 								else if(intmagarayolsecim2==2){ //Sol
 									
 									if(intmagarasolsecimi==0){
-										printf("Sol taraftan ilerledikçe bir sıcaklık geldiğini hissediyorsun\n");
-										printf("Artık daha aydınlık\nBir dakika\nNeden çığlık sesleri geliyor?\n");
+										printf("Sol taraftan ilerledikÃ§e bir sÄ±caklÄ±k geldiÄŸini hissediyorsun\n");
+										printf("ArtÄ±k daha aydÄ±nlÄ±k\nBir dakika\nNeden Ã§Ä±ÄŸlÄ±k sesleri geliyor?\n");
 										system("PAUSE");
 										system("CLS");
-										printf("Biraz daha ilerledikçe sıcaklık, aydınlık ve anlam veremediğin şekilde çığlık sesleri artıyor\n");
+										printf("Biraz daha ilerledikÃ§e sÄ±caklÄ±k, aydÄ±nlÄ±k ve anlam veremediÄŸin ÅŸekilde Ã§Ä±ÄŸlÄ±k sesleri artÄ±yor\n");
 										system("PAUSE");
 										system("CLS");
 									}
@@ -3049,61 +3049,61 @@ int main ()
 									intmagarasolsecimi=1;
 									
 									while(intmagara!=0){
-										printf("Bir kapı gördün\n[1]Kapıya doğru git\n[2]Düz git(İntihar et)\n[3]Geri dön\n");
+										printf("Bir kapÄ± gÃ¶rdÃ¼n\n[1]KapÄ±ya doÄŸru git\n[2]DÃ¼z git(Ä°ntihar et)\n[3]Geri dÃ¶n\n");
 										scanf("%d",&intmagarasecim3);
 										system("CLS");
 										
-										if(intmagarasecim3==1){ //Kapıya gitmek
+										if(intmagarasecim3==1){ //KapÄ±ya gitmek
 											srand(time(NULL));
 											intmagaraalevsans1=rand()%10;
 											
-											if(intmagaraalevsans1>=0 && intmagaraalevsans1<5){ //Şansa yakalanmadı
+											if(intmagaraalevsans1>=0 && intmagaraalevsans1<5){ //Åansa yakalanmadÄ±
 												srand(time(NULL));
 												intmagaraalevsans2=rand()%10;
 												
 												if(intmagaraalevsans2>=0 && intmagaraalevsans2<5){
-													printf("Olamaz! Kapı açılıyor...\n");
+													printf("Olamaz! KapÄ± aÃ§Ä±lÄ±yor...\n");
 													system("PAUSE");
 													system("CLS");
-													printf("Kapı açılırken aniden kapının arkasına saklandın\nDışarıya koyu tonlarda kıyafet giymiş, uzun boylu biri çıktı ve koşarak gözden kayboldu\n");
-													printf("Tam olarak ne olduğunu tanımlayamasan da insana benzediği aşikar\n");
+													printf("KapÄ± aÃ§Ä±lÄ±rken aniden kapÄ±nÄ±n arkasÄ±na saklandÄ±n\nDÄ±ÅŸarÄ±ya koyu tonlarda kÄ±yafet giymiÅŸ, uzun boylu biri Ã§Ä±ktÄ± ve koÅŸarak gÃ¶zden kayboldu\n");
+													printf("Tam olarak ne olduÄŸunu tanÄ±mlayamasan da insana benzediÄŸi aÅŸikar\n");
 													system("PAUSE");
 													system("CLS");
-													printf("Aceleyle çıktığı için kapıyı açık bıraktı\n");
+													printf("Aceleyle Ã§Ä±ktÄ±ÄŸÄ± iÃ§in kapÄ±yÄ± aÃ§Ä±k bÄ±raktÄ±\n");
 												}
 												
 												else{
-													printf("Kapının açık olduğunu gördün\n");
+													printf("KapÄ±nÄ±n aÃ§Ä±k olduÄŸunu gÃ¶rdÃ¼n\n");
 													system("PAUSE");
 													system("CLS");
 												}
 												
-												printf("Hemen kapıdan içeri girdin ve mağaranın devam ettiğini gördün\n");
-												printf("Yerde bir merdiven var. Burası aşağı iniyor\n");
+												printf("Hemen kapÄ±dan iÃ§eri girdin ve maÄŸaranÄ±n devam ettiÄŸini gÃ¶rdÃ¼n\n");
+												printf("Yerde bir merdiven var. BurasÄ± aÅŸaÄŸÄ± iniyor\n");
 												system("PAUSE");
 												system("CLS");
 												while(intmagara!=0){
-													printf("Seçimini Yap\n");
-													printf("[1]Merdivenden aşağı in\n[2]Düz git\n[3]Geri dön\n");
+													printf("SeÃ§imini Yap\n");
+													printf("[1]Merdivenden aÅŸaÄŸÄ± in\n[2]DÃ¼z git\n[3]Geri dÃ¶n\n");
 													scanf("%d",&intmagaraalevsecim1);
 													system("CLS");
 													
 													if(intmagaraalevsecim1==1){ //Merdivenden in
-														printf("Merdivenden aşağı iniyorsun\n");
-														printf("Ortalıkta hiçkimse yok\nSadece 1 adet sandık ve bir masa üzerinde yarım şarap şişesi...\n");
+														printf("Merdivenden aÅŸaÄŸÄ± iniyorsun\n");
+														printf("OrtalÄ±kta hiÃ§kimse yok\nSadece 1 adet sandÄ±k ve bir masa Ã¼zerinde yarÄ±m ÅŸarap ÅŸiÅŸesi...\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Sandığın kilitli olduğunu görüyorsun\n");
+														printf("SandÄ±ÄŸÄ±n kilitli olduÄŸunu gÃ¶rÃ¼yorsun\n");
 														
 														if(intmagaragorevi1==4 && intmagararuyaittirme==0){
 															
 															while(intmagara!=0){
-																printf("[1]Sandığı ittir\n[2]Vazgeç\n");
+																printf("[1]SandÄ±ÄŸÄ± ittir\n[2]VazgeÃ§\n");
 																scanf("%d",&intmagarasecim9);
 																system("CLS");
 																
 																if(intmagarasecim9==1){
-																	printf("Sandığı boş bir yere doğru ittiriyorsun ve aşağı açılan bir yolun olduğunu görüyorsun\n");
+																	printf("SandÄ±ÄŸÄ± boÅŸ bir yere doÄŸru ittiriyorsun ve aÅŸaÄŸÄ± aÃ§Ä±lan bir yolun olduÄŸunu gÃ¶rÃ¼yorsun\n");
 																	intmagararuyaittirme=1;
 																	break;
 																}
@@ -3118,17 +3118,17 @@ int main ()
 														
 														if(intmagararuyaittirme==1){
 															while(intmagara!=0){
-																printf("[1]Açılan yoldan git\n[2]Vazgeç\n");
+																printf("[1]AÃ§Ä±lan yoldan git\n[2]VazgeÃ§\n");
 																scanf("%d",&intmagarasecim10);
 																system("CLS");
 																
 																if(intmagarasecim10==1){
-																	printf("İlerledikçe etrafa mavi yeşil ve sarı ışık veren birçok çiçek türü görüyorsun\n");
-																	printf("Bir mağarada bunların olması garip...\n");
+																	printf("Ä°lerledikÃ§e etrafa mavi yeÅŸil ve sarÄ± Ä±ÅŸÄ±k veren birÃ§ok Ã§iÃ§ek tÃ¼rÃ¼ gÃ¶rÃ¼yorsun\n");
+																	printf("Bir maÄŸarada bunlarÄ±n olmasÄ± garip...\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("İleride bir adam var ve boş boş duvara bakıyor\n");
-																	printf("Onunla iletişime geçemiyorsun\n(İLERİDE GÖREV OLARAK EKLENECEK)\n"); //YENİ BİR GÖREV
+																	printf("Ä°leride bir adam var ve boÅŸ boÅŸ duvara bakÄ±yor\n");
+																	printf("Onunla iletiÅŸime geÃ§emiyorsun\n(Ä°LERÄ°DE GÃ–REV OLARAK EKLENECEK)\n"); //YENÄ° BÄ°R GÃ–REV
 																}
 																
 																else if(intmagarasecim10==2){
@@ -3140,96 +3140,96 @@ int main ()
 														}
 														
 														while(intmagara!=0){
-															printf("[1]Sandığı aç\n[2]Sandığı zorla\n[3]Masayı incele\n[4]Yukarı çık\n");
+															printf("[1]SandÄ±ÄŸÄ± aÃ§\n[2]SandÄ±ÄŸÄ± zorla\n[3]MasayÄ± incele\n[4]YukarÄ± Ã§Ä±k\n");
 															scanf("%d",&intmagaraalevsecim2);
 															system("CLS");
 														
-															if(intmagaraalevsecim2==1){ //Sandığın kilidini aç
+															if(intmagaraalevsecim2==1){ //SandÄ±ÄŸÄ±n kilidini aÃ§
 																
 																if(intmagarasandiksayaci==0){
 																	
-																	if(intalevanahtar==1){ //Sandıkların kilidini aç
-																		printf("Sandığı açtın!!\n");
-																		printf("Sandıktan 50 adet Tahta Ok ve 1 adet Uzun Kılıç aldın\n");
+																	if(intalevanahtar==1){ //SandÄ±klarÄ±n kilidini aÃ§
+																		printf("SandÄ±ÄŸÄ± aÃ§tÄ±n!!\n");
+																		printf("SandÄ±ktan 50 adet Tahta Ok ve 1 adet Uzun KÄ±lÄ±Ã§ aldÄ±n\n");
 																		ok[0]+=50;
 																		kil[1]=1;
 																		intmagarasandiksayaci=1;
 																	}
 																	
-																	else{ //Anahtarsız açmaya çalışmak
-																		printf("Anahtar olmadan kilidi açamazsın\n");
+																	else{ //AnahtarsÄ±z aÃ§maya Ã§alÄ±ÅŸmak
+																		printf("Anahtar olmadan kilidi aÃ§amazsÄ±n\n");
 																	}
 																	
 																}
 																
-																else{ //Sandık zaten açılmış
-																	printf("Sandıktaki her şeyi topladın!\n");
+																else{ //SandÄ±k zaten aÃ§Ä±lmÄ±ÅŸ
+																	printf("SandÄ±ktaki her ÅŸeyi topladÄ±n!\n");
 																}
 															
 															}
 															
-															else if(intmagaraalevsecim2==2){ //Sandıkları zorla
-																printf("Sandığı tüm gücünle zorladın ama başaramadın\nHatta biraz ses yaptın\n");
+															else if(intmagaraalevsecim2==2){ //SandÄ±klarÄ± zorla
+																printf("SandÄ±ÄŸÄ± tÃ¼m gÃ¼cÃ¼nle zorladÄ±n ama baÅŸaramadÄ±n\nHatta biraz ses yaptÄ±n\n");
 																srand(time(NULL));
 																intmagarasandiksans=rand()%10;
 																
 																if(intmagarasandiksans==0){
-																	printf("Sandığı açamaman yetmezmiş gibi bir de bileğine zarar verdin\n");
+																	printf("SandÄ±ÄŸÄ± aÃ§amaman yetmezmiÅŸ gibi bir de bileÄŸine zarar verdin\n");
 																	can-=10;
-																	printf("10 Can Azaldı!!\n");	
+																	printf("10 Can AzaldÄ±!!\n");	
 																}
 																
 																else if(intmagarasandiksans==1){
-																	printf("Sandığı açamaman yetmezmiş gibi bir de parmağına zarar verdin\n");
+																	printf("SandÄ±ÄŸÄ± aÃ§amaman yetmezmiÅŸ gibi bir de parmaÄŸÄ±na zarar verdin\n");
 																	can-=10;
-																	printf("10 Can Azaldı!!\n");	
+																	printf("10 Can AzaldÄ±!!\n");	
 																}
 																
 																else if(intmagarasandiksans==2){
-																	printf("Sandığı açamaman yetmezmiş gibi bir de beline zarar verdin\n");
+																	printf("SandÄ±ÄŸÄ± aÃ§amaman yetmezmiÅŸ gibi bir de beline zarar verdin\n");
 																	can-=10;
-																	printf("10 Can Azaldı!!\n");	
+																	printf("10 Can AzaldÄ±!!\n");	
 																}
 																
 															}
 															
-															else if(intmagaraalevsecim2==3){ //Masayı incele
-																printf("Masaya şöyle iyice bir bakınca şişelerin altında sıkıştırılmış bir kağıt parçası buldun\n");
-																printf("Kağıdı okumaya başladın...\n");
+															else if(intmagaraalevsecim2==3){ //MasayÄ± incele
+																printf("Masaya ÅŸÃ¶yle iyice bir bakÄ±nca ÅŸiÅŸelerin altÄ±nda sÄ±kÄ±ÅŸtÄ±rÄ±lmÄ±ÅŸ bir kaÄŸÄ±t parÃ§asÄ± buldun\n");
+																printf("KaÄŸÄ±dÄ± okumaya baÅŸladÄ±n...\n");
 																system("PAUSE");
 																system("CLS");
 																printf("------------------------------------HAFTALIK RAPOR------------------------------------\n");
-																printf("İş: Suçluların Cezalandırılması\n");
-																printf("Konum: İntihar Mağarası 1.Kat / 1.Oda\n");
-																printf("1.Kişi'nin İşlediği Suç: Hırsızlık (12800 Altın)\n");
-																printf("2.Kişi'nin İşlediği Suç: Çarşıda kavga çıkarma ve iki kişinin ölümüne sebep olma\n");
-																printf("3.Kişi'nin İşlediği Suç: Arena'da hile yapma\n");
-																printf("Cezalandırma işlemi: Canlı canlı yakma\n");
+																printf("Ä°ÅŸ: SuÃ§lularÄ±n CezalandÄ±rÄ±lmasÄ±\n");
+																printf("Konum: Ä°ntihar MaÄŸarasÄ± 1.Kat / 1.Oda\n");
+																printf("1.KiÅŸi'nin Ä°ÅŸlediÄŸi SuÃ§: HÄ±rsÄ±zlÄ±k (12800 AltÄ±n)\n");
+																printf("2.KiÅŸi'nin Ä°ÅŸlediÄŸi SuÃ§: Ã‡arÅŸÄ±da kavga Ã§Ä±karma ve iki kiÅŸinin Ã¶lÃ¼mÃ¼ne sebep olma\n");
+																printf("3.KiÅŸi'nin Ä°ÅŸlediÄŸi SuÃ§: Arena'da hile yapma\n");
+																printf("CezalandÄ±rma iÅŸlemi: CanlÄ± canlÄ± yakma\n");
 																printf("Rapor No: 10041\n");
 																printf("--------------------------------------Q9822VMR5---------------------------------------\n");
 																system("PAUSE");
 																system("CLS");
 																
-																printf("Kağıdı okuyunca ürperdin\nBurada daha fazla kalmanın mantığını bulmaya çalışıyorsun\nMerak hayatından önemli mi?\n");
+																printf("KaÄŸÄ±dÄ± okuyunca Ã¼rperdin\nBurada daha fazla kalmanÄ±n mantÄ±ÄŸÄ±nÄ± bulmaya Ã§alÄ±ÅŸÄ±yorsun\nMerak hayatÄ±ndan Ã¶nemli mi?\n");
 																system("PAUSE");
 																system("CLS");
-																printf("Bir söylentiye göre bu raporda yazılan kişiler sadece suçluların yuzde 1'i\n");
+																printf("Bir sÃ¶ylentiye gÃ¶re bu raporda yazÄ±lan kiÅŸiler sadece suÃ§lularÄ±n yuzde 1'i\n");
 																system("PAUSE");
 																system("CLS");
 																
 																if(intalevanahtar==0){
-																	printf("Kağıdı yerine bıraktın ve şarap şişesini incelemeye başladın\nŞişeyi biraz sallayınca içinde bir şey olduğunu anladın\n");
+																	printf("KaÄŸÄ±dÄ± yerine bÄ±raktÄ±n ve ÅŸarap ÅŸiÅŸesini incelemeye baÅŸladÄ±n\nÅiÅŸeyi biraz sallayÄ±nca iÃ§inde bir ÅŸey olduÄŸunu anladÄ±n\n");
 																	system("PAUSE");
 																	system("CLS");
 																	printf("Tabi ya, anahtar!\n");
-																	printf("Anahtarı buldun!\n");
+																	printf("AnahtarÄ± buldun!\n");
 																	intalevanahtar=1;
 																	system("PAUSE");
 																	system("CLS");
 																}
 															}
 															
-															else if(intmagaraalevsecim2==4){ //Yukarı Çık
+															else if(intmagaraalevsecim2==4){ //YukarÄ± Ã‡Ä±k
 																break;
 															}
 															
@@ -3237,49 +3237,49 @@ int main ()
 														
 													}
 													
-													else if(intmagaraalevsecim1==2){ //Düz git
+													else if(intmagaraalevsecim1==2){ //DÃ¼z git
 														
 														intmagarahizlakac=0;
 														
-														printf("İlerledikçe çığlıklar artıyor\n");
+														printf("Ä°lerledikÃ§e Ã§Ä±ÄŸlÄ±klar artÄ±yor\n");
 														
 														if(intalevanahtar==1){
-															printf("O kağıt parçasını okuduktan sonra bu çığlıkların nereden ve kimden geldiğini daha iyi anlıyorsun\n");
+															printf("O kaÄŸÄ±t parÃ§asÄ±nÄ± okuduktan sonra bu Ã§Ä±ÄŸlÄ±klarÄ±n nereden ve kimden geldiÄŸini daha iyi anlÄ±yorsun\n");
 														}
 														
 														system("PAUSE");
 														system("CLS");
-														printf("İlerlerken büyükçe bir çiyan yolunu kesti\n");
+														printf("Ä°lerlerken bÃ¼yÃ¼kÃ§e bir Ã§iyan yolunu kesti\n");
 														
 														if(intboceklekonusmayetenegi==1){
-															printf("Böcekle konuş\n");
+															printf("BÃ¶cekle konuÅŸ\n");
 														}
 														
 														else{
-															printf("Böcekçe bilmediğin için onunla iletişime geçemiyorsun\nÇiyan yolundan çekiliyor\n");
+															printf("BÃ¶cekÃ§e bilmediÄŸin iÃ§in onunla iletiÅŸime geÃ§emiyorsun\nÃ‡iyan yolundan Ã§ekiliyor\n");
 															system("PAUSE");
 															system("CLS");
 														}
 														
-														printf("4 tane koyu renk kıyafetli insansı yaratıklar görüyorsun\nAma burada durdukça başın ağrıyor\n");
-														printf("Çünkü bu çığlık sesleri dayanılacak gibi değil\nYoksa...\n");
+														printf("4 tane koyu renk kÄ±yafetli insansÄ± yaratÄ±klar gÃ¶rÃ¼yorsun\nAma burada durdukÃ§a baÅŸÄ±n aÄŸrÄ±yor\n");
+														printf("Ã‡Ã¼nkÃ¼ bu Ã§Ä±ÄŸlÄ±k sesleri dayanÄ±lacak gibi deÄŸil\nYoksa...\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Evet. Bu yaratıklar ya insan değil ya da sağır\nHenüz çözemedin\n");
+														printf("Evet. Bu yaratÄ±klar ya insan deÄŸil ya da saÄŸÄ±r\nHenÃ¼z Ã§Ã¶zemedin\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Suçluların cezasını vermekle yükümlüler görüldüğü üzere...\nManzara korkunç\n");
-														printf("İnsanları canlı canlı ateşe atmaktan başka bir şey yapmıyorlar şu anda\n");
+														printf("SuÃ§lularÄ±n cezasÄ±nÄ± vermekle yÃ¼kÃ¼mlÃ¼ler gÃ¶rÃ¼ldÃ¼ÄŸÃ¼ Ã¼zere...\nManzara korkunÃ§\n");
+														printf("Ä°nsanlarÄ± canlÄ± canlÄ± ateÅŸe atmaktan baÅŸka bir ÅŸey yapmÄ±yorlar ÅŸu anda\n");
 														system("PAUSE");
 														system("CLS");
-														printf("O da ne!!\nAralarından biri seni gördü!!\n");
-														printf("[1]Kaç\n[2]Kendini savun\n");
+														printf("O da ne!!\nAralarÄ±ndan biri seni gÃ¶rdÃ¼!!\n");
+														printf("[1]KaÃ§\n[2]Kendini savun\n");
 														
 														scanf("%d",&intmagaraalevsecim3);
 														system("CLS");
 														
 														if(intmagaraalevsecim3==1){
-															printf("Hızla uzaklaşıyorsun\nKapının olduğu yere geri geldin\n");
+															printf("HÄ±zla uzaklaÅŸÄ±yorsun\nKapÄ±nÄ±n olduÄŸu yere geri geldin\n");
 															
 															while(intmagara!=0){
 																
@@ -3292,10 +3292,10 @@ int main ()
 																system("CLS");
 																
 																if(intmagaraalevsecim4==1){
-																	printf("Hızla merdivenden aşağı indin\n");
+																	printf("HÄ±zla merdivenden aÅŸaÄŸÄ± indin\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("[1]Sandığa saklan\n[2]Şarap şişesini insansının kafasında patlat\n");
+																	printf("[1]SandÄ±ÄŸa saklan\n[2]Åarap ÅŸiÅŸesini insansÄ±nÄ±n kafasÄ±nda patlat\n");
 																	scanf("%d",&intmagaraalevsecim5);
 																	system("CLS");
 																	
@@ -3304,8 +3304,8 @@ int main ()
 																		if(intmagaraalevsecim5==1){
 																		
 																			if(intmagarasandiksayaci==1){
-																				printf("Sandığa saklandın ve bir süre bekledin\nO aptal insansı seni bulamadı\n");
-																				printf("Hızla yukarı çıkıyorsun...\n");
+																				printf("SandÄ±ÄŸa saklandÄ±n ve bir sÃ¼re bekledin\nO aptal insansÄ± seni bulamadÄ±\n");
+																				printf("HÄ±zla yukarÄ± Ã§Ä±kÄ±yorsun...\n");
 																				intmagarahizlakac=1;
 																				system("PAUSE");
 																				system("CLS");
@@ -3313,22 +3313,22 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Sandık kilitli!!\nİnsansı hızla merdivenden indi\n");
+																				printf("SandÄ±k kilitli!!\nÄ°nsansÄ± hÄ±zla merdivenden indi\n");
 																				intmagarahizlakac=1;
 																				system("PAUSE");
 																				system("CLS");
-																				printf("Bir pençe darbesi aldın\n");
+																				printf("Bir penÃ§e darbesi aldÄ±n\n");
 																				can-=20;
 																				
-																				if(can>=50){ //Yara sıyırdı kalkıp devam etti
-																					printf("Yara sıyırdığı için fazla zarar görmeyip insansıyı ittin ve yere düştü\nHemen oradan uzaklaştın\n");	
+																				if(can>=50){ //Yara sÄ±yÄ±rdÄ± kalkÄ±p devam etti
+																					printf("Yara sÄ±yÄ±rdÄ±ÄŸÄ± iÃ§in fazla zarar gÃ¶rmeyip insansÄ±yÄ± ittin ve yere dÃ¼ÅŸtÃ¼\nHemen oradan uzaklaÅŸtÄ±n\n");	
 																					system("PAUSE");
 																					system("CLS");
 																					break;
 																				}
 																				
-																				else{ //Yere düştü bayıldı
-																					printf("Yere düştün, dayanamayıp bayıldın\n"); //DÜZENLENECEK REHİN ALINACAK ********************
+																				else{ //Yere dÃ¼ÅŸtÃ¼ bayÄ±ldÄ±
+																					printf("Yere dÃ¼ÅŸtÃ¼n, dayanamayÄ±p bayÄ±ldÄ±n\n"); //DÃœZENLENECEK REHÄ°N ALINACAK ********************
 																					return 0;
 																				}
 																				
@@ -3337,7 +3337,7 @@ int main ()
 																		}
 																		
 																		else if(intmagaraalevsecim5==2){
-																			printf("İnsansı merdivenden indiği gibi kafasında şişeyi patlattın\nHızla yukarı çıktın...\nPeşinde kimse yok artık...\n");
+																			printf("Ä°nsansÄ± merdivenden indiÄŸi gibi kafasÄ±nda ÅŸiÅŸeyi patlattÄ±n\nHÄ±zla yukarÄ± Ã§Ä±ktÄ±n...\nPeÅŸinde kimse yok artÄ±k...\n");
 																			system("PAUSE");
 																			system("CLS");
 																			intmagarahizlakac=1;
@@ -3345,10 +3345,10 @@ int main ()
 																		}
 																		
 																		else{
-																			printf("Yanlış bir hareket yapmanın sırası değil!\n");
+																			printf("YanlÄ±ÅŸ bir hareket yapmanÄ±n sÄ±rasÄ± deÄŸil!\n");
 																			system("PAUSE");
 																			system("CLS");
-																			printf("Bir pençe darbesi aldın\n");
+																			printf("Bir penÃ§e darbesi aldÄ±n\n");
 																			can-=20;
 																			system("PAUSE");
 																			system("CLS");
@@ -3356,15 +3356,15 @@ int main ()
 																			system("PAUSE");
 																			system("CLS");
 																			
-																			if(can>=20){ //Yara sıyırdı kalkıp devam etti
-																				printf("Yara sıyırdığı için fazla zarar görmeyip insansıyı ittin ve yere düştü\nYukarı çıktın\nGörünüşe göre peşini bıraktılar\n");	
+																			if(can>=20){ //Yara sÄ±yÄ±rdÄ± kalkÄ±p devam etti
+																				printf("Yara sÄ±yÄ±rdÄ±ÄŸÄ± iÃ§in fazla zarar gÃ¶rmeyip insansÄ±yÄ± ittin ve yere dÃ¼ÅŸtÃ¼\nYukarÄ± Ã§Ä±ktÄ±n\nGÃ¶rÃ¼nÃ¼ÅŸe gÃ¶re peÅŸini bÄ±raktÄ±lar\n");	
 																				system("PAUSE");
 																				system("CLS");
 																				break;
 																			}
 																			
-																			else{ //Yere düştü bayıldı
-																				printf("Yere düştün, dayanamayıp bayıldın\n"); //DÜZENLENECEK REHİN ALINACAK **************************
+																			else{ //Yere dÃ¼ÅŸtÃ¼ bayÄ±ldÄ±
+																				printf("Yere dÃ¼ÅŸtÃ¼n, dayanamayÄ±p bayÄ±ldÄ±n\n"); //DÃœZENLENECEK REHÄ°N ALINACAK **************************
 																				return 0;
 																			}
 																			
@@ -3375,15 +3375,15 @@ int main ()
 																}
 																
 																else if(intmagaraalevsecim4==2){ //Soluklan
-																	printf("Biraz soluklandıktan sonra peşinden kimsenin gelmediğini farkettin\n");
+																	printf("Biraz soluklandÄ±ktan sonra peÅŸinden kimsenin gelmediÄŸini farkettin\n");
 																	break;
 																}
 																
 																else{
-																	printf("Yanlış bir hareket yapmanın sırası değil!\n");
+																	printf("YanlÄ±ÅŸ bir hareket yapmanÄ±n sÄ±rasÄ± deÄŸil!\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("Bir pençe darbesi aldın\n");
+																	printf("Bir penÃ§e darbesi aldÄ±n\n");
 																	can-=20;
 																	system("PAUSE");
 																	system("CLS");
@@ -3391,15 +3391,15 @@ int main ()
 																	system("PAUSE");
 																	system("CLS");
 																	
-																	if(can>=20){ //Yara sıyırdı kalkıp devam etti
-																		printf("Yara sıyırdığı için fazla zarar görmeyip insansıyı ittin ve yere düştü\nGörünüşe göre peşini bıraktılar\n");	
+																	if(can>=20){ //Yara sÄ±yÄ±rdÄ± kalkÄ±p devam etti
+																		printf("Yara sÄ±yÄ±rdÄ±ÄŸÄ± iÃ§in fazla zarar gÃ¶rmeyip insansÄ±yÄ± ittin ve yere dÃ¼ÅŸtÃ¼\nGÃ¶rÃ¼nÃ¼ÅŸe gÃ¶re peÅŸini bÄ±raktÄ±lar\n");	
 																		system("PAUSE");
 																		system("CLS");
 																		break;
 																	}
 																	
-																	else{ //Yere düştü bayıldı
-																		printf("Yere düştün, dayanamayıp bayıldın\n"); //DÜZENLENECEK REHİN ALINACAK **************************
+																	else{ //Yere dÃ¼ÅŸtÃ¼ bayÄ±ldÄ±
+																		printf("Yere dÃ¼ÅŸtÃ¼n, dayanamayÄ±p bayÄ±ldÄ±n\n"); //DÃœZENLENECEK REHÄ°N ALINACAK **************************
 																		return 0;
 																	}
 																	
@@ -3409,15 +3409,15 @@ int main ()
 															
 														}
 														
-														else if(intmagaraalevsecim3==2){ //Kendini savun DÖVÜŞ EKLENECEK **************
-															printf("KENDİNİ SAVUNMA EKLENECEK\n");
+														else if(intmagaraalevsecim3==2){ //Kendini savun DÃ–VÃœÅ EKLENECEK **************
+															printf("KENDÄ°NÄ° SAVUNMA EKLENECEK\n");
 														}
 														
 														else{
-															printf("Yanlış bir hareket yapmanın sırası değil!\n");
+															printf("YanlÄ±ÅŸ bir hareket yapmanÄ±n sÄ±rasÄ± deÄŸil!\n");
 															system("PAUSE");
 															system("CLS");
-															printf("Bir pençe darbesi aldın\n");
+															printf("Bir penÃ§e darbesi aldÄ±n\n");
 															can-=20;
 															system("PAUSE");
 															system("CLS");
@@ -3425,15 +3425,15 @@ int main ()
 															system("PAUSE");
 															system("CLS");
 																	
-															if(can>=20){ //Yara sıyırdı kalkıp devam etti
-																printf("Yara sıyırdığı için fazla zarar görmeyip insansıyı ittin ve yere düştü\nHemen oradan uzaklaştın\n");	
+															if(can>=20){ //Yara sÄ±yÄ±rdÄ± kalkÄ±p devam etti
+																printf("Yara sÄ±yÄ±rdÄ±ÄŸÄ± iÃ§in fazla zarar gÃ¶rmeyip insansÄ±yÄ± ittin ve yere dÃ¼ÅŸtÃ¼\nHemen oradan uzaklaÅŸtÄ±n\n");	
 																system("PAUSE");
 																system("CLS");
 																break;
 															}
 																
-															else{ //Yere düştü bayıldı
-																printf("Yere düştün, dayanamayıp bayıldın\n"); //DÜZENLENECEK REHİN ALINACAK **************************
+															else{ //Yere dÃ¼ÅŸtÃ¼ bayÄ±ldÄ±
+																printf("Yere dÃ¼ÅŸtÃ¼n, dayanamayÄ±p bayÄ±ldÄ±n\n"); //DÃœZENLENECEK REHÄ°N ALINACAK **************************
 																return 0;
 															}
 															
@@ -3441,20 +3441,20 @@ int main ()
 															
 													}
 													
-													else if(intmagaraalevsecim1==3){ //Geri dön
+													else if(intmagaraalevsecim1==3){ //Geri dÃ¶n
 														break;
 													}
 													
 												}
 											}
 											
-											else{ //Şansa yakalandı
+											else{ //Åansa yakalandÄ±
 												
 												if(intmagarateklif1sayac==0){
-													printf("Olamaz! Kapı bir anda açılıyor...\n");
+													printf("Olamaz! KapÄ± bir anda aÃ§Ä±lÄ±yor...\n");
 													system("PAUSE");
 													system("CLS");
-													printf("Şanssızsın!\nO insansı yaratık seni farketti\nAma saldırmak yerine konuşmayı tercih etti\n");
+													printf("ÅanssÄ±zsÄ±n!\nO insansÄ± yaratÄ±k seni farketti\nAma saldÄ±rmak yerine konuÅŸmayÄ± tercih etti\n");
 													system("PAUSE");
 													system("CLS");
 													printf("-Hey! Sen kimsin?\n");
@@ -3463,20 +3463,20 @@ int main ()
 													printf("-Ben %s. Peki sen kimsin?\n",isim);
 													system("PAUSE");
 													system("CLS");
-													printf("-Sen benimle dalga mı geçiyorsun? Buraya gelen bir yabancının aptal olması gerekir.\nBuraya geldiysen bunun bir bedeli olacak.\n");
+													printf("-Sen benimle dalga mÄ± geÃ§iyorsun? Buraya gelen bir yabancÄ±nÄ±n aptal olmasÄ± gerekir.\nBuraya geldiysen bunun bir bedeli olacak.\n");
 													system("PAUSE");
 													system("CLS");
-													printf("-Anlaşıldı, seninle fazla konuşulmuyor. Teklifin ne?\n");
+													printf("-AnlaÅŸÄ±ldÄ±, seninle fazla konuÅŸulmuyor. Teklifin ne?\n");
 													system("PAUSE");
 													system("CLS");
-													printf("-Bana 50 altın ver, bu konuyu kapatalım. Ha, bu arada, o kapıdan içeri girmeye çalışma sakın.\nEğer bir daha seni buralarda görürsem teklif olmayacak!\n");
+													printf("-Bana 50 altÄ±n ver, bu konuyu kapatalÄ±m. Ha, bu arada, o kapÄ±dan iÃ§eri girmeye Ã§alÄ±ÅŸma sakÄ±n.\nEÄŸer bir daha seni buralarda gÃ¶rÃ¼rsem teklif olmayacak!\n");
 													system("PAUSE");
 													system("CLS");
-													printf("-Düşünmeme izin ver...\n");
+													printf("-DÃ¼ÅŸÃ¼nmeme izin ver...\n");
 													system("PAUSE");
 													system("CLS");
 													while(intmagara!=0){
-														printf("[1]Teklifi kabul et(-50 Altın)\n[2]Teklifi reddet(+40 Onur)\n");
+														printf("[1]Teklifi kabul et(-50 AltÄ±n)\n[2]Teklifi reddet(+40 Onur)\n");
 														scanf("%d",&intmagarateklif1);
 														system("CLS");
 														
@@ -3485,33 +3485,33 @@ int main ()
 															altin-=50;
 															system("PAUSE");
 															system("CLS");
-															printf("-50 Altın\n");
+															printf("-50 AltÄ±n\n");
 															intmagarateklif1sayac=1;
 															system("PAUSE");
 															system("CLS");
-															printf("-Güzel, akıllı insanları severim. Bir daha seni buralarda görmeyim.\n");
+															printf("-GÃ¼zel, akÄ±llÄ± insanlarÄ± severim. Bir daha seni buralarda gÃ¶rmeyim.\n");
 															system("PAUSE");
 															system("CLS");
 															break;
 														}
 														
 														else if(intmagarateklif1==2){
-															printf("-Ne olduğu belli olmayan biri için değil 50 altın, 1 altın bile harcamam.\n");
+															printf("-Ne olduÄŸu belli olmayan biri iÃ§in deÄŸil 50 altÄ±n, 1 altÄ±n bile harcamam.\n");
 															onur+=40;
 															printf("+40 Onur\n");
 															intmagarateklif1sayac=1;
 															system("PAUSE");
 															system("CLS");
-															printf("-Peki yabancı. Fazlasıyla cesursun. Ancak cesaretle aptallık arasında ince bir çizgi vardır bilir misin?\nAptallar hakettiğini bulsun o zaman!\n");
-															printf("(Kılıcını çıkarır)\n");
+															printf("-Peki yabancÄ±. FazlasÄ±yla cesursun. Ancak cesaretle aptallÄ±k arasÄ±nda ince bir Ã§izgi vardÄ±r bilir misin?\nAptallar hakettiÄŸini bulsun o zaman!\n");
+															printf("(KÄ±lÄ±cÄ±nÄ± Ã§Ä±karÄ±r)\n");
 															system("PAUSE");
 															system("CLS");
-															printf("DÖVÜŞ EKLENECEK\n"); //DÖVÜŞ EKLENECEK
+															printf("DÃ–VÃœÅ EKLENECEK\n"); //DÃ–VÃœÅ EKLENECEK
 															break;
 														}
 														
 														else{
-															printf("İnsansı sinirlenmeye başlıyor\n");
+															printf("Ä°nsansÄ± sinirlenmeye baÅŸlÄ±yor\n");
 															system("PAUSE");
 															system("CLS");
 														}
@@ -3523,11 +3523,11 @@ int main ()
 												}
 												
 												else{
-													printf("-Yine mi sen! Gel bakalım.\n");
-													printf("(Kılıcını çıkarır)\n");
+													printf("-Yine mi sen! Gel bakalÄ±m.\n");
+													printf("(KÄ±lÄ±cÄ±nÄ± Ã§Ä±karÄ±r)\n");
 													system("PAUSE");
 													system("CLS");
-													printf("DÖVÜŞ EKLENECEK\n"); //DÖVÜŞ EKLENECEK
+													printf("DÃ–VÃœÅ EKLENECEK\n"); //DÃ–VÃœÅ EKLENECEK
 													break;	
 												}
 												
@@ -3535,31 +3535,31 @@ int main ()
 											
 										}
 										
-										else if(intmagarasecim3==2){ //Alev ölüm
-											printf("Yürüdükçe çığlık seslerinin azaldığını, ancak aydınlığın arttığını farkediyorsun\n");
+										else if(intmagarasecim3==2){ //Alev Ã¶lÃ¼m
+											printf("YÃ¼rÃ¼dÃ¼kÃ§e Ã§Ä±ÄŸlÄ±k seslerinin azaldÄ±ÄŸÄ±nÄ±, ancak aydÄ±nlÄ±ÄŸÄ±n arttÄ±ÄŸÄ±nÄ± farkediyorsun\n");
 											system("PAUSE");
 											system("CLS");
-											printf("Ve işte geldin. Kendini alevlerin ortasına atacaksın\n");
-											printf("Hayatın gözünün önünden geçiyor. Başarıların, başarısızlıkların...\n");
+											printf("Ve iÅŸte geldin. Kendini alevlerin ortasÄ±na atacaksÄ±n\n");
+											printf("HayatÄ±n gÃ¶zÃ¼nÃ¼n Ã¶nÃ¼nden geÃ§iyor. BaÅŸarÄ±larÄ±n, baÅŸarÄ±sÄ±zlÄ±klarÄ±n...\n");
 											system("PAUSE");
 											system("CLS");
 											printf("Yolun sonuna geldik %s...\n",isim);
 											system("PAUSE");
 											system("CLS");
-											printf("Kendini alevlerin ortasına attın. Belki de birileri duymuştur son çığlıklarını...\n");
+											printf("Kendini alevlerin ortasÄ±na attÄ±n. Belki de birileri duymuÅŸtur son Ã§Ä±ÄŸlÄ±klarÄ±nÄ±...\n");
 											system("PAUSE");
 											system("CLS");
-											printf("--------------------------------------\nBu acımasız hayata gözlerini yumdun...\n--------------------------------------\n");
-											printf("Toplam Geçirilen Gün: %d\n",gun); //GÜNÜ EKLE
-											printf("Tamamlanan Görevler: %d/%d\n");
-											printf("Kazandığın Para: %d\n");
-											printf("Harcadığın Para: %d\n");
+											printf("--------------------------------------\nBu acÄ±masÄ±z hayata gÃ¶zlerini yumdun...\n--------------------------------------\n");
+											printf("Toplam GeÃ§irilen GÃ¼n: %d\n",gun); //GÃœNÃœ EKLE
+											printf("Tamamlanan GÃ¶revler: %d/%d\n");
+											printf("KazandÄ±ÄŸÄ±n Para: %d\n");
+											printf("HarcadÄ±ÄŸÄ±n Para: %d\n");
 											printf("--------------------------------------\n");
 											return 0;
 											
 										}
 										
-										else if(intmagarasecim3==3){ //Geri dön
+										else if(intmagarasecim3==3){ //Geri dÃ¶n
 											break;
 										}
 									
@@ -3567,25 +3567,25 @@ int main ()
 									
 								}
 								
-								else if(intmagarayolsecim2==3){ //Sağ
-									printf("Sağa doğru hareket ettin\n");
+								else if(intmagarayolsecim2==3){ //SaÄŸ
+									printf("SaÄŸa doÄŸru hareket ettin\n");
 									while(intmagara!=0){
-										printf("[1]Hemen bir ip bul ve sonsuzluğa kavuş\n[2]Etrafta biraz gezin\n[3]Geri dön\n");
+										printf("[1]Hemen bir ip bul ve sonsuzluÄŸa kavuÅŸ\n[2]Etrafta biraz gezin\n[3]Geri dÃ¶n\n");
 										scanf("%d",&intmagarasecim4);
 										system("CLS");
 										
-										if(intmagarasecim4==1){ //İp ölüm
+										if(intmagarasecim4==1){ //Ä°p Ã¶lÃ¼m
 											printf("Yolun sonuna geldik %s...\n",isim);
 											system("PAUSE");
 											system("CLS");
-											printf("Kararını verdin. Acısız bir ölüm oldu\n");
+											printf("KararÄ±nÄ± verdin. AcÄ±sÄ±z bir Ã¶lÃ¼m oldu\n");
 											system("PAUSE");
 											system("CLS");
-											printf("--------------------------------------\nBu acımasız hayata gözlerini yumdun...\n--------------------------------------\n");
-											printf("Toplam Geçirilen Gün: %d\n",gun); //GÜNÜ EKLE
-											printf("Tamamlanan Görevler: %d/%d\n");
-											printf("Kazandığın Para: %d\n");
-											printf("Harcadığın Para: %d\n");
+											printf("--------------------------------------\nBu acÄ±masÄ±z hayata gÃ¶zlerini yumdun...\n--------------------------------------\n");
+											printf("Toplam GeÃ§irilen GÃ¼n: %d\n",gun); //GÃœNÃœ EKLE
+											printf("Tamamlanan GÃ¶revler: %d/%d\n");
+											printf("KazandÄ±ÄŸÄ±n Para: %d\n");
+											printf("HarcadÄ±ÄŸÄ±n Para: %d\n");
 											printf("--------------------------------------\n");
 											printf("Yolun sonuna geldik %s...\n",isim);
 											return 0;
@@ -3594,9 +3594,9 @@ int main ()
 										else if(intmagarasecim4==2){ //Gezin
 										
 											if(intmagaragezinsecimi==0){
-												printf("Bir meşale buldun ve artık etrafı daha iyi görüyorsun\n");
-												printf("Korkunç bir manzara...\nHeryerde ipe asılmış koca hayatlar...\n");
-												printf("Biraz gezindikten sonra birdenbire konuşma sesleri duyuyorsun\n");
+												printf("Bir meÅŸale buldun ve artÄ±k etrafÄ± daha iyi gÃ¶rÃ¼yorsun\n");
+												printf("KorkunÃ§ bir manzara...\nHeryerde ipe asÄ±lmÄ±ÅŸ koca hayatlar...\n");
+												printf("Biraz gezindikten sonra birdenbire konuÅŸma sesleri duyuyorsun\n");
 											}
 											
 											intmagaragezinsecimi=1;
@@ -3604,113 +3604,113 @@ int main ()
 											while(intmagara!=0){
 											
 												if(intmagaragorevi1==0){
-													printf("[1]Sese doğru git\n[2]Gezinmeye devam et\n[3]Geri dön\n");
+													printf("[1]Sese doÄŸru git\n[2]Gezinmeye devam et\n[3]Geri dÃ¶n\n");
 												}
 											
 												else{
-													printf("[1]İhtiyar Büyücünün yanına git\n[2]Gezinmeye devam et\n[3]Geri dön\n");	
+													printf("[1]Ä°htiyar BÃ¼yÃ¼cÃ¼nÃ¼n yanÄ±na git\n[2]Gezinmeye devam et\n[3]Geri dÃ¶n\n");	
 												}
 											
 												scanf("%d",&intmagarasecim5);
 								            	system("CLS");
 												
-												if(intmagarasecim5==1){ //Sese git yılan görevi
-													if(intmagaragorevi1==0){ //Mağara görevi yapılmadı ilk defa gelindi 
-														printf("Mağaranın içinde ilerledikçe sesleri daha net duyuyorsun\nÜrpertici\n");
-														printf("Oraya gitmek istediğinden emin misin?\n[1]Devam et\n[2]Ayrıl\n");
+												if(intmagarasecim5==1){ //Sese git yÄ±lan gÃ¶revi
+													if(intmagaragorevi1==0){ //MaÄŸara gÃ¶revi yapÄ±lmadÄ± ilk defa gelindi 
+														printf("MaÄŸaranÄ±n iÃ§inde ilerledikÃ§e sesleri daha net duyuyorsun\nÃœrpertici\n");
+														printf("Oraya gitmek istediÄŸinden emin misin?\n[1]Devam et\n[2]AyrÄ±l\n");
 														scanf("%d",&intmagaragorevkarar);
 														system("CLS");
 														
-														if(intmagaragorevkarar==1){ //Göreve gir
-															printf("Gelen seslerin insan sesi olduğunu anlıyorsun ama konuşan her kimse senin bilmediğin bir dili konuşuyor\n");
-															printf("En son çocukluğunda bu dili duymuştun\n");
+														if(intmagaragorevkarar==1){ //GÃ¶reve gir
+															printf("Gelen seslerin insan sesi olduÄŸunu anlÄ±yorsun ama konuÅŸan her kimse senin bilmediÄŸin bir dili konuÅŸuyor\n");
+															printf("En son Ã§ocukluÄŸunda bu dili duymuÅŸtun\n");
 															system("PAUSE");
 															system("CLS");
-															printf("İlerledikçe 7 tane meşalenin ortasında oturan 80 Yaşlarında saçlarına ve sakallarına aklar düşmüş bir adamı gördün.\nOna yaklaşıyorsun...\n");
-															printf("Bir anda\n-DUR!\ndiye bağırdı\n");
+															printf("Ä°lerledikÃ§e 7 tane meÅŸalenin ortasÄ±nda oturan 80 YaÅŸlarÄ±nda saÃ§larÄ±na ve sakallarÄ±na aklar dÃ¼ÅŸmÃ¼ÅŸ bir adamÄ± gÃ¶rdÃ¼n.\nOna yaklaÅŸÄ±yorsun...\n");
+															printf("Bir anda\n-DUR!\ndiye baÄŸÄ±rdÄ±\n");
 															system("PAUSE");
 															system("CLS");
-															printf("Birkaç dakika sonra oturduğu yerden kalktı ve yanına yaklaştı\n");
+															printf("BirkaÃ§ dakika sonra oturduÄŸu yerden kalktÄ± ve yanÄ±na yaklaÅŸtÄ±\n");
 															system("PAUSE");
 															system("CLS");
-															printf("Hayattan bıkmış bir biçimde,\n");
-															printf("-Hoşgeldin %s.\n",isim);
+															printf("Hayattan bÄ±kmÄ±ÅŸ bir biÃ§imde,\n");
+															printf("-HoÅŸgeldin %s.\n",isim);
 															system("PAUSE");
 															system("CLS");
-															printf("-Merhaba. İsmimi nereden biliyorsun ihtiyar?\n");
+															printf("-Merhaba. Ä°smimi nereden biliyorsun ihtiyar?\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Buraya geleceğin belliydi. Her özel savaşçı buraya gelmiştir. Sen de onlardan birisin işte...\n");
+															printf("-Buraya geleceÄŸin belliydi. Her Ã¶zel savaÅŸÃ§Ä± buraya gelmiÅŸtir. Sen de onlardan birisin iÅŸte...\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Az önce konuştuğun dil, yaptığın ritüelimsi şeyler. Bunların açıklaması nedir?\n");
+															printf("-Az Ã¶nce konuÅŸtuÄŸun dil, yaptÄ±ÄŸÄ±n ritÃ¼elimsi ÅŸeyler. BunlarÄ±n aÃ§Ä±klamasÄ± nedir?\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Her zaman böyle meraklı mısındır %s?\n",isim);
+															printf("-Her zaman bÃ¶yle meraklÄ± mÄ±sÄ±ndÄ±r %s?\n",isim);
 															system("PAUSE");
 															system("CLS");
-															printf("-Yeri geldiğinde herkes biraz meraklı olmalı. Her neyse, gerçekten burada ne yapıyorsun?\n");
+															printf("-Yeri geldiÄŸinde herkes biraz meraklÄ± olmalÄ±. Her neyse, gerÃ§ekten burada ne yapÄ±yorsun?\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Ben uzun yıllardır burada yaşarım.\n");
+															printf("-Ben uzun yÄ±llardÄ±r burada yaÅŸarÄ±m.\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Burada mı? Bir mağarada öyle mi?\n");
+															printf("-Burada mÄ±? Bir maÄŸarada Ã¶yle mi?\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Evet. Dışarıda işler hiç iyi gitmiyor %s.\n",isim);
+															printf("-Evet. DÄ±ÅŸarÄ±da iÅŸler hiÃ§ iyi gitmiyor %s.\n",isim);
 															system("PAUSE");
 															system("CLS");
 															printf("-Neler biliyorsun ihtiyar?\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Zamanı geldiğinde öğreneceksin. Ama şuan senden yapmanı istediğim bir şey var.\n");
+															printf("-ZamanÄ± geldiÄŸinde Ã¶ÄŸreneceksin. Ama ÅŸuan senden yapmanÄ± istediÄŸim bir ÅŸey var.\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Ben yaşlı bir adamım %s, güçlerim ve yeteneklerim sınırlı.\n",isim);
+															printf("-Ben yaÅŸlÄ± bir adamÄ±m %s, gÃ¼Ã§lerim ve yeteneklerim sÄ±nÄ±rlÄ±.\n",isim);
 															system("PAUSE");
 															system("CLS");
 															printf("-Dinliyorum ihtiyar.\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Güçlerim bu gezegenin yok olmaması için gerekli %s. Bunu çok kişiye anlattım ama inanmadılar.\nHaksız değiller tabi, ölmekte olan bir ihtiyara kim inanır ki?\n",isim);
+															printf("-GÃ¼Ã§lerim bu gezegenin yok olmamasÄ± iÃ§in gerekli %s. Bunu Ã§ok kiÅŸiye anlattÄ±m ama inanmadÄ±lar.\nHaksÄ±z deÄŸiller tabi, Ã¶lmekte olan bir ihtiyara kim inanÄ±r ki?\n",isim);
 															system("PAUSE");
 															system("CLS");
 															printf("-Sadede gel ihtiyar.\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Bende olan bu laneti çözebilmem için bana 2 tane yılan yumurtası gerekli.\nYılan dediğime bakma, mağaradaki renk değiştiren Ölüm Yılanlarından bahsediyorum.\n");
+															printf("-Bende olan bu laneti Ã§Ã¶zebilmem iÃ§in bana 2 tane yÄ±lan yumurtasÄ± gerekli.\nYÄ±lan dediÄŸime bakma, maÄŸaradaki renk deÄŸiÅŸtiren Ã–lÃ¼m YÄ±lanlarÄ±ndan bahsediyorum.\n");
 															system("PAUSE");
 															system("CLS");
-															printf("-Eğer bana 2 tane Ölüm Yılanı yumurtası getirirsen 100 altın ile ödüllendirileceksin.\nNe düşünüyorsun?\n");
+															printf("-EÄŸer bana 2 tane Ã–lÃ¼m YÄ±lanÄ± yumurtasÄ± getirirsen 100 altÄ±n ile Ã¶dÃ¼llendirileceksin.\nNe dÃ¼ÅŸÃ¼nÃ¼yorsun?\n");
 															while(intmagara!=0){
-																printf("Görevi;\n[1]Kabul et\n[2]Reddet\n");
+																printf("GÃ¶revi;\n[1]Kabul et\n[2]Reddet\n");
 																scanf("%d",&intmagaragorev1secimi);
 																system("CLS");
 																
-																if(intmagaragorev1secimi==1){ //Görevi kabul et
-																	printf("-Mağaranın girişinde yol üçe ayrılır. Buraya geldiğine göre sağ tarafı seçmişsin.\nHerneyse, mağaranın girişinden düz git, yol ikiye ayrılacak. Sol tarafa git.\n");
+																if(intmagaragorev1secimi==1){ //GÃ¶revi kabul et
+																	printf("-MaÄŸaranÄ±n giriÅŸinde yol Ã¼Ã§e ayrÄ±lÄ±r. Buraya geldiÄŸine gÃ¶re saÄŸ tarafÄ± seÃ§miÅŸsin.\nHerneyse, maÄŸaranÄ±n giriÅŸinden dÃ¼z git, yol ikiye ayrÄ±lacak. Sol tarafa git.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Ha! Son olarak, çarşıda bulabileceğin 'uyutucu etkiye sahip kediotu'nu yılanların ortasına atarsan işin kolaylaşabilir.\n");
+																	printf("-Ha! Son olarak, Ã§arÅŸÄ±da bulabileceÄŸin 'uyutucu etkiye sahip kediotu'nu yÄ±lanlarÄ±n ortasÄ±na atarsan iÅŸin kolaylaÅŸabilir.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Anladım. Görüşmek üzere ihtiyar.\n");
+																	printf("-AnladÄ±m. GÃ¶rÃ¼ÅŸmek Ã¼zere ihtiyar.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Görüşmek üzere...\n");
+																	printf("-GÃ¶rÃ¼ÅŸmek Ã¼zere...\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-----------------------------------\nBÜYÜCÜNÜN YUMURTALARI GÖREVİ ALINDI\n-----------------------------------\n");
+																	printf("-----------------------------------\nBÃœYÃœCÃœNÃœN YUMURTALARI GÃ–REVÄ° ALINDI\n-----------------------------------\n");
 																	intmagaragorevi1=2;
 																	break;
 																}
 																
-																else if(intmagaragorev1secimi==2){ //Görevi reddet
-																	printf("-Şuan müsait değilim ihtiyar.\n");	
+																else if(intmagaragorev1secimi==2){ //GÃ¶revi reddet
+																	printf("-Åuan mÃ¼sait deÄŸilim ihtiyar.\n");	
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Anlıyorum evlat. Yalnız, bir an önce müsait olursan iyi olur.\n");
+																	printf("-AnlÄ±yorum evlat. YalnÄ±z, bir an Ã¶nce mÃ¼sait olursan iyi olur.\n");
 																	system("PAUSE");
 																	system("CLS");
 																	intmagaragorevi1=1;
@@ -3721,40 +3721,40 @@ int main ()
 															
 														}
 														
-														else if(intmagaragorevkarar==2){ //Göreve girme
+														else if(intmagaragorevkarar==2){ //GÃ¶reve girme
 															printf("Riske girmemeyi tercih ettin\n");
 															break;
 														}
 													
 													}
 													
-													else if(intmagaragorevi1==1){ //Mağara görevi dinlendi karar aşamasına geç
+													else if(intmagaragorevi1==1){ //MaÄŸara gÃ¶revi dinlendi karar aÅŸamasÄ±na geÃ§
 														while(intmagara!=0){
-																printf("Görevi\n[1]Kabul et\n[2]Reddet\n");
+																printf("GÃ¶revi\n[1]Kabul et\n[2]Reddet\n");
 																scanf("%d",&intmagaragorev1secimi);
 																system("CLS");
 															
-																if(intmagaragorev1secimi==1){ //Görevi kabul et
-																	printf("Mağaranın girişinde yol üçe ayrılır. Buraya geldiğine göre sağ tarafı seçmişsin.\nHerneyse, mağaranın girişinden düz git, yol ikiye ayrılacak. Sol tarafa git.\n");
+																if(intmagaragorev1secimi==1){ //GÃ¶revi kabul et
+																	printf("MaÄŸaranÄ±n giriÅŸinde yol Ã¼Ã§e ayrÄ±lÄ±r. Buraya geldiÄŸine gÃ¶re saÄŸ tarafÄ± seÃ§miÅŸsin.\nHerneyse, maÄŸaranÄ±n giriÅŸinden dÃ¼z git, yol ikiye ayrÄ±lacak. Sol tarafa git.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Ha! Son olarak, çarşıda bulabileceğin 'uyutucu etkiye sahip kediotu'nu yılanların ortasına atarsan işin kolaylaşabilir.\n");
+																	printf("-Ha! Son olarak, Ã§arÅŸÄ±da bulabileceÄŸin 'uyutucu etkiye sahip kediotu'nu yÄ±lanlarÄ±n ortasÄ±na atarsan iÅŸin kolaylaÅŸabilir.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Anladım. Görüşmek üzere ihtiyar.\n");
+																	printf("-AnladÄ±m. GÃ¶rÃ¼ÅŸmek Ã¼zere ihtiyar.\n");
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Görüşmek üzere...\n");
-																	printf("-----------------------------------\nBÜYÜCÜNÜN YUMURTALARI GÖREVİ ALINDI\n-----------------------------------\n");
+																	printf("-GÃ¶rÃ¼ÅŸmek Ã¼zere...\n");
+																	printf("-----------------------------------\nBÃœYÃœCÃœNÃœN YUMURTALARI GÃ–REVÄ° ALINDI\n-----------------------------------\n");
 																	intmagaragorevi1=2;
 																	break;
 																}
 																
-																else if(intmagaragorev1secimi==2){ //Görevi reddet
-																	printf("-Şuan müsait değilim ihtiyar.\n");	
+																else if(intmagaragorev1secimi==2){ //GÃ¶revi reddet
+																	printf("-Åuan mÃ¼sait deÄŸilim ihtiyar.\n");	
 																	system("PAUSE");
 																	system("CLS");
-																	printf("-Anlıyorum evlat. Yalnız, bir an önce müsait olursan iyi olur.\n");
+																	printf("-AnlÄ±yorum evlat. YalnÄ±z, bir an Ã¶nce mÃ¼sait olursan iyi olur.\n");
 																	system("PAUSE");
 																	system("CLS");
 																	intmagaragorevi1=1;
@@ -3765,47 +3765,47 @@ int main ()
 															
 													}
 													
-													else if(intmagaragorevi1==2){ //Mağara görevi alındı büyücüyle konuşma
-														printf("-Hoşgeldin %s.\n",isim);
+													else if(intmagaragorevi1==2){ //MaÄŸara gÃ¶revi alÄ±ndÄ± bÃ¼yÃ¼cÃ¼yle konuÅŸma
+														printf("-HoÅŸgeldin %s.\n",isim);
 														printf("-Sadece geziniyorum\n");
 													}
 													
-													else if(intmagaragorevi1==3 && yilanyumurtasi>=2){ //Mağara görevi tamamlanıyor
-														printf("-İşte. 2 adet Ölüm Yılanı yumurtası.\n");
+													else if(intmagaragorevi1==3 && yilanyumurtasi>=2){ //MaÄŸara gÃ¶revi tamamlanÄ±yor
+														printf("-Ä°ÅŸte. 2 adet Ã–lÃ¼m YÄ±lanÄ± yumurtasÄ±.\n");
 														system("PAUSE");
 														system("CLS");
 														yilanyumurtasi-=2;
-														printf("-Güzel. Teşekkür ederim %s.\n",isim);
+														printf("-GÃ¼zel. TeÅŸekkÃ¼r ederim %s.\n",isim);
 														system("PAUSE");
 														system("CLS");
-														printf("-Ne yapacaksın bu yumurtaları ihtiyar?\n");
+														printf("-Ne yapacaksÄ±n bu yumurtalarÄ± ihtiyar?\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Dedim ya, güçlerimin kaybolmamasını sağlayacak iksiri hazırlayacağım.\n");
+														printf("-Dedim ya, gÃ¼Ã§lerimin kaybolmamasÄ±nÄ± saÄŸlayacak iksiri hazÄ±rlayacaÄŸÄ±m.\n");
 														system("PAUSE");
 														system("CLS");
 														printf("-Peki ya bildiklerin?\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Tamam. Anlatacağım.\n");
+														printf("-Tamam. AnlatacaÄŸÄ±m.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Bu evrende kaç gezegen vardır bilir misin evlat?\n");
+														printf("-Bu evrende kaÃ§ gezegen vardÄ±r bilir misin evlat?\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Bazı söylentiler duydum çocukluğumdan beri\nAma doğrusunu bilmiyorum.\n");
+														printf("-BazÄ± sÃ¶ylentiler duydum Ã§ocukluÄŸumdan beri\nAma doÄŸrusunu bilmiyorum.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Evrenimizde 7 yarı-tanrı, 7 gezegen vardır\nBunlar; Yaşam ve doğa gezegeni\nBilgi gezegeni\nAşk ve Şehvet gezegeni\nTicaret gezegeni\nSavaş gezegeni ve Zulüm gezegeni\n");
+														printf("-Evrenimizde 7 yarÄ±-tanrÄ±, 7 gezegen vardÄ±r\nBunlar; YaÅŸam ve doÄŸa gezegeni\nBilgi gezegeni\nAÅŸk ve Åehvet gezegeni\nTicaret gezegeni\nSavaÅŸ gezegeni ve ZulÃ¼m gezegeni\n");
 														system("PAUSE");
 														system("CLS");
 														printf("-Peki ya 7.gezegen?\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-7. gezegen ya! Doğru. Fakat ben her şeyi bilemem %s.\n",isim);
+														printf("-7. gezegen ya! DoÄŸru. Fakat ben her ÅŸeyi bilemem %s.\n",isim);
 														system("PAUSE");
 														system("CLS");
-														printf("-Her gezegenin kendi içinde bir dengesi vardır. Maalesef son zamanlarda bu denge bozuluyor.\n");
+														printf("-Her gezegenin kendi iÃ§inde bir dengesi vardÄ±r. Maalesef son zamanlarda bu denge bozuluyor.\n");
 														system("PAUSE");
 														system("CLS");
 														printf("-Neden?\n");
@@ -3814,86 +3814,86 @@ int main ()
 														printf("-Masterlar...\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Masterlar mı?\nOnlar da ne?\n");
+														printf("-Masterlar mÄ±?\nOnlar da ne?\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Masterlar yarı-tanrılar tarafından görevlendirildi.\nGezegenler arası portalları ve bu portallardan geçenleri kontrol ederler.\n");
+														printf("-Masterlar yarÄ±-tanrÄ±lar tarafÄ±ndan gÃ¶revlendirildi.\nGezegenler arasÄ± portallarÄ± ve bu portallardan geÃ§enleri kontrol ederler.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Bunda bir sorun yok. Ancak son zamanlarda portallardan başka gezegenlere geçmek daha da kolaylaştı.\nArtık gelen geçen belli değil. Gezegenlerin dengesinin bozulmasının bir sebebi bu.\n");
+														printf("-Bunda bir sorun yok. Ancak son zamanlarda portallardan baÅŸka gezegenlere geÃ§mek daha da kolaylaÅŸtÄ±.\nArtÄ±k gelen geÃ§en belli deÄŸil. Gezegenlerin dengesinin bozulmasÄ±nÄ±n bir sebebi bu.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Çocukken bizi korkutmak için okutulan kitaplardaki yaratıkların bazılarını bu gezegende gördüm %s.\nOnların burada olmaması gerek.\n",isim);
+														printf("-Ã‡ocukken bizi korkutmak iÃ§in okutulan kitaplardaki yaratÄ±klarÄ±n bazÄ±larÄ±nÄ± bu gezegende gÃ¶rdÃ¼m %s.\nOnlarÄ±n burada olmamasÄ± gerek.\n",isim);
 														system("PAUSE");
 														system("CLS");
-														printf("-Hatta bir kere...üzere...\n");
+														printf("-Hatta bir kere...Ã¼zere...\n");
 														system("PAUSE");
 														system("CLS");
-														printf("(Büyücü iksiri hazırlarken kokusundan etkilendin)\n");
+														printf("(BÃ¼yÃ¼cÃ¼ iksiri hazÄ±rlarken kokusundan etkilendin)\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-En kısa zamanda dediğinizi yapacağım.\nŞimdi gitmem gerek.\n");
+														printf("-En kÄ±sa zamanda dediÄŸinizi yapacaÄŸÄ±m.\nÅimdi gitmem gerek.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Güzel. Hadi kolay gelsin!\n");
+														printf("-GÃ¼zel. Hadi kolay gelsin!\n");
 														system("PAUSE");
 														system("CLS");
-														printf("İntihar mağarasına doğru koşuyorsun\nHava o kadar sıcak ki mağaranın soğuğu bile serinletemiyor\n");
+														printf("Ä°ntihar maÄŸarasÄ±na doÄŸru koÅŸuyorsun\nHava o kadar sÄ±cak ki maÄŸaranÄ±n soÄŸuÄŸu bile serinletemiyor\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Sola doğru gidiyorsun\n");
+														printf("Sola doÄŸru gidiyorsun\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Kapının açık olduğunu görüp içeri giriyorsun\nMerdivenden iniyorsun\n");
+														printf("KapÄ±nÄ±n aÃ§Ä±k olduÄŸunu gÃ¶rÃ¼p iÃ§eri giriyorsun\nMerdivenden iniyorsun\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Odada üzerinde şarap şişesinden başka hiçbir şey olmayan bir masa ve bir sandık görüyorsun\n");
+														printf("Odada Ã¼zerinde ÅŸarap ÅŸiÅŸesinden baÅŸka hiÃ§bir ÅŸey olmayan bir masa ve bir sandÄ±k gÃ¶rÃ¼yorsun\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Sandığı tüm gücünle ittirirken...\n");
+														printf("SandÄ±ÄŸÄ± tÃ¼m gÃ¼cÃ¼nle ittirirken...\n");
 														system("PAUSE");
 														system("CLS");
 														printf("...\n");
 														system("PAUSE");
 														system("CLS");
-														printf("(Ayılıyorsun)\n");
+														printf("(AyÄ±lÄ±yorsun)\n");
 														system("PAUSE");
 														system("CLS");
-														printf("-Dediğim gibi %s. Dışarıda yaşıyorsan, dikkatli olacaksın.\n",isim);
+														printf("-DediÄŸim gibi %s. DÄ±ÅŸarÄ±da yaÅŸÄ±yorsan, dikkatli olacaksÄ±n.\n",isim);
 														system("PAUSE");
 														system("CLS");
-														printf("(Öksürük sesi)\nVerdiğin bilgiler için teşekkür ederim ihtiyar.\nBen kalkayım artık.\n");
+														printf("(Ã–ksÃ¼rÃ¼k sesi)\nVerdiÄŸin bilgiler iÃ§in teÅŸekkÃ¼r ederim ihtiyar.\nBen kalkayÄ±m artÄ±k.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Tamam. Ha! Az daha ödülü vermeyi unutuyordum.\n");
+														printf("Tamam. Ha! Az daha Ã¶dÃ¼lÃ¼ vermeyi unutuyordum.\n");
 														system("PAUSE");
 														system("CLS");
-														printf("İşte söz verdiğim gibi, 100 altın.\n");
+														printf("Ä°ÅŸte sÃ¶z verdiÄŸim gibi, 100 altÄ±n.\n");
 														altin+=100;
 														onur+=50;
-														printf("+100 Altın\n");
+														printf("+100 AltÄ±n\n");
 														system("PAUSE");
 														system("CLS");
-														printf("---------------------------------------\nBÜYÜCÜNÜN YUMURTALARI GÖREVİ TAMAMLANDI\n---------------------------------------\n");
+														printf("---------------------------------------\nBÃœYÃœCÃœNÃœN YUMURTALARI GÃ–REVÄ° TAMAMLANDI\n---------------------------------------\n");
 														intmagaragorevi1=4;
 														printf("+50 Onur\n");
 														system("PAUSE");
 														system("CLS");
-														printf("Artık büyücüye gelip bilgi alabilirsin!!\n");
+														printf("ArtÄ±k bÃ¼yÃ¼cÃ¼ye gelip bilgi alabilirsin!!\n");
 														system("PAUSE");
 														system("CLS");
 													}
 													
-													else if(intmagaragorevi1==4){ //Görev tamamen bitti büyücü ile konuşma para karşılığı bilgi olabilir
+													else if(intmagaragorevi1==4){ //GÃ¶rev tamamen bitti bÃ¼yÃ¼cÃ¼ ile konuÅŸma para karÅŸÄ±lÄ±ÄŸÄ± bilgi olabilir
 														
 														while(intmagara!=0){
-															printf("Hoşgeldin %s\nSenin için ne yapabilirim?\n",isim);
-															printf("[1]Elinde hangi bilgiler varmış görelim\n[2]Yetenek üretmek istiyorum\n[3]Verdiğin bilgilerin ne işe yaradığını söyle\n[4]Ayrıl\n");
+															printf("HoÅŸgeldin %s\nSenin iÃ§in ne yapabilirim?\n",isim);
+															printf("[1]Elinde hangi bilgiler varmÄ±ÅŸ gÃ¶relim\n[2]Yetenek Ã¼retmek istiyorum\n[3]VerdiÄŸin bilgilerin ne iÅŸe yaradÄ±ÄŸÄ±nÄ± sÃ¶yle\n[4]AyrÄ±l\n");
 															scanf("%d",&intmagarasecim8);
 															system("CLS");
 															
 															if(intmagarasecim8==1){
-																printf("DÜZENLENECEK\n");//DÜZENLENECEK******************************************
+																printf("DÃœZENLENECEK\n");//DÃœZENLENECEK******************************************
 																while(intmagara!=0){
 																	
 																	intbilgisayfa=1;
@@ -3903,74 +3903,74 @@ int main ()
 																		printf("Elimdeki Bilgiler\n");
 																		
 																		if(bilgi[0]==0){
-																			printf("[1] Yedinci Gezegenin Adı: X Altın\n");
+																			printf("[1] Yedinci Gezegenin AdÄ±: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[0]==1){
-																			printf("[1] Yedinci Gezegenin Adı (ALINDI)\n");	
+																			printf("[1] Yedinci Gezegenin AdÄ± (ALINDI)\n");	
 																		}
 																		
 																		if(bilgi[1]==0){
-																			printf("[2] Doğa ve Yaşam Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[2] DoÄŸa ve YaÅŸam Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[1]==1){
-																			printf("[2] Doğa ve Yaşam Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[2] DoÄŸa ve YaÅŸam Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[2]==0){
-																			printf("[3] Bilgi Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[3] Bilgi Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[2]==1){
-																			printf("[3] Bilgi Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[3] Bilgi Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[3]==0){
-																			printf("[4] Aşk ve Şehvet Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[4] AÅŸk ve Åehvet Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[3]==1){
-																			printf("[4] Aşk ve Şehvet Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[4] AÅŸk ve Åehvet Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[4]==0){
-																			printf("[5] Ticaret Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[5] Ticaret Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[4]==1){
-																			printf("[5] Ticaret Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[5] Ticaret Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[5]==0){
-																			printf("[6] Savaş Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[6] SavaÅŸ Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[5]==1){
-																			printf("[6] Savaş Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[6] SavaÅŸ Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[6]==0){
-																			printf("[7] Zulüm Gezegeninin Yarı Tanrısının Özellikleri: X Altın\n");
+																			printf("[7] ZulÃ¼m Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri: X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[6]==1){
-																			printf("[7] Zulüm Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[7] ZulÃ¼m Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
 																		if(bilgi[7]==0){
-																			printf("[8] X Gezegeninin Yarı Tanrısının Özellikleri(Bunu açmak için Yedinci Gezegenin adını öğrenmelisin!!): X Altın\n");
+																			printf("[8] X Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri(Bunu aÃ§mak iÃ§in Yedinci Gezegenin adÄ±nÄ± Ã¶ÄŸrenmelisin!!): X AltÄ±n\n");
 																		}
 																		
 																		else if(bilgi[7]==1){
-																			printf("[8] X Gezegeninin Yarı Tanrısının Özellikleri (ALINDI)\n");
+																			printf("[8] X Gezegeninin YarÄ± TanrÄ±sÄ±nÄ±n Ã–zellikleri (ALINDI)\n");
 																		}
 																		
-																		printf("[9] Geri dön\n");
-																		printf("[10] 2.Sayfaya Geç\n");
+																		printf("[9] Geri dÃ¶n\n");
+																		printf("[10] 2.Sayfaya GeÃ§\n");
 																		printf("----------------------------------------------------1.SAYFA----------------------------------------------------\n");
 																		
-																		printf("Seçimini Yap\n");
+																		printf("SeÃ§imini Yap\n");
 																		scanf("%d",&intbilgisec1);
 																		system("CLS");
 																		
@@ -3981,7 +3981,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[0]=1;
 																			}
 																			
@@ -3997,7 +3997,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[1]=1;
 																			}
 																			
@@ -4013,7 +4013,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[2]=1;
 																			}
 																			
@@ -4029,7 +4029,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[3]=1;
 																			}
 																			
@@ -4045,7 +4045,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[4]=1;
 																			}
 																			
@@ -4061,7 +4061,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[5]=1;
 																			}
 																			
@@ -4077,7 +4077,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[6]=1;
 																			}
 																			
@@ -4093,7 +4093,7 @@ int main ()
 																			}
 																			
 																			else{
-																				printf("Satın aldın\n");
+																				printf("SatÄ±n aldÄ±n\n");
 																				bilgi[7]=1;
 																			}
 																			
@@ -4102,11 +4102,11 @@ int main ()
 																			
 																		}
 																		
-																		else if(intbilgisec1==9){ //Geri dön
+																		else if(intbilgisec1==9){ //Geri dÃ¶n
 																			break;
 																		}
 																		
-																		else if(intbilgisec1==10){ //2.Sayfaya geç
+																		else if(intbilgisec1==10){ //2.Sayfaya geÃ§
 																			intbilgisayfa=2;
 																			system("PAUSE");
 																			system("CLS");
@@ -4117,15 +4117,15 @@ int main ()
 																	if(intbilgisayfa==2){
 																		while(intmagara!=0){
 																			printf("2.SAYFA EKLENECEK\n");
-																			printf("[1] İlk seçenek\n");
-																			printf("[2] 1.Sayfaya Geç\n");
+																			printf("[1] Ä°lk seÃ§enek\n");
+																			printf("[2] 1.Sayfaya GeÃ§\n");
 																			printf("----------------------------------------------------2.SAYFA----------------------------------------------------\n");
-																			printf("Seçimini Yap\n");
+																			printf("SeÃ§imini Yap\n");
 																			scanf("%d",&intbilgisec2);
 																			system("CLS");
 																			
 																			if(intbilgisec2==1){
-																				printf("İlk seçeneği aldın (DENEME)\n");
+																				printf("Ä°lk seÃ§eneÄŸi aldÄ±n (DENEME)\n");
 																			}
 																			
 																			else if(intbilgisec2==2){
@@ -4137,16 +4137,16 @@ int main ()
 																		
 																	}
 																	
-																} //while bitişi
+																} //while bitiÅŸi
 																
 															}
 															
 															else if(intmagarasecim8==2){
-																printf("DÜZENLENECEK\n"); //DÜZENLENECEK
+																printf("DÃœZENLENECEK\n"); //DÃœZENLENECEK
 															}
 															
 															else if(intmagarasecim8==3){
-																printf("Verdiğim bilgileri birleştirerek yeni yetenekler üretip kullanabilirsin\n");
+																printf("VerdiÄŸim bilgileri birleÅŸtirerek yeni yetenekler Ã¼retip kullanabilirsin\n");
 																system("PAUSE");
 																system("CLS");
 															}
@@ -4164,83 +4164,83 @@ int main ()
 													
 												}
 												
-												else if(intmagarasecim5==2){ //Gezinmeye devam et böcekler
+												else if(intmagarasecim5==2){ //Gezinmeye devam et bÃ¶cekler
 													
 													if(intbocekgorme==0){
-														printf("Etrafta böceklerin olduğunu görünce iğreniyorsun.\n");
-														printf("O da ne!!\nYaklaşık 2 Metre boyunda kocaman bir hamam böceği!!\nİğrenç...\n");
+														printf("Etrafta bÃ¶ceklerin olduÄŸunu gÃ¶rÃ¼nce iÄŸreniyorsun.\n");
+														printf("O da ne!!\nYaklaÅŸÄ±k 2 Metre boyunda kocaman bir hamam bÃ¶ceÄŸi!!\nÄ°ÄŸrenÃ§...\n");
 														intbocekgorme=1;
 													}
 													
 													else{
-														printf("Hamam böceği hala orada\n");	
+														printf("Hamam bÃ¶ceÄŸi hala orada\n");	
 													}
 				
-													printf("[1]Saldır\n[2]Saklan\n[3]Kaç\n");
+													printf("[1]SaldÄ±r\n[2]Saklan\n[3]KaÃ§\n");
 													scanf("%d",&intmagarasecimbocek1);
 													system("CLS");
 													
-													if(intmagarasecimbocek1==1){ //Saldır EKLENECEK
+													if(intmagarasecimbocek1==1){ //SaldÄ±r EKLENECEK
 															
 													}
 													
 													else if(intmagarasecimbocek1==2){ //Saklan
-														printf("Hemen bir taşın arkasına saklandın\n");
+														printf("Hemen bir taÅŸÄ±n arkasÄ±na saklandÄ±n\n");
 														if(intmagaraokalma==0){
-															printf("Şansa bak!!\nYanında yakın zamanda kendi hayatına kıymış birinin oklarını buldun\n");
-															printf("Kıyafetlerine baktığında onun bir savaşçının cesedi olduğunu anladın\nOklar hala kullanılabilir durumda\n");
-															printf("[1]Okları topla(Onurun düşer)\n[2]Görmezden gel\n");
+															printf("Åansa bak!!\nYanÄ±nda yakÄ±n zamanda kendi hayatÄ±na kÄ±ymÄ±ÅŸ birinin oklarÄ±nÄ± buldun\n");
+															printf("KÄ±yafetlerine baktÄ±ÄŸÄ±nda onun bir savaÅŸÃ§Ä±nÄ±n cesedi olduÄŸunu anladÄ±n\nOklar hala kullanÄ±labilir durumda\n");
+															printf("[1]OklarÄ± topla(Onurun dÃ¼ÅŸer)\n[2]GÃ¶rmezden gel\n");
 															scanf("%d",&intmagaraoktopla);
 															system("CLS");
 															
-															if(intmagaraoktopla==1){ //Ok almaya çalıştı
+															if(intmagaraoktopla==1){ //Ok almaya Ã§alÄ±ÅŸtÄ±
 																srand(time(NULL));
 																intmagaraoktoplasans=rand()%10;
 																
 																if(intmagaraoktoplasans>=0 && intmagaraoktoplasans<8){
 																	ok[0]+=50;
-																	printf("Okları topladın ama galiba bir savaşçının oklarını çalmanın ne anlama geldiği hakkında bir fikrin yok!\n");
-																	printf("Yaşasa da Yaşamasa da...\n");
+																	printf("OklarÄ± topladÄ±n ama galiba bir savaÅŸÃ§Ä±nÄ±n oklarÄ±nÄ± Ã§almanÄ±n ne anlama geldiÄŸi hakkÄ±nda bir fikrin yok!\n");
+																	printf("YaÅŸasa da YaÅŸamasa da...\n");
 																	onur-=30;
-																	printf("30 Onur Kaybettin!\nSessizce uzaklaşıyorsun\n");
+																	printf("30 Onur Kaybettin!\nSessizce uzaklaÅŸÄ±yorsun\n");
 																	system("PAUSE");
 																	system("CLS");
 																}
 																
-																else{ //Ayağın kaydı
-																	printf("Yere düşmüş sadağı yavaşça almaya çalışırken ayağın kaydı ve biraz ses yaptın!\n");
+																else{ //AyaÄŸÄ±n kaydÄ±
+																	printf("Yere dÃ¼ÅŸmÃ¼ÅŸ sadaÄŸÄ± yavaÅŸÃ§a almaya Ã§alÄ±ÅŸÄ±rken ayaÄŸÄ±n kaydÄ± ve biraz ses yaptÄ±n!\n");
 																	srand(time(NULL));
 																	intmagarasesyapmasans=rand()%10;
 																	
 																	if(intmagarasesyapmasans>=0 && intmagarasesyapmasans<5){ 
 																		ok[0]+=50;
-																		printf("Neyseki hamam böceği bunu duymadı\nŞanslı günündesin...\n");
-																		printf("Okları topladın ama galiba bir savaşçının oklarını çalmanın ne anlama geldiği hakkında bir fikrin yok!\n");
-																		printf("Yaşasa da Yaşamasa da...\n");
+																		printf("Neyseki hamam bÃ¶ceÄŸi bunu duymadÄ±\nÅanslÄ± gÃ¼nÃ¼ndesin...\n");
+																		printf("OklarÄ± topladÄ±n ama galiba bir savaÅŸÃ§Ä±nÄ±n oklarÄ±nÄ± Ã§almanÄ±n ne anlama geldiÄŸi hakkÄ±nda bir fikrin yok!\n");
+																		printf("YaÅŸasa da YaÅŸamasa da...\n");
 																		onur-=30;
 																		printf("30 Onur Kaybettin!\n");	
 																	}
 																	
 																	else{
-																		printf("Olamaz!\nHamam böceği bunu duymuş olmalı\n");
-																		printf("Hemen karar ver!\n[1]Saklanmaya devam et\n[2]Hızlıca kaç\n");
+																		printf("Olamaz!\nHamam bÃ¶ceÄŸi bunu duymuÅŸ olmalÄ±\n");
+																		printf("Hemen karar ver!\n[1]Saklanmaya devam et\n[2]HÄ±zlÄ±ca kaÃ§\n");
 																		scanf("%d",&intmagarabocekkac);
 																		system("CLS");
 																		
 																		if(intmagarabocekkac==1){ //Saklanmaya devam
-																			printf("Hamam böceği bugün tembel gününde. Seni umursamadı.\n");
+																			printf("Hamam bÃ¶ceÄŸi bugÃ¼n tembel gÃ¼nÃ¼nde. Seni umursamadÄ±.\n");
 																		}
 																		
-																		else if(intmagarabocekkac==2){ //Hızlıca Kaç
+																		else if(intmagarabocekkac==2){ //HÄ±zlÄ±ca KaÃ§
 																			
 																			if(hiz>100){
-																				printf("Hız yeteneğin çok iyi olduğu için sıkıntısız bir şekilde ortamdan uzaklaştın\n");	
+																				printf("HÄ±z yeteneÄŸin Ã§ok iyi olduÄŸu iÃ§in sÄ±kÄ±ntÄ±sÄ±z bir ÅŸekilde ortamdan uzaklaÅŸtÄ±n\n");	
 																			}
 																			
 																			else{
-																				printf("Koşarken ayağın bir taşa takıldı ve yere düştün\n");
+																				printf("KoÅŸarken ayaÄŸÄ±n bir taÅŸa takÄ±ldÄ± ve yere dÃ¼ÅŸtÃ¼n\n");
 																				can-=20;
-																				printf("20 Can Azaldı!!\n");
+																				printf("20 Can AzaldÄ±!!\n");
 																			}
 																			
 																		}
@@ -4251,11 +4251,11 @@ int main ()
 																
 															}
 															
-															else if(intmagaraoktopla==2){ //Ok almadı
-																printf("Onurlu bir savaşçı olma yolunda önemli bir test\n");
+															else if(intmagaraoktopla==2){ //Ok almadÄ±
+																printf("Onurlu bir savaÅŸÃ§Ä± olma yolunda Ã¶nemli bir test\n");
 																onur+=10;
-																printf("10 Onur Kazandın!\n");
-																printf("Buradan uzaklaşmanın tam zamanı\n");
+																printf("10 Onur KazandÄ±n!\n");
+																printf("Buradan uzaklaÅŸmanÄ±n tam zamanÄ±\n");
 																system("PAUSE");
 																system("CLS");
 																intmagaraokalma=1;
@@ -4264,40 +4264,40 @@ int main ()
 														}
 														
 														else{
-															printf("Hamam böceği seni duymuş olsa da pek de umursamadı\n");
-															printf("Sessizce uzaklaşıyorsun\n");
+															printf("Hamam bÃ¶ceÄŸi seni duymuÅŸ olsa da pek de umursamadÄ±\n");
+															printf("Sessizce uzaklaÅŸÄ±yorsun\n");
 															break;
 														}
 														
 													}
 													
-													else if(intmagarasecimbocek1==3){ //Kaçmaya Çalıştın
+													else if(intmagarasecimbocek1==3){ //KaÃ§maya Ã‡alÄ±ÅŸtÄ±n
 														srand(time(NULL));
 														intboceksans=rand()%2;
 														
-														if(intboceksans==0){ //Kaçtın
-															printf("Kaçmayı başardığın için şanslısın\n");
+														if(intboceksans==0){ //KaÃ§tÄ±n
+															printf("KaÃ§mayÄ± baÅŸardÄ±ÄŸÄ±n iÃ§in ÅŸanslÄ±sÄ±n\n");
 														}
 														
-														else{ //Kaçamadın
-															printf("Olamaz!!\nHamam böceği seni duymuş olmalı.\n[1]Onunla dovüş\n[2]Konuşmaya çalış\n");
+														else{ //KaÃ§amadÄ±n
+															printf("Olamaz!!\nHamam bÃ¶ceÄŸi seni duymuÅŸ olmalÄ±.\n[1]Onunla dovÃ¼ÅŸ\n[2]KonuÅŸmaya Ã§alÄ±ÅŸ\n");
 															scanf("%d",&intmagarasecimbocek2);
 															system("CLS");
 															
-															if(intmagarasecimbocek2==1){ //Dövüş EKLENECEK
+															if(intmagarasecimbocek2==1){ //DÃ¶vÃ¼ÅŸ EKLENECEK
 															}	
 															
-															else if(intmagarasecimbocek2==2){ //Konuşmaya Çalış
-																printf("Onunla konuşmaya çalıştığında biraz sakinleştiğini gördün.\n");
+															else if(intmagarasecimbocek2==2){ //KonuÅŸmaya Ã‡alÄ±ÅŸ
+																printf("Onunla konuÅŸmaya Ã§alÄ±ÅŸtÄ±ÄŸÄ±nda biraz sakinleÅŸtiÄŸini gÃ¶rdÃ¼n.\n");
 																
-																if(intboceklekonusmayetenegi==1){ //Konuş
-																	printf("Sana hikayesini anlatıyor. Duyduğuna göre ilk defa böcek dışında bir yaratıkla konuşuyor. Onun ilgisini çektin\n");
-																	printf("GÖREV VEYA EVENT GELECEK\n"); //***************
+																if(intboceklekonusmayetenegi==1){ //KonuÅŸ
+																	printf("Sana hikayesini anlatÄ±yor. DuyduÄŸuna gÃ¶re ilk defa bÃ¶cek dÄ±ÅŸÄ±nda bir yaratÄ±kla konuÅŸuyor. Onun ilgisini Ã§ektin\n");
+																	printf("GÃ–REV VEYA EVENT GELECEK\n"); //***************
 																}
 																
-																else if(intboceklekonusmayetenegi==0){ //Konuşamayıp Kaçmak
-																	printf("Bir dakika\nSen onun dilini bilmiyorsun ki!\nHamam böceğinin bir boşluğundan yararlanıp yavaşça ondan uzaklaşıyorsun\n");
-																	printf("Buraya gelmeden önce onun dilini öğrensen iyi olur.\n");
+																else if(intboceklekonusmayetenegi==0){ //KonuÅŸamayÄ±p KaÃ§mak
+																	printf("Bir dakika\nSen onun dilini bilmiyorsun ki!\nHamam bÃ¶ceÄŸinin bir boÅŸluÄŸundan yararlanÄ±p yavaÅŸÃ§a ondan uzaklaÅŸÄ±yorsun\n");
+																	printf("Buraya gelmeden Ã¶nce onun dilini Ã¶ÄŸrensen iyi olur.\n");
 																}
 																
 															}
@@ -4316,7 +4316,7 @@ int main ()
 											
 										}
 										
-										else if(intmagarasecim4==3){ //Geri dön
+										else if(intmagarasecim4==3){ //Geri dÃ¶n
 											break;
 										}
 										
@@ -4324,7 +4324,7 @@ int main ()
 									
 								}
 								
-								else if(intmagarayolsecim2==4){ //Geri dön
+								else if(intmagarayolsecim2==4){ //Geri dÃ¶n
 									break;
 								}
 								
@@ -4332,13 +4332,13 @@ int main ()
 							
 						}
 						
-						else if(intmagarayolsecim1==2){ //Geri dön
+						else if(intmagarayolsecim1==2){ //Geri dÃ¶n
 						
 							if(intalevanahtar==1 || intmagarasandiksayaci==1){
-								printf("Ne maceraydı ama!!\n");
+								printf("Ne maceraydÄ± ama!!\n");
 							}
 							
-							printf("Bu ortamdan uzaklaştığın için kendini daha rahat hissediyorsun\n");
+							printf("Bu ortamdan uzaklaÅŸtÄ±ÄŸÄ±n iÃ§in kendini daha rahat hissediyorsun\n");
 							break;
 						}
 					}
@@ -4349,13 +4349,13 @@ int main ()
 					
 					if(din==0)
 					{
-						printf("Evde bir güzel dinlendin günün boş geçti ama yaraların tamamen iyileşti.");
+						printf("Evde bir gÃ¼zel dinlendin gÃ¼nÃ¼n boÅŸ geÃ§ti ama yaralarÄ±n tamamen iyileÅŸti.");
 						can=Mcan;
 					}
 					
 					if(din==1)
 					{
-						printf("Evde oturmaktan çok sıkıldığın için dışarıda vakit geçirmeye karar verdin.");
+						printf("Evde oturmaktan Ã§ok sÄ±kÄ±ldÄ±ÄŸÄ±n iÃ§in dÄ±ÅŸarÄ±da vakit geÃ§irmeye karar verdin.");
 						gun--;
 					din=1;
 					}
@@ -4364,18 +4364,18 @@ int main ()
 				
 				case 8:
 					
-					printf("Talim alanına hoşgeldin! Hangi yeteneğini geliştirmek istersin?\n[1]Kılıç [2]Okçuluk [3]Büyücülük [4]Dayanıklılık [5]Hız [6]Max Can\n");
+					printf("Talim alanÄ±na hoÅŸgeldin! Hangi yeteneÄŸini geliÅŸtirmek istersin?\n[1]KÄ±lÄ±Ã§ [2]OkÃ§uluk [3]BÃ¼yÃ¼cÃ¼lÃ¼k [4]DayanÄ±klÄ±lÄ±k [5]HÄ±z [6]Max Can\n");
 					scanf("%d",&talim);
 					
 					if(talim==1)
 					{
-							printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+							printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 							scanf("%d",&talim1);
 						
 						if(talim1==1)
 						{
 							hasar=hasar+5;
-							printf("Kılıç ustalığın 5 arttı! Yeni kılıç ustalığınız=%d\n",hasar);
+							printf("KÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±n 5 arttÄ±! Yeni kÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±nÄ±z=%d\n",hasar);
 						}
 						
 						else if(talim1==2)
@@ -4383,7 +4383,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							hasar=hasar+15;
-							printf("Kılıç ustalığın 10 arttı ama canın %d azaldı!\nYeni kılıç ustalığın=%d\nMevcut canın=%d\n",i,hasar,can); 
+							printf("KÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±n 10 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni kÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±n=%d\nMevcut canÄ±n=%d\n",i,hasar,can); 
 						}
 						
 						else if(talim1==3)
@@ -4392,19 +4392,19 @@ int main ()
 						    j=i+15;
 						  	can=can-j;
 						  	hasar=hasar+25;
-						  	printf("Kılıç ustalığın 25 arttı ama canın %d azaldı!\nYeni kılıç ustalığın=%d\nMevcut canın=%d\n",j,hasar,can);
+						  	printf("KÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±n 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni kÄ±lÄ±Ã§ ustalÄ±ÄŸÄ±n=%d\nMevcut canÄ±n=%d\n",j,hasar,can);
 						}
 					}
 					
 					else if(talim==2)
 					{
-						printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+						printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 						scanf("%d",&talim2);
 						
 						if(talim2==1)
 						{
 							okyet=okyet+5;
-							printf("Okçuluğun 5 arttı! Yeni okçuluğun=%d\n",ok);
+							printf("OkÃ§uluÄŸun 5 arttÄ±! Yeni okÃ§uluÄŸun=%d\n",ok);
 						}
 						
 						else if(talim2==2)
@@ -4412,7 +4412,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							okyet=okyet+15;
-							printf("Okçuluğun 10 arttı ama canın %d azaldı!\nYeni okçuluğun=%d\nMevcut canın=%d\n",i,ok,can);
+							printf("OkÃ§uluÄŸun 10 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni okÃ§uluÄŸun=%d\nMevcut canÄ±n=%d\n",i,ok,can);
 						}
 						
 						else if(talim2==3)
@@ -4421,18 +4421,18 @@ int main ()
 							j=i+15;
 							can=can-j;
 							okyet=okyet+25;
-							printf("Okçuluğun 25 arttı ama canın %d azaldı!\nYeni okçuluğun=%d\nMevcut canın=%d\n",j,ok,can);
+							printf("OkÃ§uluÄŸun 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni okÃ§uluÄŸun=%d\nMevcut canÄ±n=%d\n",j,ok,can);
 						}
 					}
 					
 					else if(talim==3)
 					{
-						printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+						printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 						scanf("%d",&talim3);
 						if(talim3==1)
 						{
 							buyuyet=buyuyet+5;
-							printf("Büyü gücün 5 arttı! Yeni büyü gücünüz=%d\n",buyuyet);
+							printf("BÃ¼yÃ¼ gÃ¼cÃ¼n 5 arttÄ±! Yeni bÃ¼yÃ¼ gÃ¼cÃ¼nÃ¼z=%d\n",buyuyet);
 						}
 						
 						else if(talim3==2)
@@ -4440,7 +4440,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							buyuyet=buyuyet+15;
-							printf("Büyü gücün 10 arttı ama canın %d azaldı!\nYeni büyü gücün=%d\nMevcut canın=%d\n",i,buyuyet,can);
+							printf("BÃ¼yÃ¼ gÃ¼cÃ¼n 10 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni bÃ¼yÃ¼ gÃ¼cÃ¼n=%d\nMevcut canÄ±n=%d\n",i,buyuyet,can);
 						}
 						
 						else if(talim3==3)
@@ -4449,19 +4449,19 @@ int main ()
 							j=i+15;
 							can=can-j;
 							buyuyet=buyuyet+25;
-							printf("Büyü gücün 25 arttı ama canın %d azaldı!\nYeni büyü gücün=%d\nMevcut canın=%d\n",j,buyuyet,can);
+							printf("BÃ¼yÃ¼ gÃ¼cÃ¼n 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni bÃ¼yÃ¼ gÃ¼cÃ¼n=%d\nMevcut canÄ±n=%d\n",j,buyuyet,can);
 						}
 					}
 					
 					else if(talim==4)
 					{
-						printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+						printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 						scanf("%d",&talim4);
 						
 						if(talim4==1)
 						{
 							def=def+5;
-							printf("Dayanıklılığın 5 arttı! Yeni dayanıklılığın=%d\n",def);
+							printf("DayanÄ±klÄ±lÄ±ÄŸÄ±n 5 arttÄ±! Yeni dayanÄ±klÄ±lÄ±ÄŸÄ±n=%d\n",def);
 						}
 						
 						else if(talim4==2)
@@ -4469,7 +4469,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							def=def+15;
-							printf("Dayanıklılığın 15 arttı ama canın %d azaldı!\nYeni dayanıklılığın=%d\nMevcut canın=%d\n",i,def,can);
+							printf("DayanÄ±klÄ±lÄ±ÄŸÄ±n 15 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni dayanÄ±klÄ±lÄ±ÄŸÄ±n=%d\nMevcut canÄ±n=%d\n",i,def,can);
 						}
 						
 						else if(talim4==3)
@@ -4478,19 +4478,19 @@ int main ()
 							j=i+15;
 							can=can-j;
 							def=def+25;
-							printf("Dayanıklılığın 25 arttı ama canın %d azaldı!\nYeni dayanıklılığın=%d\nMevcut canın=%d\n",j,def,can);
+							printf("DayanÄ±klÄ±lÄ±ÄŸÄ±n 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni dayanÄ±klÄ±lÄ±ÄŸÄ±n=%d\nMevcut canÄ±n=%d\n",j,def,can);
 						}
 					}
 					
 					else if(talim==5)
 					{
-						printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+						printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 						scanf("%d",&talim5);
 						
 						if(talim5==1)
 						{
 							hiz=hiz+5;
-							printf("Hızın 5 arttı! yeni hızın=%d\n",hiz);
+							printf("HÄ±zÄ±n 5 arttÄ±! yeni hÄ±zÄ±n=%d\n",hiz);
 						}
 						
 						else if(talim5==2)
@@ -4498,7 +4498,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							hiz=hiz+15;
-							printf("Hızın 15 arttı ama canın %d azaldı!\nYeni hızın=%d\nMevcut canın=%d\n",i,hiz,can);
+							printf("HÄ±zÄ±n 15 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni hÄ±zÄ±n=%d\nMevcut canÄ±n=%d\n",i,hiz,can);
 						}
 						
 						else if(talim5==3)
@@ -4507,19 +4507,19 @@ int main ()
 							j=i+15;
 							can=can-j;
 							hiz=hiz+25;
-							printf("Hızın 25 arttı ama canın %d azaldı!\nYeni hızın=%d\nMevcut canın=%d\n",j,hiz,can);
+							printf("HÄ±zÄ±n 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni hÄ±zÄ±n=%d\nMevcut canÄ±n=%d\n",j,hiz,can);
 						}
 					}
 					
 					else if(talim==6)
 					{
-						printf("Ne kadar çalışacaksın [1]Hafif [2]Dengeli [3]Ağır\n");
+						printf("Ne kadar Ã§alÄ±ÅŸacaksÄ±n [1]Hafif [2]Dengeli [3]AÄŸÄ±r\n");
 						scanf("%d",&talim6);
 						
 						if(talim6==1)
 						{
 							Mcan=Mcan+5;
-							printf("Maksimum canın 5 arttı! Yeni maksimum canın=%d\n",Mcan);
+							printf("Maksimum canÄ±n 5 arttÄ±! Yeni maksimum canÄ±n=%d\n",Mcan);
 						}
 						
 						else if(talim6==2)
@@ -4527,7 +4527,7 @@ int main ()
 							i=rand()%15;
 							can=can-i;
 							Mcan=Mcan+15;
-							printf("Maksimum canın 15 arttı ama canın %d azaldı!\nYeni maksimum canın=%d\nMevcut canın=%d\n",i,Mcan,can);
+							printf("Maksimum canÄ±n 15 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni maksimum canÄ±n=%d\nMevcut canÄ±n=%d\n",i,Mcan,can);
 						}
 						
 						else if(talim6==3)
@@ -4536,7 +4536,7 @@ int main ()
 							j=i+15;
 							can=can-j;
 							Mcan=Mcan+25;
-							printf("Maksimum canın 25 arttı ama canın %d azaldı!\nYeni maksimum canın=%d\nMevcut canın=%d\n",j,Mcan,can);
+							printf("Maksimum canÄ±n 25 arttÄ± ama canÄ±n %d azaldÄ±!\nYeni maksimum canÄ±n=%d\nMevcut canÄ±n=%d\n",j,Mcan,can);
 						}
 					}
 				
@@ -4549,22 +4549,22 @@ int main ()
 					srand(time(NULL)); 
 					sanssayi = rand()%100;
 					
-					printf("Çarşıya hoşgeldin\n"); //PAZARLIK EKLENECEK(Karizma yeteneği) İSİMLER DEĞİŞECEK VE ÇEŞİTLENDİRİLECEK || Envanter geldiğinde hasar ve defans item alınınca ve envantere koyulduğunda artacak
+					printf("Ã‡arÅŸÄ±ya hoÅŸgeldin\n"); //PAZARLIK EKLENECEK(Karizma yeteneÄŸi) Ä°SÄ°MLER DEÄÄ°ÅECEK VE Ã‡EÅÄ°TLENDÄ°RÄ°LECEK || Envanter geldiÄŸinde hasar ve defans item alÄ±nÄ±nca ve envantere koyulduÄŸunda artacak
 					
 					while(shp!=0)
 					{
 						printf("Ne yapmak istersin?\n");
-						printf("[1]Çarşının sahibiyle konuş\n[2]Silah dükkanına git\n[3]Zırh dükkanına git\n[4]Büyü dükkanına git\n[5]İksir dükkanına git\n[6]Evcil hayvan dükkanına git\n[7]Aksesuar dükkanına git\n[8]Kuaföre git\n[9]Eşya sat\n[10]Çarşıdan ayrıl\n");
+						printf("[1]Ã‡arÅŸÄ±nÄ±n sahibiyle konuÅŸ\n[2]Silah dÃ¼kkanÄ±na git\n[3]ZÄ±rh dÃ¼kkanÄ±na git\n[4]BÃ¼yÃ¼ dÃ¼kkanÄ±na git\n[5]Ä°ksir dÃ¼kkanÄ±na git\n[6]Evcil hayvan dÃ¼kkanÄ±na git\n[7]Aksesuar dÃ¼kkanÄ±na git\n[8]KuafÃ¶re git\n[9]EÅŸya sat\n[10]Ã‡arÅŸÄ±dan ayrÄ±l\n");
 						scanf("%d",&duksec);
 						
 						if(duksec==1) //OYUN
 						{
-							printf("Çarşının sahibi ile konuşmaya gittin...\n");
+							printf("Ã‡arÅŸÄ±nÄ±n sahibi ile konuÅŸmaya gittin...\n");
 							
 							while(shp!=0)
 							{
-								printf("Biraz muhabbet ettikten sonra sana oynatacağı bir oyunu kazanman karşılığında bir kereliğine herhangi bir üründe\nyuzde 50 indirim teklif etti!!\n");
-								printf("Ama eğer kaybedersen 50 Altınını alacak!!\nKabul ediyorsan 1'e etmiyorsan 2'ye bas\nSeçimini Yap...\n");
+								printf("Biraz muhabbet ettikten sonra sana oynatacaÄŸÄ± bir oyunu kazanman karÅŸÄ±lÄ±ÄŸÄ±nda bir kereliÄŸine herhangi bir Ã¼rÃ¼nde\nyuzde 50 indirim teklif etti!!\n");
+								printf("Ama eÄŸer kaybedersen 50 AltÄ±nÄ±nÄ± alacak!!\nKabul ediyorsan 1'e etmiyorsan 2'ye bas\nSeÃ§imini Yap...\n");
 								scanf("%d",&indsec);
 								
 								if(indsec==1)
@@ -4572,33 +4572,33 @@ int main ()
 									
 									if(oyunsayac==1)
 									{
-										printf("Bugünlük hakkını kullandın!!\n");
+										printf("BugÃ¼nlÃ¼k hakkÄ±nÄ± kullandÄ±n!!\n");
 										break;
 									}
-									printf("Oyun basit. 0 ile 100 arasında bir sayı belirleniyor. 5 tahmin hakkın var.\nİlk turda tahminin ile belirlenen sayı arasında 20 veya daha az fark varsa ikinci tura geçiyorsun.\n");
-									printf("İkinci turda tahminin ile belirlenen sayı arasında 10 veya daha az fark varsa üçüncü tura geçiyorsun.\nGerisini sen buluyorsun.\nHadi Başlayalım!!\n\n");
+									printf("Oyun basit. 0 ile 100 arasÄ±nda bir sayÄ± belirleniyor. 5 tahmin hakkÄ±n var.\nÄ°lk turda tahminin ile belirlenen sayÄ± arasÄ±nda 20 veya daha az fark varsa ikinci tura geÃ§iyorsun.\n");
+									printf("Ä°kinci turda tahminin ile belirlenen sayÄ± arasÄ±nda 10 veya daha az fark varsa Ã¼Ã§Ã¼ncÃ¼ tura geÃ§iyorsun.\nGerisini sen buluyorsun.\nHadi BaÅŸlayalÄ±m!!\n\n");
 									printf("1.TUR\n");
 									hak=6;
 									
 									while(hak>0)
 									{
 										hak--;
-										printf("Kalan hakkın: %d\n",hak);
+										printf("Kalan hakkÄ±n: %d\n",hak);
 										
 										if(hak==0)
 										{
 											printf("Kaybettin!!\n");
 											altin-=50;
-											printf("Kalan altın: %d\n",altin);
+											printf("Kalan altÄ±n: %d\n",altin);
 											break;
 										}
-										printf("Bir sayı tahmin et: ");
+										printf("Bir sayÄ± tahmin et: ");
 										scanf("%d",&tahmin);
 										
 										if(sanssayi==tahmin)
 										{
-											printf("Kazandın!!\n");
-											printf("Bir tane indirim hakkın var!!\n(Fiyatı yarısını hesapla)\n");
+											printf("KazandÄ±n!!\n");
+											printf("Bir tane indirim hakkÄ±n var!!\n(FiyatÄ± yarÄ±sÄ±nÄ± hesapla)\n");
 											indirim=1;
 											hak=0;
 											break;
@@ -4614,28 +4614,28 @@ int main ()
 										{
 											printf("2.TUR\n");
 											hak+=2;
-											printf("+2 Hak Kazandın!!\n");
-											printf("İPUCU: Aradığın sayı %d ile %d arasında...\n",tahmin-20,tahmin+20);
+											printf("+2 Hak KazandÄ±n!!\n");
+											printf("Ä°PUCU: AradÄ±ÄŸÄ±n sayÄ± %d ile %d arasÄ±nda...\n",tahmin-20,tahmin+20);
 											
 											while(hak>0)
 											{
 												hak--;
-												printf("Kalan hakkın: %d\n",hak);
+												printf("Kalan hakkÄ±n: %d\n",hak);
 												
 												if(hak==0)
 												{
 													printf("Kaybettin!!\n");
 													altin-=50;
-													printf("Kalan altın: %d\n",altin);
+													printf("Kalan altÄ±n: %d\n",altin);
 													break;
 												}
-												printf("Bir sayı tahmin et: ");
+												printf("Bir sayÄ± tahmin et: ");
 												scanf("%d",&tahmin);
 												
 												if(sanssayi==tahmin)
 												{
-													printf("Kazandın!!\n");
-													printf("Bir tane indirim hakkın var!!\n(Fiyatı yarısını hesapla)\n");
+													printf("KazandÄ±n!!\n");
+													printf("Bir tane indirim hakkÄ±n var!!\n(FiyatÄ± yarÄ±sÄ±nÄ± hesapla)\n");
 													indirim=1;
 													hak=0;
 													break;
@@ -4645,28 +4645,28 @@ int main ()
 												{
 													printf("3.TUR\n");
 													hak+=2;
-													printf("+2 Hak Kazandın!!\n");
-													printf("İPUCU: Aradığın sayı %d ile %d arasında...\n",tahmin-10,tahmin+10);
+													printf("+2 Hak KazandÄ±n!!\n");
+													printf("Ä°PUCU: AradÄ±ÄŸÄ±n sayÄ± %d ile %d arasÄ±nda...\n",tahmin-10,tahmin+10);
 													
 													while(hak>0)
 													{
 														hak--;
-														printf("Kalan hakkın: %d\n",hak);
+														printf("Kalan hakkÄ±n: %d\n",hak);
 														
 														if(hak==0)
 														{
 															printf("Kaybettin!!\n");
 															altin-=50;
-															printf("Kalan altın: %d\n",altin);
+															printf("Kalan altÄ±n: %d\n",altin);
 															break;
 														}
-														printf("Bir sayı tahmin et: ");
+														printf("Bir sayÄ± tahmin et: ");
 														scanf("%d",&tahmin);
 														
 														if(sanssayi==tahmin)
 														{
-															printf("Kazandın!!\n");
-															printf("Bir tane indirim hakkın var!!\n(Fiyatı yarısını hesapla)\n");
+															printf("KazandÄ±n!!\n");
+															printf("Bir tane indirim hakkÄ±n var!!\n(FiyatÄ± yarÄ±sÄ±nÄ± hesapla)\n");
 															indirim=1;
 															hak=0;
 															break;
@@ -4720,22 +4720,22 @@ int main ()
 							}
 						}
 						
-						else if(duksec==2) //SİLAH ÇEŞİTLERİ
+						else if(duksec==2) //SÄ°LAH Ã‡EÅÄ°TLERÄ°
 						{
 							
 							while(shp!=0)
 							{ 
-								printf("[1]Kılıç\n[2]Balta\n[3]Mızrak ve Kargı\n[4]Yay ve Ok\n[5]Silah dükkanından çık\n");
+								printf("[1]KÄ±lÄ±Ã§\n[2]Balta\n[3]MÄ±zrak ve KargÄ±\n[4]Yay ve Ok\n[5]Silah dÃ¼kkanÄ±ndan Ã§Ä±k\n");
 								scanf("%d",&silsec);
 								
-								if(silsec==1) //KILIÇ ÇEŞİTLERİ 
+								if(silsec==1) //KILIÃ‡ Ã‡EÅÄ°TLERÄ° 
 								{
-									printf("Kılıç Çeşitleri\n");
+									printf("KÄ±lÄ±Ã§ Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Kısa Kılıç(Hasarı 20 arttırır): 40 altın\n[2]Uzun Kılıç(Hasarı 30 arttırır): 60 altın\n[3]Tek Elli Ağır Kılıç(Hasarı 40 arttırır): 80 altın\n");
-										printf("[4]Çift Elli Ağır Kılıç(Hasarı 50 arttırır): 100 altın\n[5]Ekmek Bıçağı(Hasarı 10 arttırır): 20 altın\n[6]Hançer(Hasarı 15 arttırır): 30 altın\n[7]Silah çeşitlerine geri dön\n");
+										printf("[1]KÄ±sa KÄ±lÄ±Ã§(HasarÄ± 20 arttÄ±rÄ±r): 40 altÄ±n\n[2]Uzun KÄ±lÄ±Ã§(HasarÄ± 30 arttÄ±rÄ±r): 60 altÄ±n\n[3]Tek Elli AÄŸÄ±r KÄ±lÄ±Ã§(HasarÄ± 40 arttÄ±rÄ±r): 80 altÄ±n\n");
+										printf("[4]Ã‡ift Elli AÄŸÄ±r KÄ±lÄ±Ã§(HasarÄ± 50 arttÄ±rÄ±r): 100 altÄ±n\n[5]Ekmek BÄ±Ã§aÄŸÄ±(HasarÄ± 10 arttÄ±rÄ±r): 20 altÄ±n\n[6]HanÃ§er(HasarÄ± 15 arttÄ±rÄ±r): 30 altÄ±n\n[7]Silah Ã§eÅŸitlerine geri dÃ¶n\n");
 										scanf("%d",&kilicsec);
 										
 										if(kilicsec==1)
@@ -4788,7 +4788,7 @@ int main ()
 										
 										else if(kilicsec==7)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -4796,18 +4796,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(silsec==2) //BALTA ÇEŞİTLERİ
+								else if(silsec==2) //BALTA Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Balta Çeşitleri\n");
+									printf("Balta Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Kısa Balta(Hasarı 30 arttırır): 60 Altın\n[2]Uzun Balta(Hasarı 50 arttırır): 100 Altın\n[3]Tek Elli Ağır Balta(Hasarı 70 arttırır): 140 Altın\n");
-										printf("[4]Çift Elli Ağır Balta(Hasarı 90 arttırır): 180 Altın\n[5]Silah çeşitlerine geri dön\n");
+										printf("[1]KÄ±sa Balta(HasarÄ± 30 arttÄ±rÄ±r): 60 AltÄ±n\n[2]Uzun Balta(HasarÄ± 50 arttÄ±rÄ±r): 100 AltÄ±n\n[3]Tek Elli AÄŸÄ±r Balta(HasarÄ± 70 arttÄ±rÄ±r): 140 AltÄ±n\n");
+										printf("[4]Ã‡ift Elli AÄŸÄ±r Balta(HasarÄ± 90 arttÄ±rÄ±r): 180 AltÄ±n\n[5]Silah Ã§eÅŸitlerine geri dÃ¶n\n");
 										scanf("%d",&baltasec);
 										
 										if(baltasec==1)
@@ -4844,7 +4844,7 @@ int main ()
 										
 										else if(baltasec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -4852,18 +4852,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(silsec==3) //MIZRAK VE KARGI ÇEŞİTLERİ
+								else if(silsec==3) //MIZRAK VE KARGI Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Mızrak ve Kargı Çeşitleri\n");
+									printf("MÄ±zrak ve KargÄ± Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Uzun Mızrak(Hasarı 40 arttırır): 80 Altın\n[2]Üç Başlı Mızrak(Hasarı 60 arttırır): 120 Altın\n[3]Uzun Kargı(Hasarı 80 arttırır): 160 Altın\n");
-										printf("[4]Baltalı Kargı(Hasarı 100 arttırır): 200 Altın\n[5]Silah çeşitlerine geri dön\n");
+										printf("[1]Uzun MÄ±zrak(HasarÄ± 40 arttÄ±rÄ±r): 80 AltÄ±n\n[2]ÃœÃ§ BaÅŸlÄ± MÄ±zrak(HasarÄ± 60 arttÄ±rÄ±r): 120 AltÄ±n\n[3]Uzun KargÄ±(HasarÄ± 80 arttÄ±rÄ±r): 160 AltÄ±n\n");
+										printf("[4]BaltalÄ± KargÄ±(HasarÄ± 100 arttÄ±rÄ±r): 200 AltÄ±n\n[5]Silah Ã§eÅŸitlerine geri dÃ¶n\n");
 										scanf("%d",&mizsec);
 										
 										if(mizsec==1)
@@ -4900,7 +4900,7 @@ int main ()
 										
 										else if(mizsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -4908,18 +4908,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(silsec==4) //YAY VE OK ÇEŞİTLERİ ANA KODDA DÜZELTİLMELİ OK SAYISI VE YAY YETENEĞİ YETENEK ARTTIKÇA HASAR ARTABİLİR
+								else if(silsec==4) //YAY VE OK Ã‡EÅÄ°TLERÄ° ANA KODDA DÃœZELTÄ°LMELÄ° OK SAYISI VE YAY YETENEÄÄ° YETENEK ARTTIKÃ‡A HASAR ARTABÄ°LÄ°R
 								{
-									printf("Yay ve Ok Çeşitleri\n");
+									printf("Yay ve Ok Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Kısa Yay(Okun hasarını 20 arttırır): 40 Altın\n[2]Uzun Yay(Okun hasarını 30 arttırır): 60 Altın\n[3]Crossbow(Okun hasarını 50 arttırır): 100 Altın\n");
-										printf("[4]Tahta Ok(Okun hasarını 2 arttırır: 4 Altın\n[5]Taş Ok(Okun hasarını 4 arttırır): 8 Altın\n[6]Silah çeşitlerine geri dön\n");
+										printf("[1]KÄ±sa Yay(Okun hasarÄ±nÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n[2]Uzun Yay(Okun hasarÄ±nÄ± 30 arttÄ±rÄ±r): 60 AltÄ±n\n[3]Crossbow(Okun hasarÄ±nÄ± 50 arttÄ±rÄ±r): 100 AltÄ±n\n");
+										printf("[4]Tahta Ok(Okun hasarÄ±nÄ± 2 arttÄ±rÄ±r: 4 AltÄ±n\n[5]TaÅŸ Ok(Okun hasarÄ±nÄ± 4 arttÄ±rÄ±r): 8 AltÄ±n\n[6]Silah Ã§eÅŸitlerine geri dÃ¶n\n");
 										scanf("%d",&yaysec);
 										
 										if(yaysec==1)
@@ -4951,10 +4951,10 @@ int main ()
 											
 											while(shp!=0)
 											{
-												printf("Kaç tane almak istersin?\n");
+												printf("KaÃ§ tane almak istersin?\n");
 												scanf("%d",&oksay);
 												
-												if(oksay<=0)printf("Pozitif bir değer gir!!\n");
+												if(oksay<=0)printf("Pozitif bir deÄŸer gir!!\n");
 												
 												else
 												{
@@ -4962,14 +4962,14 @@ int main ()
 													
 													if(altin>=oktutar)
 													{
-														printf("%d tane Tahta Ok satın aldın\n",oksay);
+														printf("%d tane Tahta Ok satÄ±n aldÄ±n\n",oksay);
 														altin=altin-oktutar;
 														ok[0]+=oksay;
 													}
 													
 													else
 													{
-														printf("Yeterli altının yok!\n");
+														printf("Yeterli altÄ±nÄ±n yok!\n");
 													}
 													break;
 												}
@@ -4981,10 +4981,10 @@ int main ()
 											
 											while(shp!=0)
 											{
-												printf("Kaç tane almak istersin?\n");
+												printf("KaÃ§ tane almak istersin?\n");
 												scanf("%d",&oksay);
 												
-												if(oksay<=0)printf("Pozitif bir değer gir!!");
+												if(oksay<=0)printf("Pozitif bir deÄŸer gir!!");
 												
 												else
 												{
@@ -4992,7 +4992,7 @@ int main ()
 													
 													if(altin>=oktutar)
 													{
-														printf("%d tane Taş Ok satın aldın\n",oksay);
+														printf("%d tane TaÅŸ Ok satÄ±n aldÄ±n\n",oksay);
 														altin=altin-oktutar;
 														ok[1]+=oksay;
 													}
@@ -5003,7 +5003,7 @@ int main ()
 										
 										else if(yaysec==6)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5011,13 +5011,13 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(silsec==5) //GERİ DÖN
+								else if(silsec==5) //GERÄ° DÃ–N
 								{
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								
@@ -5028,22 +5028,22 @@ int main ()
 							}
 						}
 						
-						else if(duksec==3) //ZIRH ÇEŞİTLERİ
+						else if(duksec==3) //ZIRH Ã‡EÅÄ°TLERÄ°
 						{
 							
 							while(shp!=0)
 							{
-								printf("[1]Kalkan\n[2]Miğfer\n[3]Gövde\n[4]Bacak\n[5]Kol\n[6]Eldiven\n[7]Bot\n[8]Zırh Dükkanından Çık\n");
+								printf("[1]Kalkan\n[2]MiÄŸfer\n[3]GÃ¶vde\n[4]Bacak\n[5]Kol\n[6]Eldiven\n[7]Bot\n[8]ZÄ±rh DÃ¼kkanÄ±ndan Ã‡Ä±k\n");
 								scanf("%d",&zirhsec);
 								
-								if(zirhsec==1) //KALKAN ÇEŞİTLERİ
+								if(zirhsec==1) //KALKAN Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Kalkan Çeşitleri\n");
+									printf("Kalkan Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Klasik Yuvarlak Kalkan(Defansı 20 arttırır): 40 Altın\n[2]Klasik Uzun Kalkan(Defansı 30 arttırır): 60 Altın\n[3]Büyük Yuvarlak Kalkan(Defansı 50 arttırır): 100 Altın\n");
-										printf("[4]Dayanıklı Yuvarlak Kalkan(Defansı 70 arttırır): 140 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");				
+										printf("[1]Klasik Yuvarlak Kalkan(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n[2]Klasik Uzun Kalkan(DefansÄ± 30 arttÄ±rÄ±r): 60 AltÄ±n\n[3]BÃ¼yÃ¼k Yuvarlak Kalkan(DefansÄ± 50 arttÄ±rÄ±r): 100 AltÄ±n\n");
+										printf("[4]DayanÄ±klÄ± Yuvarlak Kalkan(DefansÄ± 70 arttÄ±rÄ±r): 140 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");				
 										scanf("%d",&kalkansec);
 										
 										if(kalkansec==1)
@@ -5080,7 +5080,7 @@ int main ()
 										
 										else if(kalkansec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5088,18 +5088,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}				
 								}
 								
-								else if(zirhsec==2) //MİĞFER ÇEŞİTLERİ
+								else if(zirhsec==2) //MÄ°ÄFER Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Miğfer Çeşitleri\n");
+									printf("MiÄŸfer Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Eskimiş Miğfer(Defansı 10 arttırır): 20 Altın\n[2]Klasik Miğfer(Defansı 15 arttırır): 30 Altın\n[3]Kaliteli Miğfer(Defansı 20 arttırır): 40 Altın\n");
-										printf("[4]Dayanıklı Miğfer(Defansı 25 arttırır): 50 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]EskimiÅŸ MiÄŸfer(DefansÄ± 10 arttÄ±rÄ±r): 20 AltÄ±n\n[2]Klasik MiÄŸfer(DefansÄ± 15 arttÄ±rÄ±r): 30 AltÄ±n\n[3]Kaliteli MiÄŸfer(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n");
+										printf("[4]DayanÄ±klÄ± MiÄŸfer(DefansÄ± 25 arttÄ±rÄ±r): 50 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&migfsec);
 										
 										if(migfsec==1)
@@ -5136,7 +5136,7 @@ int main ()
 										
 										else if(migfsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5144,18 +5144,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==3) //GÖVDE ZIRHI ÇEŞİTLERİ
+								else if(zirhsec==3) //GÃ–VDE ZIRHI Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Gövde Zırhı Çeşitleri\n");
+									printf("GÃ¶vde ZÄ±rhÄ± Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Hasarlı Gövde Zırhı(Defansı 30 arttırır): 60 Altın\n[2]Klasik Gövde Zırhı(Defansı 40 arttırır): 80 Altın\n[3]Kaliteli Gövde Zırhı(Defansı 50 arttırır): 100 Altın\n");
-										printf("[4]Dayanıklı Gövde Zırhı(Defansı 60 arttırır): 120 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]HasarlÄ± GÃ¶vde ZÄ±rhÄ±(DefansÄ± 30 arttÄ±rÄ±r): 60 AltÄ±n\n[2]Klasik GÃ¶vde ZÄ±rhÄ±(DefansÄ± 40 arttÄ±rÄ±r): 80 AltÄ±n\n[3]Kaliteli GÃ¶vde ZÄ±rhÄ±(DefansÄ± 50 arttÄ±rÄ±r): 100 AltÄ±n\n");
+										printf("[4]DayanÄ±klÄ± GÃ¶vde ZÄ±rhÄ±(DefansÄ± 60 arttÄ±rÄ±r): 120 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&govsec);
 										
 										if(govsec==1)
@@ -5192,7 +5192,7 @@ int main ()
 										
 										else if(govsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5200,18 +5200,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==4) //BACAK ZIRHI ÇEŞİTLERİ
+								else if(zirhsec==4) //BACAK ZIRHI Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Bacak Zırhı Çeşitleri\n");
+									printf("Bacak ZÄ±rhÄ± Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Parçalanmış Bacak Zırhı(Defansı 5 arttırır): 10 Altın\n[2]Klasik Bacak Zırhı(Defansı 10 arttırır): 20 Altın\n[3]Kaliteli Bacak Zırhı(Defansı 15 arttırır): 30 Altın\n");
-										printf("[4]Dayanıklı Bacak Zırhı(Defansı 20 arttırır): 40 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]ParÃ§alanmÄ±ÅŸ Bacak ZÄ±rhÄ±(DefansÄ± 5 arttÄ±rÄ±r): 10 AltÄ±n\n[2]Klasik Bacak ZÄ±rhÄ±(DefansÄ± 10 arttÄ±rÄ±r): 20 AltÄ±n\n[3]Kaliteli Bacak ZÄ±rhÄ±(DefansÄ± 15 arttÄ±rÄ±r): 30 AltÄ±n\n");
+										printf("[4]DayanÄ±klÄ± Bacak ZÄ±rhÄ±(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&bacsec);
 										
 										if(bacsec==1)
@@ -5248,7 +5248,7 @@ int main ()
 										
 										else if(bacsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5256,18 +5256,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==5) //KOL ZIRHI ÇEŞİTLERİ
+								else if(zirhsec==5) //KOL ZIRHI Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Kol Zırhı Çeşitleri\n");
+									printf("Kol ZÄ±rhÄ± Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Paslanmış Kol Zırhı(Defansı 5 arttırır): 10 Altın\n[2]Klasik Kol Zırhı(Defansı 10 arttırır): 20 Altın\n[3]Kaliteli Kol Zırhı(Defansı 15 arttırır): 30 Altın\n");
-										printf("[4]Sağlam Kol Zırhı(Defansı 20 arttırır): 40 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]PaslanmÄ±ÅŸ Kol ZÄ±rhÄ±(DefansÄ± 5 arttÄ±rÄ±r): 10 AltÄ±n\n[2]Klasik Kol ZÄ±rhÄ±(DefansÄ± 10 arttÄ±rÄ±r): 20 AltÄ±n\n[3]Kaliteli Kol ZÄ±rhÄ±(DefansÄ± 15 arttÄ±rÄ±r): 30 AltÄ±n\n");
+										printf("[4]SaÄŸlam Kol ZÄ±rhÄ±(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&kolsec);
 										
 										if(kolsec==1)
@@ -5304,7 +5304,7 @@ int main ()
 										
 										else if(kolsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5312,18 +5312,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==6) //ELDİVEN ÇEŞİTLERİ
+								else if(zirhsec==6) //ELDÄ°VEN Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Eldiven Çeşitleri\n");
+									printf("Eldiven Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Yün Eldiven(Defansı 5 arttırır): 10 Altın\n[2]Deri Eldiven(Defansı 10 arttırır): 20 Altın\n[3]Kaliteli Eldiven(Defansı 15 arttırır): 30 Altın\n");
-										printf("[4]Ağır Eldiven(Defansı 20 arttırır): 40 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]YÃ¼n Eldiven(DefansÄ± 5 arttÄ±rÄ±r): 10 AltÄ±n\n[2]Deri Eldiven(DefansÄ± 10 arttÄ±rÄ±r): 20 AltÄ±n\n[3]Kaliteli Eldiven(DefansÄ± 15 arttÄ±rÄ±r): 30 AltÄ±n\n");
+										printf("[4]AÄŸÄ±r Eldiven(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&eldsec);
 										
 										if(eldsec==1)
@@ -5360,7 +5360,7 @@ int main ()
 										
 										else if(eldsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5368,18 +5368,18 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==7) //BOT ÇEŞİTLERİ
+								else if(zirhsec==7) //BOT Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Bot Çeşitleri\n");
+									printf("Bot Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Yün Bot(Defansı 10 arttırır): 20 Altın\n[2]Klasik Bot(Defansı 15 arttırır): 30 Altın\n[3]Sağlam Bot(Defansı 20 arttırır): 40 Altın\n");
-										printf("[4]Dayanıklı Bot(Defansı 25 arttırır): 50 Altın\n[5]Zırh Çeşitlerine Geri Dön\n");
+										printf("[1]YÃ¼n Bot(DefansÄ± 10 arttÄ±rÄ±r): 20 AltÄ±n\n[2]Klasik Bot(DefansÄ± 15 arttÄ±rÄ±r): 30 AltÄ±n\n[3]SaÄŸlam Bot(DefansÄ± 20 arttÄ±rÄ±r): 40 AltÄ±n\n");
+										printf("[4]DayanÄ±klÄ± Bot(DefansÄ± 25 arttÄ±rÄ±r): 50 AltÄ±n\n[5]ZÄ±rh Ã‡eÅŸitlerine Geri DÃ¶n\n");
 										scanf("%d",&botsec);
 										
 										if(botsec==1)
@@ -5416,7 +5416,7 @@ int main ()
 										
 										else if(botsec==5)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5424,13 +5424,13 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(zirhsec==8) //GERİ DÖN
+								else if(zirhsec==8) //GERÄ° DÃ–N
 								{
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								
@@ -5440,28 +5440,28 @@ int main ()
 								}
 							}
 						}
-						else if(duksec==4){ //BÜYÜ ÇEŞİTLERİ
+						else if(duksec==4){ //BÃœYÃœ Ã‡EÅÄ°TLERÄ°
 							while(shp!=0){
-								printf("[1]Büyü1\n[2]Büyü2\n[3]Büyü3\n[4]Büyü4\n[5]Büyü Dükkanından Çık\n");
+								printf("[1]BÃ¼yÃ¼1\n[2]BÃ¼yÃ¼2\n[3]BÃ¼yÃ¼3\n[4]BÃ¼yÃ¼4\n[5]BÃ¼yÃ¼ DÃ¼kkanÄ±ndan Ã‡Ä±k\n");
 								scanf("%d",&buyusec);
 								if(buyusec==1){
-									printf("Büyü1 aldın\n");
+									printf("BÃ¼yÃ¼1 aldÄ±n\n");
 									buyu[0]=1;
 								}
 								else if(buyusec==2){
-									printf("Büyü2 aldın\n");
+									printf("BÃ¼yÃ¼2 aldÄ±n\n");
 									buyu[1]=1;
 								}
 								else if(buyusec==3){
-									printf("Büyü3 aldın\n");
+									printf("BÃ¼yÃ¼3 aldÄ±n\n");
 									buyu[2]=1;
 								}
 								else if(buyusec==4){
-									printf("Büyü4 aldın\n");
+									printf("BÃ¼yÃ¼4 aldÄ±n\n");
 									buyu[3]=1;
 								}
 								else if(buyusec==5){
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								else{
@@ -5469,42 +5469,42 @@ int main ()
 								}
 							}
 						}
-						else if(duksec==5) //İKSİR ÇEŞİTLERİ DÜZENLENECEK
+						else if(duksec==5) //Ä°KSÄ°R Ã‡EÅÄ°TLERÄ° DÃœZENLENECEK
 						{
 							
 							while(shp!=0)
 							{
-								printf("[1]Kuvvet İksiri(Savaş sırasında +x hasar artışı)\n[2]Sağlık İksiri(Savaş sırasında +x sağlık artışı)\n");
-								printf("[3]Dayanıklılık İksiri(Savaş sırasında +x dayanıklılık artışı)\n[4]Şans İksiri\n[5]İksir Dükkanından Çık\n");
+								printf("[1]Kuvvet Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x hasar artÄ±ÅŸÄ±)\n[2]SaÄŸlÄ±k Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x saÄŸlÄ±k artÄ±ÅŸÄ±)\n");
+								printf("[3]DayanÄ±klÄ±lÄ±k Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x dayanÄ±klÄ±lÄ±k artÄ±ÅŸÄ±)\n[4]Åans Ä°ksiri\n[5]Ä°ksir DÃ¼kkanÄ±ndan Ã‡Ä±k\n");
 								scanf("%d",&ikssec);
 								
 								if(ikssec==1)
 								{
-									printf("Kuvvet İksiri aldın\n");
+									printf("Kuvvet Ä°ksiri aldÄ±n\n");
 									iksir[0]=1;
 								}
 								
 								else if(ikssec==2)
 								{
-									printf("Sağlık İksiri aldın\n");
+									printf("SaÄŸlÄ±k Ä°ksiri aldÄ±n\n");
 									iksir[1]=1;
 								}
 								
 								else if(ikssec==3)
 								{
-									printf("Dayanıklılık İksiri aldın\n");
+									printf("DayanÄ±klÄ±lÄ±k Ä°ksiri aldÄ±n\n");
 									iksir[2]=1;
 								}
 								
 								else if(ikssec==4)
 								{
-									printf("Şans İksiri aldın\n");
+									printf("Åans Ä°ksiri aldÄ±n\n");
 									iksir[3]=1;
 								}
 								
 								else if(ikssec==5)
 								{
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								
@@ -5515,12 +5515,12 @@ int main ()
 							}
 						}
 						
-						else if(duksec==6) //PET ÇEŞİTLERİ
+						else if(duksec==6) //PET Ã‡EÅÄ°TLERÄ°
 						{
 							
 							while(shp!=0)
 							{
-								printf("[1]Kedi(Zihin yeteneği 50 artar): 100 Altın\n[2]Köpek(Tahmin yeteneği 50 artar): 100 Altın\n[3]Petshop'tan Çık\n");
+								printf("[1]Kedi(Zihin yeteneÄŸi 50 artar): 100 AltÄ±n\n[2]KÃ¶pek(Tahmin yeteneÄŸi 50 artar): 100 AltÄ±n\n[3]Petshop'tan Ã‡Ä±k\n");
 								scanf("%d",&petsec);
 								
 								if(petsec==1)
@@ -5541,7 +5541,7 @@ int main ()
 								
 								else if(petsec==3)
 								{
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								
@@ -5551,21 +5551,21 @@ int main ()
 							}
 						}
 						
-						else if(duksec==7) //AKSESUAR ÇEŞİTLERİ 
+						else if(duksec==7) //AKSESUAR Ã‡EÅÄ°TLERÄ° 
 						{
 							
 							while(shp!=0)
 							{
-								printf("[1]Kolye\n[2]Bileklik\n[3]Yüzük\n[4]Küpe\n[5]Aksesuar Dükkanından Çık\n");
+								printf("[1]Kolye\n[2]Bileklik\n[3]YÃ¼zÃ¼k\n[4]KÃ¼pe\n[5]Aksesuar DÃ¼kkanÄ±ndan Ã‡Ä±k\n");
 								scanf("%d",&akssec);
 								
-								if(akssec==1) //KOLYE ÇEŞİTLERİ
+								if(akssec==1) //KOLYE Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Kolye Çeşitleri\n");
+									printf("Kolye Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Bronz Kolye: 50 Altın\n[2]Altın Kolye: 100 Altın\n[3]Elmas Kolye: 200 Altın\n[4]Geri\n");
+										printf("[1]Bronz Kolye: 50 AltÄ±n\n[2]AltÄ±n Kolye: 100 AltÄ±n\n[3]Elmas Kolye: 200 AltÄ±n\n[4]Geri\n");
 										scanf("%d",&kolyesec);
 										
 										if(kolyesec==1)
@@ -5594,7 +5594,7 @@ int main ()
 										
 										else if(kolyesec==4)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5602,17 +5602,17 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(akssec==2) //BİLEKLİK ÇEŞİTLERİ
+								else if(akssec==2) //BÄ°LEKLÄ°K Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Bileklik Çeşitleri\n");
+									printf("Bileklik Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Bronz Bileklik: 50 Altın\n[2]Altın Bileklik: 100 Altın\n[3]Elmas Bileklik: 200 Altın\n[4]Geri\n");
+										printf("[1]Bronz Bileklik: 50 AltÄ±n\n[2]AltÄ±n Bileklik: 100 AltÄ±n\n[3]Elmas Bileklik: 200 AltÄ±n\n[4]Geri\n");
 										scanf("%d",&bileksec);
 										
 										if(bileksec==1)
@@ -5641,7 +5641,7 @@ int main ()
 										
 										else if(bileksec==4)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5649,17 +5649,17 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(akssec==3) //YÜZÜK ÇEŞİTLERİ
+								else if(akssec==3) //YÃœZÃœK Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Yüzük Çeşitleri\n");
+									printf("YÃ¼zÃ¼k Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Bronz Yüzük: 50 Altın\n[2]Altın Yüzük: 100 Altın\n[3]Elmas Yüzük: 200 Altın\n[4]Geri\n");
+										printf("[1]Bronz YÃ¼zÃ¼k: 50 AltÄ±n\n[2]AltÄ±n YÃ¼zÃ¼k: 100 AltÄ±n\n[3]Elmas YÃ¼zÃ¼k: 200 AltÄ±n\n[4]Geri\n");
 										scanf("%d",&yuzuksec);
 										
 										if(yuzuksec==1)
@@ -5688,7 +5688,7 @@ int main ()
 										
 										else if(yuzuksec==4)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5696,17 +5696,17 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(akssec==4) //KÜPE ÇEŞİTLERİ
+								else if(akssec==4) //KÃœPE Ã‡EÅÄ°TLERÄ°
 								{
-									printf("Küpe Çeşitleri\n");
+									printf("KÃ¼pe Ã‡eÅŸitleri\n");
 									
 									while(shp!=0)
 									{
-										printf("[1]Bronz Küpe: 50 Altın\n[2]Altın Küpe: 100 Altın\n[3]Elmas Küpe: 200 Altın\n[4]Geri\n");
+										printf("[1]Bronz KÃ¼pe: 50 AltÄ±n\n[2]AltÄ±n KÃ¼pe: 100 AltÄ±n\n[3]Elmas KÃ¼pe: 200 AltÄ±n\n[4]Geri\n");
 										scanf("%d",&kupesec);
 										
 										if(kupesec==1)
@@ -5735,7 +5735,7 @@ int main ()
 										
 										else if(kupesec==4)
 										{
-											printf("Geri dönülüyor...\n");
+											printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 											break;
 										}
 										
@@ -5743,13 +5743,13 @@ int main ()
 										{
 											printf("Tekrar dene!!\n");
 										}
-										printf("Altının: %d\n\n",altin);
+										printf("AltÄ±nÄ±n: %d\n\n",altin);
 									}
 								}
 								
-								else if(akssec==5) //GERİ DÖN
+								else if(akssec==5) //GERÄ° DÃ–N
 								{
-									printf("Geri dönülüyor...\n");
+									printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 									break;
 								}
 								
@@ -5760,13 +5760,13 @@ int main ()
 							}
 						}
 						
-						else if(duksec==8) //KUAFÖR
+						else if(duksec==8) //KUAFÃ–R
 						{
-							printf("Hoşgeldin\n"); //ÇEKİCİLİK VEYA KARİZMA ARTACAK
+							printf("HoÅŸgeldin\n"); //Ã‡EKÄ°CÄ°LÄ°K VEYA KARÄ°ZMA ARTACAK
 							
 							while(shp!=0)
 							{
-							printf("[1]Saç\n[2]Sakal\n[3]Geri dön\n");
+							printf("[1]SaÃ§\n[2]Sakal\n[3]Geri dÃ¶n\n");
 							scanf("%d",&kuaforsec);
 							
 							if(kuaforsec==1)
@@ -5774,9 +5774,9 @@ int main ()
 								
 								while(shp!=0)
 								{
-									printf("Altının: %d\n",altin);
-									printf("Nasıl bir saç modeli istersin?\n");
-									printf("[1]Uzun: 50 Altın\n[2]Kısa: 40 Altın\n[3]Kel: 40 Altın\n[4]Boya\n[5]Geri dön\n");
+									printf("AltÄ±nÄ±n: %d\n",altin);
+									printf("NasÄ±l bir saÃ§ modeli istersin?\n");
+									printf("[1]Uzun: 50 AltÄ±n\n[2]KÄ±sa: 40 AltÄ±n\n[3]Kel: 40 AltÄ±n\n[4]Boya\n[5]Geri dÃ¶n\n");
 									scanf("%d",&sacsec);
 									
 									if(sacsec==1)
@@ -5784,14 +5784,14 @@ int main ()
 										
 										if(altin>=50)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=50;
-											kel=0; //DÜZENLENMELİ
+											kel=0; //DÃœZENLENMELÄ°
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 									
@@ -5800,14 +5800,14 @@ int main ()
 										
 										if(altin>=40)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=40;
-											kel=0; //DÜZENLENMELİ
+											kel=0; //DÃœZENLENMELÄ°
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 								
@@ -5816,14 +5816,14 @@ int main ()
 										
 										if(altin>=40)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=40;
-											kel=0; //DÜZENLENMELİ
+											kel=0; //DÃœZENLENMELÄ°
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 									
@@ -5833,7 +5833,7 @@ int main ()
 										while(shp!=0)
 										{
 											printf("Hangi renk?\n");
-											printf("[1]Sarı: 75 Altın\n[2]Kırmızı: 75 Altın\n[3]Beyaz: 75 Altın\n[4]Geri dön\n");
+											printf("[1]SarÄ±: 75 AltÄ±n\n[2]KÄ±rmÄ±zÄ±: 75 AltÄ±n\n[3]Beyaz: 75 AltÄ±n\n[4]Geri dÃ¶n\n");
 											scanf("%d",&renksec);
 											
 											if(renksec==1)
@@ -5841,13 +5841,13 @@ int main ()
 												
 												if(altin>=75)
 												{
-													printf("Saçını sarıya boyadın!\n");
+													printf("SaÃ§Ä±nÄ± sarÄ±ya boyadÄ±n!\n");
 													altin-=75;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}
 											}
 											
@@ -5856,13 +5856,13 @@ int main ()
 												
 												if(altin>=75)
 												{
-													printf("Saçını kırmızıya boyadın!\n");
+													printf("SaÃ§Ä±nÄ± kÄ±rmÄ±zÄ±ya boyadÄ±n!\n");
 													altin-=75;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}
 											}
 											
@@ -5871,13 +5871,13 @@ int main ()
 												
 												if(altin>=75)
 												{
-													printf("Saçını beyaza boyadın!\n");
+													printf("SaÃ§Ä±nÄ± beyaza boyadÄ±n!\n");
 													altin-=75;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}
 											}
 											
@@ -5910,9 +5910,9 @@ int main ()
 								
 								while(shp!=0)
 								{
-									printf("Altının: %d\n",altin);
-									printf("Nasıl bir sakal modeli istersin?\n");
-									printf("[1]Top Sakal: 40 Altın\n[2]Kirli Sakal: 40 Altın\n[3]Gür Sakal: 40 Altın\n[4]Boya\n[5]Geri dön\n");
+									printf("AltÄ±nÄ±n: %d\n",altin);
+									printf("NasÄ±l bir sakal modeli istersin?\n");
+									printf("[1]Top Sakal: 40 AltÄ±n\n[2]Kirli Sakal: 40 AltÄ±n\n[3]GÃ¼r Sakal: 40 AltÄ±n\n[4]Boya\n[5]Geri dÃ¶n\n");
 									scanf("%d",&sakalsec);
 									
 									if(sakalsec==1)
@@ -5920,13 +5920,13 @@ int main ()
 										
 										if(altin>=40)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=40;
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 									
@@ -5935,13 +5935,13 @@ int main ()
 										
 										if(altin>=40)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=40;
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 									
@@ -5950,13 +5950,13 @@ int main ()
 										
 										if(altin>=40)
 										{
-											printf("Sıhhatler olsun!\n");
+											printf("SÄ±hhatler olsun!\n");
 											altin-=40;
 										}
 										
 										else
 										{
-											printf("Yeterli altının yok!!\n");
+											printf("Yeterli altÄ±nÄ±n yok!!\n");
 										}
 									}
 									
@@ -5966,7 +5966,7 @@ int main ()
 										while(shp!=0)
 										{
 											printf("Hangi renk?\n");
-											printf("[1]Sarı: 50 Altın\n[2]Kırmızı: 50 Altın\n[3]Beyaz: 50 Altın\n[4]Geri dön\n");
+											printf("[1]SarÄ±: 50 AltÄ±n\n[2]KÄ±rmÄ±zÄ±: 50 AltÄ±n\n[3]Beyaz: 50 AltÄ±n\n[4]Geri dÃ¶n\n");
 											scanf("%d",&renksec);
 											
 											if(renksec==1)
@@ -5974,13 +5974,13 @@ int main ()
 												
 												if(altin>=50)
 												{
-													printf("Sakalını sarıya boyadın!\n");
+													printf("SakalÄ±nÄ± sarÄ±ya boyadÄ±n!\n");
 													altin-=50;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}		
 											}
 											
@@ -5989,13 +5989,13 @@ int main ()
 												
 												if(altin>=50)
 												{
-													printf("Sakalını kırmızıya boyadın!\n");
+													printf("SakalÄ±nÄ± kÄ±rmÄ±zÄ±ya boyadÄ±n!\n");
 													altin-=50;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}
 											}
 											
@@ -6004,13 +6004,13 @@ int main ()
 												
 												if(altin>=50)
 												{
-													printf("Sakalını beyaza boyadın!\n");
+													printf("SakalÄ±nÄ± beyaza boyadÄ±n!\n");
 													altin-=50;
 												}
 												
 												else
 												{
-													printf("Yeterli altının yok!!\n");
+													printf("Yeterli altÄ±nÄ±n yok!!\n");
 												}
 											}
 											
@@ -6050,9 +6050,9 @@ int main ()
 							}
 						}
 						
-						else if(duksec==9) //EŞYA SAT
+						else if(duksec==9) //EÅYA SAT
 						{
-							printf("Envanter Açılıyor\n\n");
+							printf("Envanter AÃ§Ä±lÄ±yor\n\n");
 							
 							while(sat!=0)
 							{
@@ -6070,8 +6070,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kısa Kılıç (+20 Hasar) | Satış Fiyatı: %d\n",kil[0],kilf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d KÄ±sa KÄ±lÄ±Ã§ (+20 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kil[0],kilf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6112,8 +6112,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Uzun Kılıç (+30 Hasar) | Satış Fiyatı: %d\n",kil[1],kilf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Uzun KÄ±lÄ±Ã§ (+30 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kil[1],kilf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6154,8 +6154,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Tek Elli Ağır Kılıç (+40 Hasar) | Satış Fiyatı: %d\n",kil[2],kilf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Tek Elli AÄŸÄ±r KÄ±lÄ±Ã§ (+40 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kil[2],kilf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6196,8 +6196,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Çift Elli Ağır Kılıç (+50 Hasar) | Satış Fiyatı: %d\n",kil[3],kilf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Ã‡ift Elli AÄŸÄ±r KÄ±lÄ±Ã§ (+50 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kil[3],kilf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6238,8 +6238,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Ekmek Bıçağı (+10 Hasar) | Satış Fiyatı: %d\n",bic[0],bicf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Ekmek BÄ±Ã§aÄŸÄ± (+10 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bic[0],bicf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6280,8 +6280,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Hançer (+15 Hasar) | Satış Fiyatı: %d\n",bic[1],bicf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d HanÃ§er (+15 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bic[1],bicf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6322,8 +6322,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kısa Balta (+30 Hasar) | Satış Fiyatı: %d\n",bal[0],balf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d KÄ±sa Balta (+30 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bal[0],balf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6364,8 +6364,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Uzun Balta (+50 Hasar) | Satış Fiyatı: %d\n",bal[1],balf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Uzun Balta (+50 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bal[1],balf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6406,8 +6406,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Tek Elli Ağır Balta (+70 Hasar) | Satış Fiyatı: %d\n",bal[2],balf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Tek Elli AÄŸÄ±r Balta (+70 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bal[2],balf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6448,8 +6448,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Çift Elli Ağır Balta (+90 Hasar) | Satış Fiyatı: %d\n",bal[3],balf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Ã‡ift Elli AÄŸÄ±r Balta (+90 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",bal[3],balf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6490,8 +6490,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Uzun Mızrak (+40 Hasar) | Satış Fiyatı: %d\n",miz[0],mizf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Uzun MÄ±zrak (+40 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",miz[0],mizf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6532,8 +6532,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Üç Başlı Mızrak (+60 Hasar) | Satış Fiyatı: %d\n",miz[1],mizf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d ÃœÃ§ BaÅŸlÄ± MÄ±zrak (+60 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",miz[1],mizf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6574,8 +6574,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Uzun Kargı (+80 Hasar) | Satış Fiyatı: %d\n",kar[0],karf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Uzun KargÄ± (+80 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kar[0],karf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6616,8 +6616,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Baltalı Kargı (+100 Hasar) | Satış Fiyatı: %d\n",kar[1],karf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d BaltalÄ± KargÄ± (+100 Hasar) | SatÄ±ÅŸ FiyatÄ±: %d\n",kar[1],karf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6658,8 +6658,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kısa Yay (+20 Ok Hasarı) | Satış Fiyatı: %d\n",yay[0],yayf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d KÄ±sa Yay (+20 Ok HasarÄ±) | SatÄ±ÅŸ FiyatÄ±: %d\n",yay[0],yayf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6698,8 +6698,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Uzun Yay (+30 Ok Hasarı) | Satış Fiyatı: %d\n",yay[1],yayf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Uzun Yay (+30 Ok HasarÄ±) | SatÄ±ÅŸ FiyatÄ±: %d\n",yay[1],yayf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6740,8 +6740,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Crossbow (+50 Ok Hasarı) | Satış Fiyatı: %d\n",yay[2],yayf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Crossbow (+50 Ok HasarÄ±) | SatÄ±ÅŸ FiyatÄ±: %d\n",yay[2],yayf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6782,8 +6782,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Tahta Ok (+2 Ok Hasarı) | Satış Fiyatı: %d\n",ok[0],okf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Tahta Ok (+2 Ok HasarÄ±) | SatÄ±ÅŸ FiyatÄ±: %d\n",ok[0],okf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6824,8 +6824,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Taş Ok (+4 Ok Hasarı) | Satış Fiyatı: %d\n",ok[1],okf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d TaÅŸ Ok (+4 Ok HasarÄ±) | SatÄ±ÅŸ FiyatÄ±: %d\n",ok[1],okf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6866,8 +6866,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Yuvarlak Kalkan (+20 Zırh) | Satış Fiyatı: %d\n",kalkan[0],kalkanf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik Yuvarlak Kalkan (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kalkan[0],kalkanf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6908,8 +6908,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Uzun Kalkan (+30 Zırh) | Satış Fiyatı: %d\n",kalkan[1],kalkanf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik Uzun Kalkan (+30 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kalkan[1],kalkanf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6950,8 +6950,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Büyük Yuvarlak Kalkan (+50 Zırh) | Satış Fiyatı: %d\n",kalkan[2],kalkanf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d BÃ¼yÃ¼k Yuvarlak Kalkan (+50 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kalkan[2],kalkanf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -6992,8 +6992,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Dayanıklı Yuvarlak Kalkan (+70 Zırh) | Satış Fiyatı: %d\n",kalkan[3],kalkanf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d DayanÄ±klÄ± Yuvarlak Kalkan (+70 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kalkan[3],kalkanf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7034,8 +7034,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Eskimiş Miğfer (+10 Zırh) | Satış Fiyatı: %d\n",mig[0],migf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d EskimiÅŸ MiÄŸfer (+10 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",mig[0],migf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7076,8 +7076,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Miğfer (+15 Zırh) | Satış Fiyatı: %d\n",mig[1],migf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik MiÄŸfer (+15 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",mig[1],migf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7118,8 +7118,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kaliteli Miğfer (+20 Zırh) | Satış Fiyatı: %d\n",mig[2],migf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kaliteli MiÄŸfer (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",mig[2],migf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7160,8 +7160,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Dayanıklı Miğfer (+25 Zırh) | Satış Fiyatı: %d\n",mig[3],migf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d DayanÄ±klÄ± MiÄŸfer (+25 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",mig[3],migf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7202,8 +7202,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Hasarlı Gövde Zırhı (+30 Zırh) | Satış Fiyatı: %d\n",gov[0],govf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d HasarlÄ± GÃ¶vde ZÄ±rhÄ± (+30 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",gov[0],govf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7244,8 +7244,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Gövde Zırhı (+40 Zırh) | Satış Fiyatı: %d\n",gov[1],govf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik GÃ¶vde ZÄ±rhÄ± (+40 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",gov[1],govf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7286,8 +7286,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kaliteli Gövde Zırhı (+50 Zırh) | Satış Fiyatı: %d\n",gov[2],govf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kaliteli GÃ¶vde ZÄ±rhÄ± (+50 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",gov[2],govf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7328,8 +7328,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Dayanıklı Gövde Zırhı (+60 Zırh) | Satış Fiyatı: %d\n",gov[3],govf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d DayanÄ±klÄ± GÃ¶vde ZÄ±rhÄ± (+60 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",gov[3],govf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7370,8 +7370,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Parçalanmış Bacak Zırhı (+5 Zırh) | Satış Fiyatı: %d\n",bac[0],bacf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d ParÃ§alanmÄ±ÅŸ Bacak ZÄ±rhÄ± (+5 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bac[0],bacf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7412,8 +7412,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Bacak Zırhı (+10 Zırh) | Satış Fiyatı: %d\n",bac[1],bacf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik Bacak ZÄ±rhÄ± (+10 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bac[1],bacf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7454,8 +7454,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kaliteli Bacak Zırhı (+15 Zırh) | Satış Fiyatı: %d\n",bac[2],bacf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kaliteli Bacak ZÄ±rhÄ± (+15 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bac[2],bacf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7496,8 +7496,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Dayanıklı Bacak Zırhı (+20 Zırh) | Satış Fiyatı: %d\n",bac[3],bacf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d DayanÄ±klÄ± Bacak ZÄ±rhÄ± (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bac[3],bacf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7538,8 +7538,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Paslanmış Kol Zırhı (+5 Zırh) | Satış Fiyatı: %d\n",kol[0],kolf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d PaslanmÄ±ÅŸ Kol ZÄ±rhÄ± (+5 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kol[0],kolf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7580,8 +7580,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Paslanmış Kol Zırhı (+10 Zırh) | Satış Fiyatı: %d\n",kol[1],kolf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d PaslanmÄ±ÅŸ Kol ZÄ±rhÄ± (+10 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kol[1],kolf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7622,8 +7622,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kaliteli Kol Zırhı (+15 Zırh) | Satış Fiyatı: %d\n",kol[2],kolf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kaliteli Kol ZÄ±rhÄ± (+15 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kol[2],kolf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7664,8 +7664,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Sağlam Kol Zırhı (+20 Zırh) | Satış Fiyatı: %d\n",kol[3],kolf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d SaÄŸlam Kol ZÄ±rhÄ± (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",kol[3],kolf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7706,8 +7706,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Yün Eldiven (+5 Zırh) | Satış Fiyatı: %d\n",eld[0],eldf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d YÃ¼n Eldiven (+5 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",eld[0],eldf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7748,8 +7748,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Deri Eldiven (+10 Zırh) | Satış Fiyatı: %d\n",eld[1],eldf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Deri Eldiven (+10 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",eld[1],eldf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7790,8 +7790,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kaliteli Eldiven (+15 Zırh) | Satış Fiyatı: %d\n",eld[2],eldf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kaliteli Eldiven (+15 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",eld[2],eldf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7832,8 +7832,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Ağır Eldiven (+20 Zırh) | Satış Fiyatı: %d\n",eld[3],eldf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d AÄŸÄ±r Eldiven (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",eld[3],eldf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7874,8 +7874,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Yün Bot (+10 Zırh) | Satış Fiyatı: %d\n",bot[0],botf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d YÃ¼n Bot (+10 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bot[0],botf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7916,8 +7916,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Klasik Bot (+15 Zırh) | Satış Fiyatı: %d\n",bot[1],botf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Klasik Bot (+15 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bot[1],botf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -7958,8 +7958,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Sağlam Bot (+20 Zırh) | Satış Fiyatı: %d\n",bot[2],botf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d SaÄŸlam Bot (+20 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bot[2],botf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8000,8 +8000,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Dayanıklı Bot (+25 Zırh) | Satış Fiyatı: %d\n",bot[3],botf[3]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d DayanÄ±klÄ± Bot (+25 ZÄ±rh) | SatÄ±ÅŸ FiyatÄ±: %d\n",bot[3],botf[3]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8042,8 +8042,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Kedi (+50 Zihin Yeteneği) | Satış Fiyatı: %d\n",pet[0],petf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Kedi (+50 Zihin YeteneÄŸi) | SatÄ±ÅŸ FiyatÄ±: %d\n",pet[0],petf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8084,8 +8084,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Köpek (+50 Tahmin Yeteneği) | Satış Fiyatı: %d\n",pet[1],petf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d KÃ¶pek (+50 Tahmin YeteneÄŸi) | SatÄ±ÅŸ FiyatÄ±: %d\n",pet[1],petf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8126,8 +8126,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Bronz Kolye | Satış Fiyatı: %d\n",kolye[0],kolyef[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Bronz Kolye | SatÄ±ÅŸ FiyatÄ±: %d\n",kolye[0],kolyef[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8168,8 +8168,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Altın Kolye | Satış Fiyatı: %d\n",kolye[1],kolyef[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d AltÄ±n Kolye | SatÄ±ÅŸ FiyatÄ±: %d\n",kolye[1],kolyef[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 									
 										if(satsec==1)
@@ -8210,8 +8210,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Elmas Kolye | Satış Fiyatı: %d\n",kolye[2],kolyef[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Elmas Kolye | SatÄ±ÅŸ FiyatÄ±: %d\n",kolye[2],kolyef[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8252,8 +8252,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Bronz Bileklik | Satış Fiyatı: %d\n",bilek[0],bilekf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Bronz Bileklik | SatÄ±ÅŸ FiyatÄ±: %d\n",bilek[0],bilekf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 									
 										if(satsec==1)
@@ -8294,8 +8294,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Altın Bileklik | Satış Fiyatı: %d\n",bilek[1],bilekf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d AltÄ±n Bileklik | SatÄ±ÅŸ FiyatÄ±: %d\n",bilek[1],bilekf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8336,8 +8336,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Elmas Bileklik | Satış Fiyatı: %d\n",bilek[2],bilekf[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Elmas Bileklik | SatÄ±ÅŸ FiyatÄ±: %d\n",bilek[2],bilekf[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8378,8 +8378,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Bronz Yüzük | Satış Fiyatı: %d\n",yuzuk[0],yuzukf[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Bronz YÃ¼zÃ¼k | SatÄ±ÅŸ FiyatÄ±: %d\n",yuzuk[0],yuzukf[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8420,8 +8420,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Altın Yüzük | Satış Fiyatı: %d\n",yuzuk[1],yuzukf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d AltÄ±n YÃ¼zÃ¼k | SatÄ±ÅŸ FiyatÄ±: %d\n",yuzuk[1],yuzukf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 									
 										if(satsec==1)
@@ -8462,8 +8462,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Elmas Yüzük | Satış Fiyatı: %d\n",yuzuk[2],yuzukf[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Elmas YÃ¼zÃ¼k | SatÄ±ÅŸ FiyatÄ±: %d\n",yuzuk[2],yuzukf[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8504,8 +8504,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Bronz Küpe | Satış Fiyatı: %d\n",kupe[0],kupef[0]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Bronz KÃ¼pe | SatÄ±ÅŸ FiyatÄ±: %d\n",kupe[0],kupef[0]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8546,8 +8546,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Altın Küpe | Satış Fiyatı: %d\n",kupe[1],kupef[1]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d AltÄ±n KÃ¼pe | SatÄ±ÅŸ FiyatÄ±: %d\n",kupe[1],kupef[1]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 										
 										if(satsec==1)
@@ -8588,8 +8588,8 @@ int main ()
 											printf("-----\n");
 											break;
 										}
-										printf("%d Elmas Küpe | Satış Fiyatı: %d\n",kupe[2],kupef[2]/2);
-										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dön\n");
+										printf("%d Elmas KÃ¼pe | SatÄ±ÅŸ FiyatÄ±: %d\n",kupe[2],kupef[2]/2);
+										printf("[1]Sat\n[2]Bakmaya devam et\n[3]Geri dÃ¶n\n");
 										scanf("%d",&satsec);
 									
 										if(satsec==1)
@@ -8626,9 +8626,9 @@ int main ()
 							}
 						}
 					
-						else if(duksec==10) //ÇARŞIDAN AYRIL
+						else if(duksec==10) //Ã‡ARÅIDAN AYRIL
 						{
-							printf("Çarşıdan Ayrılınıyor...\n");
+							printf("Ã‡arÅŸÄ±dan AyrÄ±lÄ±nÄ±yor...\n");
 							break;
 						}
 						
@@ -8641,8 +8641,8 @@ int main ()
 				
 				case 10:
 					
-					printf("bozkır dünyasına giriş yaptınız. Burası zorbaların, adilerin ve kötü kalpli insanlarım diyarı gezerken bir Zelemna baskınına uğrayabilir ya da bir bozkır hayvanı tarafından saldırıya uğrayabilirsin bozkır evlerinde kumar oynayabilir ya da özel iznin varsa Zelemna kabilesinin köyüne gidebilirsin.\n");
-					printf("[1]bozkırda gezintiye çık\n[2]kumar çadırlarını bul\n[3]Zelemna kabilesinin köyüne git(daha yapılmadı)\n[4]bozkırı keşfetmesi için insan tut(dikkat et kiraladığın insan ölebilir ya da iyi bir ganimet bulursa alıp kaçabilir)\n");
+					printf("bozkÄ±r dÃ¼nyasÄ±na giriÅŸ yaptÄ±nÄ±z. BurasÄ± zorbalarÄ±n, adilerin ve kÃ¶tÃ¼ kalpli insanlarÄ±m diyarÄ± gezerken bir Zelemna baskÄ±nÄ±na uÄŸrayabilir ya da bir bozkÄ±r hayvanÄ± tarafÄ±ndan saldÄ±rÄ±ya uÄŸrayabilirsin bozkÄ±r evlerinde kumar oynayabilir ya da Ã¶zel iznin varsa Zelemna kabilesinin kÃ¶yÃ¼ne gidebilirsin.\n");
+					printf("[1]bozkÄ±rda gezintiye Ã§Ä±k\n[2]kumar Ã§adÄ±rlarÄ±nÄ± bul\n[3]Zelemna kabilesinin kÃ¶yÃ¼ne git(daha yapÄ±lmadÄ±)\n[4]bozkÄ±rÄ± keÅŸfetmesi iÃ§in insan tut(dikkat et kiraladÄ±ÄŸÄ±n insan Ã¶lebilir ya da iyi bir ganimet bulursa alÄ±p kaÃ§abilir)\n");
 					printf("ne yapmak istersin : ");
 					scanf("%d",&Bsec);
 					
@@ -8651,7 +8651,7 @@ int main ()
 						biht=(rand()%100);
 						if(biht>95)
 						{
-							printf("küçük bir Zelemna devriyesine denk geldin. hemen saklandın fakat bir tanesi seni gördü ve savaşa tutuştunuz.");
+							printf("kÃ¼Ã§Ã¼k bir Zelemna devriyesine denk geldin. hemen saklandÄ±n fakat bir tanesi seni gÃ¶rdÃ¼ ve savaÅŸa tutuÅŸtunuz.");
 							DMcan=100,Dcan=100,Dsaldiri=10,saldiri=hasar/3,tur=0,Ddef=10;
 							savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
 							can=Darena[0];
@@ -8661,19 +8661,19 @@ int main ()
 							onur=Darena[4];
 							if(can>0)
 							{
-								printf("savaştığın kişi devriye lideri olmakla beraber köyün de lideri çıktı. senin çok yiğitçe dövüştüğünü söyledi ve sana köye giriş izinini verdi(giriş izni yapalım)");
+								printf("savaÅŸtÄ±ÄŸÄ±n kiÅŸi devriye lideri olmakla beraber kÃ¶yÃ¼n de lideri Ã§Ä±ktÄ±. senin Ã§ok yiÄŸitÃ§e dÃ¶vÃ¼ÅŸtÃ¼ÄŸÃ¼nÃ¼ sÃ¶yledi ve sana kÃ¶ye giriÅŸ izinini verdi(giriÅŸ izni yapalÄ±m)");
 							}
 							
 						}
 						
 						else if(biht>90)
 						{
-							printf("bozkırın bir yerde çukurlaştığını görüyorsun ve bir hazine mağarası olduğunu farkediyorsun. içerideki hazineyi almak ister misin?\n[1]evet al\n[2]hayır alma\nne yapmak istersin: ");
+							printf("bozkÄ±rÄ±n bir yerde Ã§ukurlaÅŸtÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼yorsun ve bir hazine maÄŸarasÄ± olduÄŸunu farkediyorsun. iÃ§erideki hazineyi almak ister misin?\n[1]evet al\n[2]hayÄ±r alma\nne yapmak istersin: ");
 							scanf("%d",&Bsec2);
 							
 							if(Bsec2==1)
 							{
-								printf("kazancınız\n400 altın\n30 taş ok");
+								printf("kazancÄ±nÄ±z\n400 altÄ±n\n30 taÅŸ ok");
 								altin= altin+400;
 								ok[1]=ok[1]+30;
 								
@@ -8681,25 +8681,25 @@ int main ()
 							
 							else if(Bsec==2)
 							{
-								printf("hiç ellemeden çıktınız");
+								printf("hiÃ§ ellemeden Ã§Ä±ktÄ±nÄ±z");
 							}
 							
 							else
 							{
-								printf("hiç ellemeden çıktınız");
+								printf("hiÃ§ ellemeden Ã§Ä±ktÄ±nÄ±z");
 							}
 							
 						}
 						
 						else if(biht>85)
 						{
-							printf("bozkırda bir kelle avcısını gördün ve seni durdurdu. Birkaç sayfasını kontrol ettikten sonra senin bir suçlu olmadığını söyledi. Bir suçluyu aradığını ve suçluyu bulup öldürmede ona yardım edersen ödülü bölüşebileceğini söyledi.\n[1] yardım et \n[2]yardım etme\nne yapmak istiyorsun");
+							printf("bozkÄ±rda bir kelle avcÄ±sÄ±nÄ± gÃ¶rdÃ¼n ve seni durdurdu. BirkaÃ§ sayfasÄ±nÄ± kontrol ettikten sonra senin bir suÃ§lu olmadÄ±ÄŸÄ±nÄ± sÃ¶yledi. Bir suÃ§luyu aradÄ±ÄŸÄ±nÄ± ve suÃ§luyu bulup Ã¶ldÃ¼rmede ona yardÄ±m edersen Ã¶dÃ¼lÃ¼ bÃ¶lÃ¼ÅŸebileceÄŸini sÃ¶yledi.\n[1] yardÄ±m et \n[2]yardÄ±m etme\nne yapmak istiyorsun");
 							scanf("%d",&Bsec2);
 							
 							if(Bsec==1)
 							{
-								printf("bunu duyduğuna sevindi ve sana aradığın kişinin resmini gösterdi. Gözgörmez Peek adında birisi ve çok atik birisiymiş aramaya koyuluyorsunuz.\n------------\n------------\n------------\n------------\n------------\n");
-								printf("aradığınız adam size gece uyuyorken bir suikast gerçekleştiriyor. Ortağının boğazı çoktan kesilmiş ve oluk oluk kan akıyor. bir savaş başlamak zorunda artık\n");
+								printf("bunu duyduÄŸuna sevindi ve sana aradÄ±ÄŸÄ±n kiÅŸinin resmini gÃ¶sterdi. GÃ¶zgÃ¶rmez Peek adÄ±nda birisi ve Ã§ok atik birisiymiÅŸ aramaya koyuluyorsunuz.\n------------\n------------\n------------\n------------\n------------\n");
+								printf("aradÄ±ÄŸÄ±nÄ±z adam size gece uyuyorken bir suikast gerÃ§ekleÅŸtiriyor. OrtaÄŸÄ±nÄ±n boÄŸazÄ± Ã§oktan kesilmiÅŸ ve oluk oluk kan akÄ±yor. bir savaÅŸ baÅŸlamak zorunda artÄ±k\n");
 								
 								DMcan=300,Dcan=300,Dsaldiri=30,saldiri=hasar/3,tur=0,Ddef=30;
 								savas(DMcan,Dcan,Dsaldiri,tur,saldiri,Ssec,Ddef,exp,can,Darena);
@@ -8710,76 +8710,76 @@ int main ()
 								onur=Darena[4];
 								if(can>0)
 								{
-									printf("ona alışmaya başlamıştın. Öldü ve ona yaraşır bir şekilde gömüldü. Mezari başında güzel bir konuşma sonrası rakibinin kelesi ve aranan kişiler listesiyle kasabaya indin");
+									printf("ona alÄ±ÅŸmaya baÅŸlamÄ±ÅŸtÄ±n. Ã–ldÃ¼ ve ona yaraÅŸÄ±r bir ÅŸekilde gÃ¶mÃ¼ldÃ¼. Mezari baÅŸÄ±nda gÃ¼zel bir konuÅŸma sonrasÄ± rakibinin kelesi ve aranan kiÅŸiler listesiyle kasabaya indin");
 									altin=altin+300;
-									printf("kelleye konan ödül 300 altin\naltin: %d",altin);
+									printf("kelleye konan Ã¶dÃ¼l 300 altin\naltin: %d",altin);
 								}
 							
 							}
 							
 							else
 							{
-								printf("senin bir korkak olduğunu söyledi ve yoluna gitti.");
+								printf("senin bir korkak olduÄŸunu sÃ¶yledi ve yoluna gitti.");
 							}
 						}
 						
 						else if(biht>80)
 						{
-							printf("bir tüccara rastladın. yolda kaldığını ve acilen paraya ihtiyacı olduğunu söyledi. elindeki mallarını yarı fiyatına sana satmak istiyor. Almak ister misin?\n[1]evet isterim \n[2]hayır istemem\n");
-							printf("daha bitmedi sonra dene şansını");
+							printf("bir tÃ¼ccara rastladÄ±n. yolda kaldÄ±ÄŸÄ±nÄ± ve acilen paraya ihtiyacÄ± olduÄŸunu sÃ¶yledi. elindeki mallarÄ±nÄ± yarÄ± fiyatÄ±na sana satmak istiyor. Almak ister misin?\n[1]evet isterim \n[2]hayÄ±r istemem\n");
+							printf("daha bitmedi sonra dene ÅŸansÄ±nÄ±");
 							
 						}
 						
 						else if(biht>75)
 						{
-							printf("bir katibe denk geldin kendisi yolda kalmış ve yol güvenliğini sağlaman karşılığında sana belli bri ücret sunmak istiyor ne dersin");
+							printf("bir katibe denk geldin kendisi yolda kalmÄ±ÅŸ ve yol gÃ¼venliÄŸini saÄŸlaman karÅŸÄ±lÄ±ÄŸÄ±nda sana belli bri Ã¼cret sunmak istiyor ne dersin");
 						}
 						
 						else if(biht>70)
 						{
-							printf("yolda bir efsun taşı görüyorsun(yetenek ağacı için)");
+							printf("yolda bir efsun taÅŸÄ± gÃ¶rÃ¼yorsun(yetenek aÄŸacÄ± iÃ§in)");
 						}
 						
 						else if(biht>65)
 						{
-							printf("bozkırın en derinlerine doğru yol almaya başladın devam etmek istediğine emin misin?\n[1]evet\n[2]hayır\nne yapmak istersin :");
+							printf("bozkÄ±rÄ±n en derinlerine doÄŸru yol almaya baÅŸladÄ±n devam etmek istediÄŸine emin misin?\n[1]evet\n[2]hayÄ±r\nne yapmak istersin :");
 							scanf("%d",&Bsec2);
 							
 							if(Bsec2==1)
 							{
-								printf("bir çölü andırsa da su bulunmasında sıkıntı yaşamadığından şanslısın. Derinlerde bir ejderha yuvasına rastladın. içine girmek ister misin?\n[1]evet giriyorum\n[2]Hayır bu kadar eğlence yeter eve gidelim\nne yapmak istersin: ");
+								printf("bir Ã§Ã¶lÃ¼ andÄ±rsa da su bulunmasÄ±nda sÄ±kÄ±ntÄ± yaÅŸamadÄ±ÄŸÄ±ndan ÅŸanslÄ±sÄ±n. Derinlerde bir ejderha yuvasÄ±na rastladÄ±n. iÃ§ine girmek ister misin?\n[1]evet giriyorum\n[2]HayÄ±r bu kadar eÄŸlence yeter eve gidelim\nne yapmak istersin: ");
 								scanf("%d",&Bsec2);
 								
 								if(Bsec2==1)
 								{
-									printf("ejderha yuvasında değil ama yumurtaları burada. ne yapmak ister misin?\n[1]evet gir ve al\n[2]gir ve ejderhayı bekle\n[3]çabucak kaç\nne yapmak istersin: ");
+									printf("ejderha yuvasÄ±nda deÄŸil ama yumurtalarÄ± burada. ne yapmak ister misin?\n[1]evet gir ve al\n[2]gir ve ejderhayÄ± bekle\n[3]Ã§abucak kaÃ§\nne yapmak istersin: ");
 									scanf("%d",Bsec2);
 									if(Bsec==1)
 									{
-										printf("yumurtaları alıp kaçtın.(envantere eklenecek ama şimdilik yumurta eklenmediğinden al para)");
+										printf("yumurtalarÄ± alÄ±p kaÃ§tÄ±n.(envantere eklenecek ama ÅŸimdilik yumurta eklenmediÄŸinden al para)");
 										altin=altin+300;
-										printf("yumurtanın fiyatı 300 altin\naltin: %d",altin);
+										printf("yumurtanÄ±n fiyatÄ± 300 altin\naltin: %d",altin);
 									}
 									
 									else if(Bsec==2)
 									{
-										printf("ejdeyhayla mı şavaşcan şen oyyy (daha eklemedik ama kesin yenemezdin:))");
+										printf("ejdeyhayla mÄ± ÅŸavaÅŸcan ÅŸen oyyy (daha eklemedik ama kesin yenemezdin:))");
 									}
 									
 									else
 									{
-										printf("gece geç olmadan eve döndün pek bir şey bulamadın birkaç tavşan, dağ ve toprak.");
+										printf("gece geÃ§ olmadan eve dÃ¶ndÃ¼n pek bir ÅŸey bulamadÄ±n birkaÃ§ tavÅŸan, daÄŸ ve toprak.");
 									}
 								}
 								
 								else
 								{
-									printf("gece geç olmadan eve döndün pek bir şey bulamadın birkaç tavşan, dağ ve toprak.");
+									printf("gece geÃ§ olmadan eve dÃ¶ndÃ¼n pek bir ÅŸey bulamadÄ±n birkaÃ§ tavÅŸan, daÄŸ ve toprak.");
 								}
 							}
 							else
 							{
-								printf("gece geç olmadan eve döndün pek bir şey bulamadın birkaç tavşan, dağ ve toprak.");
+								printf("gece geÃ§ olmadan eve dÃ¶ndÃ¼n pek bir ÅŸey bulamadÄ±n birkaÃ§ tavÅŸan, daÄŸ ve toprak.");
 							}
 						}
 						
@@ -8846,19 +8846,19 @@ int main ()
 					
 					else if(Bsec==2)
 					{
-						printf("kumar çadırları kuruluyor daha sonra gelmeniz söylendi\n");
+						printf("kumar Ã§adÄ±rlarÄ± kuruluyor daha sonra gelmeniz sÃ¶ylendi\n");
 					}
 					
 					else if(Bsec==3)
 					{
-						printf("Zelemna kabilesinin köyüne geldin ama senden giriş belgesi sordular. olmadığını görünce seni kovaladılar. canını zor kurtardın\n");
+						printf("Zelemna kabilesinin kÃ¶yÃ¼ne geldin ama senden giriÅŸ belgesi sordular. olmadÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼nce seni kovaladÄ±lar. canÄ±nÄ± zor kurtardÄ±n\n");
 					}
 					
 					else if(Bsec==4)
 					{
-						printf("senin içni uçsuz bucaksız bu bozkırı keşfetmeye bir grup talip oldu. Senin yerine keşif yapmak için 300 altın fiyat istediler ve yola çıkmaya hazırlar.\n");
-						//keşif giden kişi çalmışsa boş gözükcek ama talan edilmiş olcak doluysa tekrar gidilmişse talan edilmiş göstercek
-						printf("[1]evet 300 altın veriyorum yola çıkın(lütfen bir kervan gelmeden diğerini yolamayın)\n[2]yok ben fakirim\n");
+						printf("senin iÃ§ni uÃ§suz bucaksÄ±z bu bozkÄ±rÄ± keÅŸfetmeye bir grup talip oldu. Senin yerine keÅŸif yapmak iÃ§in 300 altÄ±n fiyat istediler ve yola Ã§Ä±kmaya hazÄ±rlar.\n");
+						//keÅŸif giden kiÅŸi Ã§almÄ±ÅŸsa boÅŸ gÃ¶zÃ¼kcek ama talan edilmiÅŸ olcak doluysa tekrar gidilmiÅŸse talan edilmiÅŸ gÃ¶stercek
+						printf("[1]evet 300 altÄ±n veriyorum yola Ã§Ä±kÄ±n(lÃ¼tfen bir kervan gelmeden diÄŸerini yolamayÄ±n)\n[2]yok ben fakirim\n");
 						printf("ne yapmak istersin : ");
 						scanf("%d",&Bsec1);
 						
@@ -8884,18 +8884,18 @@ int main ()
 						
 						else if(Bsec1==2)
 						{
-							printf("Şifu\'ların başı senin reddetmene üzüldü biz canımızı ortaya koyuyoruz dedi ve artık senin için fiyatın 400 altına çıktığını söyledi.");
+							printf("Åifu\'larÄ±n baÅŸÄ± senin reddetmene Ã¼zÃ¼ldÃ¼ biz canÄ±mÄ±zÄ± ortaya koyuyoruz dedi ve artÄ±k senin iÃ§in fiyatÄ±n 400 altÄ±na Ã§Ä±ktÄ±ÄŸÄ±nÄ± sÃ¶yledi.");
 						}
 						
 						else
 						{
-							printf("zannederim yanlış bir tuşa bastın.");
+							printf("zannederim yanlÄ±ÅŸ bir tuÅŸa bastÄ±n.");
 						}
 					}
 					
 					else
 					{
-						printf("doğru bir tuşa basmadın ve gün boşa geçti");
+						printf("doÄŸru bir tuÅŸa basmadÄ±n ve gÃ¼n boÅŸa geÃ§ti");
 					}
 					
 				break;
@@ -8905,26 +8905,26 @@ int main ()
 					while(Lliman != 0){
 	
 	printf("Limana geldiniz.\nNe yapmak istersiniz?\n");
-	printf("Liman:\n1-Liman'da gez.\n2-Gemileri gez.\n3-Göreve git.\n4-Liman'dan çık\n");
+	printf("Liman:\n1-Liman'da gez.\n2-Gemileri gez.\n3-GÃ¶reve git.\n4-Liman'dan Ã§Ä±k\n");
 	scanf("%d",&Lsecim1);
 	
 		if(Lsecim1 == 1){
 			while(Lliman != 0){
 			
-		printf("Yapılacaklar:\n1-Balıkçıya git.\n2-Kervanları gez.\n3-Sandallara bak.\n4-Giyim kuşam yerlerine bak.\n5-Hana git.\n6-Yapılacaklara geri dön.\n");
+		printf("YapÄ±lacaklar:\n1-BalÄ±kÃ§Ä±ya git.\n2-KervanlarÄ± gez.\n3-Sandallara bak.\n4-Giyim kuÅŸam yerlerine bak.\n5-Hana git.\n6-YapÄ±lacaklara geri dÃ¶n.\n");
 		printf("Ne yapmak istersin:");
 		scanf("%d",&Lsecim1);
 		
 		if(Lsecim1 == 1){
 			while(Lliman != 0){
 			
-			printf("Balıkçıya gittin.\nBizim Karakter:Merhabalar kolay gelsin.Balık piyasası ne durumda onu öğrenebilir miyim?\n");
-			printf("Balıkçı:Size de merhaba teşekkürler.Balik piyasasi şuan iyi durumda değil.Aynı zamanda balık getirecek tedarikçilerde azaldı.Denizde artan korsancılık yüzünden mallarimiz güvenli bir şekilde limana ulaşmıyor.Umarım bu korsanlar belalarini bulurlar.\n");
-			printf("Bizim karakter:Anladım.Peki bu korsanlar denizin her yerinde mi olurlar?\nTüccar:Hayır ama çoğu yerde onlara rastlamak mümkün.Özellikle ticaret yollari üzerinde.Gerçekten onların acıması yok beyim.\n");
-			printf("Bizim karakter:Anladım teşekkür ederim balıkçı.\n1-Yapılıcaklara geri dön.\n");
+			printf("BalÄ±kÃ§Ä±ya gittin.\nBizim Karakter:Merhabalar kolay gelsin.BalÄ±k piyasasÄ± ne durumda onu Ã¶ÄŸrenebilir miyim?\n");
+			printf("BalÄ±kÃ§Ä±:Size de merhaba teÅŸekkÃ¼rler.Balik piyasasi ÅŸuan iyi durumda deÄŸil.AynÄ± zamanda balÄ±k getirecek tedarikÃ§ilerde azaldÄ±.Denizde artan korsancÄ±lÄ±k yÃ¼zÃ¼nden mallarimiz gÃ¼venli bir ÅŸekilde limana ulaÅŸmÄ±yor.UmarÄ±m bu korsanlar belalarini bulurlar.\n");
+			printf("Bizim karakter:AnladÄ±m.Peki bu korsanlar denizin her yerinde mi olurlar?\nTÃ¼ccar:HayÄ±r ama Ã§oÄŸu yerde onlara rastlamak mÃ¼mkÃ¼n.Ã–zellikle ticaret yollari Ã¼zerinde.GerÃ§ekten onlarÄ±n acÄ±masÄ± yok beyim.\n");
+			printf("Bizim karakter:AnladÄ±m teÅŸekkÃ¼r ederim balÄ±kÃ§Ä±.\n1-YapÄ±lÄ±caklara geri dÃ¶n.\n");
 			scanf("%d",&Lsecim1);
 			if(Lsecim1 == 1){
-			   printf("Geri dönülüyor...");
+			   printf("Geri dÃ¶nÃ¼lÃ¼yor...");
 			   break;	
 			}
 		}
@@ -8933,155 +8933,155 @@ int main ()
 		else if(Lsecim1 == 2){
    			while(Lliman != 0){
    				
-   			printf("Limanda gezerken gözüne yeni gelen kervanlar takildi ve yanlarına gittin:Merhabalar kolay gelsin.Kervan ticareti hakkinda bilgi almak istiyorum.\nTüccar:Size de merhabalar teşekkürler.Tabi nasil yardimci olabilirim?\n");
-			printf("Bizim karakter:Ticaret yollarini eşkiyaların çok bastığını duydum doğru mu?\nTüccar:Ah efendim ah hiç sormayın.Sizlere şunu söyleyeyim her kervan ölümü yanlarında taşıyorlar.\n");
-			printf("Bizim karakter:Peki bu kadar zahmet kazandığınız para için yeterli oluyor mu?\nTüccar:Olmaz mı efendim hehehe.Sen de kervana katılıp ticaret yapmayı düşünür müsün?\n1-Kervana katil.\n2-Umursama ve yapılcaklar listesine geri dön.\n");
+   			printf("Limanda gezerken gÃ¶zÃ¼ne yeni gelen kervanlar takildi ve yanlarÄ±na gittin:Merhabalar kolay gelsin.Kervan ticareti hakkinda bilgi almak istiyorum.\nTÃ¼ccar:Size de merhabalar teÅŸekkÃ¼rler.Tabi nasil yardimci olabilirim?\n");
+			printf("Bizim karakter:Ticaret yollarini eÅŸkiyalarÄ±n Ã§ok bastÄ±ÄŸÄ±nÄ± duydum doÄŸru mu?\nTÃ¼ccar:Ah efendim ah hiÃ§ sormayÄ±n.Sizlere ÅŸunu sÃ¶yleyeyim her kervan Ã¶lÃ¼mÃ¼ yanlarÄ±nda taÅŸÄ±yorlar.\n");
+			printf("Bizim karakter:Peki bu kadar zahmet kazandÄ±ÄŸÄ±nÄ±z para iÃ§in yeterli oluyor mu?\nTÃ¼ccar:Olmaz mÄ± efendim hehehe.Sen de kervana katÄ±lÄ±p ticaret yapmayÄ± dÃ¼ÅŸÃ¼nÃ¼r mÃ¼sÃ¼n?\n1-Kervana katil.\n2-Umursama ve yapÄ±lcaklar listesine geri dÃ¶n.\n");
 			scanf("%d",&Lsecim1);
 			
 			if(Lsecim1 == 1){
-				printf("Kervana katildin.Kervan 3'e ayrilacaktır1-İpek Yolu.\n2-Kürk Yolu.\n3-Baharat Yolu.\nHangisini seçmek istersin?\n");
+				printf("Kervana katildin.Kervan 3'e ayrilacaktÄ±r1-Ä°pek Yolu.\n2-KÃ¼rk Yolu.\n3-Baharat Yolu.\nHangisini seÃ§mek istersin?\n");
 				scanf("%d",&Lsecim1);
 				if(Lsecim1 == 1){
-					printf("ipek yolu üzerinde giderken yolda eşkiyalar tarafından baskına uğradın.\n1-Savaşın.\n2-Kaç.\n");
+					printf("ipek yolu Ã¼zerinde giderken yolda eÅŸkiyalar tarafÄ±ndan baskÄ±na uÄŸradÄ±n.\n1-SavaÅŸÄ±n.\n2-KaÃ§.\n");
 					scanf("%d",&Lsecim1);
 					if(Lsecim1 == 1){
-						printf("Eşkiyalar ile savaştınız ve kaybettiniz.Esir alındın.Eşkiyalar seni bir süre sürüklediler ve yol kenarın attılar.\n");
+						printf("EÅŸkiyalar ile savaÅŸtÄ±nÄ±z ve kaybettiniz.Esir alÄ±ndÄ±n.EÅŸkiyalar seni bir sÃ¼re sÃ¼rÃ¼klediler ve yol kenarÄ±n attÄ±lar.\n");
 						can = can - 10;
 						altin = altin - 15;
-					    printf("Canınız: %d\n",can);
-						printf("Altınınız: %d\n",altin);
-						printf("Uzun bir çabanın ardından geri döndün.\n");
-						printf("Geri dönülüyor...\n");
+					    printf("CanÄ±nÄ±z: %d\n",can);
+						printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+						printf("Uzun bir Ã§abanÄ±n ardÄ±ndan geri dÃ¶ndÃ¼n.\n");
+						printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 						break;	
 					}
 					else{
-						printf("Kaçtın ama kavurucu Arap sıcağının ortasında kaldın.Yaşamak için yürümen lazım ama yürüdükçe sıcaklık ve susuzluk artıyor.\n");
+						printf("KaÃ§tÄ±n ama kavurucu Arap sÄ±caÄŸÄ±nÄ±n ortasÄ±nda kaldÄ±n.YaÅŸamak iÃ§in yÃ¼rÃ¼men lazÄ±m ama yÃ¼rÃ¼dÃ¼kÃ§e sÄ±caklÄ±k ve susuzluk artÄ±yor.\n");
 						while(LGgun < 10){
-							printf("Günler geçiyor ve bitmek bilmeyen yolda sıcaklık ve susuzluğun verdiği yorgunluktan bayıldın.\n");
+							printf("GÃ¼nler geÃ§iyor ve bitmek bilmeyen yolda sÄ±caklÄ±k ve susuzluÄŸun verdiÄŸi yorgunluktan bayÄ±ldÄ±n.\n");
 							LGgun ++;
-							printf("Yeni gün: %d\n",LGgun);
-							printf("Bir müddet sonra gözünü açtın ama nerede olduğunu bilmiyorsun.Yanına yüzü kapalı bir adam geldi ve su verdi.Suyu içtikten sonra bira rahatladın.\n");
+							printf("Yeni gÃ¼n: %d\n",LGgun);
+							printf("Bir mÃ¼ddet sonra gÃ¶zÃ¼nÃ¼ aÃ§tÄ±n ama nerede olduÄŸunu bilmiyorsun.YanÄ±na yÃ¼zÃ¼ kapalÄ± bir adam geldi ve su verdi.Suyu iÃ§tikten sonra bira rahatladÄ±n.\n");
 							can = can + 5;
-							printf("Canın: %d\n",can);
-							printf("Kendine geldikten sonra adama:Neredeyim ben?Siz kimsiniz?\nAdam kendi dilinde birşeyler söyledi ve en ufak birşey anlamadın.\n");
-							printf("Arkadan bir ses geldi:Lut çölü yakınlarında bir yerdeyiz.Senin ne işin var buralarda?\nBizim karakter:Avrupa'dan bir ticaret kervanı ile yola çıktım ama yolda eşkiyalar tarafından saldırıya uğradık çoğu kişi öldü kalanlarda kaçtı onlara ne oldu bilmiyorum ama çölde yürürken susuzluk ve sıaktan bayılmışım.\n");
-					        printf("Adam:Anladım yabancı.Buralarda dikkatli olman lazım.Söyle bakalım ne yapmak istersin.\nBizim karakter:Efendim öncelikle yardımlarınız için minnettarım eğer olursa evime gitmek istiyorum bu konuda bana yardımcı olabilir misiniz?");
-					        printf("Adam:Pekala yabancı sana fazla olan bir atı ve biraz erzak verebilirim ama bu at uzun yol için dayanaklı değil.Eve dönerken atını dinlendirmelisin.\nAta bindin ve yola çıktın.\n");
+							printf("CanÄ±n: %d\n",can);
+							printf("Kendine geldikten sonra adama:Neredeyim ben?Siz kimsiniz?\nAdam kendi dilinde birÅŸeyler sÃ¶yledi ve en ufak birÅŸey anlamadÄ±n.\n");
+							printf("Arkadan bir ses geldi:Lut Ã§Ã¶lÃ¼ yakÄ±nlarÄ±nda bir yerdeyiz.Senin ne iÅŸin var buralarda?\nBizim karakter:Avrupa'dan bir ticaret kervanÄ± ile yola Ã§Ä±ktÄ±m ama yolda eÅŸkiyalar tarafÄ±ndan saldÄ±rÄ±ya uÄŸradÄ±k Ã§oÄŸu kiÅŸi Ã¶ldÃ¼ kalanlarda kaÃ§tÄ± onlara ne oldu bilmiyorum ama Ã§Ã¶lde yÃ¼rÃ¼rken susuzluk ve sÄ±aktan bayÄ±lmÄ±ÅŸÄ±m.\n");
+					        printf("Adam:AnladÄ±m yabancÄ±.Buralarda dikkatli olman lazÄ±m.SÃ¶yle bakalÄ±m ne yapmak istersin.\nBizim karakter:Efendim Ã¶ncelikle yardÄ±mlarÄ±nÄ±z iÃ§in minnettarÄ±m eÄŸer olursa evime gitmek istiyorum bu konuda bana yardÄ±mcÄ± olabilir misiniz?");
+					        printf("Adam:Pekala yabancÄ± sana fazla olan bir atÄ± ve biraz erzak verebilirim ama bu at uzun yol iÃ§in dayanaklÄ± deÄŸil.Eve dÃ¶nerken atÄ±nÄ± dinlendirmelisin.\nAta bindin ve yola Ã§Ä±ktÄ±n.\n");
 					        LGgun = 20 + LAgun;
-					        printf("Yeni gün: %d\n",LGgun);
-					        printf("Sonunda kendi topraklarına döndün ama bu yolculuk sana pahalıya patladı.");
+					        printf("Yeni gÃ¼n: %d\n",LGgun);
+					        printf("Sonunda kendi topraklarÄ±na dÃ¶ndÃ¼n ama bu yolculuk sana pahalÄ±ya patladÄ±.");
 					        altin = altin - 50;
 					        can = can - 10;
-					        printf("Canınız: %d\n",can);
-					        printf("Altınınız: %d\n",altin);
+					        printf("CanÄ±nÄ±z: %d\n",can);
+					        printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 					        
 						}
-						  printf("Geri dönüldü...\n");
+						  printf("Geri dÃ¶nÃ¼ldÃ¼...\n");
 						  break;
 					}
 				}
 				if(Lsecim1== 2){
-					printf("Kürk yolu üzerinden giden kervana katıldın ve yola çıktınız.Amur Nehri yakınlarına geldiniz ve tüccarlar ellerindeki hayvan kürklerini satmaya başladılar.\n1-Satmalarına yardım et.\n2-Gezintiye çık.\n");
+					printf("KÃ¼rk yolu Ã¼zerinden giden kervana katÄ±ldÄ±n ve yola Ã§Ä±ktÄ±nÄ±z.Amur Nehri yakÄ±nlarÄ±na geldiniz ve tÃ¼ccarlar ellerindeki hayvan kÃ¼rklerini satmaya baÅŸladÄ±lar.\n1-SatmalarÄ±na yardÄ±m et.\n2-Gezintiye Ã§Ä±k.\n");
 					scanf("%d",&Lsecim1);
 					if(Lsecim1 == 1){
-						printf("Tüccarlara elinden geldiğince yardım ettin ve malları sattınız.Tüccarlar bu garetn karşılığında sana giyebilceğin güzel bir hayvan postu hediye ettiler.Ticaret bitti ve kervanla birlikte tekrar geri döndün\n");
-						printf("Yeni eşya: Hayvan postu.");
+						printf("TÃ¼ccarlara elinden geldiÄŸince yardÄ±m ettin ve mallarÄ± sattÄ±nÄ±z.TÃ¼ccarlar bu garetn karÅŸÄ±lÄ±ÄŸÄ±nda sana giyebilceÄŸin gÃ¼zel bir hayvan postu hediye ettiler.Ticaret bitti ve kervanla birlikte tekrar geri dÃ¶ndÃ¼n\n");
+						printf("Yeni eÅŸya: Hayvan postu.");
 						altin = altin + 20;
 						onur = onur + 5;
 						exp = exp + 50;
 						def = def + 10;
-						printf("Altınınız: %d\n",altin);
+						printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 						printf("Onurunuz: %d\n",onur);
-						printf("Tecrübeniz: %d\n",exp);
-						printf("Defansınız: %d\n",def);	
-						printf("Geri dönüldü...\n");
+						printf("TecrÃ¼beniz: %d\n",exp);
+						printf("DefansÄ±nÄ±z: %d\n",def);	
+						printf("Geri dÃ¶nÃ¼ldÃ¼...\n");
 						break;
 					}
 					else{
-						printf("Etrafı gözlemledin ve ticaret bitince geri döndünüz..\n");
+						printf("EtrafÄ± gÃ¶zlemledin ve ticaret bitince geri dÃ¶ndÃ¼nÃ¼z..\n");
 						exp = exp + 50;
-						printf("Geri dönüldü...\n");
+						printf("Geri dÃ¶nÃ¼ldÃ¼...\n");
 						break;
 					}
 				}	
 				if(Lsecim1 == 3){
-					printf("Kervan ile beraber baharat yolu üzerinden yola çıktınız.Bir çok yerden geçtiniz ve Arap Yarımadası taraflarına kadar geldiniz.Ama o da ne!!Eşkiyalar üzerinize doğru geliyor.\n1-Savaş.\n2-Kaç.\n");
+					printf("Kervan ile beraber baharat yolu Ã¼zerinden yola Ã§Ä±ktÄ±nÄ±z.Bir Ã§ok yerden geÃ§tiniz ve Arap YarÄ±madasÄ± taraflarÄ±na kadar geldiniz.Ama o da ne!!EÅŸkiyalar Ã¼zerinize doÄŸru geliyor.\n1-SavaÅŸ.\n2-KaÃ§.\n");
 					scanf("%d",&Lsecim1);
 					if(Lsecim1 == 1){
-						printf("Eşkiyalar ile senin önderliğinde savaştınız ufak bir zayiat verseniz de savaşı kazandınız.Ve eşkiyalardan bir çok değerli eşya kazandınız.\n");
+						printf("EÅŸkiyalar ile senin Ã¶nderliÄŸinde savaÅŸtÄ±nÄ±z ufak bir zayiat verseniz de savaÅŸÄ± kazandÄ±nÄ±z.Ve eÅŸkiyalardan bir Ã§ok deÄŸerli eÅŸya kazandÄ±nÄ±z.\n");
 						altin = altin + 200;
 						exp = exp + 20;
 						kilic_yetenegi = kilic_yetenegi + 15;
 						def = def+ 10;
-						printf("Altınınız: %d\n",altin);
-						printf("Tecrübeniz: %d\n",exp);
-						printf("Kılıç yeteğeni: %d\n",kilic_yetenegi);
+						printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+						printf("TecrÃ¼beniz: %d\n",exp);
+						printf("KÄ±lÄ±Ã§ yeteÄŸeni: %d\n",kilic_yetenegi);
 						printf("Defans: %d\n",def);
-						printf("Eşkiyalar ile savaştıktan sonra yoluna devam ettin ve Halep'e ulaştınız.Tüccarlar ile beraber malları satmaya başladınız.\n1-Yardım et.\n2-Gezintiye çık.\n");
+						printf("EÅŸkiyalar ile savaÅŸtÄ±ktan sonra yoluna devam ettin ve Halep'e ulaÅŸtÄ±nÄ±z.TÃ¼ccarlar ile beraber mallarÄ± satmaya baÅŸladÄ±nÄ±z.\n1-YardÄ±m et.\n2-Gezintiye Ã§Ä±k.\n");
 						scanf("%d",&Lsecim1);
 						
 						if(Lsecim1 == 1){
-							printf("Tüccarlar ile malları sattınız ve bunun karşılığında sen de kazandın.\n");
+							printf("TÃ¼ccarlar ile mallarÄ± sattÄ±nÄ±z ve bunun karÅŸÄ±lÄ±ÄŸÄ±nda sen de kazandÄ±n.\n");
 							altin = altin + 100;
 							exp = exp + 20;
-							printf("Yeni eşya:ipek kaftan.\n");
+							printf("Yeni eÅŸya:ipek kaftan.\n");
 							def = def + 5;
-							printf("Altınınız: %d\n",altin);
-							printf("Tecrübeniz: %d\n",exp);
-							printf("Defansınız: %d\n",def);
-							printf("Ticaret bitti ve geri döndünüz...\n");
+							printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+							printf("TecrÃ¼beniz: %d\n",exp);
+							printf("DefansÄ±nÄ±z: %d\n",def);
+							printf("Ticaret bitti ve geri dÃ¶ndÃ¼nÃ¼z...\n");
 							LGgun = LAgun + 7;
-							printf("Yeni gün: %d",LGgun);
-							printf("Geri dönülüyor...\n");
+							printf("Yeni gÃ¼n: %d",LGgun);
+							printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 							break;
 						}
 						else{
-							printf("Pazarda gezintiye çıktın ve etrafı gözlemlerken 2-3 şehir soytarısı önünü kesti.\n1-Karşı koy.\n2-Teslim ol.\n");
+							printf("Pazarda gezintiye Ã§Ä±ktÄ±n ve etrafÄ± gÃ¶zlemlerken 2-3 ÅŸehir soytarÄ±sÄ± Ã¶nÃ¼nÃ¼ kesti.\n1-KarÅŸÄ± koy.\n2-Teslim ol.\n");
 							scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
-								printf("Soytarıları karşı koydun ve hepsinin hakkından geldin.\n");
+								printf("SoytarÄ±larÄ± karÅŸÄ± koydun ve hepsinin hakkÄ±ndan geldin.\n");
 								kilic_yetenegi = kilic_yetenegi + 10;
 								can = can - 5;
 								altin = altin + 15;
-								printf("Kılıç yeteneğin: %d",kilic_yetenegi);
-								printf("Canınız: %d",can);
-								printf("Altınınız: %d",altin);
-								printf("Pazarda gezintin bitti ve tüccarlar ile beraber geri dönmek için yola koyuldunuz...\n");
+								printf("KÄ±lÄ±Ã§ yeteneÄŸin: %d",kilic_yetenegi);
+								printf("CanÄ±nÄ±z: %d",can);
+								printf("AltÄ±nÄ±nÄ±z: %d",altin);
+								printf("Pazarda gezintin bitti ve tÃ¼ccarlar ile beraber geri dÃ¶nmek iÃ§in yola koyuldunuz...\n");
 								LGgun = LAgun + 7;
-								printf("Yeni gün: %d",LGgun);
-								printf("Geri dönülüyor...\n");
+								printf("Yeni gÃ¼n: %d",LGgun);
+								printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 								break;
 							}
 							else{
-								printf("Soytarılara teslim oldun ve onurun Araplar arasında alay konusu oldu");
+								printf("SoytarÄ±lara teslim oldun ve onurun Araplar arasÄ±nda alay konusu oldu");
 								altin = altin - 100;
 								onur = onur - 20;
 								can = can - 10;
-								printf("Altınınız: %d",altin);
+								printf("AltÄ±nÄ±nÄ±z: %d",altin);
 								printf("Onurunuz: %d",onur);
-								printf("Canınız: %d",can);
-								printf("Bu utanç verici hadisenin ardından tüccarların yanına döndün ve geri dönmek üzere yola koyuldunuz...\n");
-								printf("Geri dönülüyor...\n");
+								printf("CanÄ±nÄ±z: %d",can);
+								printf("Bu utanÃ§ verici hadisenin ardÄ±ndan tÃ¼ccarlarÄ±n yanÄ±na dÃ¶ndÃ¼n ve geri dÃ¶nmek Ã¼zere yola koyuldunuz...\n");
+								printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 								break;
 							}
 						}
-						printf("Maları sattınız ve tüccarlarile geri döndünüz...");
+						printf("MalarÄ± sattÄ±nÄ±z ve tÃ¼ccarlarile geri dÃ¶ndÃ¼nÃ¼z...");
 						LGgun = 20 + LAgun;
-						printf("Yeni gün: %d",LGgun);
+						printf("Yeni gÃ¼n: %d",LGgun);
 					}
 					else if(Lsecim1 == 2){
-						printf("Eşkiyaların saldırısndan kaçtın ve kendini zor kurtardın ama Arap Yarımadasının kavurucu sıcaklığında susuz ve aç olarak tek başına kaldın.Sıcaklık ve susuzluk git gide arttı ve dayanamayıp baıldın.\n");
-						printf("Gözünü açtın ve yanında duran suyu içtin ve biraz kendine geldin.Yanına biri yaklaştı ve sana:Kendine gelmişsin yabancı söyle bakalım buralarda işin ne?\nBizim karakter:Avrupa'dan ticaret için gelen bir kervan ile birlikteydim.Yolda eşkiyalar pusu attı çoğu kişi öldü ya da kaçtı.Bende kaçtım ama sıcak ve susuzluktan bayılmışım.\n");
-						printf("Adam:Buralarda dikkatli olmak lazım.Buranın eşkiya çoktur ve acımasızdır.Bizler buraların Bedevileriyiz.Söyle bakalı şimdi ne yapacaksın.\nBizim karakter:Evime dönmeyi istiyorum efendim.Bu konuda bana yardımcı olabilir misiniz?\n");
-						printf("Bedevi:Hahaha bu acele de eyin nesi yabancı.istersen bizimle biraz kalıp sonra da gidebilirsin.\n1-Kal.\n2-Git.\n");
+						printf("EÅŸkiyalarÄ±n saldÄ±rÄ±sndan kaÃ§tÄ±n ve kendini zor kurtardÄ±n ama Arap YarÄ±madasÄ±nÄ±n kavurucu sÄ±caklÄ±ÄŸÄ±nda susuz ve aÃ§ olarak tek baÅŸÄ±na kaldÄ±n.SÄ±caklÄ±k ve susuzluk git gide arttÄ± ve dayanamayÄ±p baÄ±ldÄ±n.\n");
+						printf("GÃ¶zÃ¼nÃ¼ aÃ§tÄ±n ve yanÄ±nda duran suyu iÃ§tin ve biraz kendine geldin.YanÄ±na biri yaklaÅŸtÄ± ve sana:Kendine gelmiÅŸsin yabancÄ± sÃ¶yle bakalÄ±m buralarda iÅŸin ne?\nBizim karakter:Avrupa'dan ticaret iÃ§in gelen bir kervan ile birlikteydim.Yolda eÅŸkiyalar pusu attÄ± Ã§oÄŸu kiÅŸi Ã¶ldÃ¼ ya da kaÃ§tÄ±.Bende kaÃ§tÄ±m ama sÄ±cak ve susuzluktan bayÄ±lmÄ±ÅŸÄ±m.\n");
+						printf("Adam:Buralarda dikkatli olmak lazÄ±m.BuranÄ±n eÅŸkiya Ã§oktur ve acÄ±masÄ±zdÄ±r.Bizler buralarÄ±n Bedevileriyiz.SÃ¶yle bakalÄ± ÅŸimdi ne yapacaksÄ±n.\nBizim karakter:Evime dÃ¶nmeyi istiyorum efendim.Bu konuda bana yardÄ±mcÄ± olabilir misiniz?\n");
+						printf("Bedevi:Hahaha bu acele de eyin nesi yabancÄ±.istersen bizimle biraz kalÄ±p sonra da gidebilirsin.\n1-Kal.\n2-Git.\n");
 						scanf("%d",&Lsecim1);
 						if(Lsecim1 == 1){
-							printf("Bedeviler yanında 1 hafta geçirdin ve bir sürü tecrübe kazandın.Sonrasında onların verdiği at ve biraz erzak ile geri döndün.\n");
+							printf("Bedeviler yanÄ±nda 1 hafta geÃ§irdin ve bir sÃ¼rÃ¼ tecrÃ¼be kazandÄ±n.SonrasÄ±nda onlarÄ±n verdiÄŸi at ve biraz erzak ile geri dÃ¶ndÃ¼n.\n");
 							LGgun = 7 + LAgun;
 							exp = 20 + exp;
-							printf("Yeni gün: %d\n",LGgun);
-							printf("Tecrüben: %d",exp);
-							printf("Geri dönülüyor..\n");
+							printf("Yeni gÃ¼n: %d\n",LGgun);
+							printf("TecrÃ¼ben: %d",exp);
+							printf("Geri dÃ¶nÃ¼lÃ¼yor..\n");
 							break;
 						}
 						
@@ -9089,78 +9089,78 @@ int main ()
 				}
 			}
 					else{
-				printf("Bizim karakter:Hayır teşekkürler sadece bilgi almak için sormuştum.\n");
-				printf("Geri dönülüyor.\n");
+				printf("Bizim karakter:HayÄ±r teÅŸekkÃ¼rler sadece bilgi almak iÃ§in sormuÅŸtum.\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor.\n");
 				break;
 			}
 		 }
 	   }
 	   if(Lsecim1 == 3){
 	   	while(Lliman != 0){
-		   	printf("Limanda gezerken gözüne güzel sandallar takıldı.Sandal satıcsının yanına gittin:\n1-Sandan fiyatlarını sor.\n2-Sandal ile ne yapabieceğini sor.\n3-Ayrıl.\n");
+		   	printf("Limanda gezerken gÃ¶zÃ¼ne gÃ¼zel sandallar takÄ±ldÄ±.Sandal satÄ±csÄ±nÄ±n yanÄ±na gittin:\n1-Sandan fiyatlarÄ±nÄ± sor.\n2-Sandal ile ne yapabieceÄŸini sor.\n3-AyrÄ±l.\n");
 		   	scanf("%d",&Lsecim1);
 		   	if(Lsecim1 == 1){
 		   		 	
-		   		printf("Bizim karakter:Merhaba kolay gelsin.Sandal fiyatları hakkında bilgi almaya gelmiştim de.Fiyatlar nedir?\nSandalcı:Size de merhaba beyim teşekkürler.Büyük olanlar 500 altın orta olanlar 250 altın ve küçük olanlar 100 altın.\n");
+		   		printf("Bizim karakter:Merhaba kolay gelsin.Sandal fiyatlarÄ± hakkÄ±nda bilgi almaya gelmiÅŸtim de.Fiyatlar nedir?\nSandalcÄ±:Size de merhaba beyim teÅŸekkÃ¼rler.BÃ¼yÃ¼k olanlar 500 altÄ±n orta olanlar 250 altÄ±n ve kÃ¼Ã§Ã¼k olanlar 100 altÄ±n.\n");
 		   		while(Lliman != 0){
-		   		printf("Bizim karakter:Anladım teşekkürler.\n1-Sandal satın al.\n2-Ayrıl.\n");
+		   		printf("Bizim karakter:AnladÄ±m teÅŸekkÃ¼rler.\n1-Sandal satÄ±n al.\n2-AyrÄ±l.\n");
 		   		scanf("%d",&Lsecim1);
 		   	    
 		   	    if(Lsecim1 == 1){
 		   	    	while(Lliman != 0){
 					   
-		   	    	printf("Hangi sandalı almak istersin:\n1-Büyük.\n2-Orta.\n3-Küçük.\n4-Çık.\n");
+		   	    	printf("Hangi sandalÄ± almak istersin:\n1-BÃ¼yÃ¼k.\n2-Orta.\n3-KÃ¼Ã§Ã¼k.\n4-Ã‡Ä±k.\n");
 		   	    	scanf("%d",&Lsecim1);
-		   	    	printf("Altınınız: %d\n",altin);
+		   	    	printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 					if(Lsecim1 == 1){
 						
 						if(altin > 500){
-							printf("Bizim karakter:Bu büyük sandalı almak istiyorum.\nSandalcı:Çok doğru bir seçim efendim tamamdır.\n");
+							printf("Bizim karakter:Bu bÃ¼yÃ¼k sandalÄ± almak istiyorum.\nSandalcÄ±:Ã‡ok doÄŸru bir seÃ§im efendim tamamdÄ±r.\n");
 							altin = altin - 500;
-							printf("Altınınız: %d\n",altin);
-							printf("Geri dönülüyor..\n");
+							printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+							printf("Geri dÃ¶nÃ¼lÃ¼yor..\n");
 							break;
 						}
 						else{
-							printf("Altınınız yetersiz.");
+							printf("AltÄ±nÄ±nÄ±z yetersiz.");
 							break;
 							
 						}
 					}
 					else if(Lsecim1 == 2){
 							if(altin > 250){
-								printf("Bizim karakter:Bu orta boy sandalı almak istiyorum.\nSandalcı:Çok oğru bir karar efendim tamamdır.\n");
+								printf("Bizim karakter:Bu orta boy sandalÄ± almak istiyorum.\nSandalcÄ±:Ã‡ok oÄŸru bir karar efendim tamamdÄ±r.\n");
 								altin = altin - 250;
-								printf("Altınınız: %d\n",altin);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 								break;
 							}
 							else{
-								printf("Altınınız yetersiz.");
+								printf("AltÄ±nÄ±nÄ±z yetersiz.");
 								break;
 							}
 						}
 						else if(Lsecim1 == 3){
 					
 							if(altin > 100){
-								printf("Bizim karakter:Bu küçük sandalı istiyorum.\nSandalcı:Çok doğru bir karar efendim tamamdır.\n");
+								printf("Bizim karakter:Bu kÃ¼Ã§Ã¼k sandalÄ± istiyorum.\nSandalcÄ±:Ã‡ok doÄŸru bir karar efendim tamamdÄ±r.\n");
 								altin = altin - 100;
-								printf("Altınınız: %d\n",altin);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 								break;
 							}
 							else{
-								printf("Altınınız yetersiz.");
+								printf("AltÄ±nÄ±nÄ±z yetersiz.");
 								break;
 							}
 						}
 						else if(Lsecim1 == 4){
-							printf("Geri dönülüyor...\n");
+							printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 							break;
 						}
 				}
 					} 
 					else{
-						printf("Snadalcıya teşekkür ettin ve ayrıldın");
-						printf("Geri dönülüyor...\n");
+						printf("SnadalcÄ±ya teÅŸekkÃ¼r ettin ve ayrÄ±ldÄ±n");
+						printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 						break;
 					}  
 			   }
@@ -9168,355 +9168,355 @@ int main ()
 			   else if(Lsecim1 == 2){
 			   	while(Lliman != 0){
 				   
-			   	printf("Bizim karakter:Söyle bakalım sandalcı.Bu sandallar ile neler yapabilirim?\nSandalcı:Beyim bu sandallar ile balık tutabilir.Gezintiye çıkabilir ve hatta şehir bile değiştirebilirsiniz.Ancak sizleri bir konuda uyarmam lazım çok dikkatli olmanız lazım efendim zira eşkiyalar giderek çoğalmakta ve bu tedirgin edici.\n");
-			   	printf("Bizim karakter:Sen merak etme sandalcı öyle bir durumda görecekleri son şey yüzüm olur.hehehe.Teşekkürler Sandalcı.\n");
-			   	printf("Geri dönülüyor...\n");
+			   	printf("Bizim karakter:SÃ¶yle bakalÄ±m sandalcÄ±.Bu sandallar ile neler yapabilirim?\nSandalcÄ±:Beyim bu sandallar ile balÄ±k tutabilir.Gezintiye Ã§Ä±kabilir ve hatta ÅŸehir bile deÄŸiÅŸtirebilirsiniz.Ancak sizleri bir konuda uyarmam lazÄ±m Ã§ok dikkatli olmanÄ±z lazÄ±m efendim zira eÅŸkiyalar giderek Ã§oÄŸalmakta ve bu tedirgin edici.\n");
+			   	printf("Bizim karakter:Sen merak etme sandalcÄ± Ã¶yle bir durumda gÃ¶recekleri son ÅŸey yÃ¼zÃ¼m olur.hehehe.TeÅŸekkÃ¼rler SandalcÄ±.\n");
+			   	printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			   	break;
 			   }
 		}
 			   else if(Lsecim1 == 3){
-			   	printf("Geri dönülüyor...\n");
+			   	printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			   	break;
 			   }
 			}
 		}
 			   if(Lsecim1 == 4){
-			   	printf("Limanda giyim kuşan satan yerlere geldin.\n");
+			   	printf("Limanda giyim kuÅŸan satan yerlere geldin.\n");
 			  
 			   	while(Lliman != 0){
-			   		printf("İçeridekiler:\n1-Kaftan.\n2-Takılar.\n3-Gömlek.\n4-Çorap.\n5-Ayakkabı.\n6-Çık.\nNe almak istersin?\n");
+			   		printf("Ä°Ã§eridekiler:\n1-Kaftan.\n2-TakÄ±lar.\n3-GÃ¶mlek.\n4-Ã‡orap.\n5-AyakkabÄ±.\n6-Ã‡Ä±k.\nNe almak istersin?\n");
 			   		scanf("%d",&Lsecim1);
 			   	if(Lsecim1 == 1){
 			   		while(Lliman != 0){
 					   
-			   			printf("Bizim karakter:Merhaba kolay gelsin.Bu kaftanların fiyatı ne kadar?\nTüccar:Merhaba efendim hoş geldnizi.\n1-Siyah olanlar 50 altin.\n2-Açık renkli olanlar 40 altin.\n3-Diğerleri 15.\n4-Çık.\n");
+			   			printf("Bizim karakter:Merhaba kolay gelsin.Bu kaftanlarÄ±n fiyatÄ± ne kadar?\nTÃ¼ccar:Merhaba efendim hoÅŸ geldnizi.\n1-Siyah olanlar 50 altin.\n2-AÃ§Ä±k renkli olanlar 40 altin.\n3-DiÄŸerleri 15.\n4-Ã‡Ä±k.\n");
 			   			scanf("%d",&Lsecim1);
 			   			
 			   		if(Lsecim1 == 1){
 			   			if(altin > 50){
-			   				printf("Bizim karakter:Pekala tüccar.Bana şu siyah olanlardan bir tane ver bakalım.\n");
-			   				printf("Yeni eşya: Siyah kaftan.\n");
+			   				printf("Bizim karakter:Pekala tÃ¼ccar.Bana ÅŸu siyah olanlardan bir tane ver bakalÄ±m.\n");
+			   				printf("Yeni eÅŸya: Siyah kaftan.\n");
 			   				altin = altin -50;
 			   				def = def + 10;
 			   				cekicilik = cekicilik + 10;
-			   				printf("Altınınız: %d\n",altin);
-			   				printf("Defansınız: %d\n",def);
-			   				printf("Çekicilik: %d\n",cekicilik);
+			   				printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+			   				printf("DefansÄ±nÄ±z: %d\n",def);
+			   				printf("Ã‡ekicilik: %d\n",cekicilik);
 			   			
 					   }
 					   else{
-					   		printf("Paranız yetersiz.\n");
+					   		printf("ParanÄ±z yetersiz.\n");
 					   	break;
 					   }
 					}
 					   else if(Lsecim1 == 2){
 					   	if(altin > 40){
-					   		printf("Bizim karakter:Pekala tüccar efendi.Şu açık renkli olanlardan 1 tane almak istiyorum.\n");
+					   		printf("Bizim karakter:Pekala tÃ¼ccar efendi.Åu aÃ§Ä±k renkli olanlardan 1 tane almak istiyorum.\n");
 					   		altin = altin - 40;
 					  	 	def = def + 5;
 					   		cekicilik = cekicilik + 5;
-					   		printf("Altınınız: %d\n",altin);
-			   				printf("Defansınız: %d\n",def);
-			   				printf("Çekicilik: %d\n",cekicilik);
+					   		printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+			   				printf("DefansÄ±nÄ±z: %d\n",def);
+			   				printf("Ã‡ekicilik: %d\n",cekicilik);
 			   			
 						}
 						else{
-							printf("Paranız yetersiz.\n");
+							printf("ParanÄ±z yetersiz.\n");
 						break;
 						}
 					  }
 					   else if(Lsecim1 == 3) {
 					   		if(altin > 15){
-					   			printf("Bizim karakter:Pekala tüccar.Şunlardan bana bir tane ver bakalım.\n");
+					   			printf("Bizim karakter:Pekala tÃ¼ccar.Åunlardan bana bir tane ver bakalÄ±m.\n");
 					   			altin = altin - 15;
 					   			def = def + 3;
 					   			cekicilik = cekicilik + 3;
-					   			printf("Altınınız: %d\n",altin);
-			   					printf("Defansınız: %d\n",def);
-			   					printf("Çekicilik: %d\n",cekicilik);
+					   			printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+			   					printf("DefansÄ±nÄ±z: %d\n",def);
+			   					printf("Ã‡ekicilik: %d\n",cekicilik);
 			   				
 				}
 				else{
-					printf("Paranız yetersiz.\n");
+					printf("ParanÄ±z yetersiz.\n");
 				break;
 				}
 			}
 			else if(Lsecim1 == 4){
-				printf("Geri dönülüyor...\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			break;
 			}
 		}
 	}
 					else if(Lsecim1 == 2){
-						printf("Bizim karakter:Merhaba tüccar.Elinde takı olarak ne var söyle bakalım.\n");
+						printf("Bizim karakter:Merhaba tÃ¼ccar.Elinde takÄ± olarak ne var sÃ¶yle bakalÄ±m.\n");
 					
 						while(Lliman != 0){
-							printf("Tüccar:Size de merhabalar beyim hoş geldiniz.Tabi ki.\n1-Şu yüzükler 10 altin.\n2-Kolyeler de 10 atlin.\n3-Bileklikler 15 altin.\n4-Şans tılsımları 20 altin.\n5-Çık.\n");
+							printf("TÃ¼ccar:Size de merhabalar beyim hoÅŸ geldiniz.Tabi ki.\n1-Åu yÃ¼zÃ¼kler 10 altin.\n2-Kolyeler de 10 atlin.\n3-Bileklikler 15 altin.\n4-Åans tÄ±lsÄ±mlarÄ± 20 altin.\n5-Ã‡Ä±k.\n");
 							scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
 							if(altin > 10){
-								printf("Bizim karakter:Pekala tüccar efendi.Bana şu yüzüklerden ver bakalım 1 tane.\n");
-								printf("Yeni eşya.Bakır Yüzük.\n");
+								printf("Bizim karakter:Pekala tÃ¼ccar efendi.Bana ÅŸu yÃ¼zÃ¼klerden ver bakalÄ±m 1 tane.\n");
+								printf("Yeni eÅŸya.BakÄ±r YÃ¼zÃ¼k.\n");
 								altin = altin - 10;
 								cekicilik = cekicilik + 5;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 							
 						}
 						else{
-							printf("Paranız yetersiz.\n");
+							printf("ParanÄ±z yetersiz.\n");
 						break;
 						}
 					}
 						else if(Lsecim1 == 2){
 							if(altin > 10){
-								printf("Bizim karakter:Pekala tüccar efendi.Şu kolyeden alayım.\n");
-								printf("Yeni eşya:Gümüş Kolye.\n");
+								printf("Bizim karakter:Pekala tÃ¼ccar efendi.Åu kolyeden alayÄ±m.\n");
+								printf("Yeni eÅŸya:GÃ¼mÃ¼ÅŸ Kolye.\n");
 								altin = altin - 10;
 								cekicilik = cekicilik + 10;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 							
 						}
 						else{
-							printf("Paranız yetersiz.\n");
+							printf("ParanÄ±z yetersiz.\n");
 						break;
 						}
 					}
 						else if(Lsecim1 == 3){
 							if(altin > 15){
-								printf("Bizim karakter:O zaman şu bilekliklerden 1 tane alayım tüccar.\n");
-								printf("Yeni eşya:Bielklik.\n");
+								printf("Bizim karakter:O zaman ÅŸu bilekliklerden 1 tane alayÄ±m tÃ¼ccar.\n");
+								printf("Yeni eÅŸya:Bielklik.\n");
 								altin = altin - 15;
 								cekicilik = cekicilik + 10;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 							
 						}
 						else{
-							printf("Paranız yetersiz.\n");
+							printf("ParanÄ±z yetersiz.\n");
 						break;
 						}
 					}
 						else if(Lsecim1 == 4){
-							printf("Şu şans tılsımları ne tür şeyler içerir tüccar söyle bakalım.\n");
+							printf("Åu ÅŸans tÄ±lsÄ±mlarÄ± ne tÃ¼r ÅŸeyler iÃ§erir tÃ¼ccar sÃ¶yle bakalÄ±m.\n");
 							
 							while(Lliman != 0){
 								if(altin > 20){
-									printf("Tüccar:Tabi efendim.3 çeşit var.\n1-Kaplan Gözü Tılsımı.\n2-Kuvars Tılsımı.\n3-Kehribar Tılsımı.\n4-Çık.\nHnagisini alamk istersniz beyim.\n");
+									printf("TÃ¼ccar:Tabi efendim.3 Ã§eÅŸit var.\n1-Kaplan GÃ¶zÃ¼ TÄ±lsÄ±mÄ±.\n2-Kuvars TÄ±lsÄ±mÄ±.\n3-Kehribar TÄ±lsÄ±mÄ±.\n4-Ã‡Ä±k.\nHnagisini alamk istersniz beyim.\n");
 									scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
-								printf("Bizim karakter:Pekala tüccar efendi söyle bakalım bu Kaplan Gözü Tılsımı ne işe yarar.\nTüccar:Tabi efendim.Bu taş sizin diğer insanlara olan bağlılığınızı azaltır beyim.Ancak bu durum ikili ilişkilerinizi etkiliyebilir.\n1-Al.\n2-Alma.\n");
+								printf("Bizim karakter:Pekala tÃ¼ccar efendi sÃ¶yle bakalÄ±m bu Kaplan GÃ¶zÃ¼ TÄ±lsÄ±mÄ± ne iÅŸe yarar.\nTÃ¼ccar:Tabi efendim.Bu taÅŸ sizin diÄŸer insanlara olan baÄŸlÄ±lÄ±ÄŸÄ±nÄ±zÄ± azaltÄ±r beyim.Ancak bu durum ikili iliÅŸkilerinizi etkiliyebilir.\n1-Al.\n2-Alma.\n");
 								scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
-								printf("Bizim karakter:Anladım tüccar efendi.Ver bakayım bir tane.\n");
-								printf("Yeni eşya:Kaplan Gözü Tılsımı.\n");
+								printf("Bizim karakter:AnladÄ±m tÃ¼ccar efendi.Ver bakayÄ±m bir tane.\n");
+								printf("Yeni eÅŸya:Kaplan GÃ¶zÃ¼ TÄ±lsÄ±mÄ±.\n");
 								altin = altin - 20;
 								cekicilik = cekicilik - 5;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 									
 						}
 							else{
-								printf("Paranız yetersiz.\n");
+								printf("ParanÄ±z yetersiz.\n");
 								break;
 							}
 						}
 								else{
-									printf("Anladım tüccar efendi kalsın.\n");
+									printf("AnladÄ±m tÃ¼ccar efendi kalsÄ±n.\n");
 								}
 						}
 						else if(Lsecim1 == 2){
-							printf("Bizim karakter:Pekala tüccar efendi bana kuars tılsımını anlat bakalım.\nTüccar:Heheh kuvars demek istediniz herhalde efendim.Bu tılsım duygusal dengeliyicidir efendim.Beyin fonksiyonlarını düzenlediğine inanılır.\n1-Al.\n2-Alma.\n");
+							printf("Bizim karakter:Pekala tÃ¼ccar efendi bana kuars tÄ±lsÄ±mÄ±nÄ± anlat bakalÄ±m.\nTÃ¼ccar:Heheh kuvars demek istediniz herhalde efendim.Bu tÄ±lsÄ±m duygusal dengeliyicidir efendim.Beyin fonksiyonlarÄ±nÄ± dÃ¼zenlediÄŸine inanÄ±lÄ±r.\n1-Al.\n2-Alma.\n");
 							scanf("%d",&Lsecim1);
 								if(Lsecim1 == 1){
 									if(altin > 20){
-										printf("Bizim karakter:Anladım tüccar ver bakalım.\n");
+										printf("Bizim karakter:AnladÄ±m tÃ¼ccar ver bakalÄ±m.\n");
 										altin = altin - 20;
 										cekicilik = cekicilik + 5;
 										bilgelik = bilgelik + 10;
-										printf("Altınınız: %d\n",altin);
-										printf("Çekicilik: %d\n",cekicilik);
-						      			printf("Bilgeliğiniz: %d",bilgelik);	
+										printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+										printf("Ã‡ekicilik: %d\n",cekicilik);
+						      			printf("BilgeliÄŸiniz: %d",bilgelik);	
 						}
 						else{
-							printf("Paranız yetersiz.\n");
+							printf("ParanÄ±z yetersiz.\n");
 						break;
 						}
 							}
 							else{
-								printf("Bizim karakter:Anladım tüccar efendi kalsın.\n");
+								printf("Bizim karakter:AnladÄ±m tÃ¼ccar efendi kalsÄ±n.\n");
 							break;
 						}
 				}
 					else if(Lsecim1 == 3){
-						printf("Bizim karakter:Bana kehribar tılsımından bahset tüccar.\nTüccar:Tabi efendim.Bu tılsım kötü talihi götürüp şans getirir.Tılsımın aynı zamanda zehirlenmeyi önlediğine inanılır.Aynı zamanda cinsel açıdan güç verir efendim hehe.\n1-Al.\n2-Alma.\n");
+						printf("Bizim karakter:Bana kehribar tÄ±lsÄ±mÄ±ndan bahset tÃ¼ccar.\nTÃ¼ccar:Tabi efendim.Bu tÄ±lsÄ±m kÃ¶tÃ¼ talihi gÃ¶tÃ¼rÃ¼p ÅŸans getirir.TÄ±lsÄ±mÄ±n aynÄ± zamanda zehirlenmeyi Ã¶nlediÄŸine inanÄ±lÄ±r.AynÄ± zamanda cinsel aÃ§Ä±dan gÃ¼Ã§ verir efendim hehe.\n1-Al.\n2-Alma.\n");
 						scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
 								if(altin > 20){
-									printf("Biim karakter:Hehehe pekala tüccar efendi ver bakalım kehribar tılsımından bir tane.\n");
-									printf("Yeni eşya:Kehribar tılsımı.\n");
+									printf("Biim karakter:Hehehe pekala tÃ¼ccar efendi ver bakalÄ±m kehribar tÄ±lsÄ±mÄ±ndan bir tane.\n");
+									printf("Yeni eÅŸya:Kehribar tÄ±lsÄ±mÄ±.\n");
 									altin = altin- 20;
 									cekicilik = cekicilik + 10;
 									bilgelik = bilgelik + 10;
-									printf("Altınınız: %d\n",altin);
-									printf("Çekicilik: %d\n",cekicilik);
-									printf("Bilgeliğiniz: %d",bilgelik);
+									printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+									printf("Ã‡ekicilik: %d\n",cekicilik);
+									printf("BilgeliÄŸiniz: %d",bilgelik);
 					}
 					else{
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					break;
 					}
 				}
 						else{
-							printf("Bizim karakter:hehe.Kalsın tüccar efendi teşekkürler.Dedin ve çıktın.\n");
+							printf("Bizim karakter:hehe.KalsÄ±n tÃ¼ccar efendi teÅŸekkÃ¼rler.Dedin ve Ã§Ä±ktÄ±n.\n");
 						break;
 						}
 					}
 					else if(Lsecim1 == 4){
-						printf("Bizim karakter:Kalsın tüccar.\nGeri dönülüyor...\n");
+						printf("Bizim karakter:KalsÄ±n tÃ¼ccar.\nGeri dÃ¶nÃ¼lÃ¼yor...\n");
 					break;
 					}
 				}
 			}
 			else if(Lsecim1 == 5){
-				printf("Geri dönülüyor...\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			break;
 			}
 			}
 		}
 					else if(Lsecim1 == 3){
-						printf("Bizim karakter:Merhaba tüccar efendi kolay gelsin.Gömlek bakıyorum da sendekiler nasıl?\n");
+						printf("Bizim karakter:Merhaba tÃ¼ccar efendi kolay gelsin.GÃ¶mlek bakÄ±yorum da sendekiler nasÄ±l?\n");
 							while(Lliman != 0){
-								printf("TÜccar:Hoş geldiniz beyim buyrun.Yeni ürünlerim var.\n1-Şu şekilli olanlar 25 altin.\n2-Düz olanlar 35 altin.\n3-Çık.\nHangisini almak istersiniz?\n");
+								printf("TÃœccar:HoÅŸ geldiniz beyim buyrun.Yeni Ã¼rÃ¼nlerim var.\n1-Åu ÅŸekilli olanlar 25 altin.\n2-DÃ¼z olanlar 35 altin.\n3-Ã‡Ä±k.\nHangisini almak istersiniz?\n");
 								scanf("%d",&Lsecim1);
 									if(Lsecim1 == 1){
 										if(altin > 25){
-											printf("Bizim karakter:Şu şekilli olanlarından alayım bir tane tüccar.\n");
-											printf("Yeni eşya:Şekilli gömlek.\n");
+											printf("Bizim karakter:Åu ÅŸekilli olanlarÄ±ndan alayÄ±m bir tane tÃ¼ccar.\n");
+											printf("Yeni eÅŸya:Åekilli gÃ¶mlek.\n");
 											altin = altin - 25;
 											cekicilik = cekicilik + 10;
-											printf("Altınınız: %d\n",altin);
-											printf("Çekicilik: %d\n",cekicilik);
+											printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+											printf("Ã‡ekicilik: %d\n",cekicilik);
 					}
 					else{
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					}
 				}
 						else{
 							if(altin > 35){
-								printf("Bizim karakter:Bana şu düz olanlardan ver tüccar efendi.\n");
-								printf("Yeni eşya:Düz renk gömlek.\n");
+								printf("Bizim karakter:Bana ÅŸu dÃ¼z olanlardan ver tÃ¼ccar efendi.\n");
+								printf("Yeni eÅŸya:DÃ¼z renk gÃ¶mlek.\n");
 								altin = altin - 35;
 								cekicilik = cekicilik + 15;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 					}
 					else{
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					}
 				}
 			}
 		}
 		
 					else if(Lsecim1 == 4){
-						printf("Bizim karakter:Merhaba tüccar efendi.Çorap almak istiyorum.\n");
+						printf("Bizim karakter:Merhaba tÃ¼ccar efendi.Ã‡orap almak istiyorum.\n");
 						
 						while(Lliman != 0){
-							printf("Tüccar:Hoş geldinizi beyim buyurun.Elimde çok güzel çoraplar var.\n1-Şu ince olanlar 15.\n2-Kalın olanlar 20 altin beyim.\n3-Çık.\nHangisini almak istersiniz?\n");
+							printf("TÃ¼ccar:HoÅŸ geldinizi beyim buyurun.Elimde Ã§ok gÃ¼zel Ã§oraplar var.\n1-Åu ince olanlar 15.\n2-KalÄ±n olanlar 20 altin beyim.\n3-Ã‡Ä±k.\nHangisini almak istersiniz?\n");
 							scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
 								if(altin > 15){
-									printf("Bizim karakter:Şu ince olanlardan alayım bir tane tüccar efendi.\n");
-									printf("Yeni eşya:İnce çorap.\n");
+									printf("Bizim karakter:Åu ince olanlardan alayÄ±m bir tane tÃ¼ccar efendi.\n");
+									printf("Yeni eÅŸya:Ä°nce Ã§orap.\n");
 									altin = altin - 15;
-									printf("Altınınız: %d\n",altin);
+									printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 					}
 					else{
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					break;
 					}
 				}
 						else if(Lsecim1 == 2){
 							if(altin > 20){
-								printf("Bizim karakter:Şu kalın olanlardan alayım bir tane tüccar efendi.\n");
-								printf("Yeni eşya:Kalın çorap.\n");
+								printf("Bizim karakter:Åu kalÄ±n olanlardan alayÄ±m bir tane tÃ¼ccar efendi.\n");
+								printf("Yeni eÅŸya:KalÄ±n Ã§orap.\n");
 								altin = altin - 20;
-								printf("Altınınız: %d\n",altin);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 					}
 					else{
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					break;
 					}
 				}
 				else if(Lsecim1 == 3){
-					printf("Geri dönülüyor...\n");
+					printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 				break;
 				}
 			}
 		}
 					if(Lsecim1 == 5){
-						printf("Bizim karakter:Merhaba tüccar efendi.Ayakkabı almak istiyorum.\n");
+						printf("Bizim karakter:Merhaba tÃ¼ccar efendi.AyakkabÄ± almak istiyorum.\n");
 					
 						while(Lliman != 0){
-							printf("Tüccar:Hoş geldiniz beyim buyurun.Elimde çok güzel ayakkabılar var.\n1-Şu sandaletler 40 altin.\n2-Deri ayakkabılar 50 altin.\n3-Asker ayakkabısı da 60 altın beyim.\n");
+							printf("TÃ¼ccar:HoÅŸ geldiniz beyim buyurun.Elimde Ã§ok gÃ¼zel ayakkabÄ±lar var.\n1-Åu sandaletler 40 altin.\n2-Deri ayakkabÄ±lar 50 altin.\n3-Asker ayakkabÄ±sÄ± da 60 altÄ±n beyim.\n");
 							scanf("%d",&Lsecim1);
 							if(Lsecim1 == 1){
 								if(altin > 40){
-									printf("Bizim karakter:Pekala tüccar efendi bana şu sandaletlerden ver.\n");
-									printf("Yeni eşya:Sandalet.\n");
+									printf("Bizim karakter:Pekala tÃ¼ccar efendi bana ÅŸu sandaletlerden ver.\n");
+									printf("Yeni eÅŸya:Sandalet.\n");
 									altin = altin - 40;
 									cekicilik = cekicilik + 5;
-									printf("Altınınız: %d\n",altin);
-									printf("Çekicilik: %d\n",cekicilik);
+									printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+									printf("Ã‡ekicilik: %d\n",cekicilik);
 					}
 					else{
 						
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 						
 					}
 				}
 						else if(Lsecim1 == 2){
 							if(altin > 50){
-								printf("Bizim karakter:Pekala tüccar efendi bana şu deri ayakkabılardan ver.\n");
-								printf("Yeni eşya:Deri ayakkabı.\n");
+								printf("Bizim karakter:Pekala tÃ¼ccar efendi bana ÅŸu deri ayakkabÄ±lardan ver.\n");
+								printf("Yeni eÅŸya:Deri ayakkabÄ±.\n");
 								altin = altin - 50;
 								cekicilik = cekicilik + 10;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 					}
 					else{
 						
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					
 					}
 				}
 						else{
 							if(altin > 60){
-								printf("Bizim karakter:Tamam tüccar efendi.Bana şu asker ayakkabısından bir tane ver bakayım.\n");
-								printf("Yeni eşya:Asker Ayakkabısı.\n");
+								printf("Bizim karakter:Tamam tÃ¼ccar efendi.Bana ÅŸu asker ayakkabÄ±sÄ±ndan bir tane ver bakayÄ±m.\n");
+								printf("Yeni eÅŸya:Asker AyakkabÄ±sÄ±.\n");
 								altin = altin - 60;
 								cekicilik = cekicilik + 15;
-								printf("Altınınız: %d\n",altin);
-								printf("Çekicilik: %d\n",cekicilik);
+								printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+								printf("Ã‡ekicilik: %d\n",cekicilik);
 					}
 					else{
 						
-						printf("Paranız yetersiz.\n");
+						printf("ParanÄ±z yetersiz.\n");
 					break;
 					}
 				}
 			}
 		}
 			else if(Lsecim1 == 6){
-				printf("Geri dönülüyor...\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			break;
 			}
 	   }		
    }    
 	if(Lsecim1 == 5){
-		printf("Hana doğru giderken yolda hırsızlar cebini çarptı ve peşlerine düştün.Uzun bir kovalamacadan sonra hırsızlardan birini yakaladın ama hırsız dişli çıktı ve ufak bir kavga tutuştunuz.\n");
-   		printf("Adam sana saldırmaya hazırlanıyor:\n1-Sağa gitmek için D'ye bas.\n2-Sola gitmek için A'ya bas.\n3-Eğilmek için C'ye bas.\n4-Kendini geri çekmek için S'ye bas.\n");
+		printf("Hana doÄŸru giderken yolda hÄ±rsÄ±zlar cebini Ã§arptÄ± ve peÅŸlerine dÃ¼ÅŸtÃ¼n.Uzun bir kovalamacadan sonra hÄ±rsÄ±zlardan birini yakaladÄ±n ama hÄ±rsÄ±z diÅŸli Ã§Ä±ktÄ± ve ufak bir kavga tutuÅŸtunuz.\n");
+   		printf("Adam sana saldÄ±rmaya hazÄ±rlanÄ±yor:\n1-SaÄŸa gitmek iÃ§in D'ye bas.\n2-Sola gitmek iÃ§in A'ya bas.\n3-EÄŸilmek iÃ§in C'ye bas.\n4-Kendini geri Ã§ekmek iÃ§in S'ye bas.\n");
    		srand(time(NULL));
 		Lsira6 = can / 15;
 		Lsaldiri1 = rand() % 4;
@@ -9532,14 +9532,14 @@ int main ()
 		{
 			
 			if(Lsaldiri1 == 1){
-				printf("Düşman saldırısndan kaçtın.\n");
+				printf("DÃ¼ÅŸman saldÄ±rÄ±sndan kaÃ§tÄ±n.\n");
 			
 			if(Lsira2 == 0){
-				printf("1-Saldır.\n2-Bekle.\n");
+				printf("1-SaldÄ±r.\n2-Bekle.\n");
 				scanf("%d",&Lsira3);
 					if(Lsira3 == 1){
 						Lsira1++;
-						printf("Düşmana vurdun.\n");
+						printf("DÃ¼ÅŸmana vurdun.\n");
 				}
 				else{
 					Lsira2++;
@@ -9562,14 +9562,14 @@ int main ()
 		{
 			
 			if(Lsaldiri1 == 2){
-				printf("Düşman saldırısndan kaçtın.\n");
+				printf("DÃ¼ÅŸman saldÄ±rÄ±sndan kaÃ§tÄ±n.\n");
 			
 			if(Lsira2 == 0){
-				printf("1-Saldır.\n2-Bekle.\n");
+				printf("1-SaldÄ±r.\n2-Bekle.\n");
 				scanf("%d",&Lsira3);
 					if(Lsira3 == 1){
 						Lsira1++;
-						printf("Düşmana vurdun.\n");
+						printf("DÃ¼ÅŸmana vurdun.\n");
 				}
 				else{
 					Lsira2++;
@@ -9593,14 +9593,14 @@ int main ()
 			
 			if(Lsaldiri1 == 3)
 			{
-				printf("Düşman saldırısndan kaçtın.\n");
+				printf("DÃ¼ÅŸman saldÄ±rÄ±sndan kaÃ§tÄ±n.\n");
 			
 			if(Lsira2 == 0){
-				printf("1-Saldır.\n2-Bekle.\n");
+				printf("1-SaldÄ±r.\n2-Bekle.\n");
 				scanf("%d",&Lsira3);
 					if(Lsira3 == 1){
 						Lsira1++;
-						printf("Düşmana vurdun.\n");
+						printf("DÃ¼ÅŸmana vurdun.\n");
 				}
 				else{
 					Lsira2++;
@@ -9623,14 +9623,14 @@ int main ()
 		{
 			
 			if(Lsaldiri1 == 4){
-				printf("Düşman saldırısndan kaçtın.\n");
+				printf("DÃ¼ÅŸman saldÄ±rÄ±sndan kaÃ§tÄ±n.\n");
 			
 			if(Lsira2 == 0){
-				printf("1-Saldır.\n2-Bekle.\n");
+				printf("1-SaldÄ±r.\n2-Bekle.\n");
 				scanf("%d",&Lsira3);
 				if(Lsira3 == 1){
 					Lsira1++;
-					printf("Düşmana vurdun.\n");
+					printf("DÃ¼ÅŸmana vurdun.\n");
 				}
 				else{
 					Lsira2++;
@@ -9664,17 +9664,17 @@ int main ()
 			}
 }
 	if(Lsira5 == 1){
-		printf("Tebrikler kazandınız.\n");
+		printf("Tebrikler kazandÄ±nÄ±z.\n");
 		altin = altin + 100;
 		onur = onur + 10;
-		printf("Altınınız: %d",altin);
+		printf("AltÄ±nÄ±nÄ±z: %d",altin);
 		printf("Onurunuz: %d",onur);
 	}
 	else if(Lsira5 == 0){
 		printf("Kaybettiniz.\n");
 		altin = altin - 50;
 		onur = onur - 5;
-		printf("Altınınız: %d\n",altin);
+		printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 		printf("Onurunuz: %d\n",onur);
 		
 	}	
@@ -9682,44 +9682,44 @@ int main ()
 	
 	while(Lliman != 0){
 				   
-		printf("Ne yapmak istersin:\n1-Birşeyler iç.\n2-Hancı ile konuş.\n3-Karnını doyur.\n4-Dinlen.\n5-Çık.\n");
+		printf("Ne yapmak istersin:\n1-BirÅŸeyler iÃ§.\n2-HancÄ± ile konuÅŸ.\n3-KarnÄ±nÄ± doyur.\n4-Dinlen.\n5-Ã‡Ä±k.\n");
 		scanf("%d",&Lsecim1);
 			if(Lsecim1 == 1){
-				printf("Handa birşeyler içtin ve kendine geldin bu seni çok rahatlattı.\n");
+				printf("Handa birÅŸeyler iÃ§tin ve kendine geldin bu seni Ã§ok rahatlattÄ±.\n");
 				can = can + 5;
 				altin = altin - 5;
-				printf("Canınız: %d\n",can);
-				printf("Altınınız: %d\n",altin);
+				printf("CanÄ±nÄ±z: %d\n",can);
+				printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 		}
 				   else if(Lsecim1 == 2){
-				   	printf("Hancının yanına giderek:Merhaba hancı kolay gelsin.Söyle bakalım buraya ne tür insanlar gelir.\nHancı:Saolasın beyim.Burası bir han beyim her yerden insan gelir biz paramıza bakarız.Eğer dinlenmek istersen uygun yerimiz var.Yalnız burada kalırken dikkat etmelisin beyim her yerden insan geldiği için neden geldiklerini de bilemeyiz!\n");
-				   	printf("Pekala hancı teşekkürler.\nAyrıldın.\n");
+				   	printf("HancÄ±nÄ±n yanÄ±na giderek:Merhaba hancÄ± kolay gelsin.SÃ¶yle bakalÄ±m buraya ne tÃ¼r insanlar gelir.\nHancÄ±:SaolasÄ±n beyim.BurasÄ± bir han beyim her yerden insan gelir biz paramÄ±za bakarÄ±z.EÄŸer dinlenmek istersen uygun yerimiz var.YalnÄ±z burada kalÄ±rken dikkat etmelisin beyim her yerden insan geldiÄŸi iÃ§in neden geldiklerini de bilemeyiz!\n");
+				   	printf("Pekala hancÄ± teÅŸekkÃ¼rler.\nAyrÄ±ldÄ±n.\n");
 				   }
 				   else if(Lsecim1 == 3){
-				   	printf("Yemek yedin ve karınını doyurdun bu seni çok rahatlattı.\n");
+				   	printf("Yemek yedin ve karÄ±nÄ±nÄ± doyurdun bu seni Ã§ok rahatlattÄ±.\n");
 				   	can = can + 10;
 				   	altin = altin - 15;
-				   	printf("Canınız: %d\n",can);
-				   	printf("Altınınız: %d\n",altin);
+				   	printf("CanÄ±nÄ±z: %d\n",can);
+				   	printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 				   }
 				   else if(Lsecim1 == 4){
-				   	printf("Dinlenmek için han da kaldın ve akşam handa müzik eşliğinde vakit geçirdikten sonra güzel bir uyku çektin...Ama o da ne!!Paran yok!\n");
+				   	printf("Dinlenmek iÃ§in han da kaldÄ±n ve akÅŸam handa mÃ¼zik eÅŸliÄŸinde vakit geÃ§irdikten sonra gÃ¼zel bir uyku Ã§ektin...Ama o da ne!!Paran yok!\n");
 				   	LGgun = 1 + LAgun;
-				   	printf("Yeni gün: %d\n",LGgun);
-				   	printf("Sinirli bir şekilde hancının yanına gittin:Hey sen söyle bakalım eşyalarım nerede!\nHancı:Ben sizi dikkatli olmanız konusunda uyardım beyim söyleyin bakalım ne oldu.\nBizim karakter:Uyandım ve bazı değerli eşyalarımın olmadığını gördüm.\nHancı:Kusura bakmayın beyim yapabileceğim birşey yok bir dahaki sefere daha dikkatli olun.\n");
+				   	printf("Yeni gÃ¼n: %d\n",LGgun);
+				   	printf("Sinirli bir ÅŸekilde hancÄ±nÄ±n yanÄ±na gittin:Hey sen sÃ¶yle bakalÄ±m eÅŸyalarÄ±m nerede!\nHancÄ±:Ben sizi dikkatli olmanÄ±z konusunda uyardÄ±m beyim sÃ¶yleyin bakalÄ±m ne oldu.\nBizim karakter:UyandÄ±m ve bazÄ± deÄŸerli eÅŸyalarÄ±mÄ±n olmadÄ±ÄŸÄ±nÄ± gÃ¶rdÃ¼m.\nHancÄ±:Kusura bakmayÄ±n beyim yapabileceÄŸim birÅŸey yok bir dahaki sefere daha dikkatli olun.\n");
 					   altin = altin - 100;
 					   exp = exp + 10;
-					   printf("Altınınız: %d\n",altin);
-					   printf("Tecrübeniz: %d",exp);				   	
+					   printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
+					   printf("TecrÃ¼beniz: %d",exp);				   	
 				   }
 				   else if(Lsecim1 == 5){
-				   	printf("Geri dönülüyor...\n");
+				   	printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 				   	break;
 				   }
 			   }
 			}
 			else if(Lsecim1 == 6){
-				printf("Geri dönülüyor...\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			break;
 			}
 	}
@@ -9727,24 +9727,24 @@ int main ()
 				else if(Lsecim1 == 2){
 	  				while(Lliman != 0){
 					  
-					printf("Limanda gemilere bakarak yürürken bir gemici adamın yanına geldin:\n1-Gemi fiyatlarını sor.\n2-Ayrıl.\n");
+					printf("Limanda gemilere bakarak yÃ¼rÃ¼rken bir gemici adamÄ±n yanÄ±na geldin:\n1-Gemi fiyatlarÄ±nÄ± sor.\n2-AyrÄ±l.\n");
 					scanf("%d",&Lsecim1);
 				if(Lsecim1 == 1){
-					printf("Bizim karakter:Kolay gelsin gemici.Gemilerin fiyatını öğrnmek istiyorum.\n");
+					printf("Bizim karakter:Kolay gelsin gemici.Gemilerin fiyatÄ±nÄ± Ã¶ÄŸrnmek istiyorum.\n");
 				
-					printf("Gemici söyle bakalım satın almak ister misin?\n1-Evet.\n2-Hayır.\n");
+					printf("Gemici sÃ¶yle bakalÄ±m satÄ±n almak ister misin?\n1-Evet.\n2-HayÄ±r.\n");
 					scanf("%d",&Lsecim1);
 						while(Lliman != 0){
-							printf("Gemici:Peki.Gemiler en pahalıdan en ucuza doğru gider.\nŞu en soldaki en pahalası adı KISMET'tir.Çok güçlü bir gemidir.Aynı zamanda savaş gemisidir.Fiyatı 10.000 altındır.\nDiğer gemi yük gemisidir lakin güçlüdür.Heniz bir adı yok.Fiyatı 7.000 altındır.\nEn küçük olanın adı Serçedir hızlıdır lakin güçsüzdür savunmasızdır.Fiyatı 4.000 altındır.\n");
+							printf("Gemici:Peki.Gemiler en pahalÄ±dan en ucuza doÄŸru gider.\nÅu en soldaki en pahalasÄ± adÄ± KISMET'tir.Ã‡ok gÃ¼Ã§lÃ¼ bir gemidir.AynÄ± zamanda savaÅŸ gemisidir.FiyatÄ± 10.000 altÄ±ndÄ±r.\nDiÄŸer gemi yÃ¼k gemisidir lakin gÃ¼Ã§lÃ¼dÃ¼r.Heniz bir adÄ± yok.FiyatÄ± 7.000 altÄ±ndÄ±r.\nEn kÃ¼Ã§Ã¼k olanÄ±n adÄ± SerÃ§edir hÄ±zlÄ±dÄ±r lakin gÃ¼Ã§sÃ¼zdÃ¼r savunmasÄ±zdÄ±r.FiyatÄ± 4.000 altÄ±ndÄ±r.\n");
 				if(Lsecim1 == 1){
-					printf("Gemici:Pekala hangisini almak istersin:\n1-Kısmet.\n2-Yük gemisi.\n3-Serçe.\n4-Ayrıl.\nNe yapmak istiyorsun.\n");
+					printf("Gemici:Pekala hangisini almak istersin:\n1-KÄ±smet.\n2-YÃ¼k gemisi.\n3-SerÃ§e.\n4-AyrÄ±l.\nNe yapmak istiyorsun.\n");
 					scanf("%d",&Lsayac);
 					
 				
 				if(Lsayac == 1){
-					printf("Gemici:Pekala beyim.Kısmet artık sizindir.İstediğiniz zaman gelip buradan alabilirsiniz.\n");
+					printf("Gemici:Pekala beyim.KÄ±smet artÄ±k sizindir.Ä°stediÄŸiniz zaman gelip buradan alabilirsiniz.\n");
 					altin = altin - 10.000;
-					printf("Altınınız: %d\n",altin);
+					printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 					
 				}
 				else{
@@ -9753,19 +9753,19 @@ int main ()
 				
 				}
 				if(Lsayac == 2){
-					printf("Gemici:Pekala beyim.Bu yük gemisi sizindir.İstediğinizi zaman gelip buradan alabilirsiniz.\n");
+					printf("Gemici:Pekala beyim.Bu yÃ¼k gemisi sizindir.Ä°stediÄŸinizi zaman gelip buradan alabilirsiniz.\n");
 					altin = altin - 7.000;
-					printf("Altınınız: %d\n",altin);
+					printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 				
 				}
 				else{
-					printf("Paranız yetersiz!\n\n");
+					printf("ParanÄ±z yetersiz!\n\n");
 				
 				}
 				if(Lsayac == 3){
-					printf("Gemici:Pekala beyim.Serçe artık sizindir.İstediğiniz zaman gelip buradan alabilirsiniz.\n");
+					printf("Gemici:Pekala beyim.SerÃ§e artÄ±k sizindir.Ä°stediÄŸiniz zaman gelip buradan alabilirsiniz.\n");
 					altin = altin - 4.000;
-					printf("Altınınız: %d\n",altin);
+					printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 				
 				}
 				else{
@@ -9773,19 +9773,19 @@ int main ()
 				
 				}
 				if(Lsayac == 4){
-					printf("Bizim karakter:Ya da teşekkürler gemici.\n");
+					printf("Bizim karakter:Ya da teÅŸekkÃ¼rler gemici.\n");
 				
 				}
 			}
 			else if(Lsecim1 == 2){
-				printf("Geri dönülüyor...\n");
+				printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 			break;
 			}
 		
 		}
 	}
 		else if(Lsecim1 == 2){
-			printf("Geri dönülüyor...\n");
+			printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 		break;
 		}
       } 
@@ -9794,13 +9794,13 @@ int main ()
       	srand(time(NULL));
       	
       	Liht3 = rand() % 5;
-		printf("Görev:\nBalık tutmak.\n");
+		printf("GÃ¶rev:\nBalÄ±k tutmak.\n");
 	
-		printf("Göreve gitmeye hazır mısn?\n1-Evet.\n2-Hayır.\n");
+		printf("GÃ¶reve gitmeye hazÄ±r mÄ±sn?\n1-Evet.\n2-HayÄ±r.\n");
 			scanf("%d",&Lsecim1);
 			if(Lsecim1 == 1){
-				printf("Bilgilendirme:\nSenden istenilen sayıyı doğru girersen ve eğer 10 denemeden önce bilirsen balığı kapaersın.Her balığı tutmak için 3 olta atma hakkın var.Eğer balığı tutarsan hakkın aynı kalır.\nGünlük 10 tane balık tutma hakkın var.\nHadi başlayalım.\n");
-				printf("Sandala atladın ve denize balık tutmak için açıldın.\nTutabileceğin balıklar:\n1-Çipura.\n2-Alabalık.\n3-Palamut.\n4-Küçük balık.\nBakalım ne yakalyacaksın.\n");
+				printf("Bilgilendirme:\nSenden istenilen sayÄ±yÄ± doÄŸru girersen ve eÄŸer 10 denemeden Ã¶nce bilirsen balÄ±ÄŸÄ± kapaersÄ±n.Her balÄ±ÄŸÄ± tutmak iÃ§in 3 olta atma hakkÄ±n var.EÄŸer balÄ±ÄŸÄ± tutarsan hakkÄ±n aynÄ± kalÄ±r.\nGÃ¼nlÃ¼k 10 tane balÄ±k tutma hakkÄ±n var.\nHadi baÅŸlayalÄ±m.\n");
+				printf("Sandala atladÄ±n ve denize balÄ±k tutmak iÃ§in aÃ§Ä±ldÄ±n.\nTutabileceÄŸin balÄ±klar:\n1-Ã‡ipura.\n2-AlabalÄ±k.\n3-Palamut.\n4-KÃ¼Ã§Ã¼k balÄ±k.\nBakalÄ±m ne yakalyacaksÄ±n.\n");
 				Lbaliktutma = rand() % 3;
 				Lsayac3 = rand() % 30;
 				Lhak4 = 3;
@@ -9813,34 +9813,34 @@ int main ()
 	 	while(Lhak4 != 0){
 			Ldeneme4 = 0;
 		 while(Ldeneme4 != 10){
-					printf("Sayı gir:");
+					printf("SayÄ± gir:");
 					scanf("%d",&Lsans7);
 					if(Lsans7 < Lsayac3){
-						printf("Sayıyı büyültün.\n");
+						printf("SayÄ±yÄ± bÃ¼yÃ¼ltÃ¼n.\n");
 					}
 					else if(Lsans7 > Lsayac3){
-						printf("Sayıyı küçültün.\n");
+						printf("SayÄ±yÄ± kÃ¼Ã§Ã¼ltÃ¼n.\n");
 					}
 					Ldeneme4++;
 					
 					if(Lsayac3 == Lsans7){
 						Lsayac4++;
-						printf("Tebrikler doğru.Hakkınız aynı kaldı\n");
+						printf("Tebrikler doÄŸru.HakkÄ±nÄ±z aynÄ± kaldÄ±\n");
 						Lsans7 = Lsayac3;
 						Lhak4 = 0;
 						Ldeneme4 = 10;
 						Lb = 1; 
-						printf("Kalan hakkınız: %d\n",Lhak);
-						printf("Eldeki balık sayısı: %d\n",Lsayac4);
+						printf("Kalan hakkÄ±nÄ±z: %d\n",Lhak);
+						printf("Eldeki balÄ±k sayÄ±sÄ±: %d\n",Lsayac4);
 					}
 					else if(Lhak4 > 1 && Ldeneme4 == 10){
-						printf("Kaybettiniz.Hakkınız azaldı.\n");
+						printf("Kaybettiniz.HakkÄ±nÄ±z azaldÄ±.\n");
 						Lhak4--;
-						printf("Kalan hakkınız: %d\n\n",Lhak);
+						printf("Kalan hakkÄ±nÄ±z: %d\n\n",Lhak);
 						
 					}
 					else if(Lhak4 == 1 && Ldeneme4 == 10){
-						printf("Tüm haklarınız bitti.Kaybettiniz.\n\n");
+						printf("TÃ¼m haklarÄ±nÄ±z bitti.Kaybettiniz.\n\n");
 						Lb = 0;
 						Lj++;
 						Lhak4--;
@@ -9849,43 +9849,43 @@ int main ()
 			}	
 				
 			if(Lb == 1){
-				printf("%d kadar balığınızı sattık %d altın kazandınız:\n",Lsayac4,(Lsayac4 * 5));
+				printf("%d kadar balÄ±ÄŸÄ±nÄ±zÄ± sattÄ±k %d altÄ±n kazandÄ±nÄ±z:\n",Lsayac4,(Lsayac4 * 5));
 				altin = altin + (Lsayac4 * 5);
-				printf("Altınınız: %d\n",altin);
+				printf("AltÄ±nÄ±nÄ±z: %d\n",altin);
 				Lj++;
-			/*	if(Lbaliktutma == 0){ BUNLAR ŞUANLIK BÖLYE İTEMLER İLE BERABER DÜCELTİLECEK
-					printf("\nYeni balık: Çipura.\n");
+			/*	if(Lbaliktutma == 0){ BUNLAR ÅUANLIK BÃ–LYE Ä°TEMLER Ä°LE BERABER DÃœCELTÄ°LECEK
+					printf("\nYeni balÄ±k: Ã‡ipura.\n");
 				}
 				else if(Lbaliktutma == 1){
-					printf("\nYeni balık: Alabalık.\n");
+					printf("\nYeni balÄ±k: AlabalÄ±k.\n");
 				}
 				else if(Lbaliktutma == 2){
-					printf("\nYeni balık: Palamut.\n");
+					printf("\nYeni balÄ±k: Palamut.\n");
 				}
 				else if(Lbaliktutma == 3){
-					printf("\nYeni balık: Küçük Balık.\n");
+					printf("\nYeni balÄ±k: KÃ¼Ã§Ã¼k BalÄ±k.\n");
 				}	
 			*/}
 			
-			printf("Balık tutmaya devam mı?\n1-Devam.\n2-Geri dön.\n");
+			printf("BalÄ±k tutmaya devam mÄ±?\n1-Devam.\n2-Geri dÃ¶n.\n");
 			scanf("%d",&Lsecim1);
 			
 	 	if(Lsecim1 == 2){
-			printf("Geri dönülüyor...\n");
+			printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 	 	break;	
 	 	}
     } 
 }
 
         else if(Lsecim1 == 2){
-      		printf("O zaman limana geri dönüyoruz.\n");
-      		printf("Geri dönülüyor...\n");
+      		printf("O zaman limana geri dÃ¶nÃ¼yoruz.\n");
+      		printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
       		break;
 		  }
 	  } 
 	  else if(Lsecim1 == 4){
-	  	printf("Limana br göz attın ve geri çıkıyorsun.\n");
-	  	printf("Geri dönülüyor...\n");
+	  	printf("Limana br gÃ¶z attÄ±n ve geri Ã§Ä±kÄ±yorsun.\n");
+	  	printf("Geri dÃ¶nÃ¼lÃ¼yor...\n");
 	  	break;
 	  }
     }
@@ -9898,61 +9898,61 @@ int main ()
 					while(Esay!=0)
 					{
 		
-						printf("hangi alandaki eşyalarınıza bakmak istiyorsunuz?\n");
-						printf("[1] savaş aletleri \n[2] zırhlar\n[3] iksirler ve petler\n[4]ziynet eşyaları\n");
-						printf("seçiminiz: ");
+						printf("hangi alandaki eÅŸyalarÄ±nÄ±za bakmak istiyorsunuz?\n");
+						printf("[1] savaÅŸ aletleri \n[2] zÄ±rhlar\n[3] iksirler ve petler\n[4]ziynet eÅŸyalarÄ±\n");
+						printf("seÃ§iminiz: ");
 						scanf("%d",&Esay1);
 		
 						if(Esay1==1)
 						{
-							printf("[1]Kısa Kılıç(Hasarı 20 arttırır): %d              [2]Uzun Kılıç(Hasarı 30 arttırır): %d      [3]Tek Elli Ağır Kılıç(Hasarı 40 arttırır) : %d\n",kil[0],kil[1],kil[2]);
-							printf("[4]Çift Elli Ağır Kılıç(Hasarı 50 arttırır): %d    [5]Ekmek Bıçağı(Hasarı 10 arttırır): %d    [6]Hançer(Hasarı 15 arttırır): %d\n",kil[3],bic[0],bic[1]);
-							printf("[1]Kısa Balta(Hasarı 30 arttırır): %d              [2]Uzun Balta(Hasarı 50 arttırır): %d      [3]Tek Elli Ağır Balta(Hasarı 70 arttırır): %d\n",bal[0],bal[1],bal[2]);
-							printf("[4]Çift Elli Ağır Balta(Hasarı 90 arttırır): %d \n",bal[3]);
-							printf("[1]Uzun Mızrak(Hasarı 40 arttırır): %d             [2]Üç Başlı Mızrak(Hasarı 60 arttırır): %d \n",miz[0],miz[1]);
-							printf("[3]Uzun Kargı(Hasarı 80 arttırır): %d              [4]Baltalı Kargı(Hasarı 100 arttırır): %d \n",kar[0],kar[1]);
-							printf("[1]Kısa Yay(Okun hasarını 20 arttırır): %d         [2]Uzun Yay(Okun hasarını 30 arttırır): %d [3]Crossbow(Okun hasarını 50 arttırır): %d \n",yay[0],yay[1],yay[2]);
-							printf("[4]Tahta Ok(Okun hasarını 2 arttırır: %d           [5]Taş Ok(Okun hasarını 4 arttırır): %d \n",ok[0],ok[1]);
-							printf("[1]Klasik Yuvarlak Kalkan(Defansı 20 arttırır): %d [2]Klasik Uzun Kalkan(Defansı 30 arttırır): %d \n",kalkan[0],kalkan[1]);
-							printf("[3]Büyük Yuvarlak Kalkan(Defansı 50 arttırır): %d  [4]Dayanıklı Yuvarlak Kalkan(Defansı 70 arttırır): %d \n",kalkan[2],kalkan[3]);
+							printf("[1]KÄ±sa KÄ±lÄ±Ã§(HasarÄ± 20 arttÄ±rÄ±r): %d              [2]Uzun KÄ±lÄ±Ã§(HasarÄ± 30 arttÄ±rÄ±r): %d      [3]Tek Elli AÄŸÄ±r KÄ±lÄ±Ã§(HasarÄ± 40 arttÄ±rÄ±r) : %d\n",kil[0],kil[1],kil[2]);
+							printf("[4]Ã‡ift Elli AÄŸÄ±r KÄ±lÄ±Ã§(HasarÄ± 50 arttÄ±rÄ±r): %d    [5]Ekmek BÄ±Ã§aÄŸÄ±(HasarÄ± 10 arttÄ±rÄ±r): %d    [6]HanÃ§er(HasarÄ± 15 arttÄ±rÄ±r): %d\n",kil[3],bic[0],bic[1]);
+							printf("[1]KÄ±sa Balta(HasarÄ± 30 arttÄ±rÄ±r): %d              [2]Uzun Balta(HasarÄ± 50 arttÄ±rÄ±r): %d      [3]Tek Elli AÄŸÄ±r Balta(HasarÄ± 70 arttÄ±rÄ±r): %d\n",bal[0],bal[1],bal[2]);
+							printf("[4]Ã‡ift Elli AÄŸÄ±r Balta(HasarÄ± 90 arttÄ±rÄ±r): %d \n",bal[3]);
+							printf("[1]Uzun MÄ±zrak(HasarÄ± 40 arttÄ±rÄ±r): %d             [2]ÃœÃ§ BaÅŸlÄ± MÄ±zrak(HasarÄ± 60 arttÄ±rÄ±r): %d \n",miz[0],miz[1]);
+							printf("[3]Uzun KargÄ±(HasarÄ± 80 arttÄ±rÄ±r): %d              [4]BaltalÄ± KargÄ±(HasarÄ± 100 arttÄ±rÄ±r): %d \n",kar[0],kar[1]);
+							printf("[1]KÄ±sa Yay(Okun hasarÄ±nÄ± 20 arttÄ±rÄ±r): %d         [2]Uzun Yay(Okun hasarÄ±nÄ± 30 arttÄ±rÄ±r): %d [3]Crossbow(Okun hasarÄ±nÄ± 50 arttÄ±rÄ±r): %d \n",yay[0],yay[1],yay[2]);
+							printf("[4]Tahta Ok(Okun hasarÄ±nÄ± 2 arttÄ±rÄ±r: %d           [5]TaÅŸ Ok(Okun hasarÄ±nÄ± 4 arttÄ±rÄ±r): %d \n",ok[0],ok[1]);
+							printf("[1]Klasik Yuvarlak Kalkan(DefansÄ± 20 arttÄ±rÄ±r): %d [2]Klasik Uzun Kalkan(DefansÄ± 30 arttÄ±rÄ±r): %d \n",kalkan[0],kalkan[1]);
+							printf("[3]BÃ¼yÃ¼k Yuvarlak Kalkan(DefansÄ± 50 arttÄ±rÄ±r): %d  [4]DayanÄ±klÄ± Yuvarlak Kalkan(DefansÄ± 70 arttÄ±rÄ±r): %d \n",kalkan[2],kalkan[3]);
 							system("pause");
 						}
 		
 						else if(Esay1==2)
 						{
-							printf("[1]Eskimiş Miğfer(Defansı 10 arttırır): %d         [2]Klasik Miğfer(Defansı 15 arttırır): %d \n",mig[0],mig[1]);
-							printf("[3]Kaliteli Miğfer(Defansı 20 arttırır): %d        [4]Dayanıklı Miğfer(Defansı 25 arttırır): %d \n",mig[2],mig[3]);
-							printf("[1]Hasarlı Gövde Zırhı(Defansı 30 arttırır): %d    [2]Klasik Gövde Zırhı(Defansı 40 arttırır): %d \n",gov[0],gov[1]);
-							printf("[3]Kaliteli Gövde Zırhı(Defansı 50 arttırır): %d   [4]Dayanıklı Gövde Zırhı(Defansı 60 arttırır): %d \n",gov[2],gov[3]);
-							printf("[1]Parçalanmış Bacak Zırhı(Defansı 5 arttırır): %d [2]Klasik Bacak Zırhı(Defansı 10 arttırır): %d\n",bac[0],bac[1]);
-							printf("[3]Kaliteli Bacak Zırhı(Defansı 15 arttırır): %d   [4]Dayanıklı Bacak Zırhı(Defansı 20 arttırır): %d \n",bac[2],bac[3]);
-							printf("[1]Paslanmış Kol Zırhı(Defansı 5 arttırır): %d     [2]Klasik Kol Zırhı(Defansı 10 arttırır): %d \n",kol[0],kol[1]);
-							printf("[3]Kaliteli Kol Zırhı(Defansı 15 arttırır): %d     [4]Sağlam Kol Zırhı(Defansı 20 arttırır): %d \n",kol[2],kol[3]);
-							printf("[1]Yün Eldiven(Defansı 5 arttırır): %d             [2]Deri Eldiven(Defansı 10 arttırır): %d \n",eld[0],eld[1]);
-							printf("[3]Kaliteli Eldiven(Defansı 15 arttırır): %d       [4]Ağır Eldiven(Defansı 20 arttırır): %d \n",eld[2],eld[3]);
-							printf("[1]Yün Bot(Defansı 10 arttırır): %d                [2]Klasik Bot(Defansı 15 arttırır): %d \n",bot[0],bot[1]);
-							printf("[3]Sağlam Bot(Defansı 20 arttırır): %d             [4]Dayanıklı Bot(Defansı 25 arttırır): %d \n",bot[2],bot[3]);
+							printf("[1]EskimiÅŸ MiÄŸfer(DefansÄ± 10 arttÄ±rÄ±r): %d         [2]Klasik MiÄŸfer(DefansÄ± 15 arttÄ±rÄ±r): %d \n",mig[0],mig[1]);
+							printf("[3]Kaliteli MiÄŸfer(DefansÄ± 20 arttÄ±rÄ±r): %d        [4]DayanÄ±klÄ± MiÄŸfer(DefansÄ± 25 arttÄ±rÄ±r): %d \n",mig[2],mig[3]);
+							printf("[1]HasarlÄ± GÃ¶vde ZÄ±rhÄ±(DefansÄ± 30 arttÄ±rÄ±r): %d    [2]Klasik GÃ¶vde ZÄ±rhÄ±(DefansÄ± 40 arttÄ±rÄ±r): %d \n",gov[0],gov[1]);
+							printf("[3]Kaliteli GÃ¶vde ZÄ±rhÄ±(DefansÄ± 50 arttÄ±rÄ±r): %d   [4]DayanÄ±klÄ± GÃ¶vde ZÄ±rhÄ±(DefansÄ± 60 arttÄ±rÄ±r): %d \n",gov[2],gov[3]);
+							printf("[1]ParÃ§alanmÄ±ÅŸ Bacak ZÄ±rhÄ±(DefansÄ± 5 arttÄ±rÄ±r): %d [2]Klasik Bacak ZÄ±rhÄ±(DefansÄ± 10 arttÄ±rÄ±r): %d\n",bac[0],bac[1]);
+							printf("[3]Kaliteli Bacak ZÄ±rhÄ±(DefansÄ± 15 arttÄ±rÄ±r): %d   [4]DayanÄ±klÄ± Bacak ZÄ±rhÄ±(DefansÄ± 20 arttÄ±rÄ±r): %d \n",bac[2],bac[3]);
+							printf("[1]PaslanmÄ±ÅŸ Kol ZÄ±rhÄ±(DefansÄ± 5 arttÄ±rÄ±r): %d     [2]Klasik Kol ZÄ±rhÄ±(DefansÄ± 10 arttÄ±rÄ±r): %d \n",kol[0],kol[1]);
+							printf("[3]Kaliteli Kol ZÄ±rhÄ±(DefansÄ± 15 arttÄ±rÄ±r): %d     [4]SaÄŸlam Kol ZÄ±rhÄ±(DefansÄ± 20 arttÄ±rÄ±r): %d \n",kol[2],kol[3]);
+							printf("[1]YÃ¼n Eldiven(DefansÄ± 5 arttÄ±rÄ±r): %d             [2]Deri Eldiven(DefansÄ± 10 arttÄ±rÄ±r): %d \n",eld[0],eld[1]);
+							printf("[3]Kaliteli Eldiven(DefansÄ± 15 arttÄ±rÄ±r): %d       [4]AÄŸÄ±r Eldiven(DefansÄ± 20 arttÄ±rÄ±r): %d \n",eld[2],eld[3]);
+							printf("[1]YÃ¼n Bot(DefansÄ± 10 arttÄ±rÄ±r): %d                [2]Klasik Bot(DefansÄ± 15 arttÄ±rÄ±r): %d \n",bot[0],bot[1]);
+							printf("[3]SaÄŸlam Bot(DefansÄ± 20 arttÄ±rÄ±r): %d             [4]DayanÄ±klÄ± Bot(DefansÄ± 25 arttÄ±rÄ±r): %d \n",bot[2],bot[3]);
 							system("pause");
 						}
 		
 						else if(Esay1==3)
 						{
-							printf("[1]Kuvvet İksiri(Savaş sırasında +x hasar artışı)              [2]Sağlık İksiri(Savaş sırasında +x sağlık artışı)(eklenmedi)\n");
-							printf("[3]Dayanıklılık İksiri(Savaş sırasında +x dayanıklılık artışı) [4]Şans İksiri(eklenmedi)\n");
-							printf("[1]Kedi(Zihin yeteneği 50 artar): %d                           [2]Köpek(Tahmin yeteneği 50 artar): %d \n",pet[0],pet[1]);
+							printf("[1]Kuvvet Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x hasar artÄ±ÅŸÄ±)              [2]SaÄŸlÄ±k Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x saÄŸlÄ±k artÄ±ÅŸÄ±)(eklenmedi)\n");
+							printf("[3]DayanÄ±klÄ±lÄ±k Ä°ksiri(SavaÅŸ sÄ±rasÄ±nda +x dayanÄ±klÄ±lÄ±k artÄ±ÅŸÄ±) [4]Åans Ä°ksiri(eklenmedi)\n");
+							printf("[1]Kedi(Zihin yeteneÄŸi 50 artar): %d                           [2]KÃ¶pek(Tahmin yeteneÄŸi 50 artar): %d \n",pet[0],pet[1]);
 							system("pause");
 						}
 		
 						else if(Esay1==4)
 						{
-							printf("[1]Bronz Kolye: %d             [2]Altın Kolye: %d           [3]Elmas Kolye: %d \n",kolye[0],kolye[1],kolye[2]);
-							printf("[1]Bronz Bileklik: %d          [2]Altın Bileklik: %d        [3]Elmas Bileklik: %d \n",bilek[0],bilek[1],bilek[2]);
-							printf("[1]Bronz Yüzük: %d             [2]Altın Yüzük: %d           [3]Elmas Yüzük: %d \n",yuzuk[0],yuzuk[1],yuzuk[2]);	
-							printf("[1]Bronz Küpe: %d              [2]Altın Küpe: %d            [3]Elmas Küpe: %d \n",kupe[0],kupe[1],kupe[2]);
+							printf("[1]Bronz Kolye: %d             [2]AltÄ±n Kolye: %d           [3]Elmas Kolye: %d \n",kolye[0],kolye[1],kolye[2]);
+							printf("[1]Bronz Bileklik: %d          [2]AltÄ±n Bileklik: %d        [3]Elmas Bileklik: %d \n",bilek[0],bilek[1],bilek[2]);
+							printf("[1]Bronz YÃ¼zÃ¼k: %d             [2]AltÄ±n YÃ¼zÃ¼k: %d           [3]Elmas YÃ¼zÃ¼k: %d \n",yuzuk[0],yuzuk[1],yuzuk[2]);	
+							printf("[1]Bronz KÃ¼pe: %d              [2]AltÄ±n KÃ¼pe: %d            [3]Elmas KÃ¼pe: %d \n",kupe[0],kupe[1],kupe[2]);
 							system("pause");
 						}		
 		
-						printf("[1]çıkmak istiyorum \n[2]bakmaya devam etmek istiyorum \nenvanterden çıkmak ister misiniz: ");
+						printf("[1]Ã§Ä±kmak istiyorum \n[2]bakmaya devam etmek istiyorum \nenvanterden Ã§Ä±kmak ister misiniz: ");
 						scanf("%d",&Esay2);
 						
 						if(Esay2==1)
@@ -9964,15 +9964,15 @@ int main ()
 				break;
 				
 				case 13:
-					printf("Nizam Sövalyeleri Kalesine girdin. İçeride bir şövalye seni karşılıyor\n");
-					printf("Nizam Şövalyesi giriş biletini görebilir miyim?  ");				
+					printf("Nizam SÃ¶valyeleri Kalesine girdin. Ä°Ã§eride bir ÅŸÃ¶valye seni karÅŸÄ±lÄ±yor\n");
+					printf("Nizam ÅÃ¶valyesi giriÅŸ biletini gÃ¶rebilir miyim?  ");				
 					scanf("%d",&Kbilet);
 					if(Kbilet==1){
-						printf("Nizam Şövalyeleri Kalesine hoşgeldin! Kalenin içinde istediğin gibi gezebilirsin ama eşyalara fazla dokunmamaya çalış.\n");
+						printf("Nizam ÅÃ¶valyeleri Kalesine hoÅŸgeldin! Kalenin iÃ§inde istediÄŸin gibi gezebilirsin ama eÅŸyalara fazla dokunmamaya Ã§alÄ±ÅŸ.\n");
 						Ksay=1;
 						while(Ksay!=0){
 						printf("Ne yapmak istersin?\n");
-						printf("[1]Etrafta dolaş [2]Kumandanın ofisine git [3]Kalenin deposuna git [4]siuuuuuu  ");
+						printf("[1]Etrafta dolaÅŸ [2]KumandanÄ±n ofisine git [3]Kalenin deposuna git [4]siuuuuuu  ");
 						scanf("%d",&Ksecim);
 						if(Ksecim==1){
 							a=rand()%4;
@@ -9994,9 +9994,9 @@ int main ()
 							
 						}
 						else if(Ksecim==3){
-							printf("\nKalenin deposuna geldin ve birsürü deperli eşya ve silah olduğunu gördün.\n");
-							printf("Ne yapacaksın?\n");
-							printf("[1]Değerli eşyaları çal(Yakalanma riski yüksek)\n[2]Silahları çal(Yakalanma riski yüksek)\n[3]Herşeyi çal(Yakalanma riski çok yüksek)\n[4]Hiçbirşeye ellemeden depodan ayrıl  ");
+							printf("\nKalenin deposuna geldin ve birsÃ¼rÃ¼ deperli eÅŸya ve silah olduÄŸunu gÃ¶rdÃ¼n.\n");
+							printf("Ne yapacaksÄ±n?\n");
+							printf("[1]DeÄŸerli eÅŸyalarÄ± Ã§al(Yakalanma riski yÃ¼ksek)\n[2]SilahlarÄ± Ã§al(Yakalanma riski yÃ¼ksek)\n[3]HerÅŸeyi Ã§al(Yakalanma riski Ã§ok yÃ¼ksek)\n[4]HiÃ§birÅŸeye ellemeden depodan ayrÄ±l  ");
 							scanf("%d",&Kdepo);
 							if(Kdepo==1){
 								
@@ -10008,7 +10008,7 @@ int main ()
 								
 							}
 							else if(Kdepo==4){
-								printf("Hiçbir değerli eşya ve silaha dokunmadın ve depodan ayrıldın.\n");
+								printf("HiÃ§bir deÄŸerli eÅŸya ve silaha dokunmadÄ±n ve depodan ayrÄ±ldÄ±n.\n");
 								
 							}
 						}
@@ -10018,7 +10018,7 @@ int main ()
 			}
 					}
 					else{
-						printf("Şövalye sana siktir çekti ve seni kaleden kovdu.");
+						printf("ÅÃ¶valye sana siktir Ã§ekti ve seni kaleden kovdu.");
 					}
 					
 					
@@ -10036,38 +10036,38 @@ int main ()
 				lwl+=1;
 				Sexp=((1+(0,2*lwl))*Mexp)+Mexp;	
 				Mexp=Sexp;
-				printf("\n\n-------Seviye Atladınız!!-------");
+				printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 				yetenekpuani();
 				}
 			}
 			/*if(xp>=10 && lvl==0){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}
 			if(xp>=20 && lvl==1){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}
 			if(xp>=45 && lvl==2){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}
 			if(xp>=100 && lvl==3){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}
 			if(xp>=300 && lvl==4){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}
 			if(xp>=800 && lvl==5){ 
 			lvl++;
-			printf("\n\n-------Seviye Atladınız!!-------");
+			printf("\n\n-------Seviye AtladÄ±nÄ±z!!-------");
 			yetenekpuani();
 			}*/
 			
@@ -10076,13 +10076,13 @@ int main ()
 			
 			if((((hiz/100)-Igun)>1)&&can>0)
 			{
-			printf("\n\nÇok hızlısın gün bitmeden bir iş daha yapabilirsin\n\n");
+			printf("\n\nÃ‡ok hÄ±zlÄ±sÄ±n gÃ¼n bitmeden bir iÅŸ daha yapabilirsin\n\n");
 			}
 			Igun++;
 		}
-			int oyunsayac=0; //SORUN OLURSA İNTİ SİL
+			int oyunsayac=0; //SORUN OLURSA Ä°NTÄ° SÄ°L
 			intyilanyumurtasialmahakki=0;
-			printf("GÜN BİTTİ\n");
+			printf("GÃœN BÄ°TTÄ°\n");
             gun +=1;
 			
 		
@@ -10090,7 +10090,7 @@ int main ()
 	}
 	else if(sec=='n')
 	{
-		printf("Keşke bir şans verseydin :'(");
+		printf("KeÅŸke bir ÅŸans verseydin :'(");
 	}
 	else
 	{
